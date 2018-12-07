@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="/favicon.ico">
+		<title>Портфолио</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:300,400,500" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+  <script src="js/parallax.min.js"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script>
+$(document).ready(function(){
+	$("#example").click(function(){
+		$path=$("#asidescroll").offset().top;
+		$('html,body').animate({scrollTop:$path},1500);
+	});
+	});
+</script>
+</head>
+<body>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<header class="header" data-speed="1" data-type="background">
+	<script>$(document).ready(function(){
+    $window = $(window);
+$('div[data-type="background"]').each(function(){
+     var $bgobj = $(this);
+ $(window).scroll(function() {
+        var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
+        var coords = '50% '+ yPos + 'px';
+        $bgobj.css({ backgroundPosition: coords });
+    }); 
+ });    
+}); 
+</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script> 	
+<div class="header-content">
+<div class="header-text">
+	<h1 class="wow fadeInDown" data-wow-delay="0.1s">Делаю сайты<br> 
+для вашего бизнеса</h1>
+	<p class="wow fadeInRight" data-wow-delay="0.3s">Я Никита Тарасенко<br> 
+разрабатываю сайты для бизнеса.<br> 
+Продающие одностраничники,<br>
+имиджевые сайты-визитки<br> 
+или полноценные интернет-магазины.</p>
+	<div class="example wow fadeInUp" data-wow-delay="0.6s">
+	<a href="#asidescroll" id="example">Примеры работ</a>
+	<a href="https://vk.me/whereareyox" id="discuss">Обсудить проект</a>
+	</div>
+</div>	
+</div>
+</header>
+<aside class="aside" id="asidescroll">
+<h1 class="example wow fadeInUp" data-wow-delay="0.9s">Мои работы</h1>
+<div class="aside-flex"></div>
+<div class="aside-shadow wow fadeInUpBig"></div>
+	<div class="aside-content">
+		
+		<div class="aside-content-workitem_1 wow fadeInUpBig">
+		<img src="images/work-image01.jpg" alt="work" id="workimage_1">
+		<p class="work-item-text_1">Одностраничный сайт для рекламы нового термобелья<br> российского производства</p>
+		<a href="#" class="work-item-link_1">Подробнее</a>
+		</div>
+		<div class="aside_content-workitem_2 wow fadeInUpBig">
+		<img src="images/work-image02.png" alt="work" id="workimage_2">
+		<p class="work-item-text_2">Адаптивный сайт наборов для похудения и детокса</p>
+		<a href="#" class="work-item-link_2">Подробнее</a>
+		</div>
+	</div>
+</aside>
+<div class="action">
+	<div class="action-text">
+		<h2>Нужен сайт</h2>
+		<p>Если у вас есть задумки по сайту давайте обсудим их. <br> 
+Я сориентирую по срокам и стоимости</p>
+	</div>
+		<form action="" class="action-form">
+			<input type="text" placeholder="e-mail" id="mail">
+			<input type="submit" value="Отправить" id="submit">
+		</form>
+		<script>
+var windowWidth = $(window).width();
+
+$('.action').mousemove(function(event) {
+
+var moveX = (($(window).width() / 2) - event.pageX) * 0.1;
+var moveY = (($(window).height. /2) - event.pageY) * 0.1;
+$('.action-text').css('margin-left', moveX + 'px');
+$('.action-text').css('margin-top', moveY + 'px');
+});
+
+</script>﻿
+</div>
+<section class="contacts">
+<div class="contacts-shadow wow fadeInUpBig"></div>
+	<div class="sertificate wow fadeInUpBig">
+		<h2>Про опыт</h2>
+		<p>Делать сайты я учился в Академии <br> верстки на курсе «Веб-разработчик»</p>
+<img src="images/certificate.png" alt="certificate">
+	</div>
+	<div class="contact-text wow fadeInUpBig">
+		<h2>Связаться со мной</h2>
+		<div class="info-contacts">
+			<div class="contacts-item">
+				<div class="contact-name">Телефон:</div>
+				<div class="contact-value">
+					<a href="tel:+77477573375" class="contact-link">+77477573375</a>
+				</div>
+			</div>
+		<div class="contacts-item">
+				<div class="contact-name">Email:</div>
+				<div class="contact-value">
+					<a href="mailto:mike07042000@gmail.com" class="contact-link">mike07042000</a>
+				</div>
+			</div>
+			<div class="contacts-item">
+				<div class="contact-name">Vk:</div>
+				<div class="contact-value">
+					<a href="https://vk.com/whereareyox" target="_blank" class="contact-link">whereareyox</a>
+				</div>
+			</div>
+			<div class="contacts-item">
+				<div class="contact-name">Instagram:</div>
+				<div class="contact-value">
+					<a href="https://www.instagram.com/niktar2126/" target="_blank" class="contact-link">niktar2126/</a>
+				</div>
+			</div>
+			<div class="contacts-item">
+				<div class="contact-name">Git:</div>
+				<div class="contact-value">
+					<a href="https://www.github.com/whereareyo" target="_blank" class="contact-link">github.com/whereareyo</a>
+					</div>
+					</div>
+					<form action="text" class="textinput">
+						<input type="text" class="text" placeholder="Имя, Фамилия">
+						<input type="text" class="text" placeholder="Телефон">
+						<input type="email" class="text" placeholder="e-mail">
+						<input type="submit" class="submit" value="Отправить">
+            <div class="form-checkbox">
+            	<input type="checkbox" class="checkbox">
+						<p>я ознакомился с <a href="privacy_policy.html" id="checklink">политикой конфиденциальности</a> и даю согласие на обработку моих персональных данных.</p>
+            </div>
+					</form>
+				</div>
+			</div>
+</section>
+<div class="container"></div>
+<footer class="footer">
+	<p>2018, Сайт портфолио Никита Тарасенко</p>
+	<p>Политика конфиденциальности.©</p>
+	<p>Договор оферты </p>
+</footer>
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+</body>
+</html>
