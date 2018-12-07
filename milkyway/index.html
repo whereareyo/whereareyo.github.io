@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>MilkyWay RolePlay - GTA V сервер</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="MilkyWay RolePlay - GTA V сервер">
+	<meta name="keywords" content="gta, gta 5, gta v, multiplayer,milkyway, roleplay, rp, server, project, мультиплеер, милкивэй, ролеплей, ролеплэй, рп, сервер, проект, онлайн, онлайн-игра, игра">
+	<link rel="shortcut icon" href="images/headicon.png" type="image/x-icon"/>
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="reset.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+  <script src="js/parallax.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#buttonland").click(function(){
+		$path=$("#secondpage").offset().top;
+		$('html,body').animate({scrollTop:$path},2000);
+	});
+	});
+</script>
+</head>
+<body>
+<!--————————————————————————————————————————————ПЕРВАЯ СТРАНИЦА———————————————————————————————————————————————————————————-->
+<section data-speed="1" data-type="background">
+	<!--—————————————————————————————————————Jquery parallax——————————————————————————————————————————————————————————— -->
+		<script>$(document).ready(function(){
+    $window = $(window);
+$('div[data-type="background"]').each(function(){
+     var $bgobj = $(this);
+ $(window).scroll(function() {
+        var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
+        var coords = '50% '+ yPos + 'px';
+        $bgobj.css({ backgroundPosition: coords });
+    }); 
+ });    
+}); 
+</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>  
+<!-- ————————————————————————————————————————Jquery parallax————————————————————————————————————————— -->
+
+		<div class="texts">
+<div class="blood">
+<img src="images/blood.png" alt="blood" id="blood"><h2 class="mw">MILKYWAY</h2>
+</div>
+		<a href="#secondpage" id="buttonland"><button type="button" name="btn" value="" class="css3button">ПОГРУЗИТЬСЯ</button></a>
+		</div>
+		</div>
+<!--——————————————————————————————————————————————————————————————КОНЕЦ ПЕРВОЙ СТРАНИЦЫ———————————————————————————————————————————————————————————————————————————————————————-->
+</section>
+<!-- ——————————————————————————————————————————————————————————————ВТОРАЯ СТРАНИЦА САЙТА—————————————————————————————————————————————————————————————————— -->
+<div class="aboutus" id="secondpage">
+	<div class="header">
+	<div class="header-content">
+	
+			
+<div class="menucontent">
+<div class="logo"><a href="index.html">	</a></div>	
+<span class="mainmenu"><a href="index.html" >Главная</a>
+<a href="index.html" >Форум</a>
+<a href="index.html" >Поддержка</a>
+<a href="index.html" >Донат</a>
+</span>
+	</div>
+		</div>
+	</div>
+<div class="secondheader">
+	<div class="secondlogo"></div>
+	
+</div>
+<div class="secondcontent">
+		<div class="articles"></div>
+		<div class="articles"></div>
+		<div class="articles"></div>
+	</div>
+			<div class="footer">
+			<div class="mainarrow">
+			 <a href="#secondpage" id="mouse">
+			 <div id="wheel"></div>
+				 <div class="scroll"></div>
+					 <div class="scroll2"></div>
+						<div class="scroll3"></div>
+						
+						 </a>
+							
+							 </div>
+							 
+</div>
+<div id="back-top">
+  <a href="#" id="up"><img src="images/top.png" alt=""></a>  
+</div>
+</div>
+
+
+<!--————————————————————————————————————————Jquery scripts————————————————————————————————-->
+	<script>(function($) {  
+$(function() {  
+   
+  $('#up').click(function() {  
+    $('body,html').animate({scrollTop:0},2000);  
+    return false;  
+  })  
+   
+})  
+})(jQuery)</script>
+<!--——————————————————————————————————————Jquery scripts—————————————————————————————————-->
+</body>
+</html>
