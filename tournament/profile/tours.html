@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOMEN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/hamburgers.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" href="../assets/fonts/Proxima Nova/stylesheet.css">
+    <link rel="shortcut icon" href="../assets/img/modules/header/trophy.ico">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="header header-games">
+        <div class="header-signin header-signin_adaptive">
+            <button class="header-signin__btn btn">
+                Sign in
+            </button>
+        </div>
+        <button onclick="showMenu()" class="hamburger hamburger--spin notindex" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="header-menu">
+            <div class="leftsidebar">
+                <div class="leftsidebar-action">
+                    <p class="leftsidebar-action__title">Menu</p>
+                    <a href="../index.html" class="leftsidebar-action__desc ">Start</a>
+                    <a href="../tournaments/challengermode/overview.html" class="leftsidebar-action__desc">My tournaments</a>
+                    <p class="leftsidebar-action__title">Games</p>
+                    <a href="../csgo/tours.html" class="leftsidebar-action__desc">CS:GO</a>
+                    <a href="../lol/tours.html" class="leftsidebar-action__desc">League of Legends</a>
+                    <a href="../dota/tours.html" class="leftsidebar-action__desc">Dota 2</a>
+                    <a href="../pubg/tours.html" class="leftsidebar-action__desc">PUBG</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-section header-section-games">
+            <div class="row header-row">
+                <a href="../index.html" class="header-logo"><img src="../../assets/img/modules/header/trophy.svg" alt="" class="header-logo__img">
+                    <p class="header-logo__title">Tournaments</p>
+                </a>
+                <div class="header-search">
+                    <input type="search" placeholder="Search..." class="header-search__input">
+                </div>
+            </div>
+            <div class="header-signin">
+                <button class="header-signin__btn btn">
+                    Sign in
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="leftsidebar">
+        <div class="leftsidebar-action">
+            <p class="leftsidebar-action__title">Menu</p>
+            <a href="../index.html" class="leftsidebar-action__desc">Start</a>
+            <a href="../tournaments/challengermode/overview.html" class="leftsidebar-action__desc">My tournaments</a>
+            <p class="leftsidebar-action__title">Games</p>
+            <a href="../csgo/tours.html" class="leftsidebar-action__desc leftsidebar-action__desc_active">CS:GO</a>
+            <a href="../lol/tours.html" class="leftsidebar-action__desc">League of Legends</a>
+            <a href="../dota/tours.html" class="leftsidebar-action__desc">Dota 2</a>
+            <a href="../pubg/tours.html" class="leftsidebar-action__desc">PUBG</a>
+        </div>
+    </div>
+    <div class="rightsidebar">
+        <div class="rightsidebar-action">
+            <p class="rightsidebar-action__title">What is “Name site”?</p>
+            <div>
+                <span class="rightsidebar-action__desc">
+                    <img src="../assets/img/modules/rightsidebar/first-place-trophy.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 20px;">
+                    <p class="rightsidebar-action__desc_p">Free tournaments <br>
+                        and competitions.</p>
+                </span>
+                <span class="rightsidebar-action__desc">
+                    <img src="../assets/img/modules/rightsidebar/profit-chart.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 20px;">
+                    <p class="rightsidebar-action__desc_p">Automated match results. <br>
+                        No screenshots!</p>
+                </span>
+                <span class="rightsidebar-action__desc">
+                    <img src="../assets/img/modules/rightsidebar/live-chat.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 20px;">
+                    <p class="rightsidebar-action__desc_p">Helpful admins and <br>
+                        online support 24/7</p>
+                </span>
+                <span class="rightsidebar-action__desc">
+                    <img src="../assets/img/modules/rightsidebar/dollar-bills.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 15px;">
+                    <p class="rightsidebar-action__desc_p">Instant payout of prizes. <br>
+                        Safe withdrawals.</p>
+                </span>
+                <span class="rightsidebar-action__desc">
+                    <img src="../assets/img/modules/rightsidebar/gift.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 18px;">
+                    <p class="rightsidebar-action__desc_p">Ability to withdraw skins</p>
+                </span>
+            </div>
+            <p class="rightsidebar-action__title">Top Teams:</p>
+            <div class="rightsidebar-action-top">
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">1.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">0%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">2.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">17%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">3.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">88%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">4.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">80%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">5.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">80%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">6.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">80%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">7.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">80%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">8.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">10%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-user">
+                <a href="overview.html" class="profile-user-ava"><img src="../assets/img/profile/ava.png" alt=""></a>
+                <div class="profile-user-info">
+                    <div class="profile-user-info-username">
+                        <a href="overview.html" class="profile-user-info-username__nickname">stoyamba</a>
+                        <p class="profile-user-info-username__clantag">[Na'Vi]</p>
+                    </div>
+                    <div class="profile-user-info-stats">
+                        <div class="column">
+                            <div class="row adaptive-rowp" style="width: 145px; justify-content: space-between; margin-bottom: 30px;">
+                                <p class="profile-user-info-stats__desc">Played:</p>
+                                <p class="profile-user-info-stats__number">133</p>
+                            </div>
+                            <div class="row adaptive-rowp" style="width: 145px; justify-content: space-between; margin-bottom: 30px;">
+                                <p class="profile-user-info-stats__desc">Wins:</p>
+                                <p class="profile-user-info-stats__number"> 43</p>
+                            </div>
+                            <div class="row adaptive-rowp" style="width: 145px; justify-content: space-between;">
+                                <p class="profile-user-info-stats__desc">Reputation:</p>
+                                <p class="profile-user-info-stats__number">25</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <p class="profile-user-info-stats__title" style="margin-bottom: 25px;">Stats:</p>
+                            <div class="row adaptive-rowp" style="width: 145px; justify-content: space-between; margin-bottom: 30px;">
+                                <p class="profile-user-info-stats__desc">Win rate:</p>
+                                <p class="profile-user-info-stats__number">49.0%</p>
+                            </div>
+                            <div class="row adaptive-rowp" style="width: 145px; justify-content: space-between;">
+                                <p class="profile-user-info-stats__desc">Play rate:</p>
+                                <p class="profile-user-info-stats__number">100%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="profile-user__online">Signed up 4 years ago</p>
+            </div>
+            <div class="profile-menu">
+                <div class="row">
+                    <a href="overview.html" class="tours-menu-bar__link">Overview</a>
+                    <a href="tours.html" class="tours-menu-bar__link tours-menu-bar__link_active"><img src="../assets/img/tournaments/menu.svg" alt="" class="tours-hover-line">Tournaments</a>
+                    <a href="leagues.html" class="tours-menu-bar__link">Leagues</a>
+                </div>
+                <button class="tours-menu-bar__btn btn ">JOIN TOURNAMENT</button>
+            </div>
+            <div class="profile-tours">
+                <p class="profile-tours__title">Past</p>
+                <div class="startpage-prizes" style="flex-wrap: wrap;">
+                    <div class="startpage-prizes-item">
+                        <img src="../assets/img/csgo/eslone.png" alt="" class="startpage-prizes-item__img">
+                        <p class="startpage-prizes-item__date">2019-09-18 21:00</p>
+                        <p class="startpage-prizes-item__tourname">DreamCup 2019 open</p>
+                        <a href="#" class="startpage-prizes-item__tourdesc">More info</a>
+                    </div>
+                    <div class="startpage-prizes-item">
+                        <img src="../assets/img/csgo/eslone.png" alt="" class="startpage-prizes-item__img">
+                        <p class="startpage-prizes-item__date">2019-09-18 21:00</p>
+                        <p class="startpage-prizes-item__tourname">DreamCup 2019 open</p>
+                        <a href="#" class="startpage-prizes-item__tourdesc">More info</a>
+                    </div>
+                    <div class="startpage-prizes-item">
+                        <img src="../assets/img/csgo/eslone.png" alt="" class="startpage-prizes-item__img">
+                        <p class="startpage-prizes-item__date">2019-09-18 21:00</p>
+                        <p class="startpage-prizes-item__tourname">DreamCup 2019 open</p>
+                        <a href="#" class="startpage-prizes-item__tourdesc">More info</a>
+                    </div>
+                    <div class="startpage-prizes-item">
+                        <img src="../assets/img/csgo/eslone.png" alt="" class="startpage-prizes-item__img">
+                        <p class="startpage-prizes-item__date">2019-09-18 21:00</p>
+                        <p class="startpage-prizes-item__tourname">DreamCup 2019 open</p>
+                        <a href="#" class="startpage-prizes-item__tourdesc">More info</a>
+                    </div>
+                    <div class="startpage-prizes-item" style="margin-top: 40px;">
+                        <img src="../assets/img/csgo/eslone.png" alt="" class="startpage-prizes-item__img">
+                        <p class="startpage-prizes-item__date">2019-09-18 21:00</p>
+                        <p class="startpage-prizes-item__tourname">DreamCup 2019 open</p>
+                        <a href="#" class="startpage-prizes-item__tourdesc">More info</a>
+                    </div>
+                    <div class="startpage-prizes-item" style="margin-top: 40px;">
+                        <img src="../assets/img/csgo/eslone.png" alt="" class="startpage-prizes-item__img">
+                        <p class="startpage-prizes-item__date">2019-09-18 21:00</p>
+                        <p class="startpage-prizes-item__tourname">DreamCup 2019 open</p>
+                        <a href="#" class="startpage-prizes-item__tourdesc">More info</a>
+                    </div>
+                    <div class="startpage-prizes-item" style="margin-top: 40px;">
+                        <img src="../assets/img/csgo/eslone.png" alt="" class="startpage-prizes-item__img">
+                        <p class="startpage-prizes-item__date">2019-09-18 21:00</p>
+                        <p class="startpage-prizes-item__tourname">DreamCup 2019 open</p>
+                        <a href="#" class="startpage-prizes-item__tourdesc">More info</a>
+                    </div>
+                    <div class="startpage-prizes-item" style="margin-top: 40px;">
+                        <img src="../assets/img/csgo/eslone.png" alt="" class="startpage-prizes-item__img">
+                        <p class="startpage-prizes-item__date">2019-09-18 21:00</p>
+                        <p class="startpage-prizes-item__tourname">DreamCup 2019 open</p>
+                        <a href="#" class="startpage-prizes-item__tourdesc">More info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.la-slider').slick({
+            slidesToShow: 1,
+            centerMode: true,
+            slidesToScroll: 1,
+            speed: 1,
+            dots: false,
+            fade: true,
+            arrows: true,
+
+            prevArrow: "<img src='../assets/img/index/prev-arrow.png' class='prev prev_csgo' alt='1'>",
+            nextArrow: "<img src='../assets/img/index/next-arrow.png' class='next next_csgo' alt='2'>",
+        });
+
+    });
+
+    function showMenu() {
+        $('.hamburger--spin').toggleClass('is-active')
+        $('.header-menu').toggleClass('show')
+        $(".overlay").toggleClass("showoverlay")
+    }
+    </script>
+</body>
+
+</html>
