@@ -1,0 +1,240 @@
+@import "_reset.scss";
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "_ui.scss";
+@import "_container.scss";
+
+.reviews {
+    padding: 60px 0 100px 0;
+    width: 100%;
+    ;
+
+
+
+    &__title {
+        color: $blue;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 26px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 40px;
+        position: relative;
+
+
+        &__img {
+            position: absolute;
+            left: 35%;
+            top: -5px;
+        }
+    }
+
+    &-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &-send {
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            background-color: $white;
+            margin-bottom: 12px;
+
+
+
+            .reviews__form {
+                width: 100%;
+                margin-left: 12px;
+
+                &_message {
+                    width: calc(100% - 24px);
+                    padding: 16px 12px;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    background-color: $cold;
+                    border: none;
+                    outline: none;
+                    margin-top: 12px;
+
+                    &::placeholder {
+                        color: #9da1b6;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+
+                &_warning {
+                    color: #eb5757;
+                    font-family: 'Play', sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-right: 20px;
+                }
+
+                .reviews__form_btn[disabled] {
+                    opacity: 0.5;
+                    transition: 0.2s;
+                }
+
+                &_btn {
+                    background-color: $red-light;
+                    color: $white;
+                    font-family: 'Play', sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    padding: 8px 20px;
+                    opacity: 1;
+                    transition: 0.2s;
+                }
+
+
+
+
+                &_username {
+                    padding: 8px 12px;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    background-color: $cold;
+                    border: none;
+                    outline: none;
+
+                    &::placeholder {
+                        color: #9da1b6;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+
+                &_row {
+                    justify-content: space-between;
+
+                    &_center {
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        .readyview-text {
+            width: calc(100% - 12px);
+            padding-left: 12px;
+
+            &__date {
+                color: #a7abc2;
+                font-family: 'Roboto', sans-serif;
+                font-size: 10px;
+                font-weight: 400;
+                margin-bottom: 8px;
+            }
+
+            &__review {
+                color: $blue;
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 8px;
+            }
+
+            &__username {
+                color: #a7abc2;
+                font-family: 'Roboto', sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+
+        &-readyview {
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: row;
+            background-color: $white;
+            margin-bottom: 12px;
+
+            .readyview-text {
+                width: calc(100% - 12px);
+                padding-left: 12px;
+
+                &__date {
+                    color: #a7abc2;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 10px;
+                    font-weight: 400;
+                    margin-bottom: 8px;
+                }
+
+                &__review {
+                    color: $blue;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 8px;
+                }
+
+                &__username {
+                    color: #a7abc2;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        &-adminmsg {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: $white;
+            padding: 30px 20px 30px 26px;
+            border-top: 1px solid #dee1ef;
+
+            &__img {
+                margin-right: 18px;
+            }
+
+            &__status {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: $red-light;
+                font-family: 'Roboto', sans-serif;
+                font-size: 12px;
+                font-weight: 600;
+            }
+
+            &__shopname {
+                color: #a7abc2;
+                font-family: 'Roboto', sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                text-transform: uppercase;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+.review-with-answer {
+    margin-bottom: 12px;
+
+    .reviews-box-readyview {
+        margin-bottom: 0;
+    }
+}
+
+.user-avatar {
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+
+    &__img {
+        width: 100%;
+        vertical-align: middle;
+    }
+
+}

@@ -1,0 +1,65 @@
+@import "_reset.scss";
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "_ui.scss";
+@import "_container.scss";
+
+.contacts {
+    padding: 270px 0 280px 0;
+    @include flex-center;
+    flex-direction: column;
+
+    &__title {
+        color: $blue;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-align: center;
+        position: relative;
+
+        &__img {
+            position: absolute;
+            left: -36.5%;
+            top: -8px;
+        }
+    }
+
+    &-text {
+        width: 66%;
+
+        &__title {
+            color: $blue;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.7px;
+            margin-bottom: 25px;
+            text-align: center;
+            line-height: 21px;
+
+
+        }
+
+        &__question {
+            color: $blue;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.7px;
+            margin-bottom: 30px;
+            text-align: center;
+            line-height: 21px;
+        }
+
+        &__data {
+            color: $blue;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.7px;
+            text-align: center;
+            line-height: 21px;
+        }
+    }
+}
