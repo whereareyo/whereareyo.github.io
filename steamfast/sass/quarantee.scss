@@ -1,0 +1,68 @@
+@import "_reset.scss";
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "_ui.scss";
+@import "_container.scss";
+
+.quarantee {
+    padding: 90px 0 125px;
+    width: 100%;
+
+    &__title {
+        color: $blue;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-align: center;
+        position: relative;
+
+        &__img {
+            position: absolute;
+            left: 32.5%;
+            top: -5px;
+        }
+    }
+
+    &-steps {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+
+        &-item {
+            padding: 25px 17px 22px 25px;
+            @include align-center;
+            background-color: $white;
+            margin-bottom: 35px;
+            width: calc(385px - 42px);
+            height: calc(142px - 47px);
+
+
+
+            &-text {
+                margin-left: 30px;
+
+                &_large {
+                    margin-left: 18px;
+                }
+
+                &__title {
+                    color: $blue;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                &__desc {
+                    color: #6a7198;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
