@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOMEN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/hamburgers.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" href="../assets/fonts/Proxima Nova/stylesheet.css">
+    <link rel="shortcut icon" href="../assets/img/modules/header/trophy.ico">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="header">
+        <div class="header-signin header-signin_adaptive">
+            <button class="header-signin__btn btn">
+                Sign in
+            </button>
+        </div>
+        <button onclick="showMenu()" class="hamburger hamburger--spin notindex" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="header-menu">
+            <div class="leftsidebar">
+                <div class="leftsidebar-action">
+                    <p class="leftsidebar-action__title">Menu</p>
+                    <a href="../index.html" class="leftsidebar-action__desc">Start</a>
+                    <a href="../tournaments/challengermode/overview.html" class="leftsidebar-action__desc">My tournaments</a>
+                    <p class="leftsidebar-action__title">Games</p>
+                    <a href="csgo/tours.html" class="leftsidebar-action__desc leftsidebar-action__desc_active">CS:GO</a>
+                    <a href="lol/tours.html" class="leftsidebar-action__desc">League of Legends</a>
+                    <a href="dota/tours.html" class="leftsidebar-action__desc">Dota 2</a>
+                    <a href="pubg/tours.html" class="leftsidebar-action__desc">PUBG</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-section">
+            <div class="row header-row">
+                <a href="../index.html" class="header-logo"><img src="../assets/img/modules/header/trophy.svg" alt="" class="header-logo__img">
+                    <p class="header-logo__title">Tournaments</p>
+                </a>
+                <div class="header-search">
+                    <input type="search" placeholder="Search..." class="header-search__input">
+                </div>
+            </div>
+            <div class="header-signin">
+                <button class="header-signin__btn btn">
+                    Sign in
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="leftsidebar">
+        <div class="leftsidebar-action">
+            <p class="leftsidebar-action__title">Menu</p>
+            <a href="../index.html" class="leftsidebar-action__desc">Start</a>
+            <a href="../tournaments/challengermode/overview.html" class="leftsidebar-action__desc">My tournaments</a>
+            <p class="leftsidebar-action__title">Games</p>
+            <a href="csgo/tours.html" class="leftsidebar-action__desc leftsidebar-action__desc_active">CS:GO</a>
+            <a href="lol/tours.html" class="leftsidebar-action__desc">League of Legends</a>
+            <a href="dota/tours.html" class="leftsidebar-action__desc">Dota 2</a>
+            <a href="pubg/tours.html" class="leftsidebar-action__desc">PUBG</a>
+        </div>
+    </div>
+    <div class="rightsidebar">
+        <div class="rightsidebar-action">
+            <p class="rightsidebar-action__title">What is “Name site”?</p>
+            <div>
+                <span class="rightsidebar-action__desc">
+                    <img src="../assets/img/modules/rightsidebar/first-place-trophy.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 20px;">
+                    <p class="rightsidebar-action__desc_p">Free tournaments <br>
+                        and competitions.</p>
+                </span>
+                <span class="rightsidebar-action__desc">
+                    <img src="../assets/img/modules/rightsidebar/profit-chart.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 20px;">
+                    <p class="rightsidebar-action__desc_p">Automated match results. <br>
+                        No screenshots!</p>
+                </span>
+                <span class="rightsidebar-action__desc">
+                    <img src="../assets/img/modules/rightsidebar/live-chat.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 20px;">
+                    <p class="rightsidebar-action__desc_p">Helpful admins and <br>
+                        online support 24/7</p>
+                </span>
+                <span class="rightsidebar-action__desc">
+                    <img src="../assets/img/modules/rightsidebar/dollar-bills.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 15px;">
+                    <p class="rightsidebar-action__desc_p">Instant payout of prizes. <br>
+                        Safe withdrawals.</p>
+                </span>
+                <span class="rightsidebar-action__desc">
+                    <img src="../assets/img/modules/rightsidebar/gift.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 18px;">
+                    <p class="rightsidebar-action__desc_p">Ability to withdraw skins</p>
+                </span>
+            </div>
+            <p class="rightsidebar-action__title">Top Teams:</p>
+            <div class="rightsidebar-action-top">
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">1.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">0%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">2.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">17%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">3.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">88%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">4.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">80%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">5.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">80%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">6.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">80%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">7.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">80%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">8.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">10%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="games">
+            <div class="games-review">
+                <div class="games-review-gameimage"><img src="../assets/img/csgo/csgame.png" alt="" class="games-review-gameimage__img"></div>
+                <div class="col">
+                    <div class="games-review-text">
+                        <p class="games-review-text__title">Counter-Strike: Global Offensive</p>
+                        <p class="games-review-text__desc">Counter-Strike: Global Offensive (CS:GO) is a multiplayer first-person shooter video game developed by Hidden Path Entertainment <br>
+                            and Valve Corporation. It is the fourth game in the Counter-Strike series and was released for <br>
+                            Microsoft Windows, OS X, Xbox 360, and PlayStation 3 on August 21, 2012, while the Linux version was released in 2014.</p>
+                    </div>
+                    <div class="games-review-action">
+                        <a href="#" class="games-review-action__signup btn">CONNECT STEAM</a>
+                        <div class="adaptive-row">
+                            <a href="tours.html" class="games-review-action__a ">Tournaments</a>
+                            <a href="leagues.html" class="games-review-action__a">Leagues</a>
+                            <a href="ranking.html" class="games-review-action__a games-review-action__a_active"> <img src="../assets/img/csgo/menu.svg" alt="" class="games-review-action__a_active_img" style="left: -39%;">Ranking</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="games-ranking">
+                <p class="startpage__title" style="margin: 0 0 15px 0">Counter-Strike: Global Offensive Top 100 Ranking</p>
+                <p class="startpage__offer" style="color: #4f4f4f;">1 new entry • Latest update 18 hours ago</p>
+                <div class="games-ranking-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>USER</th>
+                                <th>PLAYED</th>
+                                <th>WINRATE</th>
+                                <th>RATING</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-radius: 5px; background-color: transparent;   ">
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                            </tr>
+                            <tr>
+                                <td style="height: auto;">1</td>
+                                <td style="height: auto;">
+                                    <div class="userblock">
+                                        <div class="userblock-ava" style="background-image: url(../assets/img/csgo/ava.png);"></div>
+                                        <p class="userblock__username">stoyamba</p>
+                                    </div>
+                                </td>
+                                <td style="height: auto;">590</td>
+                                <td style="color: #ff5500;opacity: .5; height: auto;">87.5%</td>
+                                <td style="color: #bdbdbd; height: auto;">2,000</td>
+                            </tr>
+                            <tr style="border-radius: 5px; background-color: transparent;   ">
+                                <td style="padding: 10px 0;height: auto; "></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                            </tr>
+                            <tr>
+                                <td style="height: auto;">2</td>
+                                <td style="height: auto;">
+                                    <div class="userblock">
+                                        <div class="userblock-ava" style="background-image: url(../assets/img/csgo/silvana.jpg);"></div>
+                                        <p class="userblock__username">stoyamba</p>
+                                    </div>
+                                </td>
+                                <td style="height: auto;">590</td>
+                                <td style="color: #ff5500;opacity: .5; height: auto;">87.5%</td>
+                                <td style="color: #bdbdbd; height: auto;">2,000</td>
+                            </tr>
+                            <tr style="border-radius: 5px; background-color: transparent;   ">
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                            </tr>
+                            <tr>
+                                <td style="height: auto;">3</td>
+                                <td style="height: auto;">
+                                    <div class="userblock">
+                                        <div class="userblock-ava" style="background-image: url(../assets/img/csgo/ava.png);"></div>
+                                        <p class="userblock__username">stoyamba</p>
+                                    </div>
+                                </td>
+                                <td style="height: auto;">590</td>
+                                <td style="color: #ff5500;opacity: .5; height: auto;">87.5%</td>
+                                <td style="color: #bdbdbd; height: auto;">2,000</td>
+                            </tr>
+                            <tr style="border-radius: 5px; background-color: transparent;   ">
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                            </tr>
+                            <tr>
+                                <td style="height: auto;">4</td>
+                                <td style="height: auto;">
+                                    <div class="userblock">
+                                        <div class="userblock-ava" style="background-image: url(../assets/img/csgo/silvana.jpg);"></div>
+                                        <p class="userblock__username">stoyamba</p>
+                                    </div>
+                                </td>
+                                <td style="height: auto;">590</td>
+                                <td style="color: #ff5500;opacity: .5; height: auto;">87.5%</td>
+                                <td style="color: #bdbdbd; height: auto;">2,000</td>
+                            </tr>
+                            <tr style="border-radius: 5px; background-color: transparent;   ">
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                            </tr>
+                            <tr>
+                                <td style="height: auto;">5</td>
+                                <td style="height: auto;">
+                                    <div class="userblock">
+                                        <div class="userblock-ava" style="background-image: url(../assets/img/csgo/ava.png);"></div>
+                                        <p class="userblock__username">stoyamba</p>
+                                    </div>
+                                </td>
+                                <td style="height: auto;">590</td>
+                                <td style="color: #ff5500;opacity: .5; height: auto;">87.5%</td>
+                                <td style="color: #bdbdbd; height: auto;">2,000</td>
+                            </tr>
+                            <tr style="border-radius: 5px; background-color: transparent;   ">
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                            </tr>
+                            <tr>
+                                <td style="height: auto;">6</td>
+                                <td style="height: auto;">
+                                    <div class="userblock">
+                                        <div class="userblock-ava" style="background-image: url(../assets/img/csgo/ava.png);"></div>
+                                        <p class="userblock__username">stoyamba</p>
+                                    </div>
+                                </td>
+                                <td style="height: auto;">590</td>
+                                <td style="color: #ff5500;opacity: .5; height: auto;">87.5%</td>
+                                <td style="color: #bdbdbd; height: auto;">2,000</td>
+                            </tr>
+                            <tr style="border-radius: 5px; background-color: transparent;   ">
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                            </tr>
+                            <tr>
+                                <td style="height: auto;">7</td>
+                                <td style="height: auto;">
+                                    <div class="userblock">
+                                        <div class="userblock-ava" style="background-image: url(../assets/img/csgo/silvana.jpg);"></div>
+                                        <p class="userblock__username">stoyamba</p>
+                                    </div>
+                                </td>
+                                <td style="height: auto;">590</td>
+                                <td style="color: #ff5500;opacity: .5; height: auto;">87.5%</td>
+                                <td style="color: #bdbdbd; height: auto;">2,000</td>
+                            </tr>
+                            <tr style="border-radius: 5px; background-color: transparent;   ">
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                            </tr>
+                            <tr>
+                                <td style="height: auto;">8</td>
+                                <td style="height: auto;">
+                                    <div class="userblock">
+                                        <div class="userblock-ava" style="background-image: url(../assets/img/csgo/ava.png);"></div>
+                                        <p class="userblock__username">stoyamba</p>
+                                    </div>
+                                </td>
+                                <td style="height: auto;">590</td>
+                                <td style="color: #ff5500;opacity: .5; height: auto;">87.5%</td>
+                                <td style="color: #bdbdbd; height: auto;">2,000</td>
+                            </tr>
+                            <tr style="border-radius: 5px; background-color: transparent;   ">
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                            </tr>
+                            <tr>
+                                <td style="height: auto;">9</td>
+                                <td style="height: auto;">
+                                    <div class="userblock">
+                                        <div class="userblock-ava" style="background-image: url(../assets/img/csgo/ava.png);"></div>
+                                        <p class="userblock__username">stoyamba</p>
+                                    </div>
+                                </td>
+                                <td style="height: auto;">590</td>
+                                <td style="color: #ff5500;opacity: .5; height: auto;">87.5%</td>
+                                <td style="color: #bdbdbd; height: auto;">2,000</td>
+                            </tr>
+                            <tr style="border-radius: 5px; background-color: transparent;   ">
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                                <td style="padding: 10px 0; height: auto;"></td>
+                            </tr>
+                            <tr>
+                                <td style="height: auto;">10</td>
+                                <td style="height: auto;">
+                                    <div class="userblock">
+                                        <div class="userblock-ava" style="background-image: url(../assets/img/csgo/silvana.jpg);"></div>
+                                        <p class="userblock__username">stoyamba</p>
+                                    </div>
+                                </td>
+                                <td style="height: auto;">590</td>
+                                <td style="color: #ff5500;opacity: .5; height: auto;">87.5%</td>
+                                <td style="color: #bdbdbd; height: auto;">2,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+    function showMenu() {
+        $('.hamburger--spin').toggleClass('is-active')
+        $('.header-menu').toggleClass('show')
+        $(".overlay").toggleClass("showoverlay")
+
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOMEN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/hamburgers.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" href="../assets/fonts/Proxima Nova/stylesheet.css">
+    <link rel="shortcut icon" href="../assets/img/modules/header/trophy.ico">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="header header-games">
+        <div class="header-signin header-signin_adaptive">
+            <button class="header-signin__btn btn">
+                Sign in
+            </button>
+        </div>
+        <button onclick="showMenu()" class="hamburger hamburger--spin notindex" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="header-menu">
+            <div class="leftsidebar">
+                <div class="leftsidebar-action">
+                    <p class="leftsidebar-action__title">Menu</p>
+                    <a href="../index.html" class="leftsidebar-action__desc ">Start</a>
+                    <a href="../tournaments/challengermode/overview.html" class="leftsidebar-action__desc">My tournaments</a>
+                    <p class="leftsidebar-action__title">Games</p>
+                    <a href="csgo/tours.html" class="leftsidebar-action__desc leftsidebar-action__desc_active">CS:GO</a>
+                    <a href="lol/tours.html" class="leftsidebar-action__desc">League of Legends</a>
+                    <a href="dota/tours.html" class="leftsidebar-action__desc">Dota 2</a>
+                    <a href="pubg/tours.html" class="leftsidebar-action__desc">PUBG</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-section header-section-games">
+            <div class="row header-row">
+                <a href="../index.html" class="header-logo"><img src="../assets/img/modules/header/trophy.svg" alt="" class="header-logo__img">
+                    <p class="header-logo__title">Tournaments</p>
+                </a>
+                <div class="header-search">
+                    <input type="search" placeholder="Search..." class="header-search__input">
+                </div>
+            </div>
+            <div class="header-signin">
+                <button class="header-signin__btn btn">
+                    Sign in
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="leftsidebar">
+        <div class="leftsidebar-action">
+            <p class="leftsidebar-action__title">Menu</p>
+            <a href="../index.html" class="leftsidebar-action__desc">Start</a>
+            <a href="../tournaments/challengermode/overview.html" class="leftsidebar-action__desc">My tournaments</a>
+            <p class="leftsidebar-action__title">Games</p>
+            <a href="csgo/tours.html" class="leftsidebar-action__desc leftsidebar-action__desc_active">CS:GO</a>
+            <a href="lol/tours.html" class="leftsidebar-action__desc">League of Legends</a>
+            <a href="dota/tours.html" class="leftsidebar-action__desc">Dota 2</a>
+            <a href="pubg/tours.html" class="leftsidebar-action__desc">PUBG</a>
+        </div>
+    </div>
+    <div class="rightsidebar">
+        <div class="rightsidebar-action">
+            <p class="rightsidebar-action__title">What is “Name site”?</p>
+            <div>
+                <span class="rightsidebar-action__desc">
+                    <img src="../assets/img/modules/rightsidebar/first-place-trophy.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 20px;">
+                    <p class="rightsidebar-action__desc_p">Free tournaments <br>
+                        and competitions.</p>
+                </span>
+                <span class="rightsidebar-action__desc">
+                    <img src="../assets/img/modules/rightsidebar/profit-chart.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 20px;">
+                    <p class="rightsidebar-action__desc_p">Automated match results. <br>
+                        No screenshots!</p>
+                </span>
+                <span class="rightsidebar-action__desc">
+                    <img src="../assets/img/modules/rightsidebar/live-chat.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 20px;">
+                    <p class="rightsidebar-action__desc_p">Helpful admins and <br>
+                        online support 24/7</p>
+                </span>
+                <span class="rightsidebar-action__desc">
+                    <img src="../assets/img/modules/rightsidebar/dollar-bills.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 15px;">
+                    <p class="rightsidebar-action__desc_p">Instant payout of prizes. <br>
+                        Safe withdrawals.</p>
+                </span>
+                <span class="rightsidebar-action__desc">
+                    <img src="../assets/img/modules/rightsidebar/gift.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 18px;">
+                    <p class="rightsidebar-action__desc_p">Ability to withdraw skins</p>
+                </span>
+            </div>
+            <p class="rightsidebar-action__title">Top Teams:</p>
+            <div class="rightsidebar-action-top">
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">1.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">0%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">2.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">17%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">3.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">88%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">4.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">80%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">5.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">80%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">6.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">80%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">7.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">80%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">8.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">10%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="games">
+            <div class="games-review">
+                <div class="games-review-gameimage"><img src="../assets/img/csgo/csgame.png" alt="" class="games-review-gameimage__img"></div>
+                <div class="col">
+                    <div class="games-review-text">
+                        <p class="games-review-text__title">Counter-Strike: Global Offensive</p>
+                        <p class="games-review-text__desc">Counter-Strike: Global Offensive (CS:GO) is a multiplayer first-person shooter video game developed by Hidden Path Entertainment <br>
+                            and Valve Corporation. It is the fourth game in the Counter-Strike series and was released for <br>
+                            Microsoft Windows, OS X, Xbox 360, and PlayStation 3 on August 21, 2012, while the Linux version was released in 2014.</p>
+                    </div>
+                    <div class="games-review-action">
+                        <a href="#" class="games-review-action__signup btn">CONNECT STEAM</a>
+                        <div class="adaptive-row">
+                            <a href="tours.html" class="games-review-action__a ">Tournaments</a>
+                            <a href="leagues.html" class="games-review-action__a games-review-action__a_active"><img src="../assets/img/csgo/menu.svg" alt="" class="games-review-action__a_active_img">Leagues</a>
+                            <a href="ranking.html" class="games-review-action__a">Ranking</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="startpage__title" style="margin: 30px 0 15px 0">National Esports Leagues</p>
+            <p class="startpage__offer">The new standard for esports. Sign up for your league today!</p>
+            <div class="la-slider" style="position: relative;">
+                <div class="startpage-languages">
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/ukraine.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Ukraine</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/united-states.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">USA</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/ukraine.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Ukraine</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo startpage-languages-item_active">
+                        <div class="startpage-languages-item-flag"><img src="../assets/img/index/united-kingdom.svg" alt="" class="startpage-languages-item-flag__img">
+                            <img src="../assets/img/index/line.svg" alt="" class="startpage-languages-item-flag__line">
+                        </div>
+                        <p class="startpage-languages-item__country">UK</p>
+                        <p class="startpage-languages-item__leaguename">Name League</p>
+                        <a href="#" class="startpage-languages-item__btn btn">SIGN UP</a>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/germany.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Germany</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/italy.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Italy</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/germany.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Germany</p>
+                    </div>
+                </div>
+                <div class="startpage-languages">
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/united-states.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">USA</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/ukraine.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Ukraine</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/united-kingdom.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">UK</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo startpage-languages-item_active">
+                        <div class="startpage-languages-item-flag"><img src="../assets/img/index/germany.svg" alt="" class="startpage-languages-item-flag__img">
+                            <img src="../assets/img/index/line.svg" alt="" class="startpage-languages-item-flag__line">
+                        </div>
+                        <p class="startpage-languages-item__country">Germany</p>
+                        <p class="startpage-languages-item__leaguename">Name League</p>
+                        <a href="#" class="startpage-languages-item__btn btn">SIGN UP</a>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/italy.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Italy</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/germany.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Germany</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/ukraine.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Ukraine</p>
+                    </div>
+                </div>
+                <div class="startpage-languages">
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/ukraine.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Ukraine</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/united-kingdom.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">UK</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/germany.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Germany</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo startpage-languages-item_active">
+                        <div class="startpage-languages-item-flag"><img src="../assets/img/index/italy.svg" alt="" class="startpage-languages-item-flag__img">
+                            <img src="../assets/img/index/line.svg" alt="" class="startpage-languages-item-flag__line">
+                        </div>
+                        <p class="startpage-languages-item__country">Italy</p>
+                        <p class="startpage-languages-item__leaguename">Name League</p>
+                        <a href="#" class="startpage-languages-item__btn btn">SIGN UP</a>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/germany.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Germany</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/ukraine.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Ukraine</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/united-states.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">USA</p>
+                    </div>
+                </div>
+                <div class="startpage-languages">
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/united-kingdom.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">UK</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/germany.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Germany</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/italy.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Italy</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo startpage-languages-item_active">
+                        <div class="startpage-languages-item-flag"><img src="../assets/img/index/germany.svg" alt="" class="startpage-languages-item-flag__img">
+                            <img src="../assets/img/index/line.svg" alt="" class="startpage-languages-item-flag__line">
+                        </div>
+                        <p class="startpage-languages-item__country">Germany</p>
+                        <p class="startpage-languages-item__leaguename">Name League</p>
+                        <a href="#" class="startpage-languages-item__btn btn">SIGN UP</a>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/ukraine.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Ukraine</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/united-states.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">USA</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/ukraine.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Ukraine</p>
+                    </div>
+                </div>
+                <div class="startpage-languages">
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/germany.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Germany</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/italy.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Italy</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/germany.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Germany</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo startpage-languages-item_active">
+                        <div class="startpage-languages-item-flag"><img src="../assets/img/index/ukraine.svg" alt="" class="startpage-languages-item-flag__img">
+                            <img src="../assets/img/index/line.svg" alt="" class="startpage-languages-item-flag__line">
+                        </div>
+                        <p class="startpage-languages-item__country">Ukraine</p>
+                        <p class="startpage-languages-item__leaguename">Name League</p>
+                        <a href="#" class="startpage-languages-item__btn btn">SIGN UP</a>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/united-states.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">USA</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/ukraine.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Ukraine</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/united-kingdom.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">UK</p>
+                    </div>
+                </div>
+                <div class="startpage-languages">
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/italy.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Italy</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/germany.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Germany</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/ukraine.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Ukraine</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo startpage-languages-item_active">
+                        <div class="startpage-languages-item-flag"><img src="../assets/img/index/united-states.svg" alt="" class="startpage-languages-item-flag__img">
+                            <img src="../assets/img/index/line.svg" alt="" class="startpage-languages-item-flag__line">
+                        </div>
+                        <p class="startpage-languages-item__country">USA</p>
+                        <p class="startpage-languages-item__leaguename">Name League</p>
+                        <a href="#" class="startpage-languages-item__btn btn">SIGN UP</a>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/ukraine.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Ukraine</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/united-kingdom.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">UK</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/germany.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Germany</p>
+                    </div>
+                </div>
+                <div class="startpage-languages">
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/germany.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Germany</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/ukraine.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Ukraine</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/united-states.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">USA</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo startpage-languages-item_active">
+                        <div class="startpage-languages-item-flag"><img src="../assets/img/index/ukraine.svg" alt="" class="startpage-languages-item-flag__img">
+                            <img src="../assets/img/index/line.svg" alt="" class="startpage-languages-item-flag__line">
+                        </div>
+                        <p class="startpage-languages-item__country">Ukraine</p>
+                        <p class="startpage-languages-item__leaguename">Name League</p>
+                        <a href="#" class="startpage-languages-item__btn btn">SIGN UP</a>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/united-kingdom.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">UK</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/germany.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Germany</p>
+                    </div>
+                    <div class="startpage-languages-item startpage-languages-item_csgo">
+                        <img src="../assets/img/index/italy.svg" alt="" class="startpage-languages-item-flag__img">
+                        <p class="startpage-languages-item__country">Italy</p>
+                    </div>
+                </div>
+            </div>
+            <p class="startpage__title" style="margin: 45px 0 30px 0;">Open Leagues</p>
+            <div class="startpage-prizes">
+                <div class="startpage-prizes-item">
+                    <img src="../assets/img/csgo/eslone.png" alt="" class="startpage-prizes-item__img">
+                    <p class="startpage-prizes-item__date">2019-09-18 21:00</p>
+                    <p class="startpage-prizes-item__tourname">DreamCup 2019 open</p>
+                    <a href="#" class="startpage-prizes-item__tourdesc">More info</a>
+                </div>
+                <div class="startpage-prizes-item">
+                    <img src="../assets/img/csgo/eslone.png" alt="" class="startpage-prizes-item__img">
+                    <p class="startpage-prizes-item__date">2019-09-18 21:00</p>
+                    <p class="startpage-prizes-item__tourname">DreamCup 2019 open</p>
+                    <a href="#" class="startpage-prizes-item__tourdesc">More info</a>
+                </div>
+                <div class="startpage-prizes-item">
+                    <img src="../assets/img/csgo/eslone.png" alt="" class="startpage-prizes-item__img">
+                    <p class="startpage-prizes-item__date">2019-09-18 21:00</p>
+                    <p class="startpage-prizes-item__tourname">DreamCup 2019 open</p>
+                    <a href="#" class="startpage-prizes-item__tourdesc">More info</a>
+                </div>
+                <div class="startpage-prizes-item">
+                    <img src="../assets/img/csgo/eslone.png" alt="" class="startpage-prizes-item__img">
+                    <p class="startpage-prizes-item__date">2019-09-18 21:00</p>
+                    <p class="startpage-prizes-item__tourname">DreamCup 2019 open</p>
+                    <a href="#" class="startpage-prizes-item__tourdesc">More info</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.la-slider').slick({
+            slidesToShow: 1,
+            centerMode: true,
+            slidesToScroll: 1,
+            speed: 1,
+            dots: false,
+            fade: true,
+            arrows: true,
+
+            prevArrow: "<img src='../assets/img/index/prev-arrow.png' class='prev prev_csgo' alt='1'>",
+            nextArrow: "<img src='../assets/img/index/next-arrow.png' class='next next_csgo' alt='2'>",
+        });
+
+    });
+
+    function showMenu() {
+$('.hamburger--spin').toggleClass('is-active')
+$('.header-menu').toggleClass('show')
+$(".overlay").toggleClass("showoverlay")
+}
+    </script>
+</body>
+
+</html>

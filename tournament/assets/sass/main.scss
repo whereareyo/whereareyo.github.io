@@ -1,0 +1,511 @@
+@import "../fonts/Proxima Nova/stylesheet.css";
+@import "_container.scss";
+@import "_reset.scss";
+@import "_variables.scss";
+
+.btn {
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+@import "_ui.scss";
+@import "games.scss";
+@import "profile.scss";
+@import "tournaments.scss";
+
+html {
+    font-family: 'Proxima Nova';
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+.startpage {
+    width: 100%;
+    background-image: url(../img/index/bg.png);
+    background-color: #1f1f1f;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 0 200px 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 737px;
+    position: relative;
+
+    &:hover {
+        ::-webkit-scrollbar-thumb {
+            background-color: #828282;
+        }
+    }
+
+    &-slider {
+        width: 100%;
+
+        &-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 88px 0 161px 51px;
+            width: calc(100% - 51px);
+            flex-direction: column;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 2;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-image: linear-gradient(rgba(38, 38, 38, 0.28) 22%, rgba(36, 36, 36, 0.9) 93%);
+            }
+
+
+            &__title {
+                color: $white;
+                font-size: 60px;
+                font-weight: 700;
+                margin-bottom: 30px;
+
+            }
+
+            &__desc {
+                margin-bottom: 60px;
+                color: $white;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 35.56px;
+            }
+
+            &__btn {
+                color: $white;
+                font-size: 25px;
+                font-weight: 700;
+                padding: 17px 100px;
+                border-radius: 5px;
+                background-color: $orange;
+                transition: all 0.3s ease 0s;
+
+
+                &:hover {
+                    background-color: rgba(255, 85, 0, 0.87);
+
+                }
+            }
+        }
+    }
+
+    .startpage-container {
+        width: calc(100% - 150px);
+        padding: 0 75px;
+    }
+
+    &__title {
+        color: $light-gray;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 30px 0;
+    }
+
+    &-tours {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+
+        &-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+
+            &_simg {
+
+                a:nth-child(1) {
+                    margin-right: 7px;
+                }
+
+                a:nth-child(3) {
+                    margin-right: 7px;
+                }
+            }
+
+            &_small {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                border-radius: 10px;
+                width: 301px;
+                height: 170px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: 0.3s;
+
+                &:before {
+                    transition: 0.3s;
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    background-color: rgba(0, 0, 0, 0);
+                    transition: 0.3s;
+                }
+
+                &:hover:before {
+                    transition: 0.3s;
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    background-color: rgba(0, 0, 0, .3);
+                    transition: 0.3s;
+                }
+
+
+                &:nth-child(1) {
+                    background-image: url(../img/index/tournaments-thin1.jpg);
+                    margin-bottom: 15px;
+                }
+
+                &:nth-child(2) {
+                    background-image: url(../img/index/tournaments-thin2.jpg);
+                    margin-bottom: 15px;
+
+                }
+
+                &:nth-child(3) {
+                    background-image: url(../img/index/tournaments-thin3.jpg);
+
+
+                }
+
+                &:nth-child(4) {
+                    background-image: url(../img/index/tournaments-thin4.jpg);
+
+                }
+
+
+                &_withtext {
+                    position: relative;
+                    padding: 0 0 15px 15px;
+                    width: calc(301px - 15px);
+                    height: calc(170px - 15px);
+                    z-index: 2;
+
+                    &:hover {
+                        transition: 0.3s;
+
+                        .startpage-tours-item_small_withtext__title {
+                            opacity: 1;
+                            transition: 0.3s;
+                        }
+
+                        .startpage-tours-item_small_withtext__desc {
+                            opacity: 1;
+                            transition: 0.3s;
+                        }
+                    }
+
+                    &__title {
+                        color: rgba(224, 224, 224, 1);
+                        font-size: 15px;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                        transition: 0.3s;
+                        opacity: 0;
+                    }
+
+                    &__desc {
+                        color: $light-gray;
+                        font-size: 15px;
+                        font-weight: 400;
+                        transition: 0.3s;
+                        opacity: 0;
+                    }
+                }
+            }
+
+            &_large {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                border-radius: 10px;
+                background-image: url(../img/index/tournaments-large.jpg);
+                background-size: cover;
+                background-position: 50%;
+                background-repeat: no-repeat;
+                width: 587px;
+                height: 340px;
+                transition: 0.3s;
+
+                &:before {
+                    transition: 0.3s;
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    background-color: rgba(0, 0, 0, 0);
+                    transition: 0.3s;
+                }
+
+                &:hover:before {
+                    transition: 0.3s;
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    background-color: rgba(0, 0, 0, .3);
+                    transition: 0.3s;
+                }
+
+            }
+
+            &:first-child {
+                margin-right: 22px;
+            }
+        }
+    }
+
+    &-games {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+
+        &-item {
+
+            &:nth-child(1) {
+                .startpage-games-item__img {
+                    transition: 0.3s;
+
+                    &:hover {
+                        transition: 0.3s;
+                        transform: scale(1.03) translateY(-5px);
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                .startpage-games-item__img {
+                    transition: 0.3s;
+
+                    &:hover {
+                        transition: 0.3s;
+                        transform: scale(1.03) translateY(-5px);
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                .startpage-games-item__img {
+                    transition: 0.3s;
+
+                    &:hover {
+                        transition: 0.3s;
+                        transform: scale(1.03) translateY(-5px);
+                    }
+                }
+            }
+
+            &:nth-child(4) {
+                .startpage-games-item__img {
+                    transition: 0.3s;
+
+                    &:hover {
+                        transition: 0.3s;
+                        transform: scale(1.03) translateY(-5px);
+                    }
+                }
+            }
+
+
+
+        }
+    }
+
+    &__offer {
+        color: $dark-gray;
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 60px;
+    }
+
+    &-languages {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 155px 32px 147px 32px;
+            background-color: rgba(33, 33, 33, 0.5);
+            margin-right: 10px;
+            width: calc(118px - 64px);
+            user-select: none;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &_active {
+                padding: 65px 91px 50px 91px;
+                width: calc(400px - 182px);
+
+                .startpage-languages-item__country {
+                    font-size: 25px;
+                    margin-top: 0;
+                }
+            }
+
+            &-flag {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                width: 144px;
+                height: 70px;
+                background-image: linear-gradient(rgba(255, 85, 0, 0) 0%, rgba(255, 85, 0, 0.025) 100%);
+                position: relative;
+                margin-bottom: 30px;
+
+                &__line {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+
+            &__country {
+                color: $dark-gray;
+                font-size: 15px;
+                font-weight: 400;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+                margin-top: 23px;
+            }
+
+            &__leaguename {
+                color: $light-gray;
+                font-size: 35px;
+                font-weight: 600;
+                margin-bottom: 30px;
+                opacity: 1;
+                transition: all 0.2s;
+                outline: none;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+
+            &__btn {
+                border-radius: 30px;
+                background-color: $orange;
+                padding: 13px 65px;
+                color: $white;
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                transition: all 0.3s ease 0s;
+
+                &:hover {
+                    background-color: rgba(255, 85, 0, 0.87);
+                    transform: scale(1.05);
+                    transition: all 0.3s ease 0s;
+                }
+            }
+        }
+    }
+
+    &-prizes {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            z-index: 3;
+
+            &:before {
+                transition: 0.3s;
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 67%;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                background-color: rgba(0, 0, 0, 0);
+                transition: 0.3s;
+                border-radius: 5px;
+            }
+
+            &:hover:before {
+                background-color: rgba(0, 0, 0, .3);
+                transition: 0.3s;
+            }
+
+            &__img {
+                width: 296px;
+                height: 177px;
+                margin-bottom: 15px;
+                z-index: -11;
+                border-radius: 5px;
+            }
+
+            &__date {
+                color: $dark-gray;
+                font-size: 12px;
+                font-weight: 300;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+
+            &__tourname {
+                color: $light-gray;
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+
+            &__tourdesc {
+                color: $gray;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+    }
+
+}
+
+
+@import "media.scss";
