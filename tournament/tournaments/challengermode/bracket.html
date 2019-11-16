@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOMEN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/hamburgers.css">
+    <link rel="stylesheet" href="../../assets/css/slick.css">
+    <link rel="stylesheet" href="../../assets/css/slick-theme.css">
+    <link rel="stylesheet" href="../../assets/fonts/Proxima Nova/stylesheet.css">
+    <link rel="shortcut icon" href="../../assets/img/modules/header/trophy.ico">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="header">
+        <div class="header-signin header-signin_adaptive">
+            <button class="header-signin__btn btn">
+                Sign in
+            </button>
+        </div>
+        <button onclick="showMenu()" class="hamburger hamburger--spin notindex" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="header-menu">
+            <div class="leftsidebar">
+                <div class="leftsidebar-action">
+                    <p class="leftsidebar-action__title">Menu</p>
+                    <a href="../../index.html" class="leftsidebar-action__desc">Start</a>
+                    <a href="tournaments/challengermode/overview.html" class="leftsidebar-action__desc">My tournaments</a>
+                    <p class="leftsidebar-action__title">Games</p>
+                    <a href="csgo/tours.html" class="leftsidebar-action__desc leftsidebar-action__desc_active">CS:GO</a>
+                    <a href="lol/tours.html" class="leftsidebar-action__desc">League of Legends</a>
+                    <a href="dota/tours.html" class="leftsidebar-action__desc">Dota 2</a>
+                    <a href="pubg/tours.html" class="leftsidebar-action__desc">PUBG</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-section">
+            <div class="row header-row">
+                <a href="../../index.html" class="header-logo"><img src="../../assets/img/modules/header/trophy.svg" alt="" class="header-logo__img">
+                    <p class="header-logo__title">Tournaments</p>
+                </a>
+                <div class="header-search">
+                    <input type="search" placeholder="Search..." class="header-search__input">
+                </div>
+            </div>
+            <div class="header-signin">
+                <button class="header-signin__btn btn">
+                    Sign in
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="leftsidebar">
+        <div class="leftsidebar-action">
+            <p class="leftsidebar-action__title">Menu</p>
+            <a href="../../index.html" class="leftsidebar-action__desc">Start</a>
+            <a href="tournaments/challengermode/overview.html" class="leftsidebar-action__desc">My tournaments</a>
+            <p class="leftsidebar-action__title">Games</p>
+            <a href="../../csgo/tours.html" class="leftsidebar-action__desc">CS:GO</a>
+            <a href="../../lol/tours.html" class="leftsidebar-action__desc">League of Legends</a>
+            <a href="../../dota/tours.html" class="leftsidebar-action__desc">Dota 2</a>
+            <a href="../../pubg/tours.html" class="leftsidebar-action__desc">PUBG</a>
+        </div>
+    </div>
+    <div class="rightsidebar">
+        <div class="rightsidebar-action">
+            <p class="rightsidebar-action__title">What is “Name site”?</p>
+            <div>
+                <span class="rightsidebar-action__desc">
+                    <img src="../../assets/img/modules/rightsidebar/first-place-trophy.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 20px;">
+                    <p class="rightsidebar-action__desc_p">Free tournaments <br>
+                        and competitions.</p>
+                </span>
+                <span class="rightsidebar-action__desc">
+                    <img src="../../assets/img/modules/rightsidebar/profit-chart.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 20px;">
+                    <p class="rightsidebar-action__desc_p">Automated match results. <br>
+                        No screenshots!</p>
+                </span>
+                <span class="rightsidebar-action__desc">
+                    <img src="../../assets/img/modules/rightsidebar/live-chat.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 20px;">
+                    <p class="rightsidebar-action__desc_p">Helpful admins and <br>
+                        online support 24/7</p>
+                </span>
+                <span class="rightsidebar-action__desc">
+                    <img src="../../assets/img/modules/rightsidebar/dollar-bills.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 15px;">
+                    <p class="rightsidebar-action__desc_p">Instant payout of prizes. <br>
+                        Safe withdrawals.</p>
+                </span>
+                <span class="rightsidebar-action__desc">
+                    <img src="../../assets/img/modules/rightsidebar/gift.svg" alt="" class="rightsidebar-action__desc_img" style="margin-right: 18px;">
+                    <p class="rightsidebar-action__desc_p">Ability to withdraw skins</p>
+                </span>
+            </div>
+            <p class="rightsidebar-action__title">Top Teams:</p>
+            <div class="rightsidebar-action-top">
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">1.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">0%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">2.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">17%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">3.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">88%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">4.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">80%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">5.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">80%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">6.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">80%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">7.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">80%</p>
+                </div>
+                <div class="rightsidebar-action-top-item">
+                    <div class="row rightsidebar-row">
+                        <p class="rightsidebar-action-top-item__number">8.</p>
+                        <div class="row">
+                            <div class="rightsidebar-action-top-item_avatar"></div>
+                            <p class="rightsidebar-action-top-item__teamname">Team name</p>
+                        </div>
+                    </div>
+                    <p class="rightsidebar-action-top-item__percent">10%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="tours">
+            <div class="tours-menu">
+                <div class="tours-menu-poster">
+                    <p class="tours-menu-poster__tour">TOURNAMENT</p>
+                    <p class="tours-menu-poster__title">5K - by Challengermode</p>
+                    <p class="tours-menu-poster__date">Saturday at 19:00 EEST • Hosted by Challengermode</p>
+                </div>
+                <div class="tours-menu-bar">
+                    <div class="row jcc">
+                        <a href="overview.html" class="tours-menu-bar__link ">Overview</a>
+                        <a href="bracket.html" class="tours-menu-bar__link tours-menu-bar__link_active"><img src="../../assets/img/tournaments/menu.svg" alt="" class="tours-hover-line">Bracket</a>
+                        <a href="matches.html" class="tours-menu-bar__link">Matches</a>
+                        <a href="teams.html" class="tours-menu-bar__link">Teams</a>
+                        <a href="prizes.html" class="tours-menu-bar__link">Prizes</a>
+                        <a href="results.html" class="tours-menu-bar__link">Results</a>
+                        <a href="rules.html" class="tours-menu-bar__link">Rules</a>
+                    </div>
+                    <button class="tours-menu-bar__btn btn ">JOIN TOURNAMENT</button>
+                </div>
+            </div>
+            <div class="tours-bracket">
+                <p class="tours-bracket__title">Bracket</p>
+                <div class="tours-bracket-content">
+                    
+                    <span class="firstlargeline"></span>
+                    <span class="secondlargeline"></span>
+                    <span class="thirdlargeline"></span>
+                    <div class="column" style="width: 100%; margin-right: 150px;">
+                        <div class="tours-bracket-content-row">
+                            <div class="tours-bracket-content-column">
+                                <div class="tours-bracket-content-item">
+                                    <div class="tours-bracket-content-item-teamone">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_green">16</p>
+                                    </div>
+                                    <span class="defaultline"></span>
+                                    <div class="tours-bracket-content-item-teamtwo">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_red">7</p>
+                                    </div>
+                                    <p class="tours-bracket-content-item__subtitle">Match 1 • BO1 </p>
+                                </div>
+                                <div class="tours-bracket-content-item">
+                                    <div class="tours-bracket-content-item-teamone">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_green">16</p>
+                                    </div>
+                                    <span class="defaultline"></span>
+                                    <div class="tours-bracket-content-item-teamtwo">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_red">7</p>
+                                    </div>
+                                    <p class="tours-bracket-content-item__subtitle">Match 2 • BO1 </p>
+                                </div>
+                                <div class="tours-bracket-content-item">
+                                    <div class="tours-bracket-content-item-teamone">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_green">16</p>
+                                    </div>
+                                    <span class="defaultline"></span>
+                                    <div class="tours-bracket-content-item-teamtwo">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_red">7</p>
+                                    </div>
+                                    <p class="tours-bracket-content-item__subtitle">Match 3 • BO1 </p>
+                                </div>
+                                <div class="tours-bracket-content-item">
+                                    <div class="tours-bracket-content-item-teamone">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_green">16</p>
+                                    </div>
+                                    <span class="defaultline"></span>
+                                    <div class="tours-bracket-content-item-teamtwo">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_red">7</p>
+                                    </div>
+                                    <p class="tours-bracket-content-item__subtitle">Match 4 • BO1 </p>
+                                </div>
+                            </div>
+                            <div class="tours-bracket-content-column">
+                                <div class="tours-bracket-content-item">
+                                    <div class="tours-bracket-content-item-teamone">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_green">16</p>
+                                    </div>
+                                    <span class="defaultline" style="width: 80px; right: -80px;"></span><span class="shortline" style="width: 58px; left: -58px;"></span>
+                                    <div class="tours-bracket-content-item-teamtwo">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_red">7</p>
+                                    </div>
+                                    <p class="tours-bracket-content-item__subtitle">Match 9 • BO1 </p>
+                                </div>
+                                <div class="tours-bracket-content-item" style="opacity: 0; visibility: hidden;">
+                                    <div class="tours-bracket-content-item-teamone">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_green">16</p>
+                                    </div>
+                                    <span class="defaultline" style="width: 80px; right: -80px;"></span><span class="shortline"></span>
+                                    <div class="tours-bracket-content-item-teamtwo">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_red">7</p>
+                                    </div>
+                                    <p class="tours-bracket-content-item__subtitle">Match 1 • BO1 </p>
+                                </div>
+                                <div class="tours-bracket-content-item">
+                                    <div class="tours-bracket-content-item-teamone">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_green">16</p>
+                                    </div>
+                                    <span class="defaultline" style="width: 80px; right: -80px;"></span><span class="shortline" style="width: 58px; left: -58px;"></span>
+                                    <div class="tours-bracket-content-item-teamtwo">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_red">7</p>
+                                    </div>
+                                    <p class="tours-bracket-content-item__subtitle">Match 10 • BO1 </p>
+                                </div>
+                            </div>
+                            <div class="tours-bracket-content-column">
+                                <div class="tours-bracket-content-item">
+                                    <div class="tours-bracket-content-item-teamone">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_green">16</p>
+                                    </div>
+                                    <span class="defaultline" style="width: 50px; right: -50px;"></span><span class="shortline" style="width: 68px; left: -68px;"></span>
+                                    <div class="tours-bracket-content-item-teamtwo">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_red">7</p>
+                                    </div>
+                                    <p class="tours-bracket-content-item__subtitle">Match 13 • BO1 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tours-bracket-content-row">
+                            <div class="tours-bracket-content-column">
+                                <div class="tours-bracket-content-item">
+                                    <div class="tours-bracket-content-item-teamone">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_green">16</p>
+                                    </div>
+                                    <span class="defaultline"></span>
+                                    <div class="tours-bracket-content-item-teamtwo">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_red">7</p>
+                                    </div>
+                                    <p class="tours-bracket-content-item__subtitle">Match 5 • BO1 </p>
+                                </div>
+                                <div class="tours-bracket-content-item">
+                                    <div class="tours-bracket-content-item-teamone">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_green">16</p>
+                                    </div>
+                                    <span class="defaultline"></span>
+                                    <div class="tours-bracket-content-item-teamtwo">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_red">7</p>
+                                    </div>
+                                    <p class="tours-bracket-content-item__subtitle">Match 6 • BO1 </p>
+                                </div>
+                                <div class="tours-bracket-content-item">
+                                    <div class="tours-bracket-content-item-teamone">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_green">16</p>
+                                    </div>
+                                    <span class="defaultline"></span>
+                                    <div class="tours-bracket-content-item-teamtwo">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_red">7</p>
+                                    </div>
+                                    <p class="tours-bracket-content-item__subtitle">Match 7 • BO1 </p>
+                                </div>
+                                <div class="tours-bracket-content-item">
+                                    <div class="tours-bracket-content-item-teamone">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_green">16</p>
+                                    </div>
+                                    <span class="defaultline"></span>
+                                    <div class="tours-bracket-content-item-teamtwo">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_red">7</p>
+                                    </div>
+                                    <p class="tours-bracket-content-item__subtitle">Match 8 • BO1 </p>
+                                </div>
+                            </div>
+                            <div class="tours-bracket-content-column">
+                                <div class="tours-bracket-content-item">
+                                    <div class="tours-bracket-content-item-teamone">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_green">16</p>
+                                    </div>
+                                    <span class="defaultline" style="width: 80px; right: -80px;"></span><span class="shortline" style="width: 58px; left: -58px;"></span>
+                                    <div class="tours-bracket-content-item-teamtwo">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_red">7</p>
+                                    </div>
+                                    <p class="tours-bracket-content-item__subtitle">Match 11 • BO1 </p>
+                                </div>
+                                <div class="tours-bracket-content-item" style="opacity: 0; visibility: hidden;">
+                                    <div class="tours-bracket-content-item-teamone">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_green">16</p>
+                                    </div>
+                                    <span class="defaultline" style="width: 80px; right: -80px;"></span>
+                                    <div class="tours-bracket-content-item-teamtwo">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_red">7</p>
+                                    </div>
+                                    <p class="tours-bracket-content-item__subtitle">Match 1 • BO1 </p>
+                                </div>
+                                <div class="tours-bracket-content-item">
+                                    <div class="tours-bracket-content-item-teamone">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_green">16</p>
+                                    </div>
+                                    <span class="defaultline" style="width: 80px; right: -80px;"></span><span class="shortline" style="width: 58px; left: -58px;"></span>
+                                    <div class="tours-bracket-content-item-teamtwo">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_red">7</p>
+                                    </div>
+                                    <p class="tours-bracket-content-item__subtitle">Match 12 • BO1 </p>
+                                </div>
+                            </div>
+                            <div class="tours-bracket-content-column">
+                                <div class="tours-bracket-content-item">
+                                    <div class="tours-bracket-content-item-teamone">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_green">16</p>
+                                    </div>
+                                    <span class="defaultline" style="width: 50px; right: -50px;"></span><span class="shortline" style="width: 68px; left: -68px;"></span>
+                                    <div class="tours-bracket-content-item-teamtwo">
+                                        <div class="row">
+                                            <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                            <p class="gamername">Gamer Name</p>
+                                        </div>
+                                        <p class="gamerscore gamerscore_red">7</p>
+                                    </div>
+                                    <p class="tours-bracket-content-item__subtitle">Match 14 • BO1 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tours-bracket-content-column" style="height: max-content;">
+                        <div class="tours-bracket-content-item">
+                            <div class="tours-bracket-content-item-teamone">
+                                <div class="row">
+                                    <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                    <p class="gamername">Gamer Name</p>
+                                </div>
+                                <p class="gamerscore gamerscore_green">16</p>
+                            </div>
+                            <span class="shortline" style="width: 100px; left: -100px;"></span>
+                            <div class="tours-bracket-content-item-teamtwo">
+                                <div class="row">
+                                    <div class="bracketava"><img src="../../assets/img/tournaments/challengermode/ava.png" alt=""></div>
+                                    <p class="gamername">Gamer Name</p>
+                                </div>
+                                <p class="gamerscore gamerscore_red">7</p>
+                            </div>
+                            <p class="tours-bracket-content-item__subtitle">Match 15 • BO1 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../assets/js/slick.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script>
+    function showMenu() {
+        $('.hamburger--spin').toggleClass('is-active')
+        $('.header-menu').toggleClass('show')
+        $(".overlay").toggleClass("showoverlay")
+    }
+    </script>
+</body>
+
+</html>
