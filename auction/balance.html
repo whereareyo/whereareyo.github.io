@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AUCTION</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="signin-form">
+            <div class="signin-form-header">
+                <p class="signin-form-header__p">SIGN IN</p>
+                <button class="signin-form-header__button" onclick="showModal()"></button>
+            </div>
+            <div class="signin-form-main">
+                <img src="img/battleskin.png" alt="" class="signin-form-main__img">
+                <p class="signin-form-main__p">PLease read <a href="" class="signin-form-main__p__a">Terms&amp;Conditions </a>before SignIn</p>
+                <div class="signin-form-main-check">
+                    <input type="checkbox" class="signin-form-main-check__input checkbox" id="checkboxform">
+                    <label for="checkboxform" class="checkboxform"></label>
+                    <p class="signin-form-main-check__p">I understand all</p>
+                    <a href="" class="signin-form-main-check__a">Terms&Conditions</a>
+                </div>
+                <button class="signin-form-main__button">SIGN IN</button>
+            </div>
+        </div>
+    </div>
+    <div class="fon">
+    <header class="header">
+        <div class="header-logo"><img src="img/battleskin.png" alt="" class="header-logo__img">
+            <div class="header-lang">
+                <img src="img/eng.png" alt="" class="header-lang__img">
+                <span class="header-lang__span">ENG</span>
+                <img src="img/left-arrow.png" alt="" class="header-lang-arrow">
+                <div class="dropmenu-block">
+                    <div class="header-lang-menu">
+                        <div class="header-lang-menu-item dropmenu"><img src="img/eng.png" alt="" class="header-lang__img">
+                            <span class="header-lang__span">ENG</span>
+                        </div>
+                        <div class="header-lang-menu-item"><img src="img/eng.png" alt="" class="header-lang__img">
+                            <span class="header-lang__span">RUS</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-navbar">
+            <nav class="header-navbar__nav">
+                <ul class="header-navbar__nav__ul">
+                    <li class="header-navbar__nav__ul__li">MAIN</li>
+                    <li class="header-navbar__nav__ul__li">HOW TO PLAY</li>
+                    <li class="header-navbar__nav__ul__li">ABOUT</li>
+                    <li class="header-navbar__nav__ul__li">TERMS & CONDITIONS</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-buttons"><button class="header-buttons-blue__button__a"><img src="img/combined-shape.svg" alt="" class="header-buttons-blue__button__a__img">BUY AU</button><button class="header-buttons-orange__button__a"><img src="img/upload.png" alt="" class="header-buttons-orange__button__a__img">WITHDRAW</button>
+            <div class="header-alert"><img src="img/group-4.png" alt="" class="header-alert__img">
+                <div class="header-alert-oval"><span class="header-alert-oval__span">1</span></div>
+                <div class="dropmenu-block">
+                    <div class="header-alert-menu">
+                        <div class="header-alert-menu-header">
+                            <p class="header-alert-menu-header__p">Your alerts</p>
+                        </div>
+                        <div class="header-alert-menu-item">
+                            <img src="img/information-circular-button-symbol.png" alt="" class="header-alert-menu-item__img symbol">
+                            <div class="header-alert-menu-item-text">
+                                <h3 class="header-alert-menu-item-text__h3">Time for game is off</h3>
+                                <p class="header-alert-menu-item-text__p">You WON: AK-47 | Frontside Misty</p>
+                                <div class="header-alert-menu-item-text-time">
+                                    <p class="header-alert-menu-item-text-time__p">Today 22:35</p>
+                                </div>
+                            </div>
+                            <button class="header-alert-menu-item__button garbage"></button>
+                        </div>
+                        <div class="header-alert-menu-item">
+                            <span class="header-alert-menu-item__span akspan"><img src="img/ak.png" alt="" class="header-alert-menu-item__span__img ak"></span>
+                            <div class="header-alert-menu-item-text">
+                                <h3 class="header-alert-menu-item-text__h3">Trade #7273737</h3>
+                                <p class="header-alert-menu-item-text__p">AK-47 | Frontside Misty was send</p>
+                                <div class="header-alert-menu-item-text-time">
+                                    <p class="header-alert-menu-item-text-time__p">Today 22:35</p>
+                                </div>
+                            </div>
+                            <button class="header-alert-menu-item__button apply"><span class="applyspan">4:59</span> <br> APPLY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-profile">
+                <div class="header-profile-block"><div class="header-profile-block__img"><img src="img/close.svg" alt=""></div></div>
+                <div class="header-profile-menu">
+                    <div class="header-profile-menu-text">
+                        <h3 class="header-profile-menu-text__h3">Nickname</h3><img src="img/left-arrow.png" alt="" class="header-profile-menu-text">
+                    </div>
+                    <div class="header-profile-menu-block"><img src="img/invalid-name.png" alt="" class="header-profile-menu-block__img">
+                        <p class="header-profile-menu-block__p">2&nbsp345</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main-section">
+            <div class="aside">
+                <div class="aside-back">
+                    <img src="img/left-arrow.png" alt="" class="aside-back__img">
+                    <p class="aside-back__p">BACK</p>
+                </div>
+                <div class="aside-buy">
+                    <img src="img/combined-shape.svg" alt="" class="aside-buy__img">
+                    <p class="aside-buy__p">BUY AU</p>
+                    <span class="aside-buy__span"></span>
+                </div>
+            </div>
+            <section class="payments">
+                <div class="payments-block">
+                    <h2 class="main-section__h2">AU DEPOSIT METHODS</h2>
+                    <div class="sell">
+                        <div class="sell-item right">
+                            <div class="sell-item-hover sellh">
+                                <img src="img/combined-shape.svg" alt="" class="sell-item-hover__img">
+                                <p class="sell-item-hover__p">10</p>
+                            </div>
+                            <p class="sell-item__p">$1.00</p>
+                        </div>
+                        <div class="sell-item right">
+                            <div class="sell-item-hover sellh">
+                                <img src="img/combined-shape.svg" alt="" class="sell-item-hover__img">
+                                <p class="sell-item-hover__p">50</p>
+                            </div>
+                            <p class="sell-item__p">$5.00</p>
+                        </div>
+                        <div class="sell-item right">
+                            <div class="sell-item-hover sellh">
+                                <img src="img/combined-shape.svg" alt="" class="sell-item-hover__img">
+                                <p class="sell-item-hover__p">100</p>
+                            </div>
+                            <p class="sell-item__p">$10.00</p>
+                        </div>
+                        <div class="sell-item right">
+                            <div class="sell-item-hover sellh">
+                                <img src="img/combined-shape.svg" alt="" class="sell-item-hover__img">
+                                <p class="sell-item-hover__p">250</p>
+                            </div>
+                            <p class="sell-item__p">$25.00</p>
+                        </div>
+                        <div class="sell-item right">
+                            <div class="sell-item-hover sellh">
+                                <img src="img/combined-shape.svg" alt="" class="sell-item-hover__img">
+                                <p class="sell-item-hover__p">500</p>
+                            </div>
+                            <p class="sell-item__p">$50 .00</p>
+                        </div>
+                        <div class="sell-item right">
+                            <div class="sell-item-hover sellh">
+                                <img src="img/combined-shape.svg" alt="" class="sell-item-hover__img">
+                                <p class="sell-item-hover__p">1000 </p>
+                            </div>
+                            <p class="sell-item__p">$100.00</p>
+                        </div>
+                        <div class="sell-item right">
+                            <div class="sell-item-hover sellh">
+                                <img src="img/combined-shape.svg" alt="" class="sell-item-hover__img">
+                                <p class="sell-item-hover__p">2500</p>
+                            </div>
+                            <p class="sell-item__p">$250.00</p>
+                        </div>
+                        <div class="sell-item">
+                            <div class="sell-item-hover sellh">
+                                <img src="img/combined-shape.svg" alt="" class="sell-item-hover__img">
+                                <p class="sell-item-hover__p">5000</p>
+                            </div>
+                            <p class="sell-item__p">$500.00</p>
+                        </div>
+                    </div>
+                    <h2 class="main-section__h2 pd">G2A PAY DEPOSIT METHODS</h2>
+                    <div class="methods">
+                        <div class="methods-item right color">
+                            <img src="img/visa-inc-logo.png" alt="" class="methods-item__img">
+                        </div>
+                        <div class="methods-item right color">
+                            <img src="img/mc-vrt-pos.png" alt="" class="methods-item__img">
+                        </div>
+                        <div class="methods-item right color">
+                            <img src="img/pay-pal.png" alt="" class="methods-item__img">
+                        </div>
+                        <div class="methods-item right color">
+                            <img src="img/qiwi-logo-rgb-small.png" alt="" class="methods-item__img">
+                        </div>
+                        <div class="methods-item right color">
+                            <img src="img/visa-inc-logo.png" alt="" class="methods-item__img">
+                        </div>
+                        <div class="methods-item right color">
+                            <img src="img/mc-vrt-pos.png" alt="" class="methods-item__img">
+                        </div>
+                        <div class="methods-item right color">
+                            <img src="img/pay-pal.png" alt="" class="methods-item__img">
+                        </div>
+                        <div class="methods-item color">
+                            <img src="img/qiwi-logo-rgb-small.png" alt="" class="methods-item__img">
+                        </div>
+                    </div>
+                </div>
+                <div class="payments-form">
+                    <div class="payments-form-header">
+                        <p class="payments-form-header__p">BUYING SUMMARY</p>
+                    </div>
+                    <div class="payments-form-main">
+                        <div class="payments-form-main-select">
+                            <p class="payments-form-main-select__p">Payment method: </p>
+                            <img src="img/visa-inc-logo.png" alt="" class="payments-form-main-select__img">
+                        </div>
+                        <div class="payments-form-main-deposit">
+                            <p class="payments-form-main-deposit__p">Deposit value</p>
+                            <input type="text" placeholder="250" class="payments-form-main-deposit__input">
+                        </div>
+                        <div class="payments-form-main-last">
+                            <p class="payments-form-main-last__p">Total price:</p>
+                            <span class="payments-form-main-last__span">$25.00</span>
+                        </div>
+                        <button class="payments-form-main__button"><img src="img/combined-shape-form.svg" alt="" class="payments-form-main__button__img">BUY 250 AU</button>
+                        <div class="payments-form-main-check">
+                            <input type="checkbox" class="payments-form-main-check__input checkbox" id="checkbox"></input>
+                            <label for="checkbox" class="checkbox-block"></label>
+                            <p class="payments-form-main-check__p">I understand all&nbsp</p>
+                            <a href="" class="payments-form-main-check__a">Terms&amp;Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <h2 class="main-section__h2 pd">TRANSACTION HISTORY</h2>
+            <div class="table">
+                <div class="table-block">
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p head">TOTAL</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p head">PAYMENT METHOD</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p head focol">NUMBER</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p head fcol">STATUS</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p head lastcol">DATE/TIME</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-block">
+                    <div class="table-block-item">
+                        <div class="table-block-item-div"><img src="img/combined-shape.svg" alt="" class="table-block-item-div__img">
+                            <p class="table-block-item__p numbers">856</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <img src="img/visa-inc-logo.svg" class="table-block-item__img"></img></div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p numbers focol">12312*******12883</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p date fcol">In progress</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p date  lastcol">May 15, 22:55</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-block">
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <img src="img/combined-shape.svg" alt="" class="table-block-item-div__img">
+                            <p class="table-block-item__p numbers">5678</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <img src="img/visa-inc-logo.svg" class="table-block-item__img"></img></div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p numbers focol">12312*******12883</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p date fcol">In progress</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p date  lastcol">May 15, 22:55</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-block">
+                    <div class="table-block-item">
+                        <div class="table-block-item-div"><img src="img/combined-shape.svg" alt="" class="table-block-item-div__img">
+                            <p class="table-block-item__p numbers">250</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <img src="img/visa-inc-logo.svg" class="table-block-item__img"></img></div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p numbers focol">12312*******12883</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p date fcol">Finished</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p date lastcol">May 15, 22:55</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-block">
+                    <div class="table-block-item">
+                        <div class="table-block-item-div"><img src="img/combined-shape.svg" alt="" class="table-block-item-div__img">
+                            <p class="table-block-item__p numbers">10&nbsp456</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <img src="img/visa-inc-logo.svg" class="table-block-item__img"></img></div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p numbers focol">12312*******12883</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p date fcol">In progress</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p date lastcol">May 15, 22:55</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-block">
+                    <div class="table-block-item">
+                        <div class="table-block-item-div"><img src="img/combined-shape.svg" alt="" class="table-block-item-div__img">
+                            <p class="table-block-item__p numbers">250</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <img src="img/visa-inc-logo.svg" class="table-block-item__img"></img></div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p numbers focol">12312*******12883</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p date fcol">Finished</p>
+                        </div>
+                    </div>
+                    <div class="table-block-item">
+                        <div class="table-block-item-div">
+                            <p class="table-block-item__p date lastcol">May 15, 22:55</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-chat">
+            <div class="section-chat-header">
+                <div class="section-chat-header-block">
+                    <img src="img/speech-bubble.png" alt="" class="section-chat-header-block__img">
+                    <p class="section-chat-header-block__p">CHAT</p>
+                </div>
+                <div class="section-chat-header-block">
+                    <img src="img/msn-messenger.png" alt="" class="section-chat-header-block__img">
+                    <div class="section-chat-header-block__span">25</div>
+                </div>
+            </div>
+            <div class="section-chat-messages">
+                <div class="section-chat-messages-message first">
+                    <div class="section-chat-messages-message-ava anime"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Arowana dhufish Devario, round herring mullet?</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava rogue"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Archerfish stingray Pacific</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava cs"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Arowana dhufish Devario, round herring mullet?</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava mount"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Archerfish stingray Pacific</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava anime"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Arowana dhufish Devario, round herring mullet?</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava rogue"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Archerfish stingray Pacific</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava cs"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Arowana dhufish Devario, round herring mullet?</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava mount"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Archerfish stingray Pacific</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+            </div>
+            <div class="section-chat-footer">
+                <div class="section-chat-footer-question">
+                    <input type="text" placeholder="Type your message here" class="section-chat-footer-question__input"></input>
+                    <div class="section-chat-footer-question-links">
+                        <button class="section-chat-footer-question-links__button" onclick="showModal()" id="signin">SIGN IN</button>
+                        <button class="section-chat-footer-question-links-buttonlink"><img src="img/smiling-emoticon-square-face.png" alt="" class="section-chat-footer-question-links-buttonlink__img"></button>
+                        <button class="section-chat-footer-question-links-buttonlink"><img src="img/back-arrow.png" alt="" class="section-chat-footer-question-links-buttonlink__img"></button></div>
+                </div>
+                <div class="section-chat-footer__p">© 2019 AUction. All rights reserved.</div>
+                <div class="section-chat-footer-links">
+                    <img src="img/vk-social-logotype.png" alt="" class="section-chat-footer-links__img">
+                    <img src="img/facebook-logo.png" alt="" class="section-chat-footer-links__img">
+                    <img src="img/twitter-logo-silhouette.png" alt="" class="section-chat-footer-links__img">
+                    <img src="img/yotube.png" alt="" class="section-chat-footer-links__img">
+                </div>
+            </div>
+        </section>
+    </main>
+    </div>
+    <script>
+    const showModal = () => {
+        var menu = document.querySelector('.overlay')
+        menu.classList.toggle('menu-hidden');
+    }
+    </script>
+</body>
+
+</html>

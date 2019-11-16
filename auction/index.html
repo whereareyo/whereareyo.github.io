@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AUCTION</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="signin-form">
+            <div class="signin-form-header">
+                <p class="signin-form-header__p">SIGN IN</p>
+                <button class="signin-form-header__button" onclick="showModal()"></button>
+            </div>
+            <div class="signin-form-main">
+                <img src="img/battleskin.png" alt="" class="signin-form-main__img">
+                <p class="signin-form-main__p">PLease read <a href="" class="signin-form-main__p__a">Terms&amp;Conditions </a>before SignIn</p>
+                <div class="signin-form-main-check">
+                    <input type="checkbox" class="signin-form-main-check__input checkbox" id="checkboxform">
+                    <label for="checkboxform" class="checkboxform"></label>
+                    <p class="signin-form-main-check__p">I understand all</p>
+                    <a href="" class="signin-form-main-check__a">Terms&Conditions</a>
+                </div>
+                <button class="signin-form-main__button">SIGN IN</button>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header-logo"><img src="img/battleskin.png" alt="" class="header-logo__img">
+            <div class="header-lang">
+                <img src="img/eng.png" alt="" class="header-lang__img">
+                <span class="header-lang__span">ENG</span>
+                <img src="img/left-arrow.png" alt="" class="header-lang-arrow">
+                <div class="dropmenu-block">
+                    <div class="header-lang-menu">
+                        <div class="header-lang-menu-item dropmenu"><img src="img/eng.png" alt="" class="header-lang__img">
+                            <span class="header-lang__span">ENG</span>
+                        </div>
+                        <div class="header-lang-menu-item"><img src="img/eng.png" alt="" class="header-lang__img">
+                            <span class="header-lang__span">RUS</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-navbar">
+            <nav class="header-navbar__nav">
+                <ul class="header-navbar__nav__ul">
+                    <li class="header-navbar__nav__ul__li">MAIN</li>
+                    <li class="header-navbar__nav__ul__li">HOW TO PLAY</li>
+                    <li class="header-navbar__nav__ul__li">ABOUT</li>
+                    <li class="header-navbar__nav__ul__li">TERMS & CONDITIONS</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-buttons"><button class="header-buttons-blue__button__a"><img src="img/combined-shape.svg" alt="" class="header-buttons-blue__button__a__img">BUY AU</button><button class="header-buttons-orange__button__a"><img src="img/upload.png" alt="" class="header-buttons-orange__button__a__img">WITHDRAW</button>
+            <div class="header-alert"><img src="img/group-4.png" alt="" class="header-alert__img">
+                <div class="header-alert-oval"><span class="header-alert-oval__span">1</span></div>
+                <div class="dropmenu-block">
+                    <div class="header-alert-menu">
+                        <div class="header-alert-menu-header">
+                            <p class="header-alert-menu-header__p">Your alerts</p>
+                        </div>
+                        <div class="header-alert-menu-item">
+                            <img src="img/information-circular-button-symbol.png" alt="" class="header-alert-menu-item__img symbol">
+                            <div class="header-alert-menu-item-text">
+                                <h3 class="header-alert-menu-item-text__h3">Time for game is off</h3>
+                                <p class="header-alert-menu-item-text__p">You WON: AK-47 | Frontside Misty</p>
+                                <div class="header-alert-menu-item-text-time">
+                                    <p class="header-alert-menu-item-text-time__p">Today 22:35</p>
+                                </div>
+                            </div>
+                            <button class="header-alert-menu-item__button garbage"></button>
+                        </div>
+                        <div class="header-alert-menu-item">
+                            <span class="header-alert-menu-item__span akspan"><img src="img/ak.png" alt="" class="header-alert-menu-item__span__img ak"></span>
+                            <div class="header-alert-menu-item-text">
+                                <h3 class="header-alert-menu-item-text__h3">Trade #7273737</h3>
+                                <p class="header-alert-menu-item-text__p">AK-47 | Frontside Misty was send</p>
+                                <div class="header-alert-menu-item-text-time">
+                                    <p class="header-alert-menu-item-text-time__p">Today 22:35</p>
+                                </div>
+                            </div>
+                            <button class="header-alert-menu-item__button apply"><span class="applyspan">4:59</span> <br> APPLY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-profile">
+                <div class="header-profile-block">
+                    <div class="header-profile-block__img"><img src="img/close.svg" alt=""></div>
+                </div>
+                <div class="header-profile-menu">
+                    <div class="header-profile-menu-text">
+                        <h3 class="header-profile-menu-text__h3">Nickname</h3><img src="img/left-arrow.png" alt="" class="header-profile-menu-text">
+                    </div>
+                    <div class="header-profile-menu-block"><img src="img/invalid-name.png" alt="" class="header-profile-menu-block__img">
+                        <p class="header-profile-menu-block__p">2&nbsp345</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main-section main-page-margin">
+            <div class="main-section-banners">
+                <div class="main-section-banners-item">
+                    <h2 class="main-section-banners-item__h2">Big Summer Sale</h2>
+                    <p class="main-section-banners-item__p">Sign In this month and get 2x more price </p>
+                    <button class="main-section-banners-item__button">SIGN IN</button>
+                    <img src="img/bitmap1.png" alt="" class="main-section-banners-item__img">
+                </div>
+                <div class="main-section-banners-item orangeitem">
+                    <h2 class="main-section-banners-item__h2">BID Only today 2x</h2>
+                    <p class="main-section-banners-item__p">Make bids today today and get 2x more price </p>
+                    <button class="main-section-banners-item__button orangebtn">PLAY</button>
+                    <img src="img/bitmap.png" alt="" class="main-section-banners-item__img">
+                </div>
+            </div>
+            <h2 class="main-section__h2">LAST WINS</h2>
+            <div class="main-section__overflow">
+                <div class="main-section-wins">
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock anime"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">45</span>
+                        </div>
+                        <div class="dropmenu-block">
+                            <div class="main-section-wins-item-menu">
+                                <div class="main-section-wins-item-menu-img anime"></div>
+                                <div class="main-section-wins-item-menu-text">
+                                    <p class="main-section-wins-item-menu-text__p">Username</p>
+                                    <div class="main-section-wins-item-menu-text-time">
+                                        <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                                        <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                                        <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock rogue"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">230</span>
+                        </div>
+                        <div class="dropmenu-block">
+                            <div class="main-section-wins-item-menu">
+                                <div class="main-section-wins-item-menu-img anime"></div>
+                                <div class="main-section-wins-item-menu-text">
+                                    <p class="main-section-wins-item-menu-text__p">Username</p>
+                                    <div class="main-section-wins-item-menu-text-time">
+                                        <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                                        <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                                        <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock cs"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">45</span>
+                        </div>
+                        <div class="dropmenu-block">
+                            <div class="main-section-wins-item-menu">
+                                <div class="main-section-wins-item-menu-img anime"></div>
+                                <div class="main-section-wins-item-menu-text">
+                                    <p class="main-section-wins-item-menu-text__p">Username</p>
+                                    <div class="main-section-wins-item-menu-text-time">
+                                        <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                                        <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                                        <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock cs"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">89</span>
+                        </div>
+                        <div class="dropmenu-block">
+                            <div class="main-section-wins-item-menu">
+                                <div class="main-section-wins-item-menu-img anime"></div>
+                                <div class="main-section-wins-item-menu-text">
+                                    <p class="main-section-wins-item-menu-text__p">Username</p>
+                                    <div class="main-section-wins-item-menu-text-time">
+                                        <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                                        <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                                        <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock anime"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">22</span>
+                        </div>
+                        <div class="dropmenu-block">
+                            <div class="main-section-wins-item-menu">
+                                <div class="main-section-wins-item-menu-img anime"></div>
+                                <div class="main-section-wins-item-menu-text">
+                                    <p class="main-section-wins-item-menu-text__p">Username</p>
+                                    <div class="main-section-wins-item-menu-text-time">
+                                        <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                                        <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                                        <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock rogue"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">230</span>
+                        </div>
+                        <div class="dropmenu-block">
+                            <div class="main-section-wins-item-menu">
+                                <div class="main-section-wins-item-menu-img anime"></div>
+                                <div class="main-section-wins-item-menu-text">
+                                    <p class="main-section-wins-item-menu-text__p">Username</p>
+                                    <div class="main-section-wins-item-menu-text-time">
+                                        <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                                        <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                                        <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock cs"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">45</span>
+                        </div>
+                        <div class="dropmenu-block">
+                            <div class="main-section-wins-item-menu">
+                                <div class="main-section-wins-item-menu-img anime"></div>
+                                <div class="main-section-wins-item-menu-text">
+                                    <p class="main-section-wins-item-menu-text__p">Username</p>
+                                    <div class="main-section-wins-item-menu-text-time">
+                                        <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                                        <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                                        <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock cs"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">89</span>
+                        </div>
+                        <div class="dropmenu-block">
+                            <div class="main-section-wins-item-menu">
+                                <div class="main-section-wins-item-menu-img anime"></div>
+                                <div class="main-section-wins-item-menu-text">
+                                    <p class="main-section-wins-item-menu-text__p">Username</p>
+                                    <div class="main-section-wins-item-menu-text-time">
+                                        <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                                        <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                                        <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock anime"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">22</span>
+                        </div>
+                        <div class="dropmenu-block">
+                            <div class="main-section-wins-item-menu">
+                                <div class="main-section-wins-item-menu-img anime"></div>
+                                <div class="main-section-wins-item-menu-text">
+                                    <p class="main-section-wins-item-menu-text__p">Username</p>
+                                    <div class="main-section-wins-item-menu-text-time">
+                                        <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                                        <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                                        <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock rogue"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">230</span>
+                        </div>
+                        <div class="dropmenu-block">
+                            <div class="main-section-wins-item-menu">
+                                <div class="main-section-wins-item-menu-img anime"></div>
+                                <div class="main-section-wins-item-menu-text">
+                                    <p class="main-section-wins-item-menu-text__p">Username</p>
+                                    <div class="main-section-wins-item-menu-text-time">
+                                        <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                                        <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                                        <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock cs"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">45</span>
+                        </div>
+                        <div class="dropmenu-block">
+                            <div class="main-section-wins-item-menu">
+                                <div class="main-section-wins-item-menu-img anime"></div>
+                                <div class="main-section-wins-item-menu-text">
+                                    <p class="main-section-wins-item-menu-text__p">Username</p>
+                                    <div class="main-section-wins-item-menu-text-time">
+                                        <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                                        <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                                        <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock cs"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">89</span>
+                        </div>
+                        <div class="dropmenu-block">
+                            <div class="main-section-wins-item-menu">
+                                <div class="main-section-wins-item-menu-img anime"></div>
+                                <div class="main-section-wins-item-menu-text">
+                                    <p class="main-section-wins-item-menu-text__p">Username</p>
+                                    <div class="main-section-wins-item-menu-text-time">
+                                        <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                                        <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                                        <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock anime"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">22</span>
+                        </div>
+                        <div class="dropmenu-block">
+                            <div class="main-section-wins-item-menu">
+                                <div class="main-section-wins-item-menu-img anime"></div>
+                                <div class="main-section-wins-item-menu-text">
+                                    <p class="main-section-wins-item-menu-text__p">Username</p>
+                                    <div class="main-section-wins-item-menu-text-time">
+                                        <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                                        <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                                        <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock rogue"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">230</span>
+                        </div>
+                        <div class="dropmenu-block">
+                            <div class="main-section-wins-item-menu">
+                                <div class="main-section-wins-item-menu-img anime"></div>
+                                <div class="main-section-wins-item-menu-text">
+                                    <p class="main-section-wins-item-menu-text__p">Username</p>
+                                    <div class="main-section-wins-item-menu-text-time">
+                                        <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                                        <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                                        <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock cs"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">45</span>
+                        </div>
+                        <div class="dropmenu-block">
+                            <div class="main-section-wins-item-menu">
+                                <div class="main-section-wins-item-menu-img anime"></div>
+                                <div class="main-section-wins-item-menu-text">
+                                    <p class="main-section-wins-item-menu-text__p">Username</p>
+                                    <div class="main-section-wins-item-menu-text-time">
+                                        <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                                        <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                                        <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock cs"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">89</span>
+                        </div>
+                        <div class="dropmenu-block">
+                            <div class="main-section-wins-item-menu">
+                                <div class="main-section-wins-item-menu-img anime"></div>
+                                <div class="main-section-wins-item-menu-text">
+                                    <p class="main-section-wins-item-menu-text__p">Username</p>
+                                    <div class="main-section-wins-item-menu-text-time">
+                                        <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                                        <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                                        <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock rogue"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">22</span>
+                        </div>
+                        <div class="dropmenu-block">
+                            <div class="main-section-wins-item-menu">
+                                <div class="main-section-wins-item-menu-img anime"></div>
+                                <div class="main-section-wins-item-menu-text">
+                                    <p class="main-section-wins-item-menu-text__p">Username</p>
+                                    <div class="main-section-wins-item-menu-text-time">
+                                        <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                                        <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                                        <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section-wins-item">
+                        <div class="main-section-wins-item-imgblock anime"></div>
+                        <img src="img/ak.png" alt="" class="main-section-wins-item__img">
+                        <div class="main-section-wins-item-text">
+                            <div class="main-section-wins-item-text-blockimg"></div>
+                            <span class="main-section-wins-item-text__span">230</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="main-section__h2">RECENT BIDS</h2>
+            <div class="main-section-bids">
+                <div class="main-section-bids-item">
+                    <div class="main-section-bids-item-round">
+                        <div class="main-section-bids-item-round-number"><span class="main-section-bids-item-round-number__span">1</span></div>
+                        <div class="main-section-bids-item-round-text"><span class="main-section-bids-item-round-text__span">ROUND</span></div>
+                        <div class="main-section-bids-item-round-players anime fpl">
+                            <div class="timer">
+                                <svg id="filling" viewbox="0 0 250 250">
+                                    <path id="loader" transform="translate(125, 125) scale(.98)" />
+                                </svg>
+                                <div class="time">
+                                    25
+                                </div>
+                                <svg id="bordering" viewbox="0 0 250 250">
+                                    <path id="loader2" transform="translate(125, 125) scale(.98)" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="main-section-bids-item-round-players rogue spl"></div>
+                        <div class="main-section-bids-item-round-players cs"></div>
+                    </div>
+                    <img src="img/ak.png" alt="" class="main-section-bids-item__img">
+                    <span class="main-section-bids-item__span">Worth</span>
+                    <p class="main-section-bids-item__p">$11.23</p>
+                    <h5 class="main-section-bids-item__h5">Field-Tested</h5>
+                    <h3 class="main-section-bids-item__h3">Stattrak AK-47 | Neon Rider</h3>
+                    <div class="main-section-bids-item-time">
+                        <div class="main-section-bids-item-time-rounded">
+                            <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-time-rounded__img">
+                            <p class="main-section-bids-item-time-rounded__p">999</p>
+                        </div>
+                        <div class="main-section-bids-item-time-noborder">
+                            <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-time-noborder__img">
+                            <p class="main-section-bids-item-time-noborder__p">10:00</p>
+                        </div>
+                    </div>
+                    <div class="main-section-bids-item-text">
+                        <p class="main-section-bids-item-text__p">Your total:</p>
+                        <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-text__img">
+                        <span class="main-section-bids-item-text__span">10</span>
+                    </div>
+                    <button class="main-section-bids-item__button"><img src="img/combined-shape.svg" alt="" class="main-section-bids-item__button__img">BID 54 AU</button>
+                </div>
+                <div class="main-section-bids-item sr">
+                    <div class="main-section-bids-item-round">
+                        <div class="main-section-bids-item-round-number srn"><span class="main-section-bids-item-round-number__span">2</span></div>
+                        <div class="main-section-bids-item-round-text srt"><span class="main-section-bids-item-round-text__span">ROUND</span></div>
+                        <div class="main-section-bids-item-round-players anime opl"><span class="main-section-bids-item-round-players__span"></span></div>
+                        <div class="main-section-bids-item-round-players rogue spl"></div>
+                        <div class="main-section-bids-item-round-players cs"></div>
+                    </div>
+                    <img src="img/usp.png" alt="" class="main-section-bids-item__img">
+                    <h5 class="main-section-bids-item__h5 srh">Field-Tested</h5>
+                    <h3 class="main-section-bids-item__h3">Stattrak AK-47 | Neon Rider</h3>
+                    <div class="main-section-bids-item-time">
+                        <div class="main-section-bids-item-time-rounded">
+                            <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-time-rounded__img">
+                            <p class="main-section-bids-item-time-rounded__p">999</p>
+                        </div>
+                        <div class="main-section-bids-item-time-noborder srb">
+                            <span class="main-section-bids-item-time-noborder__span srbs">Time 1 - 10 min</span>
+                            <p class="main-section-bids-item-time-noborder__p srbp">Random</p>
+                        </div>
+                    </div>
+                    <div class="main-section-bids-item-text srtt">
+                        <p class="main-section-bids-item-text__p">Your total:</p>
+                        <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-text__img">
+                        <span class="main-section-bids-item-text__span">10</span>
+                    </div>
+                    <button class="main-section-bids-item__button srbtn"><img src="img/combined-shape.svg" alt="" class="main-section-bids-item__button__img">BID 54 AU</button>
+                </div>
+                <div class="main-section-bids-item-winner">
+                    <p class="main-section-bids-item-winner__p">Winner</p>
+                    <div class="main-section-bids-item-winner-fblock">
+                        <div class="main-section-bids-item-winner-fblock-img anime"></div>
+                        <div class="main-section-bids-item-winner-fblock-text">
+                            <p class="main-section-bids-item-winner-fblock-text__p">Username</p>
+                            <span class="main-section-bids-item-winner-fblock-text__span">AK-47 | Frontside Misty</span>
+                        </div>
+                        <img src="img/ak.png" alt="" class="main-section-bids-item-winner-fblock__img">
+                    </div>
+                    <span class="main-section-bids-item-winner__span">Biggest bid</span>
+                    <div class="sblock">
+                        <div class="main-section-bids-item-winner-sblock">
+                            <div class="main-section-bids-item-winner-sblock-img rogue"></div>
+                            <div class="main-section-bids-item-winner-sblock-text">
+                                <p class="main-section-bids-item-winner-sblock-text__p">Username</p>
+                                <span class="main-section-bids-item-winner-sblock-text__span">AK-47 | Frontside Misty</span>
+                            </div>
+                            <img src="img/usp.png" alt="" class="main-section-bids-item-winner-sblock__img">
+                        </div>
+                    </div>
+                    <span class="main-section-bids-item-winner__span">Biggest bet</span>
+                    <div class="main-section-bids-item-winner-sblock">
+                        <div class="main-section-bids-item-winner-sblock-img cs"></div>
+                        <div class="main-section-bids-item-winner-sblock-text">
+                            <p class="main-section-bids-item-winner-sblock-text__p">Username</p>
+                            <span class="main-section-bids-item-winner-sblock-text__span">AK-47 | Frontside Misty</span>
+                        </div>
+                        <img src="img/knife.png" alt="" class="main-section-bids-item-winner-sblock__img">
+                    </div>
+                    <button class="main-section-bids-item-winner__button"><img src="img/racing-flag.svg" alt="" class="main-section-bids-item-winner__button__img">FINISHED</button>
+                </div>
+                <div class="main-section-bids-item">
+                    <div class="main-section-bids-item-round">
+                        <div class="main-section-bids-item-round-number"><span class="main-section-bids-item-round-number__span">1</span></div>
+                        <div class="main-section-bids-item-round-text"><span class="main-section-bids-item-round-text__span">ROUND</span></div>
+                        <div class="main-section-bids-item-round-players anime fpl"><span class="main-section-bids-item-round-players__span">25</span></div>
+                        <div class="main-section-bids-item-round-players rogue spl"></div>
+                        <div class="main-section-bids-item-round-players cs"></div>
+                    </div>
+                    <img src="img/gloves.png" alt="" class="main-section-bids-item__img">
+                    <h3 class="main-section-bids-item__h3 simple">AK-47 | Neon Rider</h3>
+                    <div class="main-section-bids-item-time simpletime">
+                        <div class="main-section-bids-item-time-rounded simplerounded">
+                            <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-time-rounded__img">
+                            <p class="main-section-bids-item-time-rounded__p">54</p>
+                        </div>
+                        <div class="main-section-bids-item-time-noborder simplenoborder">
+                            <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-time-noborder__img">
+                            <p class="main-section-bids-item-time-noborder__p">0:29</p>
+                        </div>
+                    </div>
+                    <div class="main-section-bids-item-text">
+                        <p class="main-section-bids-item-text__p">Your total:</p>
+                        <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-text__img">
+                        <span class="main-section-bids-item-text__span">10</span>
+                    </div>
+                    <button class="main-section-bids-item__button"><img src="img/combined-shape.svg" alt="" class="main-section-bids-item__button__img">BID 54 AU</button>
+                </div>
+                <div class="main-section-bids-item">
+                    <div class="main-section-bids-item-round">
+                        <div class="main-section-bids-item-round-number"><span class="main-section-bids-item-round-number__span">1</span></div>
+                        <div class="main-section-bids-item-round-text"><span class="main-section-bids-item-round-text__span">ROUND</span></div>
+                        <div class="main-section-bids-item-round-players anime fpl"><span class="main-section-bids-item-round-players__span">25</span></div>
+                        <div class="main-section-bids-item-round-players rogue spl"></div>
+                        <div class="main-section-bids-item-round-players cs"></div>
+                    </div>
+                    <img src="img/ak.png" alt="" class="main-section-bids-item__img">
+                    <h3 class="main-section-bids-item__h3 simple">AK-47 | Neon Rider</h3>
+                    <div class="main-section-bids-item-time simpletime">
+                        <div class="main-section-bids-item-time-rounded simplerounded">
+                            <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-time-rounded__img">
+                            <p class="main-section-bids-item-time-rounded__p">54</p>
+                        </div>
+                        <div class="main-section-bids-item-time-noborder simplenoborder">
+                            <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-time-noborder__img">
+                            <p class="main-section-bids-item-time-noborder__p">0:29</p>
+                        </div>
+                    </div>
+                    <div class="main-section-bids-item-text">
+                        <p class="main-section-bids-item-text__p">Your total:</p>
+                        <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-text__img">
+                        <span class="main-section-bids-item-text__span">10</span>
+                    </div>
+                    <button class="main-section-bids-item__button"><img src="img/combined-shape.svg" alt="" class="main-section-bids-item__button__img">BID 54 AU</button>
+                </div>
+                <div class="main-section-bids-item wrap">
+                    <div class="main-section-bids-item-round">
+                        <div class="main-section-bids-item-round-number"><span class="main-section-bids-item-round-number__span">1</span></div>
+                        <div class="main-section-bids-item-round-text"><span class="main-section-bids-item-round-text__span">ROUND</span></div>
+                        <div class="main-section-bids-item-round-players anime fpl"><span class="main-section-bids-item-round-players__span">25</span></div>
+                        <div class="main-section-bids-item-round-players rogue spl"></div>
+                        <div class="main-section-bids-item-round-players cs"></div>
+                    </div>
+                    <img src="img/ak.png" alt="" class="main-section-bids-item__img">
+                    <h3 class="main-section-bids-item__h3 simple">AK-47 | Neon Rider</h3>
+                    <div class="main-section-bids-item-time simpletime">
+                        <div class="main-section-bids-item-time-rounded simplerounded">
+                            <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-time-rounded__img">
+                            <p class="main-section-bids-item-time-rounded__p">54</p>
+                        </div>
+                        <div class="main-section-bids-item-time-noborder simplenoborder">
+                            <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-time-noborder__img">
+                            <p class="main-section-bids-item-time-noborder__p">0:29</p>
+                        </div>
+                    </div>
+                    <div class="main-section-bids-item-text">
+                        <p class="main-section-bids-item-text__p">Your total:</p>
+                        <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-text__img">
+                        <span class="main-section-bids-item-text__span">10</span>
+                    </div>
+                    <button class="main-section-bids-item__button"><img src="img/combined-shape.svg" alt="" class="main-section-bids-item__button__img">BID 54 AU</button>
+                </div>
+                <div class="main-section-bids-item wrap">
+                    <div class="main-section-bids-item-round">
+                        <div class="main-section-bids-item-round-number"><span class="main-section-bids-item-round-number__span">1</span></div>
+                        <div class="main-section-bids-item-round-text"><span class="main-section-bids-item-round-text__span">ROUND</span></div>
+                        <div class="main-section-bids-item-round-players anime fpl"><span class="main-section-bids-item-round-players__span">25</span></div>
+                        <div class="main-section-bids-item-round-players rogue spl"></div>
+                        <div class="main-section-bids-item-round-players cs"></div>
+                    </div>
+                    <img src="img/ak.png" alt="" class="main-section-bids-item__img">
+                    <h3 class="main-section-bids-item__h3 simple">AK-47 | Neon Rider</h3>
+                    <div class="main-section-bids-item-time simpletime">
+                        <div class="main-section-bids-item-time-rounded simplerounded">
+                            <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-time-rounded__img">
+                            <p class="main-section-bids-item-time-rounded__p">54</p>
+                        </div>
+                        <div class="main-section-bids-item-time-noborder simplenoborder">
+                            <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-time-noborder__img">
+                            <p class="main-section-bids-item-time-noborder__p">0:29</p>
+                        </div>
+                    </div>
+                    <div class="main-section-bids-item-text">
+                        <p class="main-section-bids-item-text__p">Your total:</p>
+                        <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-text__img">
+                        <span class="main-section-bids-item-text__span">10</span>
+                    </div>
+                    <button class="main-section-bids-item__button"><img src="img/combined-shape.svg" alt="" class="main-section-bids-item__button__img">BID 54 AU</button>
+                </div>
+                <div class="main-section-bids-item wrap">
+                    <div class="main-section-bids-item-round">
+                        <div class="main-section-bids-item-round-number"><span class="main-section-bids-item-round-number__span">1</span></div>
+                        <div class="main-section-bids-item-round-text"><span class="main-section-bids-item-round-text__span">ROUND</span></div>
+                        <div class="main-section-bids-item-round-players anime fpl"><span class="main-section-bids-item-round-players__span">25</span></div>
+                        <div class="main-section-bids-item-round-players rogue spl"></div>
+                        <div class="main-section-bids-item-round-players cs"></div>
+                    </div>
+                    <img src="img/ak.png" alt="" class="main-section-bids-item__img">
+                    <h3 class="main-section-bids-item__h3 simple">AK-47 | Neon Rider</h3>
+                    <div class="main-section-bids-item-time simpletime">
+                        <div class="main-section-bids-item-time-rounded simplerounded">
+                            <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-time-rounded__img">
+                            <p class="main-section-bids-item-time-rounded__p">54</p>
+                        </div>
+                        <div class="main-section-bids-item-time-noborder simplenoborder">
+                            <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-time-noborder__img">
+                            <p class="main-section-bids-item-time-noborder__p">0:29</p>
+                        </div>
+                    </div>
+                    <div class="main-section-bids-item-text">
+                        <p class="main-section-bids-item-text__p">Your total:</p>
+                        <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-text__img">
+                        <span class="main-section-bids-item-text__span">10</span>
+                    </div>
+                    <button class="main-section-bids-item__button"><img src="img/combined-shape.svg" alt="" class="main-section-bids-item__button__img">BID 54 AU</button>
+                </div>
+                <div class="main-section-bids-item wrap">
+                    <div class="main-section-bids-item-round">
+                        <div class="main-section-bids-item-round-number"><span class="main-section-bids-item-round-number__span">1</span></div>
+                        <div class="main-section-bids-item-round-text"><span class="main-section-bids-item-round-text__span">ROUND</span></div>
+                        <div class="main-section-bids-item-round-players anime fpl"><span class="main-section-bids-item-round-players__span">25</span></div>
+                        <div class="main-section-bids-item-round-players rogue spl"></div>
+                        <div class="main-section-bids-item-round-players cs"></div>
+                    </div>
+                    <img src="img/ak.png" alt="" class="main-section-bids-item__img">
+                    <h3 class="main-section-bids-item__h3 simple">AK-47 | Neon Rider</h3>
+                    <div class="main-section-bids-item-time simpletime">
+                        <div class="main-section-bids-item-time-rounded simplerounded">
+                            <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-time-rounded__img">
+                            <p class="main-section-bids-item-time-rounded__p">54</p>
+                        </div>
+                        <div class="main-section-bids-item-time-noborder simplenoborder">
+                            <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-time-noborder__img">
+                            <p class="main-section-bids-item-time-noborder__p">0:29</p>
+                        </div>
+                    </div>
+                    <div class="main-section-bids-item-text">
+                        <p class="main-section-bids-item-text__p">Your total:</p>
+                        <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-text__img">
+                        <span class="main-section-bids-item-text__span">10</span>
+                    </div>
+                    <button class="main-section-bids-item__button"><img src="img/combined-shape.svg" alt="" class="main-section-bids-item__button__img">BID 54 AU</button>
+                </div>
+                <div class="main-section-bids-item wrap">
+                    <div class="main-section-bids-item-round">
+                        <div class="main-section-bids-item-round-number"><span class="main-section-bids-item-round-number__span">1</span></div>
+                        <div class="main-section-bids-item-round-text"><span class="main-section-bids-item-round-text__span">ROUND</span></div>
+                        <div class="main-section-bids-item-round-players anime fpl"><span class="main-section-bids-item-round-players__span">25</span></div>
+                        <div class="main-section-bids-item-round-players rogue spl"></div>
+                        <div class="main-section-bids-item-round-players cs"></div>
+                    </div>
+                    <img src="img/ak.png" alt="" class="main-section-bids-item__img">
+                    <h3 class="main-section-bids-item__h3 simple">AK-47 | Neon Rider</h3>
+                    <div class="main-section-bids-item-time simpletime">
+                        <div class="main-section-bids-item-time-rounded simplerounded">
+                            <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-time-rounded__img">
+                            <p class="main-section-bids-item-time-rounded__p">54</p>
+                        </div>
+                        <div class="main-section-bids-item-time-noborder simplenoborder">
+                            <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-time-noborder__img">
+                            <p class="main-section-bids-item-time-noborder__p">0:29</p>
+                        </div>
+                    </div>
+                    <div class="main-section-bids-item-text">
+                        <p class="main-section-bids-item-text__p">Your total:</p>
+                        <img src="img/combined-shape.svg" alt="" class="main-section-bids-item-text__img">
+                        <span class="main-section-bids-item-text__span">10</span>
+                    </div>
+                    <button class="main-section-bids-item__button"><img src="img/combined-shape.svg" alt="" class="main-section-bids-item__button__img">BID 54 AU</button>
+                </div>
+            </div>
+        </section>
+        <section class="section-chat">
+            <div class="section-chat-header">
+                <div class="section-chat-header-block">
+                    <img src="img/speech-bubble.png" alt="" class="section-chat-header-block__img">
+                    <p class="section-chat-header-block__p">CHAT</p>
+                </div>
+                <div class="section-chat-header-block">
+                    <img src="img/msn-messenger.png" alt="" class="section-chat-header-block__img">
+                    <div class="section-chat-header-block__span">25</div>
+                </div>
+            </div>
+            <div class="section-chat-messages">
+                <div class="section-chat-messages-message first">
+                    <div class="section-chat-messages-message-ava anime"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Arowana dhufish Devario, round herring mullet?</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava rogue"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Archerfish stingray Pacific</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava cs"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Arowana dhufish Devario, round herring mullet?</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava mount"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Archerfish stingray Pacific</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava anime"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Arowana dhufish Devario, round herring mullet?</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava rogue"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Archerfish stingray Pacific</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava cs"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Arowana dhufish Devario, round herring mullet?</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava mount"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Archerfish stingray Pacific</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+            </div>
+            <div class="section-chat-footer">
+                <div class="section-chat-footer-question">
+                    <input type="text" placeholder="Type your message here" class="section-chat-footer-question__input"></input>
+                    <div class="section-chat-footer-question-links">
+                        <button class="section-chat-footer-question-links__button" onclick="showModal()" id="signin">SIGN IN</button>
+                        <button class="section-chat-footer-question-links-buttonlink"><img src="img/smiling-emoticon-square-face.png" alt="" class="section-chat-footer-question-links-buttonlink__img"></button>
+                        <button class="section-chat-footer-question-links-buttonlink"><img src="img/back-arrow.png" alt="" class="section-chat-footer-question-links-buttonlink__img"></button></div>
+                </div>
+                <div class="section-chat-footer__p">© 2019 AUction. All rights reserved.</div>
+                <div class="section-chat-footer-links">
+                    <img src="img/vk-social-logotype.png" alt="" class="section-chat-footer-links__img">
+                    <img src="img/facebook-logo.png" alt="" class="section-chat-footer-links__img">
+                    <img src="img/twitter-logo-silhouette.png" alt="" class="section-chat-footer-links__img">
+                    <img src="img/yotube.png" alt="" class="section-chat-footer-links__img">
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="dropmenu-block">
+        <div class="main-section-wins-item-menu">
+            <div class="main-section-wins-item-menu-img anime"></div>
+            <div class="main-section-wins-item-menu-text">
+                <p class="main-section-wins-item-menu-text__p">Username</p>
+                <div class="main-section-wins-item-menu-text-time">
+                    <p class="main-section-wins-item-menu-text-time__p">Stand:</p>
+                    <img src="img/combined-shape.svg" alt="" class="main-section-wins-item-menu-text-time__img">
+                    <span class="main-section-wins-item-menu-text-time__span">5:29</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    const showModal = () => {
+        var menu = document.querySelector('.overlay')
+        menu.classList.toggle('menu-hidden');
+    }
+    </script>
+    <script>
+    var loader = document.getElementById('loader'),
+        loader2 = document.getElementById('loader2'),
+        alpha = 20,
+        pi = Math.PI,
+        timer = (1000 / 360) * 10;
+
+    (function draw() {
+        alpha++;
+        alpha %= 360; //infinite loading
+        var r = (alpha * pi / 180),
+            x = Math.sin(r) * 125,
+            y = Math.cos(r) * -125,
+            mid = (alpha >= 180) ? 1 : 0,
+            anim = 'M 0 0 v -125 A 125 125 1 ' +
+            mid + ' 1 ' +
+            x + ' ' +
+            y + ' z';
+
+        if (alpha < 360) {
+            //setTimeout(draw, timer); // Redraw
+        } else {
+            anim = "M 0 0 v -125 A 125 125 1 1 1 -.1 -125 z";
+        }
+
+        loader.setAttribute('d', anim);
+        loader2.setAttribute('d', anim);
+
+    })();
+    </script>
+</body>
+
+</html>

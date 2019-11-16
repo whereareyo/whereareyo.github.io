@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AUCTION</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="signin-form">
+            <div class="signin-form-header">
+                <p class="signin-form-header__p">SIGN IN</p>
+                <button class="signin-form-header__button" onclick="showModal()"></button>
+            </div>
+            <div class="signin-form-main">
+                <img src="img/battleskin.png" alt="" class="signin-form-main__img">
+                <p class="signin-form-main__p">PLease read <a href="" class="signin-form-main__p__a">Terms&amp;Conditions </a>before SignIn</p>
+                <div class="signin-form-main-check">
+                    <input type="checkbox" class="signin-form-main-check__input checkbox" id="checkboxform">
+                    <label for="checkboxform" class="checkboxform"></label>
+                    <p class="signin-form-main-check__p">I understand all</p>
+                    <a href="" class="signin-form-main-check__a">Terms&Conditions</a>
+                </div>
+                <button class="signin-form-main__button">SIGN IN</button>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header-logo"><img src="img/battleskin.png" alt="" class="header-logo__img">
+            <div class="header-lang">
+                <img src="img/eng.png" alt="" class="header-lang__img">
+                <span class="header-lang__span">ENG</span>
+                <img src="img/left-arrow.png" alt="" class="header-lang-arrow">
+                <div class="dropmenu-block">
+                    <div class="header-lang-menu">
+                        <div class="header-lang-menu-item dropmenu"><img src="img/eng.png" alt="" class="header-lang__img">
+                            <span class="header-lang__span">ENG</span>
+                        </div>
+                        <div class="header-lang-menu-item"><img src="img/eng.png" alt="" class="header-lang__img">
+                            <span class="header-lang__span">RUS</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-navbar">
+            <nav class="header-navbar__nav">
+                <ul class="header-navbar__nav__ul">
+                    <li class="header-navbar__nav__ul__li">MAIN</li>
+                    <li class="header-navbar__nav__ul__li">HOW TO PLAY</li>
+                    <li class="header-navbar__nav__ul__li">ABOUT</li>
+                    <li class="header-navbar__nav__ul__li">TERMS & CONDITIONS</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-buttons"><button class="header-buttons-blue__button__a"><img src="img/combined-shape.svg" alt="" class="header-buttons-blue__button__a__img">BUY AU</button><button class="header-buttons-orange__button__a"><img src="img/upload.png" alt="" class="header-buttons-orange__button__a__img">WITHDRAW</button>
+            <div class="header-alert"><img src="img/group-4.png" alt="" class="header-alert__img">
+                <div class="header-alert-oval"><span class="header-alert-oval__span">1</span></div>
+                <div class="dropmenu-block">
+                    <div class="header-alert-menu">
+                        <div class="header-alert-menu-header">
+                            <p class="header-alert-menu-header__p">Your alerts</p>
+                        </div>
+                        <div class="header-alert-menu-item">
+                            <img src="img/information-circular-button-symbol.png" alt="" class="header-alert-menu-item__img symbol">
+                            <div class="header-alert-menu-item-text">
+                                <h3 class="header-alert-menu-item-text__h3">Time for game is off</h3>
+                                <p class="header-alert-menu-item-text__p">You WON: AK-47 | Frontside Misty</p>
+                                <div class="header-alert-menu-item-text-time">
+                                    <p class="header-alert-menu-item-text-time__p">Today 22:35</p>
+                                </div>
+                            </div>
+                            <button class="header-alert-menu-item__button garbage"></button>
+                        </div>
+                        <div class="header-alert-menu-item">
+                            <span class="header-alert-menu-item__span akspan"><img src="img/ak.png" alt="" class="header-alert-menu-item__span__img ak"></span>
+                            <div class="header-alert-menu-item-text">
+                                <h3 class="header-alert-menu-item-text__h3">Trade #7273737</h3>
+                                <p class="header-alert-menu-item-text__p">AK-47 | Frontside Misty was send</p>
+                                <div class="header-alert-menu-item-text-time">
+                                    <p class="header-alert-menu-item-text-time__p">Today 22:35</p>
+                                </div>
+                            </div>
+                            <button class="header-alert-menu-item__button apply"><span class="applyspan">4:59</span> <br> APPLY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-profile">
+                <div class="header-profile-block"><div class="header-profile-block__img"><img src="img/close.svg" alt=""></div></div>
+                <div class="header-profile-menu">
+                    <div class="header-profile-menu-text">
+                        <h3 class="header-profile-menu-text__h3">Nickname</h3><img src="img/left-arrow.png" alt="" class="header-profile-menu-text">
+                    </div>
+                    <div class="header-profile-menu-block"><img src="img/invalid-name.png" alt="" class="header-profile-menu-block__img">
+                        <p class="header-profile-menu-block__p">2&nbsp345</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main-section">
+            <div class="aside">
+                <a href="index.html" class="aside-back">
+                    <img src="img/left-arrow.png" alt="" class="aside-back__img">
+                    <p class="aside-back__p">BACK</p>
+                </a>
+                <div class="aside-buy">
+                    <p class="aside-buy__p">PROFILE</p>
+                    <span class="aside-buy__span"></span>
+                </div>
+            </div>
+            <div class="tradelink">
+                <h2 class="main-section__h2">PROFILE TRADELINK</h2>
+                <div class="tradelink-box">
+                    <div class="tradelink-box__totals">
+                        <div class="tradelink-box_total">
+                            <strong class="tradelink-box_total__title">567</strong>
+                            <div class="tradelink-box_total__description">Total bids</div>
+                        </div>
+                        <div class="tradelink-box_total">
+                            <strong class="tradelink-box_total__title">1426</strong>
+                            <div class="tradelink-box_total__description">Total bet</div>
+                        </div>
+                        <div class="tradelink-box_total">
+                            <strong class="tradelink-box_total__title">566</strong>
+                            <div class="tradelink-box_total__description">Total bids</div>
+                        </div>
+                        <div class="tradelink-box_total">
+                            <strong class="tradelink-box_total__title"><span class="buxx">$</span>6000</strong>
+                            <div class="tradelink-box_total__description">Total bits</div>
+                        </div>
+                    </div>
+                    <div class="tradelink-box__item tradelink-box__user">
+                        <div class="tradelink-box__user_avatar">
+                            <img src="img/cs.png" class="tradelink-box__user_avatar__img" alt="avatar">
+                            <div class="user-close">
+                                <img class="user-close__img" src="img/close.svg" alt="">
+                            </div>
+                        </div>
+                        <h4 class="tradelink-box__user_nickname">Dallowin</h4>
+                    </div>
+                    <div class="tradelink-box__settings">
+                        <h3 class="tradelink-box__settings_title">TRADELINK SETTINGS</h3>
+                        <div class="tradelink-box__settings_ui">
+                            <div class="tradelink-box__settings_ui_input">
+                                <input type="text" class="input" placeholder="Type your link here">
+                                <a href="#" class="tradelink-box__settings_ui_link">Where i can get my link?</a>
+                            </div>
+                            <div class="tradelink-box__settings_ui_buttons">
+                                <button class="btn btn-apply">APPLY</button>
+                                <button class="btn btn-trash ml-5"></button>
+                            </div>
+                        </div>
+                        <div class="tradelink-box__settings_public">
+                            <div class="tradelink-box__settings_public_icon"></div> Be sure you opened your inventory to public in <a href="#" class="tradelink-box__settings_public_link">steam account settings</a> tab
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inventory">
+                <h2 class="main-section__h2">YOUR INVENTORY</h2>
+                <div class="inventory-box">
+                    <div class="row">
+                        <div class="sort-text">
+                            Sort by:
+                            <div class="sort">
+
+                                <div class="sort-active">Name <img src="img/left-arrow@3x.png" width="12" alt=""> </div>
+                                <div class="emptyblock"></div>
+                                <div class="dropmenu-block">
+                                <div class="sort-dropdown">
+                                    <div class="sort-dropdown__item">Style</div>
+                                    <div class="sort-dropdown__item">Price</div>
+                                    <div class="sort-dropdown__item">Rarity</div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <input type="text" placeholder="Search" class="search-input"> <!--  active - .search-input__active !-->
+                            <div class="search-icon"></div>
+                        </div>
+                    </div>
+                    <div class="inventory-items">
+                        <div class="inventory-item">
+                            <div class="borderyellow"></div>
+                            <div class="inventory-item__gradient"></div>
+                            <img src="img/ak.png" alt="" class="inventory-item__img">
+                            <div class="inventory-item__text">
+                                <div class="inventory-item__text_img"></div>
+                                <span class="inventory-item__text_name">500</span>
+                            </div>
+                        </div>
+                        <div class="inventory-item">
+                            <div class="borderyellow"></div>
+                            <div class="inventory-item__gradient"></div>
+                            <img src="img/ak.png" alt="" class="inventory-item__img">
+                            <div class="inventory-item__text">
+                                <div class="inventory-item__text_img"></div>
+                                <span class="inventory-item__text_name">500</span>
+                            </div>
+                        </div>
+                        <div class="inventory-item orangegr">
+                            <div class="inventory-item__gradient"></div>
+                            <img src="img/ak.png" alt="" class="inventory-item__img">
+                            <div class="inventory-item__text">
+                                <div class="inventory-item__text_img"></div>
+                                <span class="inventory-item__text_name">500</span>
+                            </div>
+                            <div class="inventory-item-checkmark"><img src="img/tick.svg" alt="" class="inventory-item-checkmark__img checkmarkimg"></div>
+                        </div>
+                        <div class="inventory-item">
+                            <div class="borderyellow"></div>
+                            <div class="inventory-item__gradient"></div>
+                            <img src="img/ak.png" alt="" class="inventory-item__img">
+                            <div class="inventory-item__text">
+                                <div class="inventory-item__text_img"></div>
+                                <span class="inventory-item__text_name">500</span>
+                            </div>
+                        </div>
+                        <div class="inventory-item loading">
+                            <div class="inventory-item__gradient"></div>
+                            <img src="img/ak.png" alt="" class="inventory-item__img">
+                            <div class="inventory-item__text">
+                                <div class="inventory-item__text_img"></div>
+                                <span class="inventory-item__text_name">500</span>
+                            </div>
+                            <div class="inventory-item-hint bhint">
+                                <p class="inventory-item-hint__p btext">Selling</p>
+                            </div>
+                        </div>
+                        <div class="inventory-item ban">
+                            <div class="inventory-item__gradient"></div>
+                            <img src="img/ak.png" alt="" class="inventory-item__img">
+                            <div class="inventory-item__text">
+                                <div class="inventory-item__text_img"></div>
+                                <span class="inventory-item__text_name">500</span>
+                            </div>
+                            <div class="inventory-item-hint rhint">
+                                <p class="inventory-item-hint__p rtext">Unavailable</p>
+                            </div>
+                        </div>
+                        <div class="inventory-item checked">
+                            <div class="inventory-item__gradient"></div>
+                            <img src="img/ak.png" alt="" class="inventory-item__img">
+                            <div class="inventory-item__text">
+                                <div class="inventory-item__text_img"></div>
+                                <span class="inventory-item__text_name">500</span>
+                            </div>
+                            <div class="inventory-item-hint ghint">
+                                <p class="inventory-item-hint__p gtext">Selled</p>
+                            </div>
+                        </div>
+                        <div class="inventory-item trade">
+                            <div class="inventory-item__gradient"></div>
+                            <img src="img/ak.png" alt="" class="inventory-item__img">
+                            <div class="inventory-item__text">
+                                <div class="inventory-item__text_img"></div>
+                                <span class="inventory-item__text_name">500</span>
+                            </div>
+                            <div class="inventory-item-trade"><img src="img/giftbox.svg" alt="" class="inventory-item-trade__img">
+                                <p class="inventory-item-trade__p">Take Trade</p>
+                            </div>
+                        </div>
+                        <div class="inventory-item selected">
+                            <div class="borderyellow"></div>
+                            <div class="inventory-item__gradient"></div>
+                            <img src="img/ak.png" alt="" class="inventory-item__img">
+                            <div class="inventory-item__text">
+                                <div class="inventory-item__text_img"></div>
+                                <span class="inventory-item__text_name">500</span>
+                            </div>
+                        </div>
+                        <div class="inventory-item">
+                            <div class="borderyellow"></div>
+                            <div class="inventory-item__gradient"></div>
+                            <img src="img/ak.png" alt="" class="inventory-item__img">
+                            <div class="inventory-item__text">
+                                <div class="inventory-item__text_img"></div>
+                                <span class="inventory-item__text_name">500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inventory-items">
+                        <div class="inventory-items__empty">
+                            <p>Whooops! Your inventory is empty.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="inventory-total">
+                            Total selected <span class="inventory-total__count">1</span> items at: <strong class="inventory-total__balance">$25.00</strong>
+                        </div>
+                        <div class="inventory-buttons">
+                            <button class="btn btn-blue"><img src="img/combined-shape.svg" alt="">SELL SELECTED 25 AU</button>
+                            <button class="btn btn-orange"><img src="img/upload.png" alt="">WITHDRAW SELECTED</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-chat">
+            <div class="section-chat-header">
+                <div class="section-chat-header-block">
+                    <img src="img/speech-bubble.png" alt="" class="section-chat-header-block__img">
+                    <p class="section-chat-header-block__p">CHAT</p>
+                </div>
+                <div class="section-chat-header-block">
+                    <img src="img/msn-messenger.png" alt="" class="section-chat-header-block__img">
+                    <div class="section-chat-header-block__span">25</div>
+                </div>
+            </div>
+            <div class="section-chat-messages">
+                <div class="section-chat-messages-message first">
+                    <div class="section-chat-messages-message-ava anime"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Arowana dhufish Devario, round herring mullet?</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava rogue"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Archerfish stingray Pacific</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava cs"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Arowana dhufish Devario, round herring mullet?</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava mount"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Archerfish stingray Pacific</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava anime"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Arowana dhufish Devario, round herring mullet?</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava rogue"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Archerfish stingray Pacific</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava cs"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Arowana dhufish Devario, round herring mullet?</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+                <div class="section-chat-messages-message line">
+                    <div class="section-chat-messages-message-ava mount"></div>
+                    <div class="section-chat-messages-message-text">
+                        <div class="section-chat-messages-message-text__h4">Username</div>
+                        <div class="section-chat-messages-message-text__p">Archerfish stingray Pacific</div>
+                    </div>
+                    <img src="img/mute-emoticon-square-face.png" alt="" class="section-chat-messages-message__img">
+                </div>
+            </div>
+            <div class="section-chat-footer">
+                <div class="section-chat-footer-question">
+                    <input type="text" placeholder="Type your message here" class="section-chat-footer-question__input"></input>
+                    <div class="section-chat-footer-question-links">
+                        <button class="section-chat-footer-question-links__button" onclick="showModal()" id="signin">SIGN IN</button>
+                        <button class="section-chat-footer-question-links-buttonlink"><img src="img/smiling-emoticon-square-face.png" alt="" class="section-chat-footer-question-links-buttonlink__img"></button>
+                        <button class="section-chat-footer-question-links-buttonlink"><img src="img/back-arrow.png" alt="" class="section-chat-footer-question-links-buttonlink__img"></button></div>
+                </div>
+                <div class="section-chat-footer__p">© 2019 AUction. All rights reserved.</div>
+                <div class="section-chat-footer-links">
+                    <img src="img/vk-social-logotype.png" alt="" class="section-chat-footer-links__img">
+                    <img src="img/facebook-logo.png" alt="" class="section-chat-footer-links__img">
+                    <img src="img/twitter-logo-silhouette.png" alt="" class="section-chat-footer-links__img">
+                    <img src="img/yotube.png" alt="" class="section-chat-footer-links__img">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+    const showModal = () => {
+        var menu = document.querySelector('.overlay')
+        menu.classList.toggle('menu-hidden');
+    }
+    </script>
+</body>
+
+</html>
