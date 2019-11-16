@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>STEAMFAST</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="shortcut icon" href="img/logo/head-icon.ico">
+</head>
+
+<body>
+    <header class="header header-index">
+        <button onclick="showMenu()" class="hamburger hamburger--spin notindex" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="overlay">
+            <div class="menu-block">
+                <div class="adaptive-menu">
+                <a href="quarantee.html" class="adaptive-menu__a">Гарантии</a>
+                <a href="contacts.html" class="adaptive-menu__a">Контакты</a>
+                <a href="reviews.html" class="adaptive-menu__a">Отзывы</a>
+            </div>
+            <div class="adaptive-menu adaptive-menu_right">
+                <a href="catalog.html" class="catalog-box__btn catalog-box__btn_index btn"><img src="img/modules/menu.svg" alt="" class="catalog-box__btn_img"> Каталог</a>
+                <ul class="header-menu">
+                    <li class="header-menu__li"><a href="#" class="header-menu__link"><img src="img/modules/steam-header.svg" alt="" class="header-menu__li_img"> Steam</a></li>
+                    <li class="header-menu__li"><a href="#" class="header-menu__link"><img src="img/modules/origin-header.svg" alt="" class="header-menu__li_img"> Origin</a></li>
+                    <li class="header-menu__li"><a href="#" class="header-menu__link"><img src="img/modules/uplay-header.svg" alt="" class="header-menu__li_img"> Uplay</a></li>
+                    <li class="header-menu__li"><a href="#" class="header-menu__link"><img src="img/modules/gog-header.svg" alt="" class="header-menu__li_img"> GOG</a></li>
+                    <li class="header-menu__li"><a href="#" class="header-menu__link">Global Keys</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="row header-border header-border_index">
+            <div class="container header-container index-container">
+                <div class="row header-row">
+                    <div class="header-action adaptive-menu-action">
+                        <a href="index.html" class="logo"><img src="img/logo/index-logo.png" alt="" class="logo__img"></a>
+                        <div class="header-links">
+                            <a href="quarantee.html" class="header-links__a header-links__a_index">Гарантии</a>
+                            <a href="contacts.html" class="header-links__a header-links__a_index">Контакты</a>
+                            <a href="reviews.html" class="header-links__a header-links__a_index">Отзывы</a>
+                        </div>
+                    </div>
+                    <form required class="header-search header-search_index">
+                        <label for="main-search" class="header-search__label"><img src="img/index/search.svg" alt="" class="header-search__label_img"></label>
+                        <input onfocus="addOp()" autocomplete="off" id="main-search" type="search" class="header-search__input header-search__input_index" placeholder="Поиск" style="border: none;">
+                        <div class="dropmenu">
+                            <div class="header-search-result">
+                                <a href="good.html" class="header-search-result-item">
+                                    <div class="header-search-result-item-info">
+                                        <img src="img/index/csgo-search.png" alt="" class="header-search-result-item-info__img">
+                                        <p class="header-search-result-item-info__game">Counter Strike: Global Offencive</p>
+                                        <p class="header-search-result-item-info__price">1 999₽</p>
+                                    </div>
+                                    <div class="header-search-result-item__blur"></div>
+                                </a>
+                                <a href="good.html" class="header-search-result-item">
+                                    <div class="header-search-result-item-info">
+                                        <img src="img/index/csgo-search.png" alt="" class="header-search-result-item-info__img">
+                                        <p class="header-search-result-item-info__game">Counter Strike: Global Offencive</p>
+                                        <p class="header-search-result-item-info__price">1 999₽</p>
+                                    </div>
+                                    <div class="header-search-result-item__blur"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row pbn pbn_index">
+            <div class="container header-container">
+                <div class="row header-row">
+                    <div class="nav">
+                        <div class="catalog-box catalog-box_index adaptive-menu-catalog"><a href="catalog.html" class="catalog-box__btn catalog-box__btn_index btn"><img src="img/index/menu.svg" alt="" class="catalog-box__btn_img"> Каталог</a></div>
+                        <ul class="header-menu">
+                            <li class="header-menu__li"><a href="#" class="header-menu__link header-menu__link_index"><img src="img/index/steam-header.svg" alt="" class="header-menu__li_img"> Steam</a></li>
+                            <li class="header-menu__li"><a href="#" class="header-menu__link header-menu__link_index"><img src="img/index/origin-header.svg" alt="" class="header-menu__li_img"> Origin</a></li>
+                            <li class="header-menu__li"><a href="#" class="header-menu__link header-menu__link_index"><img src="img/index/uplay-header.svg" alt="" class="header-menu__li_img"> Uplay</a></li>
+                            <li class="header-menu__li"><a href="#" class="header-menu__link header-menu__link_index"><img src="img/index/gog-header.svg" alt="" class="header-menu__li_img"> GOG</a></li>
+                            <li class="header-menu__li"><a href="#" class="header-menu__link header-menu__link_index">Global Keys</a></li>
+                        </ul>
+                    </div>
+                    <a href='testyourluck.html' class="checkluck__btn checkluck__btn_footer checkluck__btn_footer_index btn"><img src="img/modules/clover-footer.svg" alt="" class="checkluck__btn_img"> Испытай удачу</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-slider autoplay">
+            <div class="header-slider-item">
+                <div class="container">
+                    <p class="header-slider-item__preorder">Оформите предзаказ!</p>
+                    <p class="header-slider-item__game">Cyberpunk 2077</p>
+                    <div class="header-slider-item-buy">
+                        <div class="header-slider-item-buy-sale">
+                            <img src="img/index/slider-lenta.png" alt="" class="header-slider-item-buy-sale__img">
+                            <p class="header-slider-item-buy-sale__p">-20%</p>
+                        </div>
+                        <a href="#" class="header-slider-item-buy__btn btn">Купить<img src="img/index/slider-arrow.svg" alt="" class="header-arrow"></a>
+                        <div class="header-slider-item-buy-text">
+                            <p class="header-slider-item-buy-text__worth">1 999₽</p>
+                            <p class="header-slider-item-buy-text__oldworth">1 999₽</p>
+                        </div>
+                    </div>
+                    <p class="current-slide">01<span class="numberofslides">/04</span></p>
+                    <div class="index-arrows"><img src="img/index/sliderprev.svg" alt="" class="index-arrows_prev"><img src="img/index/slidernext.svg" alt="" class="index-arrows_next"></div>
+                </div>
+            </div>
+            <div class="header-slider-item header-slider-item_second">
+                <div class="container">
+                    <p class="header-slider-item__preorder">Оформите предзаказ!</p>
+                    <p class="header-slider-item__game">Cyberpunk 2077</p>
+                    <div class="header-slider-item-buy">
+                        <div class="header-slider-item-buy-sale">
+                            <img src="img/index/slider-lenta.png" alt="" class="header-slider-item-buy-sale__img">
+                            <p class="header-slider-item-buy-sale__p">-20%</p>
+                        </div>
+                        <a href="#" class="header-slider-item-buy__btn btn">Купить<img src="img/index/slider-arrow.svg" alt="" class="header-arrow"></a>
+                        <div class="header-slider-item-buy-text">
+                            <p class="header-slider-item-buy-text__worth">1 999₽</p>
+                            <p class="header-slider-item-buy-text__oldworth">1 999₽</p>
+                        </div>
+                    </div>
+                    <p class="current-slide">02<span class="numberofslides">/04</span></p>
+                    <div class="index-arrows"><img src="img/index/sliderprev.svg" alt="" class="index-arrows_prev"><img src="img/index/slidernext.svg" alt="" class="index-arrows_next"></div>
+                </div>
+            </div>
+            <div class="header-slider-item header-slider-item_third">
+                <div class="container">
+                    <p class="header-slider-item__preorder">Оформите ежемесячную подписку!</p>
+                    <p class="header-slider-item__game">World Of Warcraft: Classic</p>
+                    <div class="header-slider-item-buy">
+                        <div class="header-slider-item-buy-sale">
+                            <img src="img/index/slider-lenta.png" alt="" class="header-slider-item-buy-sale__img">
+                            <p class="header-slider-item-buy-sale__p">-20%</p>
+                        </div>
+                        <a href="#" class="header-slider-item-buy__btn btn">Купить<img src="img/index/slider-arrow.svg" alt="" class="header-arrow"></a>
+                        <div class="header-slider-item-buy-text">
+                            <p class="header-slider-item-buy-text__worth">510₽</p>
+                            <p class="header-slider-item-buy-text__oldworth">510₽</p>
+                        </div>
+                    </div>
+                    <p class="current-slide">03<span class="numberofslides">/04</span></p>
+                    <div class="index-arrows"><img src="img/index/sliderprev.svg" alt="" class="index-arrows_prev"><img src="img/index/slidernext.svg" alt="" class="index-arrows_next"></div>
+                </div>
+            </div>
+            <div class="header-slider-item header-slider-item_fouth">
+                <div class="container">
+                    <p class="header-slider-item__preorder">Приобретите по скидке!</p>
+                    <p class="header-slider-item__game">Control</p>
+                    <div class="header-slider-item-buy">
+                        <div class="header-slider-item-buy-sale">
+                            <img src="img/index/slider-lenta.png" alt="" class="header-slider-item-buy-sale__img">
+                            <p class="header-slider-item-buy-sale__p">-20%</p>
+                        </div>
+                        <a href="#" class="header-slider-item-buy__btn btn">Купить<img src="img/index/slider-arrow.svg" alt="" class="header-arrow"></a>
+                        <div class="header-slider-item-buy-text">
+                            <p class="header-slider-item-buy-text__worth">1 999₽</p>
+                            <p class="header-slider-item-buy-text__oldworth">1 999₽</p>
+                        </div>
+                    </div>
+                    <p class="current-slide">04<span class="numberofslides">/04</span></p>
+                    <div class="index-arrows"><img src="img/index/sliderprev.svg" alt="" class="index-arrows_prev"><img src="img/index/slidernext.svg" alt="" class="index-arrows_next"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="index">
+                <div class="index__promo">
+                    <p class="index__promo__sale">-10%</p>
+                    <p class="index__promo__date">Leto2019</p>
+                    <p class="index__promo__word">Промокод</p>
+                    <button onclick="showPopup()" class="index__promo__btn btn">Больше промокодов</button>
+                </div>
+                <p class="index__title"><img src="img/index/topsells.png" alt="" class="index__title_topsells">Лидеры продаж</p>
+                <div class="catalog-games catalog-games_index">
+                    <img src="img/index/topsellsl.png" alt="" class="topsellsl"><img src="img/index/topsellsr.png" alt="" class="topsellsr">
+                    <a href="good.html" class="catalog-games-item catalog-games-item_index catalog-pubg">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Playerunknown’s Battlegrounds</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-games-item_index catalog-re">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Resident Evil 2</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-games-item_index catalog-division">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Tom Clancy's The Division</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-games-item_index catalog-division">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Tom Clancy's The Division</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-games-item_index catalog-pubg">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Playerunknown’s Battlegrounds</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-games-item_index catalog-re">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Resident Evil 2</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-games-item_index catalog-re">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Resident Evil 2</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-games-item_index catalog-pubg">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Playerunknown’s Battlegrounds</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-games-item_index catalog-division">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Tom Clancy's The Division</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                </div>
+                <p class="index__title"><img src="img/index/newitems.png" alt="" class="index__title_newitems">Новинки</p>
+                <div class="catalog-games">
+                    <img src="img/index/newitemsl.png" alt="" class="newitemsl"><img src="img/index/newitemsr.png" alt="" class="newitemsr">
+                    <a href="good.html" class="catalog-games-item catalog-games-item_index_s catalog-warhammer">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game catalog-games-item__game_indexcatalog">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-games-item_index_s catalog-gta">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game catalog-games-item__game_indexcatalog">Grand Theft Auto V</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-games-item_index_s catalog-siege">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game catalog-games-item__game_indexcatalog">Rainbow Six Siege</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-games-item_index_s catalog-farcry">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game catalog-games-item__game_indexcatalog">FarCry 5</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-games-item_index_s catalog-farcry">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game catalog-games-item__game_indexcatalog">FarCry 5</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-games-item_index_s catalog-siege">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game catalog-games-item__game_indexcatalog">Rainbow Six Siege</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-games-item_index_s catalog-gta">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game catalog-games-item__game_indexcatalog">Grand Theft Auto V</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-games-item_index_s catalog-warhammer">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game catalog-games-item__game_indexcatalog">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                </div>
+                <a href="catalog.html" class="index-catalog__btn btn"><img src="img/index/index-catalog.svg" alt="" class="index-catalog__btn_img">
+                    <p class="index-catalog__btn_p">Весь каталог</p>
+                </a>
+                <p class="index__title"><img src="img/index/reviews.png" alt="" class="index__title_reviews">Отзывы покупателей</p>
+                <div class="reviews-slider">
+                    <div class="single-item container">
+                        <div class="index-reviews">
+                            <div class="review-slider-item">
+                                <div class="reviews-box-readyview">
+                                    <div class="user-avatar"><img src="img/reviews/ava.png" alt="" class="user-avatar__img"></div>
+                                    <div class="readyview-text">
+                                        <p class="readyview-text__date">Сегодня в 11:31</p>
+                                        <p class="readyview-text__review">Все идеально! Купил FFXV, все прошло быстро и без проблем. Рекомендую!</p>
+                                        <p class="readyview-text__username">stoyamba</p>
+                                    </div>
+                                </div>
+                                <div class="reviews-box-readyview">
+                                    <div class="user-avatar"><img src="img/reviews/ava.png" alt="" class="user-avatar__img"></div>
+                                    <div class="readyview-text">
+                                        <p class="readyview-text__date">Сегодня в 11:31</p>
+                                        <p class="readyview-text__review">Все идеально! Купил FFXV, все прошло быстро и без проблем. Рекомендую!</p>
+                                        <p class="readyview-text__username">stoyamba</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="index-reviews">
+                            <div class="review-slider-item">
+                                <div class="reviews-box-readyview">
+                                    <div class="user-avatar"><img src="img/reviews/ava.png" alt="" class="user-avatar__img"></div>
+                                    <div class="readyview-text">
+                                        <p class="readyview-text__date">Сегодня в 11:31</p>
+                                        <p class="readyview-text__review">Все идеально! Купил FFXV, все прошло быстро и без проблем. Рекомендую!</p>
+                                        <p class="readyview-text__username">stoyamba</p>
+                                    </div>
+                                </div>
+                                <div class="reviews-box-readyview">
+                                    <div class="user-avatar"><img src="img/reviews/ava.png" alt="" class="user-avatar__img"></div>
+                                    <div class="readyview-text">
+                                        <p class="readyview-text__date">Сегодня в 11:31</p>
+                                        <p class="readyview-text__review">Все идеально! Купил FFXV, все прошло быстро и без проблем. Рекомендую!</p>
+                                        <p class="readyview-text__username">stoyamba</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="index-reviews">
+                            <div class="review-slider-item">
+                                <div class="reviews-box-readyview">
+                                    <div class="user-avatar"><img src="img/reviews/ava.png" alt="" class="user-avatar__img"></div>
+                                    <div class="readyview-text">
+                                        <p class="readyview-text__date">Сегодня в 11:31</p>
+                                        <p class="readyview-text__review">Все идеально! Купил FFXV, все прошло быстро и без проблем. Рекомендую!</p>
+                                        <p class="readyview-text__username">stoyamba</p>
+                                    </div>
+                                </div>
+                                <div class="reviews-box-readyview">
+                                    <div class="user-avatar"><img src="img/reviews/ava.png" alt="" class="user-avatar__img"></div>
+                                    <div class="readyview-text">
+                                        <p class="readyview-text__date">Сегодня в 11:31</p>
+                                        <p class="readyview-text__review">Все идеально! Купил FFXV, все прошло быстро и без проблем. Рекомендую!</p>
+                                        <p class="readyview-text__username">stoyamba</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="index-reviews">
+                            <div class="review-slider-item">
+                                <div class="reviews-box-readyview">
+                                    <div class="user-avatar"><img src="img/reviews/ava.png" alt="" class="user-avatar__img"></div>
+                                    <div class="readyview-text">
+                                        <p class="readyview-text__date">Сегодня в 11:31</p>
+                                        <p class="readyview-text__review">Все идеально! Купил FFXV, все прошло быстро и без проблем. Рекомендую!</p>
+                                        <p class="readyview-text__username">stoyamba</p>
+                                    </div>
+                                </div>
+                                <div class="reviews-box-readyview">
+                                    <div class="user-avatar"><img src="img/reviews/ava.png" alt="" class="user-avatar__img"></div>
+                                    <div class="readyview-text">
+                                        <p class="readyview-text__date">Сегодня в 11:31</p>
+                                        <p class="readyview-text__review">Все идеально! Купил FFXV, все прошло быстро и без проблем. Рекомендую!</p>
+                                        <p class="readyview-text__username">stoyamba</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="index-reviews">
+                            <div class="review-slider-item">
+                                <div class="reviews-box-readyview">
+                                    <div class="user-avatar"><img src="img/reviews/ava.png" alt="" class="user-avatar__img"></div>
+                                    <div class="readyview-text">
+                                        <p class="readyview-text__date">Сегодня в 11:31</p>
+                                        <p class="readyview-text__review">Все идеально! Купил FFXV, все прошло быстро и без проблем. Рекомендую!</p>
+                                        <p class="readyview-text__username">stoyamba</p>
+                                    </div>
+                                </div>
+                                <div class="reviews-box-readyview">
+                                    <div class="user-avatar"><img src="img/reviews/ava.png" alt="" class="user-avatar__img"></div>
+                                    <div class="readyview-text">
+                                        <p class="readyview-text__date">Сегодня в 11:31</p>
+                                        <p class="readyview-text__review">Все идеально! Купил FFXV, все прошло быстро и без проблем. Рекомендую!</p>
+                                        <p class="readyview-text__username">stoyamba</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="index-reviews">
+                            <div class="review-slider-item">
+                                <div class="reviews-box-readyview">
+                                    <div class="user-avatar"><img src="img/reviews/ava.png" alt="" class="user-avatar__img"></div>
+                                    <div class="readyview-text">
+                                        <p class="readyview-text__date">Сегодня в 11:31</p>
+                                        <p class="readyview-text__review">Все идеально! Купил FFXV, все прошло быстро и без проблем. Рекомендую!</p>
+                                        <p class="readyview-text__username">stoyamba</p>
+                                    </div>
+                                </div>
+                                <div class="reviews-box-readyview">
+                                    <div class="user-avatar"><img src="img/reviews/ava.png" alt="" class="user-avatar__img"></div>
+                                    <div class="readyview-text">
+                                        <p class="readyview-text__date">Сегодня в 11:31</p>
+                                        <p class="readyview-text__review">Все идеально! Купил FFXV, все прошло быстро и без проблем. Рекомендую!</p>
+                                        <p class="readyview-text__username">stoyamba</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="index-reviews">
+                            <div class="review-slider-item">
+                                <div class="reviews-box-readyview">
+                                    <div class="user-avatar"><img src="img/reviews/ava.png" alt="" class="user-avatar__img"></div>
+                                    <div class="readyview-text">
+                                        <p class="readyview-text__date">Сегодня в 11:31</p>
+                                        <p class="readyview-text__review">Все идеально! Купил FFXV, все прошло быстро и без проблем. Рекомендую!</p>
+                                        <p class="readyview-text__username">stoyamba</p>
+                                    </div>
+                                </div>
+                                <div class="reviews-box-readyview">
+                                    <div class="user-avatar"><img src="img/reviews/ava.png" alt="" class="user-avatar__img"></div>
+                                    <div class="readyview-text">
+                                        <p class="readyview-text__date">Сегодня в 11:31</p>
+                                        <p class="readyview-text__review">Все идеально! Купил FFXV, все прошло быстро и без проблем. Рекомендую!</p>
+                                        <p class="readyview-text__username">stoyamba</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="index-reviews-arrows">
+                <div class="index-reviews-arrows_prev"></div>
+                <div class="index-reviews-arrows_next "></div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="row header-row_footer footer-border">
+            <div class="container header-container">
+                <div class="row header-row header-row_footer">
+                    <div class="header-action header-action_footer">
+                         <div class="logo logo_footer">
+                            <a href="index.html" class="logo"><img src="img/logo/index-logo.png" alt="" class="logo__img"></a>
+                        </div>
+                        <div class="header-links footer-links">
+                            <a href="index.html" class="header-links__a header-links__a_footer">Главная</a>
+                            <a href="catalog.html" class="header-links__a header-links__a_footer">Каталог</a>
+                            <a href="quarantee.html" class="header-links__a header-links__a_footer">Гарантии</a>
+                            <a href="contacts.html" class="header-links__a header-links__a_footer">Контакты</a>
+                            <a href="reviews.html" class="header-links__a header-links__a_footer">Отзывы</a>
+                        </div>
+                    </div>
+                    <a href='testyourluck.html' class="checkluck__btn checkluck__btn_footer btn"><img src="img/modules/clover-footer.svg" alt="" class="checkluck__btn_img"> Испытай удачу</a>
+                </div>
+            </div>
+        </div>
+        <div class="row header-row_footer footer-row">
+            <div class="container header-container">
+                <div class="row header-row">
+                    <p class="footer__text">Все продаваемые ключи закупаются у официальных дистрибьюторов и издателей. В том числе у 1C-СофтКлаб, Бука, Новый Диск и Enaza.</p>
+                    <p class="footer__copyright">GAMESHOP.RU © 2019</p>
+                </div>
+            </div>
+    </footer>
+    <div class="popup-overlay">
+        <div class="promo-popup">
+            <button onclick="hidePopup()" class="close-popup btn"></button>
+            <p class="promo-popup__title">Подписка на промокоды</p>
+            <form action="" required class="promo-popup__form">
+                <input type="email" placeholder="Введите ваш E-mail" class="promo-popup__form_input">
+                <button class="promo-popup__form_btn btn">Получить промокоды</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        $(".index-reviews-arrows_prev").click(function() {
+            $(this).addClass("index-reviews-arrows_prev_active")
+            $(".index-reviews-arrows_next").removeClass("index-reviews-arrows_next_active")
+        })
+        $(".index-reviews-arrows_next").click(function() {
+            $(this).addClass("index-reviews-arrows_next_active")
+            $(".index-reviews-arrows_prev").removeClass("index-reviews-arrows_prev_active")
+        })
+
+
+        $('.autoplay').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            speed: 500,
+            dots: true,
+            arrows: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            prevArrow: $('.index-arrows_prev'),
+            nextArrow: $('.index-arrows_next'),
+        });
+        $('.single-item').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 500,
+            dots: true,
+            arrows: true,
+            autoplay: false,
+            autoplaySpeed: 1500,
+            dotsClass: 'slider-review-dots',
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        dots: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 425,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 375,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 321,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ],
+            prevArrow: $('.index-reviews-arrows_prev'),
+            nextArrow: $('.index-reviews-arrows_next'),
+
+        });
+    });
+
+    function showPopup() {
+        $(".popup-overlay").addClass("show-popupoverlay")
+    }
+    function hidePopup() {
+        $(".popup-overlay").removeClass("show-popupoverlay")
+    }
+
+    document.querySelector('#main-search').addEventListener('input', function() {
+        if (this.value.length) {
+            $(".dropmenu").addClass("dropmenushow")
+        } else {
+            $(".dropmenu").removeClass("dropmenushow")
+        }
+    });
+
+
+    function showMenu() {
+        $('.hamburger--spin').toggleClass('is-active')
+        $('.overlay').toggleClass('overlayvisible')
+
+    }
+
+    function addOp() {
+        $(".header-search__input").addClass("fixedsearch")
+        $(".header-search").addClass("hoveropacity")
+    }
+
+    document.querySelector('#main-search').addEventListener('blur', function() {
+        if (this.value.length === 0) {
+            $(".header-search").removeClass("hoveropacity")
+            $('.dropmenu').removeClass('dropmenushow')
+            $(".header-search__input").removeClass("fixedsearch")
+        }
+    })
+    </script>
+</body>
+
+</html>
