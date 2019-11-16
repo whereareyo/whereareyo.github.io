@@ -1,0 +1,5603 @@
+@charset "UTF-8";
+@import url(https://cybersor.host/fonts/stylesheet.css);
+
+.container {
+  position: relative;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  max-width: 1390px;
+  margin-left: 230px;
+  margin-right: auto;
+  margin-top: 83px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* Удаление padding у вложенного container */
+  /* Телефон в горизонтальном положение и шире */
+  /* Планшет в горизонтальном положение и шире */
+  /* Модификаторы
+ ========================================================================== */ }
+  .container .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .container-fueld {
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px; }
+  @media (min-width: 900px) {
+    .container {
+      padding-left: 0px;
+      padding-right: 0px; } }
+  @media (min-width: 1139px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0; } }
+  .container_small {
+    max-width: 900px; }
+  .container_large {
+    max-width: 1139px; }
+  .container_expand {
+    max-width: none; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+@media (max-width: 1024px) {
+  .row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .container {
+    overflow: hidden; } }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Градиенты */
+.btn {
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none; }
+
+/* Градиенты */
+/* ========================================================================
+   Компонент: Container
+ ========================================================================== */
+/*
+ * 1. Box-sizing должен быть 'content-box', благодаря этому максимальная ширина всегда одинакова и
+ *    не зависит от padding на разных экранах. Это важно для модификаторов.
+ */
+.container {
+  position: relative;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  max-width: 1390px;
+  margin-left: 230px;
+  margin-right: auto;
+  margin-top: 83px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* Удаление padding у вложенного container */
+  /* Телефон в горизонтальном положение и шире */
+  /* Планшет в горизонтальном положение и шире */
+  /* Модификаторы
+ ========================================================================== */ }
+  .container .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .container-fueld {
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px; }
+  @media (min-width: 900px) {
+    .container {
+      padding-left: 0px;
+      padding-right: 0px; } }
+  @media (min-width: 1139px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0; } }
+  .container_small {
+    max-width: 900px; }
+  .container_large {
+    max-width: 1139px; }
+  .container_expand {
+    max-width: none; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+@media (max-width: 1024px) {
+  .row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .container {
+    overflow: hidden; } }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.first_ava {
+  background-image: url(../img/index/sliderpubg.png); }
+
+.second_ava {
+  background-image: url(../img/index/sliderpubg2.png); }
+
+.third_ava {
+  background-image: url(../img/index/sliderpubg3.png); }
+
+.fouth_ava {
+  background-image: url(../img/index/sliderpubg.png); }
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4; }
+  .header-row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header-section {
+    padding: 9px 10px 9px 27px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: calc(100% - 37px);
+    background-color: #191919; }
+  .header-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 140px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    .header-logo:hover {
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+      .header-logo:hover .header-logo__img {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s; }
+    .header-logo__img {
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+    .header-logo__title {
+      color: #bdbdbd;
+      font-size: 30px;
+      font-weight: 600;
+      padding-left: 25px; }
+  .header-search__input {
+    border-radius: 5px;
+    border: 1px solid #1f1f1f;
+    background-color: #1b1b1b;
+    outline: none;
+    color: #ffffff;
+    padding: 18px 17px 16px 17px;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .header-search__input:focus {
+      border: 1px solid #5f5f5f;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    .header-search__input:hover {
+      border: 1px solid #5f5f5f;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    .header-search__input::-webkit-input-placeholder {
+      color: #4f4f4f; }
+    .header-search__input:-ms-input-placeholder {
+      color: #4f4f4f; }
+    .header-search__input::-ms-input-placeholder {
+      color: #4f4f4f; }
+    .header-search__input::placeholder {
+      color: #4f4f4f; }
+  .header-signin__btn {
+    padding: 22px 112px;
+    background-color: #ff5500;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .header-signin__btn:hover {
+      background-color: #ff5500de;
+      -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+      transform: scale(0.95);
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+
+.leftsidebar {
+  position: fixed;
+  left: 0;
+  background-color: #181818;
+  height: 100%;
+  width: 230px; }
+  .leftsidebar-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .leftsidebar-action__title {
+      padding: 16px 0 16px 25px;
+      width: calc(100% - 25px);
+      color: #4f4f4f;
+      font-size: 12px;
+      font-weight: 400; }
+    .leftsidebar-action__desc {
+      padding: 16px 0 16px 25px;
+      width: calc(100% - 25px);
+      color: #828282;
+      font-size: 15px;
+      font-weight: 600;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+      .leftsidebar-action__desc:hover {
+        color: #fcfcfc; }
+      .leftsidebar-action__desc_active {
+        color: #ff5500;
+        background-color: #1b1b1b;
+        background-image: url(../img/modules/leftsidebar/menu.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left; }
+
+.rightsidebar {
+  position: fixed;
+  right: 0;
+  background-color: #181818;
+  height: 100%;
+  width: 300px; }
+  .rightsidebar-row {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .rightsidebar-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .rightsidebar-action__title {
+      padding: 16px 0 16px 15px;
+      width: calc(100% - 15px);
+      color: #e0e0e0;
+      font-size: 15px;
+      font-weight: 600; }
+    .rightsidebar-action__desc {
+      padding: 0px 0 0px 25px;
+      width: calc(100% - 25px);
+      color: #828282;
+      font-size: 12px;
+      font-weight: 600;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-top: 42px; }
+      .rightsidebar-action__desc:last-child {
+        margin-bottom: 26px; }
+    .rightsidebar-action-top {
+      padding: 0 35px;
+      width: calc(100% - 70px);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-top: 14px; }
+      .rightsidebar-action-top-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 100%;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 15px; }
+        .rightsidebar-action-top-item__number {
+          color: #bdbdbd;
+          font-size: 15px;
+          font-weight: 600;
+          margin-right: 12px;
+          width: 13px; }
+        .rightsidebar-action-top-item_avatar {
+          width: 25px;
+          height: 25px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          margin-right: 7px; }
+        .rightsidebar-action-top-item__teamname {
+          color: #bdbdbd;
+          font-size: 15px;
+          font-weight: 600; }
+        .rightsidebar-action-top-item__percent {
+          font-weight: 600;
+          color: #ff5500;
+          font-size: 10px; }
+
+.slick-slider {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important; }
+
+.prev {
+  position: absolute;
+  left: -30px;
+  cursor: pointer; }
+
+.next {
+  position: absolute;
+  right: -30px;
+  cursor: pointer; }
+
+.draggable {
+  padding: 0 !important; }
+
+.header-menu {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.header-menu .leftsidebar {
+  display: block;
+  height: 100vh; }
+
+.show {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.overlay {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000073;
+  z-index: 1;
+  position: fixed; }
+
+.showoverlay {
+  visibility: visible;
+  opacity: 1; }
+
+.header-signin_adaptive {
+  display: none; }
+
+.dropmenu_sort {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  top: 44px;
+  left: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .dropmenu_sort .sort-list {
+    background-color: #1b1b1b;
+    border: 1px solid #1f1f1f; }
+    .dropmenu_sort .sort-list-item {
+      width: calc(226px - 26px);
+      padding: 16px 14px 16px 10px;
+      width: 100%;
+      color: #e0e0e0;
+      font-size: 12px;
+      font-weight: 400;
+      border-bottom: 1px solid #1f1f1f; }
+      .dropmenu_sort .sort-list-item:last-child {
+        border-bottom: none; }
+
+.dropmenu__faq {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 64px;
+  width: 100%; }
+
+.dropmenu__teams {
+  position: absolute;
+  left: 18px;
+  top: 100px;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0; }
+
+::-webkit-scrollbar-button {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 0px; }
+
+::-webkit-scrollbar-track {
+  background-color: #202020; }
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgba(79, 79, 79, 0.5);
+  background-image: url("https://yraaa.ru/_pu/24/59610063.png");
+  background-position: center;
+  background-repeat: no-repeat; }
+
+::-webkit-resizer {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 5px;
+  height: 0px; }
+
+::-webkit-scrollbar {
+  width: 5px; }
+
+.fwwn {
+  -ms-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important; }
+
+.resizer {
+  width: 100%; }
+
+.tours-overview-row_small::-webkit-scrollbar {
+  height: 5px; }
+
+.games-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 6px; }
+
+.games-circle.csgo {
+  background-image: url(../img/index/csgo.svg); }
+
+.games-circle.lol {
+  background-image: url(../img/index/lol.svg); }
+
+.games-circle.dota {
+  background-image: url(../img/index/dota.svg); }
+
+.games-circle.pubg {
+  background-image: url(../img/index/pubg.svg); }
+
+.showfaq {
+  visibility: visible;
+  opacity: 1; }
+
+.showteams {
+  visibility: visible;
+  opacity: 1; }
+
+.tours-overview-places-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+/* ========================================================================
+   Компонент: Container
+ ========================================================================== */
+/*
+ * 1. Box-sizing должен быть 'content-box', благодаря этому максимальная ширина всегда одинакова и
+ *    не зависит от padding на разных экранах. Это важно для модификаторов.
+ */
+.container {
+  position: relative;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  max-width: 1390px;
+  margin-left: 230px;
+  margin-right: auto;
+  margin-top: 83px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* Удаление padding у вложенного container */
+  /* Телефон в горизонтальном положение и шире */
+  /* Планшет в горизонтальном положение и шире */
+  /* Модификаторы
+ ========================================================================== */ }
+  .container .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .container-fueld {
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px; }
+  @media (min-width: 900px) {
+    .container {
+      padding-left: 0px;
+      padding-right: 0px; } }
+  @media (min-width: 1139px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0; } }
+  .container_small {
+    max-width: 900px; }
+  .container_large {
+    max-width: 1139px; }
+  .container_expand {
+    max-width: none; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+@media (max-width: 1024px) {
+  .row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .container {
+    overflow: hidden; } }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Градиенты */
+.games {
+  width: calc(100% - 157px);
+  background-image: url(../img/csgo/bg.png);
+  background-color: #1f1f1f;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 45px 82px 45px 75px;
+  min-height: 100vh;
+  position: relative; }
+  .games:hover ::-webkit-scrollbar-thumb {
+    background-color: #828282; }
+  .games-review {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 100%; }
+    .games-review-gameimage {
+      width: 253px;
+      height: 233px;
+      margin-right: 22px; }
+      .games-review-gameimage__img {
+        width: 100%;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s; }
+        .games-review-gameimage__img:hover {
+          -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          transform: scale(1.05); }
+    .games-review-text {
+      margin-bottom: 34px; }
+      .games-review-text__title {
+        color: #e0e0e0;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 34px; }
+      .games-review-text__desc {
+        color: #828282;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 25.41px; }
+    .games-review-action {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+      .games-review-action__signup {
+        padding: 12px 65px;
+        border-radius: 5px;
+        background-color: #333333 !important;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 26.41px;
+        text-transform: uppercase;
+        margin-right: 22px;
+        -webkit-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s; }
+        .games-review-action__signup:hover {
+          -webkit-filter: brightness(120%);
+          filter: brightness(120%); }
+      .games-review-action__a {
+        color: #bdbdbd;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 26.41px;
+        margin-right: 40px; }
+        .games-review-action__a:last-child {
+          margin-right: 0; }
+        .games-review-action__a_active {
+          color: #ff5500;
+          position: relative; }
+          .games-review-action__a_active_img {
+            position: absolute;
+            bottom: -12px;
+            left: -35%; }
+  .games-tours {
+    padding: 40px 0 45px 0;
+    width: 100%; }
+    .games-tours__title {
+      color: #e0e0e0;
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 45px; }
+    .games-tours-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      width: 100%;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .games-tours-content-filter {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start; }
+        .games-tours-content-filter__title {
+          color: #e0e0e0;
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 30px; }
+        .games-tours-content-filter__input {
+          width: 226px;
+          border-radius: 5px;
+          border: 1px solid #1f1f1f;
+          background-color: #1b1b1b;
+          outline: none;
+          color: #e0e0e0;
+          font-size: 12px;
+          font-weight: 400;
+          padding: 19px 10px 14px 10px;
+          margin-bottom: 5px; }
+          .games-tours-content-filter__input::-webkit-input-placeholder {
+            color: #e0e0e0; }
+          .games-tours-content-filter__input:-ms-input-placeholder {
+            color: #e0e0e0; }
+          .games-tours-content-filter__input::-ms-input-placeholder {
+            color: #e0e0e0; }
+          .games-tours-content-filter__input::placeholder {
+            color: #e0e0e0; }
+        .games-tours-content-filter__sort {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          width: calc(226px - 26px);
+          border-radius: 5px;
+          border: 1px solid #1f1f1f;
+          background-color: #1b1b1b;
+          outline: none;
+          color: #e0e0e0;
+          font-size: 12px;
+          font-weight: 400;
+          padding: 16px 14px 16px 10px;
+          margin-bottom: 5px;
+          position: relative;
+          cursor: pointer;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+          .games-tours-content-filter__sort:hover {
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s; }
+            .games-tours-content-filter__sort:hover .dropmenu_sort {
+              visibility: visible;
+              opacity: 1;
+              -webkit-transition: 0.3s;
+              -o-transition: 0.3s;
+              transition: 0.3s; }
+            .games-tours-content-filter__sort:hover .sortbtn {
+              -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+              -webkit-transition: 0.3s;
+              -o-transition: 0.3s;
+              transition: 0.3s; }
+          .games-tours-content-filter__sort .sortbtn {
+            padding: 0;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s; }
+        .games-tours-content-filter__btn {
+          border-radius: 5px;
+          background-color: #1b1b1b;
+          padding: 18px 77px 17px 77px;
+          color: #e0e0e0;
+          font-size: 12px;
+          font-weight: 600;
+          white-space: nowrap;
+          -webkit-transition: all .3s;
+          -o-transition: all .3s;
+          transition: all .3s; }
+          .games-tours-content-filter__btn:hover {
+            background-color: #272727; }
+      .games-tours-content-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        width: 100%;
+        margin-left: 30px; }
+        .games-tours-content-list__title {
+          color: #e0e0e0;
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 15px; }
+        .games-tours-content-list-item {
+          border-radius: 5px;
+          background-color: #1e1e1e;
+          padding: 0 22px 0 0;
+          width: calc(100% - 22px);
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          overflow: hidden;
+          margin-bottom: 8px;
+          -webkit-transition: all .1s;
+          -o-transition: all .1s;
+          transition: all .1s; }
+          .games-tours-content-list-item:hover {
+            background: -webkit-radial-gradient(center, ellipse, rgba(72, 72, 72, 0.2), rgba(59, 59, 59, 0.2));
+            background: -o-radial-gradient(center, ellipse, rgba(72, 72, 72, 0.2), rgba(59, 59, 59, 0.2));
+            background: radial-gradient(ellipse at center, rgba(72, 72, 72, 0.2), rgba(59, 59, 59, 0.2)); }
+          .games-tours-content-list-item:last-child {
+            margin-bottom: 0; }
+          .games-tours-content-list-item-text {
+            padding: 20px 0;
+            margin-left: 14px; }
+            .games-tours-content-list-item-text__tourname {
+              color: #bdbdbd;
+              font-size: 15px;
+              font-weight: 600;
+              margin-bottom: 15px; }
+            .games-tours-content-list-item-text__prizepool {
+              color: #828282;
+              font-size: 10px;
+              font-weight: 400;
+              margin-bottom: 15px; }
+              .games-tours-content-list-item-text__prizepool span {
+                font-weight: 600; }
+            .games-tours-content-list-item-text__date {
+              color: #4f4f4f;
+              font-size: 10px;
+              font-weight: 300; }
+          .games-tours-content-list-item__a {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            color: #4f4f4f;
+            font-size: 12px;
+            font-weight: 600; }
+        .games-tours-content-list__btn {
+          color: #e0e0e0;
+          font-size: 15px;
+          font-weight: 600;
+          text-transform: uppercase;
+          margin: 26px auto 0 auto;
+          -webkit-transition: all .2s;
+          -o-transition: all .2s;
+          transition: all .2s; }
+          .games-tours-content-list__btn:hover {
+            opacity: .5; }
+  .games-ranking {
+    padding: 40px 0 45px 0;
+    width: 100%; }
+    .games-ranking table {
+      width: 100%;
+      border-collapse: collapse; }
+      .games-ranking table thead tr {
+        padding: 0 0 20px 0; }
+        .games-ranking table thead tr th {
+          color: #f2f2f2;
+          font-family: "Proxima Nova";
+          font-size: 15px;
+          font-weight: 600;
+          text-transform: uppercase; }
+      .games-ranking table tbody tr {
+        border-radius: 5px;
+        background-color: #1e1e1e;
+        -webkit-transition: all .1s;
+        -o-transition: all .1s;
+        transition: all .1s; }
+        .games-ranking table tbody tr:hover td {
+          color: #bdbdbd;
+          opacity: 1 !important;
+          -webkit-transition: all .1s;
+          -o-transition: all .1s;
+          transition: all .1s; }
+        .games-ranking table tbody tr td {
+          color: #bdbdbd7d;
+          font-family: "Proxima Nova";
+          font-size: 15px;
+          font-weight: 400;
+          text-align: center;
+          padding: 15px 0;
+          vertical-align: middle; }
+          .games-ranking table tbody tr td .userblock {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center; }
+            .games-ranking table tbody tr td .userblock-ava {
+              width: 30px;
+              height: 30px;
+              background-color: #ff5500;
+              border-radius: 50%;
+              background-size: cover;
+              background-position: center center;
+              background-repeat: no-repeat;
+              margin-right: 8px; }
+            .games-ranking table tbody tr td .userblock__username {
+              color: #bdbdbd;
+              font-size: 15px;
+              font-weight: 600; }
+
+/* ========================================================================
+   Компонент: Container
+ ========================================================================== */
+/*
+ * 1. Box-sizing должен быть 'content-box', благодаря этому максимальная ширина всегда одинакова и
+ *    не зависит от padding на разных экранах. Это важно для модификаторов.
+ */
+.container {
+  position: relative;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  max-width: 1390px;
+  margin-left: 230px;
+  margin-right: auto;
+  margin-top: 83px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* Удаление padding у вложенного container */
+  /* Телефон в горизонтальном положение и шире */
+  /* Планшет в горизонтальном положение и шире */
+  /* Модификаторы
+ ========================================================================== */ }
+  .container .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .container-fueld {
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px; }
+  @media (min-width: 900px) {
+    .container {
+      padding-left: 0px;
+      padding-right: 0px; } }
+  @media (min-width: 1139px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0; } }
+  .container_small {
+    max-width: 900px; }
+  .container_large {
+    max-width: 1139px; }
+  .container_expand {
+    max-width: none; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+@media (max-width: 1024px) {
+  .row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .container {
+    overflow: hidden; } }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Градиенты */
+/* ========================================================================
+   Компонент: Container
+ ========================================================================== */
+/*
+ * 1. Box-sizing должен быть 'content-box', благодаря этому максимальная ширина всегда одинакова и
+ *    не зависит от padding на разных экранах. Это важно для модификаторов.
+ */
+.container {
+  position: relative;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  max-width: 1390px;
+  margin-left: 230px;
+  margin-right: auto;
+  margin-top: 83px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* Удаление padding у вложенного container */
+  /* Телефон в горизонтальном положение и шире */
+  /* Планшет в горизонтальном положение и шире */
+  /* Модификаторы
+ ========================================================================== */ }
+  .container .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .container-fueld {
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px; }
+  @media (min-width: 900px) {
+    .container {
+      padding-left: 0px;
+      padding-right: 0px; } }
+  @media (min-width: 1139px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0; } }
+  .container_small {
+    max-width: 900px; }
+  .container_large {
+    max-width: 1139px; }
+  .container_expand {
+    max-width: none; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+@media (max-width: 1024px) {
+  .row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .container {
+    overflow: hidden; } }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.first_ava {
+  background-image: url(../img/index/sliderpubg.png); }
+
+.second_ava {
+  background-image: url(../img/index/sliderpubg2.png); }
+
+.third_ava {
+  background-image: url(../img/index/sliderpubg3.png); }
+
+.fouth_ava {
+  background-image: url(../img/index/sliderpubg.png); }
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4; }
+  .header-row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header-section {
+    padding: 9px 10px 9px 27px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: calc(100% - 37px);
+    background-color: #191919; }
+  .header-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 140px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    .header-logo:hover {
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+      .header-logo:hover .header-logo__img {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s; }
+    .header-logo__img {
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+    .header-logo__title {
+      color: #bdbdbd;
+      font-size: 30px;
+      font-weight: 600;
+      padding-left: 25px; }
+  .header-search__input {
+    border-radius: 5px;
+    border: 1px solid #1f1f1f;
+    background-color: #1b1b1b;
+    outline: none;
+    color: #ffffff;
+    padding: 18px 17px 16px 17px;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .header-search__input:focus {
+      border: 1px solid #5f5f5f;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    .header-search__input:hover {
+      border: 1px solid #5f5f5f;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    .header-search__input::-webkit-input-placeholder {
+      color: #4f4f4f; }
+    .header-search__input:-ms-input-placeholder {
+      color: #4f4f4f; }
+    .header-search__input::-ms-input-placeholder {
+      color: #4f4f4f; }
+    .header-search__input::placeholder {
+      color: #4f4f4f; }
+  .header-signin__btn {
+    padding: 22px 112px;
+    background-color: #ff5500;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .header-signin__btn:hover {
+      background-color: #ff5500de;
+      -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+      transform: scale(0.95);
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+
+.leftsidebar {
+  position: fixed;
+  left: 0;
+  background-color: #181818;
+  height: 100%;
+  width: 230px; }
+  .leftsidebar-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .leftsidebar-action__title {
+      padding: 16px 0 16px 25px;
+      width: calc(100% - 25px);
+      color: #4f4f4f;
+      font-size: 12px;
+      font-weight: 400; }
+    .leftsidebar-action__desc {
+      padding: 16px 0 16px 25px;
+      width: calc(100% - 25px);
+      color: #828282;
+      font-size: 15px;
+      font-weight: 600;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+      .leftsidebar-action__desc:hover {
+        color: #fcfcfc; }
+      .leftsidebar-action__desc_active {
+        color: #ff5500;
+        background-color: #1b1b1b;
+        background-image: url(../img/modules/leftsidebar/menu.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left; }
+
+.rightsidebar {
+  position: fixed;
+  right: 0;
+  background-color: #181818;
+  height: 100%;
+  width: 300px; }
+  .rightsidebar-row {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .rightsidebar-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .rightsidebar-action__title {
+      padding: 16px 0 16px 15px;
+      width: calc(100% - 15px);
+      color: #e0e0e0;
+      font-size: 15px;
+      font-weight: 600; }
+    .rightsidebar-action__desc {
+      padding: 0px 0 0px 25px;
+      width: calc(100% - 25px);
+      color: #828282;
+      font-size: 12px;
+      font-weight: 600;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-top: 42px; }
+      .rightsidebar-action__desc:last-child {
+        margin-bottom: 26px; }
+    .rightsidebar-action-top {
+      padding: 0 35px;
+      width: calc(100% - 70px);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-top: 14px; }
+      .rightsidebar-action-top-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 100%;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 15px; }
+        .rightsidebar-action-top-item__number {
+          color: #bdbdbd;
+          font-size: 15px;
+          font-weight: 600;
+          margin-right: 12px;
+          width: 13px; }
+        .rightsidebar-action-top-item_avatar {
+          width: 25px;
+          height: 25px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          margin-right: 7px; }
+        .rightsidebar-action-top-item__teamname {
+          color: #bdbdbd;
+          font-size: 15px;
+          font-weight: 600; }
+        .rightsidebar-action-top-item__percent {
+          font-weight: 600;
+          color: #ff5500;
+          font-size: 10px; }
+
+.slick-slider {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important; }
+
+.prev {
+  position: absolute;
+  left: -30px;
+  cursor: pointer; }
+
+.next {
+  position: absolute;
+  right: -30px;
+  cursor: pointer; }
+
+.draggable {
+  padding: 0 !important; }
+
+.header-menu {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.header-menu .leftsidebar {
+  display: block;
+  height: 100vh; }
+
+.show {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.overlay {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000073;
+  z-index: 1;
+  position: fixed; }
+
+.showoverlay {
+  visibility: visible;
+  opacity: 1; }
+
+.header-signin_adaptive {
+  display: none; }
+
+.dropmenu_sort {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  top: 44px;
+  left: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .dropmenu_sort .sort-list {
+    background-color: #1b1b1b;
+    border: 1px solid #1f1f1f; }
+    .dropmenu_sort .sort-list-item {
+      width: calc(226px - 26px);
+      padding: 16px 14px 16px 10px;
+      width: 100%;
+      color: #e0e0e0;
+      font-size: 12px;
+      font-weight: 400;
+      border-bottom: 1px solid #1f1f1f; }
+      .dropmenu_sort .sort-list-item:last-child {
+        border-bottom: none; }
+
+.dropmenu__faq {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 64px;
+  width: 100%; }
+
+.dropmenu__teams {
+  position: absolute;
+  left: 18px;
+  top: 100px;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0; }
+
+::-webkit-scrollbar-button {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 0px; }
+
+::-webkit-scrollbar-track {
+  background-color: #202020; }
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgba(79, 79, 79, 0.5);
+  background-image: url("https://yraaa.ru/_pu/24/59610063.png");
+  background-position: center;
+  background-repeat: no-repeat; }
+
+::-webkit-resizer {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 5px;
+  height: 0px; }
+
+::-webkit-scrollbar {
+  width: 5px; }
+
+.fwwn {
+  -ms-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important; }
+
+.resizer {
+  width: 100%; }
+
+.tours-overview-row_small::-webkit-scrollbar {
+  height: 5px; }
+
+.games-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 6px; }
+
+.games-circle.csgo {
+  background-image: url(../img/index/csgo.svg); }
+
+.games-circle.lol {
+  background-image: url(../img/index/lol.svg); }
+
+.games-circle.dota {
+  background-image: url(../img/index/dota.svg); }
+
+.games-circle.pubg {
+  background-image: url(../img/index/pubg.svg); }
+
+.showfaq {
+  visibility: visible;
+  opacity: 1; }
+
+.showteams {
+  visibility: visible;
+  opacity: 1; }
+
+.tours-overview-places-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+/* Градиенты */
+.profile {
+  padding: 34px 77px;
+  background-color: #1f1f1f;
+  width: calc(100% - 154px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 786px; }
+  .profile-user {
+    border-radius: 5px;
+    background-color: #1b1b1b;
+    padding: 25px 354px 25px 25px;
+    width: calc(100% - 379px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative; }
+    .profile-user__online {
+      position: absolute;
+      top: 40px;
+      right: 20px;
+      color: #828282;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 26.41px; }
+    .profile-user-ava {
+      width: 236px;
+      height: 236px;
+      background-color: transparent;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid #1f1f1f;
+      margin-right: 45px;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      position: relative;
+      cursor: pointer; }
+      .profile-user-ava:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: #00000025;
+        opacity: 0;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s; }
+      .profile-user-ava:hover:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: #00000025;
+        opacity: 1; }
+      .profile-user-ava img {
+        width: 100%; }
+    .profile-user-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 64%; }
+      .profile-user-info-username {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 55px; }
+        .profile-user-info-username__nickname {
+          color: #e0e0e0;
+          font-size: 25px;
+          font-weight: 600;
+          margin-right: 10px;
+          -webkit-transition: all .3s;
+          -o-transition: all .3s;
+          transition: all .3s; }
+          .profile-user-info-username__nickname:hover {
+            opacity: .6; }
+        .profile-user-info-username__clantag {
+          font-weight: 400;
+          color: #828282;
+          font-size: 25px; }
+      .profile-user-info-stats {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 100%;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .profile-user-info-stats__desc {
+          color: #828282;
+          font-size: 15px;
+          font-weight: 400; }
+        .profile-user-info-stats__number {
+          color: #ff5500;
+          font-size: 15px;
+          font-weight: 600; }
+        .profile-user-info-stats__title {
+          color: #bdbdbd;
+          font-size: 20px;
+          font-weight: 600; }
+  .profile-menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 15px; }
+  .profile-overview {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .profile-overview-about {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      padding: 7px 24px 25px 13px;
+      border-radius: 5px;
+      background-color: #1e1e1e; }
+      .profile-overview-about__maintitle {
+        color: #bdbdbd;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 39.61px; }
+      .profile-overview-about__title {
+        color: #bdbdbd;
+        font-family: "Proxima Nova";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 33.01px; }
+      .profile-overview-about__subtitle {
+        color: #828282;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 19.93px; }
+        .profile-overview-about__subtitle img {
+          margin-left: 6px; }
+      .profile-overview-about__link {
+        margin-right: 10px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s; }
+        .profile-overview-about__link:hover {
+          -webkit-filter: brightness(140%);
+          filter: brightness(140%); }
+        .profile-overview-about__link:last-child {
+          margin-right: 0; }
+    .profile-overview-friends {
+      padding: 6px 15px 25px 13px;
+      border-radius: 5px;
+      background-color: #1e1e1e;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      max-width: 261px;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+      .profile-overview-friends__maintitle {
+        color: #bdbdbd;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 39.61px; }
+      .profile-overview-friends__mainsubtitle {
+        color: #828282;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 22.01px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s; }
+        .profile-overview-friends__mainsubtitle:hover {
+          opacity: .6; }
+      .profile-overview-friends .wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%; }
+      .profile-overview-friends-ava {
+        width: 54px;
+        height: 54px;
+        background-color: transparent;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 15px;
+        margin-top: 15px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        cursor: pointer;
+        position: relative; }
+        .profile-overview-friends-ava:after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-color: #00000025;
+          opacity: 0;
+          -webkit-transition: all .3s;
+          -o-transition: all .3s;
+          transition: all .3s; }
+        .profile-overview-friends-ava:hover:after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-color: #00000025;
+          opacity: 1; }
+        .profile-overview-friends-ava:nth-child(4) {
+          margin-right: 0; }
+        .profile-overview-friends-ava:nth-child(8) {
+          margin-right: 0; }
+        .profile-overview-friends-ava img {
+          width: 100%; }
+    .profile-overview-followed {
+      border-radius: 5px;
+      background-color: #1e1e1e;
+      padding: 6px 6px 16px 13px; }
+      .profile-overview-followed__maintitle {
+        color: #bdbdbd;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 39.61px; }
+      .profile-overview-followed__mainsubtitle {
+        color: #828282;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 22.01px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        cursor: pointer; }
+        .profile-overview-followed__mainsubtitle:hover {
+          opacity: .6; }
+      .profile-overview-followed-target {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .profile-overview-followed-target-ava {
+          width: 54px;
+          height: 54px;
+          background-color: transparent;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-right: 9px;
+          -webkit-transition: all .3s;
+          -o-transition: all .3s;
+          transition: all .3s;
+          cursor: pointer;
+          position: relative; }
+          .profile-overview-followed-target-ava:after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: #00000025;
+            opacity: 0;
+            -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s; }
+          .profile-overview-followed-target-ava:hover:after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: #00000025;
+            opacity: 1; }
+          .profile-overview-followed-target-ava img {
+            width: 100%; }
+        .profile-overview-followed-target__targetname {
+          color: #bdbdbd;
+          font-size: 10px;
+          font-weight: 600;
+          margin-bottom: 10px;
+          -webkit-transition: all .3s;
+          -o-transition: all .3s;
+          transition: all .3s;
+          cursor: pointer; }
+          .profile-overview-followed-target__targetname:hover {
+            opacity: .6; }
+        .profile-overview-followed-target__followers {
+          color: #828282;
+          font-size: 8px;
+          font-weight: 400; }
+      .profile-overview-followed__btn {
+        border-radius: 5px;
+        background-color: #ff5500 !important;
+        padding: 11px 28px;
+        color: #ffffff;
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s; }
+        .profile-overview-followed__btn:hover {
+          background-color: rgba(255, 85, 0, 0.72) !important; }
+    .profile-overview-activities {
+      padding: 33px 22px 66px 13px;
+      margin-left: 15px;
+      border-radius: 5px;
+      background-color: #1e1e1e;
+      width: calc(100% - 35px); }
+      .profile-overview-activities__title {
+        color: #bdbdbd;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 39.61px;
+        margin-left: 15px;
+        margin-bottom: 5px; }
+      .profile-overview-activities-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 15px; }
+        .profile-overview-activities-item:last-child {
+          margin-bottom: 0; }
+        .profile-overview-activities-item-stroke {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 11px; }
+          .profile-overview-activities-item-stroke-ava {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 12px;
+            -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+            position: relative;
+            cursor: pointer; }
+            .profile-overview-activities-item-stroke-ava:after {
+              position: absolute;
+              content: '';
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0;
+              background-color: #00000025;
+              opacity: 0;
+              -webkit-transition: all .3s;
+              -o-transition: all .3s;
+              transition: all .3s; }
+            .profile-overview-activities-item-stroke-ava:hover:after {
+              position: absolute;
+              content: '';
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0;
+              background-color: #00000025;
+              opacity: 1; }
+            .profile-overview-activities-item-stroke-ava img {
+              width: 100%; }
+          .profile-overview-activities-item-stroke__text {
+            color: #828282;
+            font-size: 12px;
+            font-weight: 600; }
+            .profile-overview-activities-item-stroke__text a {
+              color: #e0e0e0;
+              -webkit-transition: all .3s;
+              -o-transition: all .3s;
+              transition: all .3s; }
+              .profile-overview-activities-item-stroke__text a:hover {
+                opacity: .5; }
+          .profile-overview-activities-item-stroke__date {
+            color: #828282;
+            font-size: 10px;
+            font-weight: 300; }
+        .profile-overview-activities-item-box {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          width: calc(100% - 47px);
+          background-color: #1b1b1b;
+          height: 100%;
+          padding-right: 47px; }
+          .profile-overview-activities-item-box-image {
+            width: 121px;
+            height: 78px;
+            margin-right: 20px;
+            -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+            position: relative;
+            cursor: pointer; }
+            .profile-overview-activities-item-box-image:after {
+              position: absolute;
+              content: '';
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0;
+              background-color: #00000025;
+              opacity: 0;
+              -webkit-transition: all .3s;
+              -o-transition: all .3s;
+              transition: all .3s; }
+            .profile-overview-activities-item-box-image:hover:after {
+              position: absolute;
+              content: '';
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0;
+              background-color: #00000045;
+              opacity: 1; }
+            .profile-overview-activities-item-box-image img {
+              width: 100%; }
+          .profile-overview-activities-item-box__subtitle {
+            color: #4f4f4f;
+            font-size: 10px;
+            font-weight: 400;
+            margin-bottom: 8px; }
+          .profile-overview-activities-item-box__matchinfo {
+            color: #828282;
+            font-size: 12px;
+            font-weight: 600; }
+          .profile-overview-activities-item-box__title {
+            color: #ff5500;
+            font-size: 12px;
+            font-weight: 400; }
+  .profile-tours {
+    margin-top: 23px;
+    padding-bottom: 50px; }
+    .profile-tours__title {
+      color: #e0e0e0;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 44.01px;
+      margin-bottom: 22px; }
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+/* ========================================================================
+   Компонент: Container
+ ========================================================================== */
+/*
+ * 1. Box-sizing должен быть 'content-box', благодаря этому максимальная ширина всегда одинакова и
+ *    не зависит от padding на разных экранах. Это важно для модификаторов.
+ */
+.container {
+  position: relative;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  max-width: 1390px;
+  margin-left: 230px;
+  margin-right: auto;
+  margin-top: 83px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* Удаление padding у вложенного container */
+  /* Телефон в горизонтальном положение и шире */
+  /* Планшет в горизонтальном положение и шире */
+  /* Модификаторы
+ ========================================================================== */ }
+  .container .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .container-fueld {
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px; }
+  @media (min-width: 900px) {
+    .container {
+      padding-left: 0px;
+      padding-right: 0px; } }
+  @media (min-width: 1139px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0; } }
+  .container_small {
+    max-width: 900px; }
+  .container_large {
+    max-width: 1139px; }
+  .container_expand {
+    max-width: none; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+@media (max-width: 1024px) {
+  .row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .container {
+    overflow: hidden; } }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Градиенты */
+/* ========================================================================
+   Компонент: Container
+ ========================================================================== */
+/*
+ * 1. Box-sizing должен быть 'content-box', благодаря этому максимальная ширина всегда одинакова и
+ *    не зависит от padding на разных экранах. Это важно для модификаторов.
+ */
+.container {
+  position: relative;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  max-width: 1390px;
+  margin-left: 230px;
+  margin-right: auto;
+  margin-top: 83px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* Удаление padding у вложенного container */
+  /* Телефон в горизонтальном положение и шире */
+  /* Планшет в горизонтальном положение и шире */
+  /* Модификаторы
+ ========================================================================== */ }
+  .container .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .container-fueld {
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px; }
+  @media (min-width: 900px) {
+    .container {
+      padding-left: 0px;
+      padding-right: 0px; } }
+  @media (min-width: 1139px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0; } }
+  .container_small {
+    max-width: 900px; }
+  .container_large {
+    max-width: 1139px; }
+  .container_expand {
+    max-width: none; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+@media (max-width: 1024px) {
+  .row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .container {
+    overflow: hidden; } }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.first_ava {
+  background-image: url(../img/index/sliderpubg.png); }
+
+.second_ava {
+  background-image: url(../img/index/sliderpubg2.png); }
+
+.third_ava {
+  background-image: url(../img/index/sliderpubg3.png); }
+
+.fouth_ava {
+  background-image: url(../img/index/sliderpubg.png); }
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4; }
+  .header-row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header-section {
+    padding: 9px 10px 9px 27px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: calc(100% - 37px);
+    background-color: #191919; }
+  .header-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 140px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    .header-logo:hover {
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+      .header-logo:hover .header-logo__img {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s; }
+    .header-logo__img {
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+    .header-logo__title {
+      color: #bdbdbd;
+      font-size: 30px;
+      font-weight: 600;
+      padding-left: 25px; }
+  .header-search__input {
+    border-radius: 5px;
+    border: 1px solid #1f1f1f;
+    background-color: #1b1b1b;
+    outline: none;
+    color: #ffffff;
+    padding: 18px 17px 16px 17px;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .header-search__input:focus {
+      border: 1px solid #5f5f5f;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    .header-search__input:hover {
+      border: 1px solid #5f5f5f;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    .header-search__input::-webkit-input-placeholder {
+      color: #4f4f4f; }
+    .header-search__input:-ms-input-placeholder {
+      color: #4f4f4f; }
+    .header-search__input::-ms-input-placeholder {
+      color: #4f4f4f; }
+    .header-search__input::placeholder {
+      color: #4f4f4f; }
+  .header-signin__btn {
+    padding: 22px 112px;
+    background-color: #ff5500;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .header-signin__btn:hover {
+      background-color: #ff5500de;
+      -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+      transform: scale(0.95);
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+
+.leftsidebar {
+  position: fixed;
+  left: 0;
+  background-color: #181818;
+  height: 100%;
+  width: 230px; }
+  .leftsidebar-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .leftsidebar-action__title {
+      padding: 16px 0 16px 25px;
+      width: calc(100% - 25px);
+      color: #4f4f4f;
+      font-size: 12px;
+      font-weight: 400; }
+    .leftsidebar-action__desc {
+      padding: 16px 0 16px 25px;
+      width: calc(100% - 25px);
+      color: #828282;
+      font-size: 15px;
+      font-weight: 600;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+      .leftsidebar-action__desc:hover {
+        color: #fcfcfc; }
+      .leftsidebar-action__desc_active {
+        color: #ff5500;
+        background-color: #1b1b1b;
+        background-image: url(../img/modules/leftsidebar/menu.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left; }
+
+.rightsidebar {
+  position: fixed;
+  right: 0;
+  background-color: #181818;
+  height: 100%;
+  width: 300px; }
+  .rightsidebar-row {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .rightsidebar-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .rightsidebar-action__title {
+      padding: 16px 0 16px 15px;
+      width: calc(100% - 15px);
+      color: #e0e0e0;
+      font-size: 15px;
+      font-weight: 600; }
+    .rightsidebar-action__desc {
+      padding: 0px 0 0px 25px;
+      width: calc(100% - 25px);
+      color: #828282;
+      font-size: 12px;
+      font-weight: 600;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-top: 42px; }
+      .rightsidebar-action__desc:last-child {
+        margin-bottom: 26px; }
+    .rightsidebar-action-top {
+      padding: 0 35px;
+      width: calc(100% - 70px);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-top: 14px; }
+      .rightsidebar-action-top-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 100%;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 15px; }
+        .rightsidebar-action-top-item__number {
+          color: #bdbdbd;
+          font-size: 15px;
+          font-weight: 600;
+          margin-right: 12px;
+          width: 13px; }
+        .rightsidebar-action-top-item_avatar {
+          width: 25px;
+          height: 25px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          margin-right: 7px; }
+        .rightsidebar-action-top-item__teamname {
+          color: #bdbdbd;
+          font-size: 15px;
+          font-weight: 600; }
+        .rightsidebar-action-top-item__percent {
+          font-weight: 600;
+          color: #ff5500;
+          font-size: 10px; }
+
+.slick-slider {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important; }
+
+.prev {
+  position: absolute;
+  left: -30px;
+  cursor: pointer; }
+
+.next {
+  position: absolute;
+  right: -30px;
+  cursor: pointer; }
+
+.draggable {
+  padding: 0 !important; }
+
+.header-menu {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.header-menu .leftsidebar {
+  display: block;
+  height: 100vh; }
+
+.show {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.overlay {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000073;
+  z-index: 1;
+  position: fixed; }
+
+.showoverlay {
+  visibility: visible;
+  opacity: 1; }
+
+.header-signin_adaptive {
+  display: none; }
+
+.dropmenu_sort {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  top: 44px;
+  left: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .dropmenu_sort .sort-list {
+    background-color: #1b1b1b;
+    border: 1px solid #1f1f1f; }
+    .dropmenu_sort .sort-list-item {
+      width: calc(226px - 26px);
+      padding: 16px 14px 16px 10px;
+      width: 100%;
+      color: #e0e0e0;
+      font-size: 12px;
+      font-weight: 400;
+      border-bottom: 1px solid #1f1f1f; }
+      .dropmenu_sort .sort-list-item:last-child {
+        border-bottom: none; }
+
+.dropmenu__faq {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 64px;
+  width: 100%; }
+
+.dropmenu__teams {
+  position: absolute;
+  left: 18px;
+  top: 100px;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0; }
+
+::-webkit-scrollbar-button {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 0px; }
+
+::-webkit-scrollbar-track {
+  background-color: #202020; }
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgba(79, 79, 79, 0.5);
+  background-image: url("https://yraaa.ru/_pu/24/59610063.png");
+  background-position: center;
+  background-repeat: no-repeat; }
+
+::-webkit-resizer {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 5px;
+  height: 0px; }
+
+::-webkit-scrollbar {
+  width: 5px; }
+
+.fwwn {
+  -ms-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important; }
+
+.resizer {
+  width: 100%; }
+
+.tours-overview-row_small::-webkit-scrollbar {
+  height: 5px; }
+
+.games-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 6px; }
+
+.games-circle.csgo {
+  background-image: url(../img/index/csgo.svg); }
+
+.games-circle.lol {
+  background-image: url(../img/index/lol.svg); }
+
+.games-circle.dota {
+  background-image: url(../img/index/dota.svg); }
+
+.games-circle.pubg {
+  background-image: url(../img/index/pubg.svg); }
+
+.showfaq {
+  visibility: visible;
+  opacity: 1; }
+
+.showteams {
+  visibility: visible;
+  opacity: 1; }
+
+.tours-overview-places-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+/* Градиенты */
+.tours {
+  padding: 40px 73px 55px 81px;
+  width: calc(100% - 154px);
+  background-color: #1f1f1f;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 764px; }
+  .tours-hover-line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0; }
+  .tours-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%; }
+    .tours-menu-poster {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%;
+      padding: 60px 0;
+      background-image: url(../img/tournaments/challengermode/poster.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      z-index: 1; }
+      .tours-menu-poster:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background-color: rgba(27, 27, 27, 0.8);
+        z-index: -1; }
+      .tours-menu-poster__tour {
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 25px; }
+      .tours-menu-poster__title {
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 25px; }
+      .tours-menu-poster__date {
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 600; }
+    .tours-menu-bar {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 100%;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      margin-top: 50px; }
+      .tours-menu-bar__link {
+        color: #bdbdbd;
+        font-size: 12px;
+        font-weight: 600;
+        position: relative;
+        padding: 0 14px 20px 14px;
+        margin-right: 10px; }
+        .tours-menu-bar__link:last-child {
+          margin-right: 0; }
+        .tours-menu-bar__link_active {
+          color: #ff5500; }
+      .tours-menu-bar__btn {
+        padding: 20px 60px;
+        border-radius: 5px;
+        background-color: #333333;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        -webkit-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s; }
+        .tours-menu-bar__btn:hover {
+          background-color: #33333399; }
+  .tours-overview {
+    padding-top: 37px; }
+    .tours-overview-column {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .tours-overview__mapimage {
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      cursor: pointer; }
+      .tours-overview__mapimage:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05); }
+    .tours-overview-row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      width: 100%;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+    .tours-overview__title {
+      color: #e0e0e0;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 55.01px;
+      margin-bottom: 15px; }
+    .tours-overview-tourdate {
+      padding: 20px 17px 52px 24px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border-radius: 5px;
+      background-color: #1c1c1c; }
+      .tours-overview-tourdate__reg {
+        color: #828282;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        padding-left: 63px; }
+      .tours-overview-tourdate__play {
+        color: #828282;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        padding-right: 67px; }
+      .tours-overview-tourdate-line {
+        width: 544px;
+        height: 2px;
+        border-radius: 5px;
+        background-color: #333333;
+        position: relative; }
+        .tours-overview-tourdate-line__dot {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          position: absolute;
+          top: -5px; }
+          .tours-overview-tourdate-line__dot_start {
+            left: 0; }
+          .tours-overview-tourdate-line__dot_first {
+            left: 227px; }
+          .tours-overview-tourdate-line__dot_second {
+            left: 308px; }
+          .tours-overview-tourdate-line__dot .dot {
+            width: 13px;
+            height: 13px;
+            background-color: #ff5500;
+            border-radius: 50%; }
+          .tours-overview-tourdate-line__dot_time {
+            color: #bdbdbd;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 10px; }
+          .tours-overview-tourdate-line__dot_date {
+            color: #bdbdbd;
+            font-size: 10px;
+            font-weight: 400;
+            margin-top: 5px; }
+    .tours-overview-places {
+      padding: 21px 80px 22px 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      border-radius: 5px;
+      background-color: #1c1c1c; }
+      .tours-overview-places-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-right: 80px; }
+        .tours-overview-places-item__place {
+          font-size: 25px;
+          font-weight: 600;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row; }
+          .tours-overview-places-item__place:last-child {
+            margin-right: 0; }
+          .tours-overview-places-item__place img {
+            margin-right: 6px;
+            padding-bottom: 5px; }
+          .tours-overview-places-item__place_gold {
+            color: #ffa800; }
+          .tours-overview-places-item__place_silver {
+            color: #b9b9b9; }
+          .tours-overview-places-item__place_bronze {
+            color: #7a490f; }
+        .tours-overview-places-item__prize {
+          color: #828282;
+          font-size: 25px;
+          font-weight: 400;
+          margin-top: 8px; }
+      .tours-overview-places__link {
+        white-space: nowrap;
+        color: #bdbdbd;
+        font-size: 12px;
+        font-weight: 400;
+        -webkit-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s; }
+        .tours-overview-places__link:hover {
+          opacity: .6; }
+    .tours-overview-settings {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 100%; }
+      .tours-overview-settings-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 20px 17px;
+        border-radius: 5px;
+        background-color: #1c1c1c;
+        margin-right: 20px; }
+        .tours-overview-settings-item:last-child {
+          margin-right: 0; }
+        .tours-overview-settings-item__subtitle {
+          color: #828282;
+          font-size: 15px;
+          font-weight: 600;
+          margin-bottom: 10px; }
+        .tours-overview-settings-item__title {
+          color: #ff5500;
+          font-size: 12px;
+          font-weight: 400; }
+      .tours-overview-settings-slots {
+        border-radius: 5px;
+        background-color: #1c1c1c;
+        padding: 13px 45px 22px 45px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-left: 101px; }
+        .tours-overview-settings-slots__subtitle {
+          color: #828282;
+          font-size: 15px;
+          font-weight: 600;
+          margin-bottom: 10px;
+          white-space: nowrap; }
+        .tours-overview-settings-slots__title {
+          color: #ff5500;
+          font-size: 25px;
+          font-weight: 400; }
+    .tours-overview-gamesettings {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      width: 100%;
+      margin-top: 30px; }
+      .tours-overview-gamesettings__setsubtitle {
+        color: #bdbdbd;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 20px; }
+      .tours-overview-gamesettings__settitle {
+        color: #bdbdbd;
+        font-size: 12px;
+        font-weight: 600; }
+    .tours-overview-faq {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 35px; }
+      .tours-overview-faq-item {
+        padding: 22px 20px 22px 11px;
+        border-radius: 5px;
+        background-color: #1c1c1c;
+        width: calc(100% - 31px);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        position: relative;
+        margin-bottom: 35px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s; }
+        .tours-overview-faq-item__title {
+          color: #e0e0e0;
+          font-size: 20px;
+          font-weight: 600; }
+        .tours-overview-faq-item-reg {
+          width: calc(100% - 36px);
+          padding: 30px 18px;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row; }
+          .tours-overview-faq-item-reg__subtitle {
+            color: #828282;
+            font-size: 12px;
+            font-weight: 400;
+            margin-bottom: 20px; }
+          .tours-overview-faq-item-reg__title {
+            color: #bdbdbd;
+            font-size: 12px;
+            font-weight: 600; }
+        .tours-overview-faq-item-info {
+          width: calc(100% - 36px);
+          padding: 30px 18px;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
+          align-items: flex-start;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row; }
+          .tours-overview-faq-item-info__subtitle {
+            color: #bdbdbd;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 26.41px; }
+          .tours-overview-faq-item-info__title {
+            color: #828282;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 26.41px;
+            padding-left: 6px; }
+          .tours-overview-faq-item-info__link {
+            color: #bdbdbd;
+            font-size: 12px;
+            font-weight: 400;
+            text-decoration: underline;
+            line-height: 26.41px;
+            padding-left: 6px;
+            -webkit-transition: all .2s;
+            -o-transition: all .2s;
+            transition: all .2s; }
+            .tours-overview-faq-item-info__link:hover {
+              opacity: .7; }
+        .tours-overview-faq-item-teams {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          width: calc(100% - 11px);
+          padding: 30px 0 30px 11px; }
+          .tours-overview-faq-item-teams-item {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin-right: 50px;
+            width: 144px;
+            margin-bottom: 30px; }
+            .tours-overview-faq-item-teams-item:nth-child(1) .tours-overview-faq-item-teams-item__ava {
+              background-image: url(../img/tournaments/challengermode/ava.png); }
+            .tours-overview-faq-item-teams-item:nth-child(2) .tours-overview-faq-item-teams-item__ava {
+              background-image: url(../img/tournaments/challengermode/ava.png); }
+            .tours-overview-faq-item-teams-item:nth-child(3) .tours-overview-faq-item-teams-item__ava {
+              background-image: none; }
+            .tours-overview-faq-item-teams-item:nth-child(4) .tours-overview-faq-item-teams-item__ava {
+              background-image: url(../img/tournaments/challengermode/ava.png); }
+            .tours-overview-faq-item-teams-item:nth-child(5) .tours-overview-faq-item-teams-item__ava {
+              background-image: none; }
+            .tours-overview-faq-item-teams-item:nth-child(6) .tours-overview-faq-item-teams-item__ava {
+              background-image: url(../img/tournaments/challengermode/ava.png); }
+            .tours-overview-faq-item-teams-item:nth-child(7) .tours-overview-faq-item-teams-item__ava {
+              background-image: none; }
+            .tours-overview-faq-item-teams-item__ava {
+              width: 50px;
+              height: 50px;
+              background-color: #ff5500;
+              border-radius: 50%;
+              background-size: cover;
+              background-position: 50%;
+              background-repeat: no-repeat; }
+            .tours-overview-faq-item-teams-item__teamname {
+              color: #bdbdbd;
+              font-size: 15px;
+              font-weight: 600;
+              margin-left: 15px;
+              white-space: nowrap; }
+          .tours-overview-faq-item-teams__link {
+            color: #e0e0e0;
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 30px; }
+        .tours-overview-faq-item-admin {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          width: calc(100% - 11px);
+          padding: 30px 0 30px 11px; }
+          .tours-overview-faq-item-admin-item {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin-right: 50px;
+            width: 152px;
+            margin-bottom: 30px; }
+            .tours-overview-faq-item-admin-item__ava {
+              width: 50px;
+              height: 50px;
+              background-color: #ff5500;
+              border-radius: 50%;
+              background-image: url(../img/tournaments/challengermode/ava.png);
+              background-size: cover;
+              background-position: 50%;
+              background-repeat: no-repeat; }
+            .tours-overview-faq-item-admin-item__adminname {
+              color: #bdbdbd;
+              font-size: 15px;
+              font-weight: 600;
+              margin-left: 15px;
+              white-space: nowrap; }
+  .tours-matches {
+    margin-top: 55px; }
+    .tours-matches__title {
+      color: #e0e0e0;
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 20px; }
+      .tours-matches__title_results {
+        margin-bottom: 50px; }
+    .tours-matches__subtitle {
+      color: #bdbdbd;
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: 40px; }
+    .tours-matches-item {
+      border-radius: 5px;
+      background-color: #1e1e1e;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 13px 0 12px 0;
+      width: 100%;
+      margin-bottom: 15px;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      cursor: pointer; }
+      .tours-matches-item:hover {
+        background-color: #252525; }
+      .tours-matches-item-team {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .tours-matches-item-team__desc {
+          color: #bdbdbd;
+          font-family: "Proxima Nova";
+          font-size: 15px;
+          font-weight: 600; }
+        .tours-matches-item-team__ava {
+          width: 75px;
+          height: 75px;
+          background-color: transparent;
+          overflow: hidden;
+          border-radius: 50%; }
+          .tours-matches-item-team__ava_results {
+            position: relative;
+            -webkit-box-shadow: 0 0 10px 0px #ff5500;
+            box-shadow: 0 0 10px 0px #ff5500; }
+          .tours-matches-item-team__ava img {
+            width: 101%; }
+        .tours-matches-item-team__score {
+          color: #4f4f4f;
+          font-size: 25px;
+          font-weight: 700; }
+          .tours-matches-item-team__score_results {
+            color: #ff5500; }
+          .tours-matches-item-team__score_active {
+            color: #bdbdbd; }
+      .tours-matches-item__versus {
+        color: #bdbdbd;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 70px;
+        position: relative; }
+  .tours-teams {
+    margin-top: 55px;
+    width: 100%; }
+    .tours-teams__title {
+      color: #e0e0e0;
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 20px; }
+    .tours-teams__subtitle {
+      color: #bdbdbd;
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: 40px; }
+    .tours-teams-row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 51.6%;
+      margin-bottom: 20px; }
+    .tours-teams__team {
+      color: #4f4f4f;
+      font-size: 12px;
+      font-weight: 400; }
+    .tours-teams__status {
+      color: #4f4f4f;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase; }
+    .tours-teams #onet .tours-teams-item-ava {
+      background-image: url(../img/tournaments/challengermode/ava.png); }
+    .tours-teams #twot .tours-teams-item-ava {
+      background-image: url(../img/tournaments/challengermode/ava.png); }
+    .tours-teams #threet .tours-teams-item-ava {
+      background-image: url(../img/tournaments/challengermode/ava.png); }
+    .tours-teams #fourt .tours-teams-item-ava {
+      background-image: url(../img/tournaments/challengermode/ava.png); }
+    .tours-teams #fivet .tours-teams-item-ava {
+      background-image: url(../img/tournaments/challengermode/ava.png); }
+    .tours-teams-item {
+      border-radius: 5px;
+      background-color: #1e1e1e;
+      padding: 13px 25px 12px 8px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: calc(100% - 33px);
+      margin-bottom: 15px;
+      cursor: pointer;
+      position: relative;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+      .tours-teams-item_active {
+        padding: 13px 25px 205px 8px;
+        background-color: #1b1b1b; }
+      .tours-teams-item-players {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%; }
+        .tours-teams-item-players__title {
+          color: #828282;
+          font-size: 15px;
+          font-weight: 400;
+          margin-bottom: 15px; }
+        .tours-teams-item-players-item {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          width: calc(136px - 12px);
+          height: calc(100% - 23px);
+          border-radius: 5px;
+          background-color: #1e1e1e;
+          padding: 5px 6px 14px 6px;
+          margin-right: 30px;
+          -webkit-transition: all .3s;
+          -o-transition: all .3s;
+          transition: all .3s; }
+          .tours-teams-item-players-item-row {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin-bottom: 3px; }
+          .tours-teams-item-players-item__role {
+            color: #bdbdbd;
+            font-size: 12px;
+            font-weight: 400; }
+          .tours-teams-item-players-item__ready {
+            color: #828282;
+            font-size: 8px;
+            font-weight: 400; }
+          .tours-teams-item-players-item__ava {
+            width: 90px;
+            height: 90px;
+            background-color: transparent;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 11px;
+            -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+            position: relative;
+            z-index: 1; }
+            .tours-teams-item-players-item__ava:hover:after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              top: 0;
+              left: 0;
+              background-color: #00000020;
+              z-index: 2; }
+            .tours-teams-item-players-item__ava img {
+              width: 100%; }
+          .tours-teams-item-players-item__playername {
+            color: #bdbdbd;
+            font-size: 15px;
+            font-weight: 600;
+            -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s; }
+            .tours-teams-item-players-item__playername:hover {
+              opacity: .6; }
+      .tours-teams-item-ava {
+        width: 75px;
+        height: 75px;
+        background-color: #1b1b1b;
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        margin-right: 15px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        position: relative;
+        z-index: 1; }
+        .tours-teams-item-ava:hover:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          top: 0;
+          left: 0;
+          background-color: #00000020;
+          z-index: 2; }
+      .tours-teams-item__teamname {
+        color: #bdbdbd;
+        font-size: 15px;
+        font-weight: 600;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s; }
+        .tours-teams-item__teamname:hover {
+          opacity: .6; }
+  .tours-rules {
+    margin-top: 55px;
+    width: 100%; }
+    .tours-rules__title {
+      color: #e0e0e0;
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 45px; }
+    .tours-rules-row {
+      width: 100%;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .tours-rules-bar {
+      padding: 25px 26px 12px 14px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      border-radius: 5px;
+      background-color: #1e1e1e;
+      border: 1px solid #000000;
+      -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      height: -webkit-max-content;
+      height: -moz-max-content;
+      height: max-content; }
+      .tours-rules-bar__link {
+        color: #e0e0e0;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 25px;
+        text-align: left; }
+    .tours-rules-item {
+      border-radius: 5px;
+      background-color: #1e1e1e;
+      padding: 20px 0 20px 12px;
+      width: calc(100% - 12px);
+      margin-left: 15px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      position: relative; }
+      .tours-rules-item__main {
+        padding: 20px 0 20px 12px;
+        width: calc(100% - 12px);
+        border-top: none !important; }
+        .tours-rules-item__main:before {
+          display: none; }
+        .tours-rules-item__main .tours-rules-item__title {
+          margin-bottom: 25px !important;
+          padding-top: 0 !important;
+          padding-bottom: 0 !important; }
+        .tours-rules-item__main .tours-rules-item__desc {
+          position: relative;
+          visibility: visible;
+          opacity: 1; }
+      .tours-rules-item__title {
+        color: #bdbdbd;
+        font-size: 25px;
+        font-weight: 600;
+        padding-left: 21px;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s; }
+      .tours-rules-item__desc {
+        color: #f2f2f2;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 29.24px;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0; }
+  .tours-prizes {
+    margin-top: 55px;
+    width: 100%; }
+    .tours-prizes__title {
+      color: #e0e0e0;
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 20px; }
+    .tours-prizes__subtitle {
+      color: #bdbdbd;
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: 40px; }
+  .tours-bracket {
+    margin-top: 55px;
+    width: 100%;
+    z-index: 2;
+    position: relative; }
+    .tours-bracket:before {
+      content: '';
+      position: absolute;
+      width: 1390px;
+      height: 100%;
+      bottom: -55px;
+      left: -81px;
+      background-image: url(../img/tournaments/challengermode/bg.png);
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .tours-bracket__title {
+      color: #e0e0e0;
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 20px; }
+    .tours-bracket-content {
+      width: calc(100% - 139px);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 30px 76px 0 63px;
+      position: relative; }
+      .tours-bracket-content-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+      .tours-bracket-content-column {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+      .tours-bracket-content-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin-bottom: 35px;
+        position: relative; }
+        .tours-bracket-content-item-teamone {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          padding: 8px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          background-color: #333333;
+          width: calc(162px - 16px);
+          height: calc(34px - 16px); }
+          .tours-bracket-content-item-teamone .gamername {
+            color: #e0e0e0;
+            font-size: 10px;
+            font-weight: 600;
+            margin-left: 5px; }
+          .tours-bracket-content-item-teamone .gamerscore {
+            font-size: 15px;
+            font-weight: 700; }
+            .tours-bracket-content-item-teamone .gamerscore_green {
+              color: #27ae60; }
+            .tours-bracket-content-item-teamone .gamerscore_red {
+              color: #eb5757; }
+        .tours-bracket-content-item-teamtwo {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          padding: 8px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          background-color: #333333;
+          width: calc(162px - 16px);
+          height: calc(34px - 16px);
+          margin-top: 1px; }
+          .tours-bracket-content-item-teamtwo .gamername {
+            color: #e0e0e0;
+            font-size: 10px;
+            font-weight: 600;
+            margin-left: 5px; }
+          .tours-bracket-content-item-teamtwo .gamerscore {
+            font-size: 15px;
+            font-weight: 700; }
+            .tours-bracket-content-item-teamtwo .gamerscore_green {
+              color: #27ae60; }
+            .tours-bracket-content-item-teamtwo .gamerscore_red {
+              color: #eb5757; }
+        .tours-bracket-content-item__subtitle {
+          color: #4f4f4f;
+          font-size: 10px;
+          font-weight: 400;
+          margin-top: 8px; }
+
+.regmargin {
+  margin-bottom: 111px; }
+
+.infomargin {
+  margin-bottom: 297px; }
+
+.teamsmargin {
+  margin-bottom: 190px; }
+
+.adminsmargin {
+  margin-bottom: 110px; }
+
+.setmargin {
+  margin-bottom: 194px; }
+
+.status-active {
+  color: #bdbdbd;
+  font-size: 12px;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  visibility: hidden;
+  opacity: 0; }
+
+.showstatus {
+  visibility: visible;
+  opacity: 1; }
+
+.tours-rules-item_active {
+  position: relative;
+  border-top: 2px solid #ff5500;
+  z-index: 2;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  .tours-rules-item_active .tours-rules-item__title {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .tours-rules-item_active .tours-rules-item__desc {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .tours-rules-item_active:before {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(19.51%, rgba(255, 85, 0, 0)), color-stop(451.83%, rgba(255, 85, 0, 0.3)));
+    background: -webkit-linear-gradient(top, rgba(255, 85, 0, 0) 19.51%, rgba(255, 85, 0, 0.3) 451.83%);
+    background: -o-linear-gradient(top, rgba(255, 85, 0, 0) 19.51%, rgba(255, 85, 0, 0.3) 451.83%);
+    background: linear-gradient(180deg, rgba(255, 85, 0, 0) 19.51%, rgba(255, 85, 0, 0.3) 451.83%);
+    -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+    -ms-transform: matrix(1, 0, 0, -1, 0, 0);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 52px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+
+.place {
+  color: #f2f2f2;
+  font-size: 15px;
+  font-weight: 600;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 21px; }
+
+.prize {
+  color: #ff5500;
+  font-size: 15px;
+  font-weight: 400; }
+
+.ppp {
+  color: #bdbdbd;
+  font-size: 15px;
+  font-weight: 400; }
+
+.teamblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .teamblock .teamava {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+    position: relative;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .teamblock .teamava:hover:after {
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      background-color: #00000022; }
+    .teamblock .teamava img {
+      width: 100%; }
+  .teamblock .teamname {
+    color: #bdbdbd;
+    font-size: 15px;
+    font-weight: 600;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .teamblock .teamname:hover {
+      opacity: .6; }
+
+table {
+  border-collapse: collapse; }
+  table thead tr {
+    border-bottom: 25px solid #1f1f1f; }
+    table thead tr th {
+      color: #bdbdbd;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase; }
+  table tbody tr {
+    border-radius: 5px;
+    background-color: #1d1d1d;
+    border-bottom: 10px solid #1f1f1f; }
+    table tbody tr td {
+      height: 100px;
+      vertical-align: middle; }
+
+.crown {
+  position: absolute;
+  width: 100%;
+  top: -32px;
+  left: -162px;
+  z-index: 2; }
+  .crown_right {
+    left: 231px; }
+
+.bracketava {
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border-radius: 50%;
+  overflow: hidden; }
+  .bracketava img {
+    width: 100%; }
+
+.defaultline {
+  position: absolute;
+  width: 89px;
+  height: 1px;
+  background-color: #333333;
+  top: 34px;
+  right: -89px; }
+
+.firstlargeline {
+  position: absolute;
+  width: 1px;
+  height: 855px;
+  background-color: #333333;
+  left: 314px;
+  top: 64px; }
+
+.secondlargeline {
+  position: absolute;
+  width: 1px;
+  height: 731px;
+  background-color: #333333;
+  left: 613px;
+  top: 126px; }
+
+.thirdlargeline {
+  position: absolute;
+  width: 1px;
+  background-color: #333333;
+  right: 337px;
+  top: 247px;
+  height: 489px; }
+
+.shortline {
+  position: absolute;
+  height: 1px;
+  background-color: #333333;
+  top: 34px; }
+
+html {
+  font-family: 'Proxima Nova'; }
+
+body {
+  position: relative; }
+
+.startpage {
+  width: 100%;
+  background-image: url(../img/index/bg.png);
+  background-color: #1f1f1f;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 0 200px 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 737px;
+  position: relative; }
+  .startpage:hover ::-webkit-scrollbar-thumb {
+    background-color: #828282; }
+  .startpage-slider {
+    width: 100%; }
+    .startpage-slider-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      padding: 88px 0 161px 51px;
+      width: calc(100% - 51px);
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 2;
+      position: relative; }
+      .startpage-slider-item:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(22%, rgba(38, 38, 38, 0.28)), color-stop(93%, rgba(36, 36, 36, 0.9)));
+        background-image: -webkit-linear-gradient(rgba(38, 38, 38, 0.28) 22%, rgba(36, 36, 36, 0.9) 93%);
+        background-image: -o-linear-gradient(rgba(38, 38, 38, 0.28) 22%, rgba(36, 36, 36, 0.9) 93%);
+        background-image: linear-gradient(rgba(38, 38, 38, 0.28) 22%, rgba(36, 36, 36, 0.9) 93%); }
+      .startpage-slider-item__title {
+        color: #ffffff;
+        font-size: 60px;
+        font-weight: 700;
+        max-width: 800px;
+        margin-bottom: 30px; }
+      .startpage-slider-item__desc {
+        margin-bottom: 60px;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 400;
+        max-width: 800px;
+        line-height: 35.56px; }
+      .startpage-slider-item__btn {
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: 700;
+        padding: 17px 100px;
+        border-radius: 5px;
+        background-color: #ff5500;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s; }
+        .startpage-slider-item__btn:hover {
+          background-color: rgba(255, 85, 0, 0.87); }
+  .startpage .startpage-container {
+    width: calc(100% - 150px);
+    padding: 0 75px; }
+  .startpage__title {
+    color: #e0e0e0;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0; }
+  .startpage-tours {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 100%; }
+    .startpage-tours-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .startpage-tours-item_simg a:nth-child(1) {
+        margin-right: 7px; }
+      .startpage-tours-item_simg a:nth-child(3) {
+        margin-right: 7px; }
+      .startpage-tours-item_small {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        border-radius: 10px;
+        width: 301px;
+        height: 170px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        .startpage-tours-item_small:before {
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          background-color: rgba(0, 0, 0, 0);
+          transition: 0.3s; }
+        .startpage-tours-item_small:hover:before {
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          background-color: rgba(0, 0, 0, 0.3);
+          transition: 0.3s; }
+        .startpage-tours-item_small:nth-child(1) {
+          background-image: url(../img/index/tournaments-thin1.jpg);
+          margin-bottom: 15px; }
+        .startpage-tours-item_small:nth-child(2) {
+          background-image: url(../img/index/tournaments-thin2.jpg);
+          margin-bottom: 15px; }
+        .startpage-tours-item_small:nth-child(3) {
+          background-image: url(../img/index/tournaments-thin3.jpg); }
+        .startpage-tours-item_small:nth-child(4) {
+          background-image: url(../img/index/tournaments-thin4.jpg); }
+        .startpage-tours-item_small_withtext {
+          position: relative;
+          padding: 0 0 15px 15px;
+          width: calc(301px - 15px);
+          height: calc(170px - 15px);
+          z-index: 2; }
+          .startpage-tours-item_small_withtext:hover {
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s; }
+            .startpage-tours-item_small_withtext:hover .startpage-tours-item_small_withtext__title {
+              opacity: 1;
+              -webkit-transition: 0.3s;
+              -o-transition: 0.3s;
+              transition: 0.3s; }
+            .startpage-tours-item_small_withtext:hover .startpage-tours-item_small_withtext__desc {
+              opacity: 1;
+              -webkit-transition: 0.3s;
+              -o-transition: 0.3s;
+              transition: 0.3s; }
+          .startpage-tours-item_small_withtext__title {
+            color: #e0e0e0;
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            opacity: 0; }
+          .startpage-tours-item_small_withtext__desc {
+            color: #e0e0e0;
+            font-size: 15px;
+            font-weight: 400;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            opacity: 0; }
+      .startpage-tours-item_large {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        border-radius: 10px;
+        background-image: url(../img/index/tournaments-large.jpg);
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        width: 587px;
+        height: 340px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        .startpage-tours-item_large:before {
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          background-color: rgba(0, 0, 0, 0);
+          transition: 0.3s; }
+        .startpage-tours-item_large:hover:before {
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          background-color: rgba(0, 0, 0, 0.3);
+          transition: 0.3s; }
+      .startpage-tours-item:first-child {
+        margin-right: 22px; }
+  .startpage-games {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .startpage-games-item:nth-child(1) .startpage-games-item__img {
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      .startpage-games-item:nth-child(1) .startpage-games-item__img:hover {
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        -webkit-transform: scale(1.03) translateY(-5px);
+        -ms-transform: scale(1.03) translateY(-5px);
+        transform: scale(1.03) translateY(-5px); }
+    .startpage-games-item:nth-child(2) .startpage-games-item__img {
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      .startpage-games-item:nth-child(2) .startpage-games-item__img:hover {
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        -webkit-transform: scale(1.03) translateY(-5px);
+        -ms-transform: scale(1.03) translateY(-5px);
+        transform: scale(1.03) translateY(-5px); }
+    .startpage-games-item:nth-child(3) .startpage-games-item__img {
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      .startpage-games-item:nth-child(3) .startpage-games-item__img:hover {
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        -webkit-transform: scale(1.03) translateY(-5px);
+        -ms-transform: scale(1.03) translateY(-5px);
+        transform: scale(1.03) translateY(-5px); }
+    .startpage-games-item:nth-child(4) .startpage-games-item__img {
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      .startpage-games-item:nth-child(4) .startpage-games-item__img:hover {
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        -webkit-transform: scale(1.03) translateY(-5px);
+        -ms-transform: scale(1.03) translateY(-5px);
+        transform: scale(1.03) translateY(-5px); }
+  .startpage__offer {
+    color: #828282;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 60px; }
+  .startpage-languages {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .startpage-languages-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 155px 32px 147px 32px;
+      background-color: rgba(33, 33, 33, 0.5);
+      margin-right: 10px;
+      width: calc(118px - 64px);
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+      .startpage-languages-item:last-child {
+        margin-right: 0; }
+      .startpage-languages-item_active {
+        padding: 65px 91px 50px 91px;
+        width: calc(400px - 182px); }
+        .startpage-languages-item_active .startpage-languages-item__country {
+          font-size: 25px;
+          margin-top: 0; }
+      .startpage-languages-item-flag {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        width: 144px;
+        height: 70px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 85, 0, 0)), to(rgba(255, 85, 0, 0.025)));
+        background-image: -webkit-linear-gradient(rgba(255, 85, 0, 0) 0%, rgba(255, 85, 0, 0.025) 100%);
+        background-image: -o-linear-gradient(rgba(255, 85, 0, 0) 0%, rgba(255, 85, 0, 0.025) 100%);
+        background-image: linear-gradient(rgba(255, 85, 0, 0) 0%, rgba(255, 85, 0, 0.025) 100%);
+        position: relative;
+        margin-bottom: 30px; }
+        .startpage-languages-item-flag__line {
+          position: absolute;
+          bottom: 0;
+          left: 0; }
+      .startpage-languages-item__country {
+        color: #828282;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        margin-top: 23px; }
+      .startpage-languages-item__leaguename {
+        color: #e0e0e0;
+        font-size: 35px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        opacity: 1;
+        -webkit-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+        outline: none; }
+        .startpage-languages-item__leaguename:hover {
+          opacity: 0.6; }
+      .startpage-languages-item__btn {
+        border-radius: 30px;
+        background-color: #ff5500;
+        padding: 13px 65px;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s; }
+        .startpage-languages-item__btn:hover {
+          background-color: rgba(255, 85, 0, 0.87);
+          -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          transform: scale(1.05);
+          -webkit-transition: all 0.3s ease 0s;
+          -o-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s; }
+  .startpage-prizes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .startpage-prizes-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      position: relative;
+      z-index: 3; }
+      .startpage-prizes-item:before {
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 67%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, 0);
+        transition: 0.3s;
+        border-radius: 5px; }
+      .startpage-prizes-item:hover:before {
+        background-color: rgba(0, 0, 0, 0.3);
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+      .startpage-prizes-item__img {
+        width: 296px;
+        height: 177px;
+        margin-bottom: 15px;
+        z-index: -11;
+        border-radius: 5px; }
+      .startpage-prizes-item__date {
+        color: #828282;
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 15px; }
+      .startpage-prizes-item__tourname {
+        color: #e0e0e0;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 15px; }
+      .startpage-prizes-item__tourdesc {
+        color: #bdbdbd;
+        font-size: 12px;
+        font-weight: 400; }
+
+/* ========================================================================
+   Компонент: Container
+ ========================================================================== */
+/*
+ * 1. Box-sizing должен быть 'content-box', благодаря этому максимальная ширина всегда одинакова и
+ *    не зависит от padding на разных экранах. Это важно для модификаторов.
+ */
+.container {
+  position: relative;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  max-width: 1390px;
+  margin-left: 230px;
+  margin-right: auto;
+  margin-top: 83px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* Удаление padding у вложенного container */
+  /* Телефон в горизонтальном положение и шире */
+  /* Планшет в горизонтальном положение и шире */
+  /* Модификаторы
+ ========================================================================== */ }
+  .container .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .container-fueld {
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px; }
+  @media (min-width: 900px) {
+    .container {
+      padding-left: 0px;
+      padding-right: 0px; } }
+  @media (min-width: 1139px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0; } }
+  .container_small {
+    max-width: 900px; }
+  .container_large {
+    max-width: 1139px; }
+  .container_expand {
+    max-width: none; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+@media (max-width: 1024px) {
+  .row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .container {
+    overflow: hidden; } }
+
+/* Градиенты */
+@media screen and (max-width: 1024px) {
+  .tours {
+    width: 100%;
+    padding: 0 0 55px 0; }
+    .tours-bracket {
+      overflow: hidden;
+      overflow-x: scroll;
+      width: calc(100% - 30px);
+      padding-left: 15px;
+      padding-right: 15px; }
+      .tours-bracket:before {
+        width: 1500px; }
+      .tours-bracket-content {
+        min-width: 1231px; }
+    .tours-teams {
+      width: calc(100% - 30px);
+      padding-left: 15px;
+      padding-right: 15px; }
+    .tours-matches {
+      width: calc(100% - 30px);
+      padding-left: 15px;
+      padding-right: 15px; }
+    .tours-rules {
+      width: calc(100% - 30px);
+      padding-left: 15px;
+      padding-right: 15px; }
+    .tours-prizes {
+      width: calc(100% - 30px);
+      padding-left: 15px;
+      padding-right: 15px; }
+      .tours-prizes__table {
+        overflow: hidden;
+        overflow-x: scroll; }
+        .tours-prizes__table table {
+          min-width: 1231px; }
+    .tours-menu-poster__title {
+      font-size: 28px; }
+    .tours-menu-bar {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-top: -27px;
+      z-index: 2; }
+      .tours-menu-bar__link {
+        margin-bottom: 15px; }
+      .tours-menu-bar__btn {
+        margin-bottom: 30px; }
+    .tours-overview {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: calc(100% - 30px); }
+      .tours-overview-gamesettings {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 50%; }
+      .tours-overview__mapimage {
+        width: 100%; }
+      .tours-overview__title {
+        text-align: left !important;
+        padding-right: 0; }
+      .tours-overview-row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+      .tours-overview-settings {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        margin-bottom: 15px; }
+        .tours-overview-settings-slots {
+          margin-left: 0; }
+      .tours-overview-places {
+        padding: 21px 30px 22px 30px; }
+        .tours-overview-places-row {
+          width: 100%;
+          -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+        .tours-overview-places-item {
+          margin-right: 20px; }
+      .tours-overview-tourdate {
+        margin-bottom: 15px; }
+        .tours-overview-tourdate-line {
+          width: 100%; }
+    .tours-menu-bar {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: calc(100% - 30px); }
+  .profile-user {
+    padding: 25px;
+    width: calc(100% - 50px); }
+    .profile-user-info {
+      width: 50%; }
+  .profile-overview-activities-item-stroke {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .profile-overview-activities-item-stroke__date {
+      padding-left: 37px; }
+  .wrapper {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .profile-overview-friends-ava {
+    margin-top: 10px;
+    margin-right: 0; }
+  .profile-overview-followed__btn {
+    font-size: 8px;
+    padding: 11px 20px; }
+  .tours-rules-item {
+    width: calc(100% - 39px);
+    padding: 20px 12px 20px 12px; }
+  .header {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 23, 0.5)), to(rgba(17, 18, 23, 0)));
+    background: -webkit-linear-gradient(rgba(17, 18, 23, 0.5), rgba(17, 18, 23, 0));
+    background: -o-linear-gradient(rgba(17, 18, 23, 0.5), rgba(17, 18, 23, 0));
+    background: linear-gradient(rgba(17, 18, 23, 0.5), rgba(17, 18, 23, 0));
+    height: 50px;
+    position: absolute; }
+  .header-menu .leftsidebar {
+    display: block;
+    padding: 60px 0 0 0;
+    top: 0; }
+  .hamburger {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+    z-index: 1111;
+    outline: none; }
+  .hamburger.is-active {
+    position: fixed; }
+  .startpage-languages-item__btn {
+    padding: 13px 48px;
+    font-size: 20px;
+    white-space: nowrap; }
+  .startpage-languages-item_csgo:nth-child(2) {
+    margin-left: 120px; }
+  .startpage-languages-item_csgo:nth-child(6) {
+    margin-right: 120px; }
+  .prev_csgo {
+    left: 0; }
+  .next_csgo {
+    right: 0; }
+  .games-ranking-table {
+    overflow: auto; }
+    .games-ranking-table table {
+      min-width: 900px; }
+  .startpage-languages-item__leaguename {
+    font-size: 28px; }
+  .startpage-prizes-item:nth-child(3) {
+    margin-bottom: 20px; }
+  .games {
+    width: calc(100% - 30px);
+    padding: 55px 15px 45px 15px; }
+  .header-section {
+    padding: 9px 15px 9px 15px;
+    display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: calc(100% - 30px); }
+    .header-section-games {
+      width: calc(100% - 30px); }
+  .header-logo {
+    margin-right: 0;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    width: 100%; }
+  .header-row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%; }
+  .header-search {
+    margin-bottom: 15px;
+    width: 100%; }
+    .header-search__input {
+      width: 100%; }
+  .header-signin_adaptive {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+  .header-signin_adaptive .header-signin__btn {
+    padding: 10px 30px;
+    background-color: #ff550000;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 60px;
+    border: 1px solid #fff; }
+  .show {
+    visibility: visible;
+    opacity: 1; }
+  .leftsidebar {
+    display: none; }
+  .rightsidebar {
+    display: none; }
+  .container {
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0; }
+  .startpage {
+    padding: 0 0 100px 0; }
+  .startpage-prizes {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly; }
+    .startpage-prizes-item:nth-child(1) {
+      margin-bottom: 20px; }
+    .startpage-prizes-item:nth-child(2) {
+      margin-bottom: 20px; }
+  .startpage-tours {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .startpage-tours-item {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .startpage-tours-item:first-child {
+      margin-right: 0; }
+  .startpage-games {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .startpage-games-item:nth-child(1) {
+      margin-bottom: 20px; }
+    .startpage-games-item:nth-child(2) {
+      margin-bottom: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .profile {
+    padding: 34px 15px;
+    width: calc(100% - 30px); }
+  .adaptive-column {
+    width: 58% !important; }
+  .resizer::-webkit-scrollbar {
+    height: 5px; }
+  .resizer {
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 100%; }
+  .profile-overview-activities-item-box {
+    min-width: 565px; }
+  .profile-overview-activities-item-stroke__date {
+    padding-left: 32px;
+    padding-top: 5px; }
+  .tours-teams-item_active {
+    padding: 13px 25px 365px 8px; }
+  .tours-teams-item-players-item:last-child {
+    margin-top: 10px; }
+  .startpage-languages-item_csgo:nth-child(3) {
+    margin-left: 75px; }
+  .startpage-languages-item_csgo:nth-child(5) {
+    margin-right: 90px; } }
+
+@media screen and (max-width: 425px) {
+  .profile-overview-activities {
+    margin-left: 0;
+    width: calc(100% - 25px);
+    padding: 33px 22px 66px 13px; }
+  .wrapper {
+    max-width: 261px; }
+  .adaptive-rowp {
+    width: 120px !important; }
+  .adaptive-column {
+    width: 100% !important; }
+  .profile {
+    padding: 58px 15px; }
+    .profile-menu {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .profile-overview {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .profile-overview-about {
+        width: calc(100% - 37px); }
+      .profile-overview-friends {
+        width: calc(100% - 28px);
+        max-width: 100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+  .profile-user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .profile-user__online {
+      top: 10px; }
+    .profile-user-info {
+      width: 100%;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .profile-user-info-username {
+        margin-bottom: 25px;
+        margin-top: 10px; }
+    .profile-user-ava {
+      margin-right: 0; }
+  .tours {
+    width: 100%;
+    padding: 0 0 55px 0; }
+    .tours-matches {
+      width: calc(100% - 30px);
+      padding-left: 15px;
+      padding-right: 15px;
+      overflow: hidden;
+      overflow-x: scroll; }
+      .tours-matches-item {
+        min-width: 763px; }
+    .tours-menu-poster__title {
+      font-size: 28px; }
+    .tours-menu-bar {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-top: -27px;
+      z-index: 2; }
+      .tours-menu-bar__link {
+        margin-bottom: 15px; }
+      .tours-menu-bar__btn {
+        margin-bottom: 30px; }
+    .tours-overview {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: calc(100% - 30px); }
+      .tours-overview-faq-item-teams {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .tours-overview-faq-item-teams__link {
+          width: 145px;
+          text-align: center; }
+        .tours-overview-faq-item-teams-item {
+          margin-right: 0; }
+      .tours-overview-faq-item-admin {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .tours-overview-faq-item-admin-item {
+          margin-right: 0; }
+      .tours-overview-gamesettings {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 100%; }
+      .tours-overview__mapimage {
+        width: 100%; }
+      .tours-overview__title {
+        text-align: left !important;
+        padding-right: 0; }
+      .tours-overview-row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+      .tours-overview-settings {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        margin-bottom: 15px; }
+        .tours-overview-settings-item {
+          margin-right: 10px; }
+        .tours-overview-settings-slots {
+          margin-left: 0; }
+      .tours-overview-places {
+        padding: 21px 30px 22px 30px; }
+        .tours-overview-places-row {
+          width: 100%;
+          -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+        .tours-overview-places-item {
+          margin-right: 20px; }
+      .tours-overview-tourdate {
+        margin-bottom: 15px; }
+        .tours-overview-tourdate__reg {
+          padding-left: 0; }
+        .tours-overview-tourdate__play {
+          padding-right: 0; }
+        .tours-overview-tourdate-line {
+          width: 100%; }
+          .tours-overview-tourdate-line__dot_first {
+            left: 100px; }
+          .tours-overview-tourdate-line__dot_second {
+            left: 220px; }
+    .tours-menu-bar {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: calc(100% - 30px); }
+  .tours-rules-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .tours-rules-bar {
+    max-height: 200px;
+    overflow: hidden;
+    overflow-y: scroll; }
+  .tours-rules-item {
+    width: calc(100% - 27px);
+    padding: 20px 12px;
+    margin-left: 0; }
+  .tours-teams-item_active {
+    padding: 13px 25px 525px 8px; }
+  .tours-teams-item-players-item:last-child {
+    margin-top: 10px; }
+  .tours-teams-item-players-item:nth-child(4) {
+    margin-top: 10px; }
+  .tours-teams-item-players-item:nth-child(3) {
+    margin-top: 10px; }
+  .status-active {
+    top: 10px; }
+  .tours-teams-row {
+    width: 55%; }
+  .infomargin {
+    margin-bottom: 420px; }
+  .teamsmargin {
+    margin-bottom: 345px; }
+  .setmargin {
+    margin-bottom: 215px; }
+  .jcc {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .jcse {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly; }
+  .startpage-languages-item_csgo:nth-child(4) {
+    margin-right: 60px;
+    margin-left: 25px; }
+  .games-tours-content-list-item__a img {
+    margin: 0 0 0 10px !important; }
+  .games-tours-content-list-item__a {
+    white-space: nowrap; }
+  .games-tours-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .games-tours-content-list {
+    margin-left: 0;
+    margin-top: 30px; }
+  .games-review {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .games-review-action {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .games-review-action__signup {
+        margin-right: 0;
+        margin-bottom: 20px; }
+    .games-review-gameimage {
+      margin-bottom: 20px; }
+  .col {
+    width: 100%; }
+  .startpage-languages-item {
+    margin-right: 19px; }
+  .next {
+    right: -9px; }
+  .prev {
+    left: -9px; }
+  .startpage-slider-item__title {
+    font-size: 40px; }
+  .startpage-slider-item__desc {
+    font-size: 10px; }
+  .startpage-slider-item__btn {
+    padding: 13px 84px; }
+  .startpage .startpage-container {
+    width: calc(100% - 30px);
+    padding: 0 15px; }
+  .startpage-tours {
+    width: 100%; }
+    .startpage-tours-item {
+      width: 100%; }
+  .startpage-tours-item_large {
+    width: 100%;
+    height: 233px;
+    margin-bottom: 15px; }
+  .startpage-tours-item_simg a:nth-child(1) {
+    margin-right: 0; }
+  .startpage-tours-item_simg a:nth-child(3) {
+    margin-right: 0; }
+  .startpage-games-item:nth-child(3) {
+    margin-bottom: 20px; }
+  .startpage-prizes-item:nth-child(3) {
+    margin-bottom: 20px; }
+  .startpage-slider-item {
+    padding: 88px 0 161px 15px; } }
+
+@media screen and (max-width: 375px) {
+  .tours {
+    width: 100%;
+    padding: 0 0 55px 0; }
+    .tours-menu-poster__title {
+      font-size: 28px; }
+    .tours-menu-bar {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-top: -27px;
+      z-index: 2; }
+      .tours-menu-bar__link {
+        margin-bottom: 15px; }
+      .tours-menu-bar__btn {
+        margin-bottom: 30px; }
+    .tours-overview {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: calc(100% - 30px); }
+      .tours-overview .row_smalld {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10px !important; }
+      .tours-overview-column_smalld {
+        margin-right: 0 !important;
+        margin-bottom: 20px; }
+      .tours-overview-faq-item-reg {
+        max-height: 150px;
+        padding: 0 18px 30px 18px;
+        margin-top: 30px;
+        overflow: hidden;
+        overflow-y: scroll; }
+        .tours-overview-faq-item-reg__subtitle {
+          margin-bottom: 10px !important; }
+      .tours-overview-faq-item-teams {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .tours-overview-faq-item-teams__link {
+          width: 145px;
+          text-align: center; }
+        .tours-overview-faq-item-teams-item {
+          margin-right: 0; }
+      .tours-overview-faq-item-admin {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .tours-overview-faq-item-admin-item {
+          margin-right: 0; }
+      .tours-overview-gamesettings {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 100%; }
+      .tours-overview__mapimage {
+        width: 100%; }
+      .tours-overview__title {
+        text-align: left !important;
+        padding-right: 0; }
+      .tours-overview-row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .tours-overview-row_small {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          max-width: 100%;
+          overflow: hidden;
+          overflow-x: scroll; }
+      .tours-overview-settings {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        margin-bottom: 15px; }
+        .tours-overview-settings-item {
+          margin-right: 10px;
+          white-space: nowrap; }
+        .tours-overview-settings-slots {
+          margin-left: 152px; }
+      .tours-overview-places {
+        padding: 21px 30px 22px 30px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .tours-overview-places-row {
+          width: 100%;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          margin-bottom: 15px; }
+        .tours-overview-places-item {
+          margin-right: 0; }
+      .tours-overview-tourdate {
+        margin-bottom: 15px; }
+        .tours-overview-tourdate__play {
+          white-space: nowrap;
+          padding-right: 0; }
+        .tours-overview-tourdate__reg {
+          white-space: nowrap;
+          padding-left: 0; }
+        .tours-overview-tourdate-line {
+          width: 100%; }
+          .tours-overview-tourdate-line__dot_first {
+            left: 50px; }
+          .tours-overview-tourdate-line__dot_second {
+            left: 150px; }
+    .tours-menu-bar {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: calc(100% - 30px); }
+  .infomargin {
+    margin-bottom: 475px; }
+  .row_smalld {
+    margin-bottom: 20px !important; }
+  #setscroll {
+    padding-top: 20px; }
+  .teamsmargin {
+    margin-bottom: 345px; }
+  .setmargin {
+    margin-bottom: 215px; }
+  .jcc {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .startpage-tours-item_large {
+    height: 204px; }
+  .startpage-languages-item_active {
+    padding: 65px 66px 50px 66px; } }
+
+@media screen and (max-width: 320px) {
+  .profile-user__online {
+    right: 10px;
+    top: 5px; }
+  .adaptive-rowp {
+    width: 110px !important; }
+  .tours-teams-item_active {
+    padding: 13px 25px 845px 8px; }
+  .tours-teams-item-players-item:last-child {
+    margin-top: 10px; }
+  .tours-teams-item-players-item:nth-child(4) {
+    margin-top: 10px; }
+  .tours-teams-item-players-item:nth-child(3) {
+    margin-top: 10px; }
+  .tours-teams-item-players-item:nth-child(2) {
+    margin-top: 10px; }
+  .status-active {
+    top: -15px; }
+  .tours-teams-item-players-item {
+    width: calc(100% - 47px); }
+  .startpage-tours-item_large {
+    height: 171px; }
+  .startpage-languages-item_active {
+    padding: 65px 39px 50px 39px; } }

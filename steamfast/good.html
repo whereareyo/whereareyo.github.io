@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>STEAMFAST</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="shortcut icon" href="img/testyourluck/logo/head-icon.ico">
+</head>
+
+<body>
+    <header class="header header-index">
+        <div class="relative">
+            <button onclick="showMenu()" class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <div class="overlay">
+                <div class="adaptive-menu">
+                    <a href="quarantee.html" class="adaptive-menu__a">Гарантии</a>
+                    <a href="contacts.html" class="adaptive-menu__a">Контакты</a>
+                    <a href="reviews.html" class="adaptive-menu__a">Отзывы</a>
+                </div>
+                <div class="adaptive-menu adaptive-menu_right">
+                    <ul class="header-menu">
+                        <li class="header-menu__li"><a href="#" class="header-menu__link"><img src="img/modules/steam-header.svg" alt="" class="header-menu__li_img"> Steam</a></li>
+                        <li class="header-menu__li"><a href="#" class="header-menu__link"><img src="img/modules/origin-header.svg" alt="" class="header-menu__li_img"> Origin</a></li>
+                        <li class="header-menu__li"><a href="#" class="header-menu__link"><img src="img/modules/uplay-header.svg" alt="" class="header-menu__li_img"> Uplay</a></li>
+                        <li class="header-menu__li"><a href="#" class="header-menu__link"><img src="img/modules/gog-header.svg" alt="" class="header-menu__li_img"> GOG</a></li>
+                        <li class="header-menu__li"><a href="#" class="header-menu__link">Global Keys</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row header-border header-border_index">
+                <div class="container header-container">
+                    <div class="row header-row">
+                        <div class="header-action">
+                            <a href="index.html" class="logo"><img src="img/logo/index-logo.png" alt="" class="logo__img"></a>
+                            <div class="header-links">
+                                <a href="quarantee.html" class="header-links__a header-links__a_index">Гарантии</a>
+                                <a href="contacts.html" class="header-links__a header-links__a_index">Контакты</a>
+                                <a href="reviews.html" class="header-links__a header-links__a_index">Отзывы</a>
+                            </div>
+                        </div>
+                        <form required class="header-search header-search_index">
+                            <label for="main-search" class="header-search__label"><img src="img/index/search.svg" alt="" class="header-search__label_img"></label>
+                            <input onfocus="addOp()" onblur="removeOp()" autocomplete="off" id="main-search" type="search" class="header-search__input header-search__input_index" placeholder="Поиск">
+                            <div class="dropmenu">
+                                <div class="header-search-result">
+                                    <div class="header-search-result-item">
+                                        <div class="header-search-result-item-info">
+                                            <img src="img/index/csgo-search.png" alt="" class="header-search-result-item-info__img">
+                                            <p class="header-search-result-item-info__game">Counter Strike: Global Offencive</p>
+                                            <p class="header-search-result-item-info__price">1 999₽</p>
+                                        </div>
+                                        <div class="header-search-result-item__blur"></div>
+                                    </div>
+                                    <div class="header-search-result-item">
+                                        <div class="header-search-result-item-info">
+                                            <img src="img/index/csgo-search.png" alt="" class="header-search-result-item-info__img">
+                                            <p class="header-search-result-item-info__game">Counter Strike: Global Offencive</p>
+                                            <p class="header-search-result-item-info__price">1 999₽</p>
+                                        </div>
+                                        <div class="header-search-result-item__blur"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row pbn pbn_index">
+                <div class="container header-container">
+                    <div class="row header-row">
+                        <div class="nav">
+                            <div class="catalog-box catalog-box_index"><a href="catalog.html" class="catalog-box__btn catalog-box__btn_index btn"><img src="img/index/menu.svg" alt="" class="catalog-box__btn_img"> Каталог</a></div>
+                            <ul class="header-menu">
+                                <li class="header-menu__li"><a href="#" class="header-menu__link header-menu__link_index"><img src="img/index/steam-header.svg" alt="" class="header-menu__li_img"> Steam</a></li>
+                                <li class="header-menu__li"><a href="#" class="header-menu__link header-menu__link_index"><img src="img/index/origin-header.svg" alt="" class="header-menu__li_img"> Origin</a></li>
+                                <li class="header-menu__li"><a href="#" class="header-menu__link header-menu__link_index"><img src="img/index/uplay-header.svg" alt="" class="header-menu__li_img"> Uplay</a></li>
+                                <li class="header-menu__li"><a href="#" class="header-menu__link header-menu__link_index"><img src="img/index/gog-header.svg" alt="" class="header-menu__li_img"> GOG</a></li>
+                                <li class="header-menu__li"><a href="#" class="header-menu__link header-menu__link_index">Global Keys</a></li>
+                            </ul>
+                        </div>
+                        <a href='testyourluck.html' class="checkluck__btn checkluck__btn_footer checkluck__btn_footer_index btn"><img src="img/modules/clover-footer.svg" alt="" class="checkluck__btn_img"> Испытай удачу</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="good-header" style="background-image: url(img/good/bg.png);">
+            <div class="container">
+                <div class="good-navigation">
+                    <div class="good-navigation__item">
+                        <a class="good-navigation__link" href="index.html">Главная</a>
+                        <img src="img/good/arrow.svg" alt="">
+                    </div>
+                    <div class="good-navigation__item">
+                        <a class="good-navigation__link" href="catalog.html">Каталог</a>
+                        <img src="img/good/arrow.svg" alt="">
+                    </div>
+                    <div class="good-navigation__now">Cyberpunk 2077</div>
+                </div>
+                <p class="header-slider-item__game">Cyberpunk 2077</p>
+                <div class="header-slider-item-buy good-buy">
+                    <div class="header-slider-item-buy-sale">
+                        <img src="img/index/slider-lenta.png" alt="" class="header-slider-item-buy-sale__img">
+                        <p class="header-slider-item-buy-sale__p">-20%</p>
+                    </div>
+                    <a href="#" class="header-slider-item-buy__btn btn">Купить<img src="img/index/slider-arrow.svg" alt="" class="header-arrow"></a>
+                    <div class="header-slider-item-buy-text">
+                        <p class="header-slider-item-buy-text__worth">1 999₽</p>
+                        <p class="header-slider-item-buy-text__oldworth">1 999₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="good">
+        <div class="container">
+            <div class="row">
+                <div class="good-column">
+                    <div class="good-poster">
+                        <img src="./img/good/poster.png" alt="">
+                    </div>
+                    <div class="good-text">
+                        <div class="good-text__item">
+                            <h6 class="good-column__subtitle">Язык:</h4>
+                                <h4 class="good-column__title">Русский</h4>
+                        </div>
+                        <div class="good-text__item">
+                            <h6 class="good-column__subtitle">Регион:</h4>
+                                <h4 class="good-column__title">Россия и СНГ</h4>
+                        </div>
+                        <div class="good-text__item">
+                            <h6 class="good-column__subtitle">Дата выхода:</h4>
+                                <h4 class="good-column__title">15 февраля 2019</h4>
+                        </div>
+                        <div class="good-text__item">
+                            <h6 class="good-column__subtitle">Издатель:</h4>
+                                <h4 class="good-column__title good-column__title_underline">Ubisoft</h4>
+                        </div>
+                        <div class="good-text__item">
+                            <h6 class="good-column__subtitle">Разработчик:</h4>
+                                <h4 class="good-column__title good-column__title_underline">Ubisoft Montreal</h4>
+                        </div>
+                        <div class="good-text__item">
+                            <h6 class="good-column__subtitle">Платформа:</h4>
+                                <h4 class="good-column__title"><img src="./img/icons/uplay.svg" alt="">Uplay</h4>
+                        </div>
+                        <div class="good-text__item">
+                            <h6 class="good-column__subtitle">Тип товара:</h4>
+                                <h4 class="good-column__title">Ключ (All In)</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="good-block">
+                    <div class="good-gallery">
+                        <div class="good-gallery__item"><img src="./img/good/gallery.png" alt=""></div>
+                        <div class="good-gallery__item"><img src="./img/good/gallery.png" alt=""></div>
+                        <div class="good-gallery__item"><img src="./img/good/gallery.png" alt=""></div>
+                        <div class="good-gallery__item"><img src="./img/good/gallery.png" alt=""></div>
+                    </div>
+                    <div class="good-information">
+                        <div class="good-information__nav">
+                            <div onclick="switchShow(0);$(this).toggleClass('good-information__nav_active');" class="good-information__nav_item good-information__nav_active">Описание</div>
+                            <div onclick="switchShow(1);$(this).toggleClass('good-information__nav_active');" class="good-information__nav_item">Системные требования</div>
+                            <div onclick="switchShow(2);$(this).toggleClass('good-information__nav_active');" class="good-information__nav_item">Активация</div>
+                        </div>
+                        <div id="good-description" class="good-nav-block good-description show">
+                            <h3 class="good-title">Четыре буквы вместо тысячи слов</h3>
+                            <p class="good-description__p">
+                                Если не смотрели, то точно слышали про «Голодные игры». Это самый близкий нам пример того – что такое battle-royal. Сотня человек, считайте почти голые, высаживаются на огромную открытую локацию. По карте, в случайных местах, разбросано оружие, снаряжение, припасы и даже техника. Цель у участников простая – выжить, но проблема в том, что карта выпустит только одного. А поэтому приготовьтесь сражаться за свою жизнь.
+                            </p>
+                            <p class="good-description__p">
+                                И мало было разработчикам ста озлобленных игроков, рыскающих по местности, в поисках друг друга! Так они ещё и поле боя со временем сужают, вынуждая вас вылезать из надёжных нычек и отправляться искать новые. И в этом весь PUBG – в нём некогда скучать, вы постоянно в напряжении, в движении, на адреналине.
+                            </p>
+                            <p class="good-description__p">
+                                И что ещё важно добавить - это игра не только про скилл. Не всегда достаточно быть самым метким и опытным. Хитрость, терпение, удача, а иногда и подлость нужны здесь не меньше. PUBG открывает для вас множество путей к победе. Можете быть машиной для убийства и набивать фраги, а можете прятаться до самого конца, чтобы выиграть матч всего с одним убийством. На войне все средства хороши, а победа, победа вместо обеда.
+                            </p>
+                        </div>
+                        <div id="good-system" class="good-nav-block good-system">
+                            <h5 class="good-system__subtitle">Минимальные системные требования</h5>
+                            <div class="good-system__row">
+                                <div class="good-system__title">ОС:</div>
+                                <div class="good-system__name">64-bit Windows 7, Windows 8.1, Windows 10</div>
+                            </div>
+                            <div class="good-system__row">
+                                <div class="good-system__title">Процессор:</div>
+                                <div class="good-system__name">Intel Core i5-4430 / AMD FX-6300</div>
+                            </div>
+                            <div class="good-system__row">
+                                <div class="good-system__title">Оперативная память:</div>
+                                <div class="good-system__name">8 GB ОЗУ</div>
+                            </div>
+                            <div class="good-system__row">
+                                <div class="good-system__title">Видеокарта:</div>
+                                <div class="good-system__name">NVIDIA GeForce GTX 960 2GB / AMD Radeon R7 370 2GB</div>
+                            </div>
+                            <div class="good-system__row">
+                                <div class="good-system__title">Место на диске:</div>
+                                <div class="good-system__name">30 GB</div>
+                            </div>
+                            <h5 class="good-system__subtitle">Минимальные системные требования</h5>
+                            <div class="good-system__row">
+                                <div class="good-system__title">ОС:</div>
+                                <div class="good-system__name">64-bit Windows 7, Windows 8.1, Windows 10</div>
+                            </div>
+                            <div class="good-system__row">
+                                <div class="good-system__title">Процессор:</div>
+                                <div class="good-system__name">Intel Core i5-4430 / AMD FX-6300</div>
+                            </div>
+                            <div class="good-system__row">
+                                <div class="good-system__title">Оперативная память:</div>
+                                <div class="good-system__name">8 GB ОЗУ</div>
+                            </div>
+                            <div class="good-system__row">
+                                <div class="good-system__title">Видеокарта:</div>
+                                <div class="good-system__name">NVIDIA GeForce GTX 960 2GB / AMD Radeon R7 370 2GB</div>
+                            </div>
+                            <div class="good-system__row">
+                                <div class="good-system__title">Место на диске:</div>
+                                <div class="good-system__name">30 GB</div>
+                            </div>
+                        </div>
+                        <div id="good-activation" class="good-nav-block good-activation">
+                            <div class="good-activation__item">
+                                <div class="good-activation__item_num">1</div>
+                                <p class="good-activation__item_text">
+                                    Получите оплаченный товар в разделе <a href="#">МОИ ПОКУПКИ</a>
+                                </p>
+                            </div>
+                            <div class="good-activation__item">
+                                <div class="good-activation__item_num">2</div>
+                                <p class="good-activation__item_text">
+                                    Если не установлен <a href="#">Steam</a> клиент, скачайте и установите его
+                                </p>
+                            </div>
+                            <div class="good-activation__item">
+                                <div class="good-activation__item_num">3</div>
+                                <p class="good-activation__item_text">
+                                    Войдите в свой аккаунт Steam или создайте новый, если у вас его еще нет
+                                </p>
+                            </div>
+                            <div class="good-activation__item">
+                                <div class="good-activation__item_num">4</div>
+                                <p class="good-activation__item_text">
+                                    Зайдите в меню Steam и выберите “Активировать код пробукта”
+                                </p>
+                            </div>
+                            <div class="good-activation__item">
+                                <div class="good-activation__item_num">5</div>
+                                <p class="good-activation__item_text">
+                                    Ну и так далее
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="good-modal" id="modal">
+        <div class="good-modal-image" id="modal-image">
+            <div class="good-modal-close"></div>
+            <img src id="modalImage">
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="row header-row_footer footer-border">
+            <div class="container header-container">
+                <div class="row header-row header-row_footer">
+                    <div class="header-action header-action_footer">
+                         <div class="logo logo_footer">
+                            <a href="index.html" class="logo"><img src="img/logo/index-logo.png" alt="" class="logo__img"></a>
+                        </div>
+                        <div class="header-links footer-links">
+                            <a href="index.html" class="header-links__a header-links__a_footer">Главная</a>
+                            <a href="catalog.html" class="header-links__a header-links__a_footer">Каталог</a>
+                            <a href="quarantee.html" class="header-links__a header-links__a_footer">Гарантии</a>
+                            <a href="contacts.html" class="header-links__a header-links__a_footer">Контакты</a>
+                            <a href="reviews.html" class="header-links__a header-links__a_footer">Отзывы</a>
+                        </div>
+                    </div>
+                    <a href='testyourluck.html' class="checkluck__btn checkluck__btn_footer btn"><img src="img/modules/clover-footer.svg" alt="" class="checkluck__btn_img"> Испытай удачу</a>
+                </div>
+            </div>
+        </div>
+        <div class="row header-row_footer footer-row">
+            <div class="container header-container">
+                <div class="row header-row">
+                    <p class="footer__text">Все продаваемые ключи закупаются у официальных дистрибьюторов и издателей. В том числе у 1C-СофтКлаб, Бука, Новый Диск и Enaza.</p>
+                    <p class="footer__copyright">GAMESHOP.RU © 2019</p>
+                </div>
+            </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    function switchShow(id) {
+        $('.good-nav-block').removeClass('show')
+        $('.good-information__nav_item').removeClass('good-information__nav_active')
+
+        if (id === 0) {
+            $('#good-description').toggleClass('show')
+        } else if (id === 1) {
+            $('#good-system').toggleClass('show')
+        } else if (id === 2) {
+            $('#good-activation').toggleClass('show')
+        }
+    }
+    document.querySelector('#main-search').addEventListener('input', function() {
+        if (this.value.length) {
+            $(".dropmenu").addClass("dropmenushow")
+        } else {
+            $(".dropmenu").removeClass("dropmenushow")
+        }
+    });
+
+
+    function showMenu() {
+        $('.hamburger--spin').toggleClass('is-active')
+        $('.overlay').toggleClass('overlayvisible')
+
+    }
+
+    function addOp() {
+        $(".header-search__input").addClass("fixedsearch")
+        $(".header-search").addClass("hoveropacity")
+        $(".dropmenu").addClass("dropmenushow")
+    }
+
+    document.querySelector('#main-search').addEventListener('blur', function() {
+        if (this.value.length === 0) {
+            $(".header-search").removeClass("hoveropacity")
+            $('.dropmenu').removeClass('dropmenushow')
+            $(".header-search__input").removeClass("fixedsearch")
+        }
+    })
+
+    $(".good-gallery__item").click(function(){
+        $('#modalImage').attr('src', $(this).find("img").attr("src"))
+        $('.good-modal').toggleClass('show-modal')
+    });
+
+    $('.good-modal-close').click(function() {
+        $('.good-modal').removeClass('show-modal')
+    })
+
+    jQuery(function($){
+        $(document).mouseup(function (e){ // событие клика по веб-документу
+            var div = $("#modal-image"); // тут указываем ID элемента
+            if (!div.is(e.target) // если клик был не по нашему блоку
+                    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+                    $('.good-modal').removeClass('show-modal')
+                }
+        });
+    });
+    </script>
+</body>
+
+</html>

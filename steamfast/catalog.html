@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>STEAMFAST</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="shortcut icon" href="img/testyourluck/logo/head-icon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+   <header class="header">
+        <button onclick="showMenu()" class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="overlay">
+            <div class="adaptive-menu">
+                <a href="quarantee.html" class="adaptive-menu__a">Гарантии</a>
+                <a href="contacts.html" class="adaptive-menu__a">Контакты</a>
+                <a href="reviews.html" class="adaptive-menu__a">Отзывы</a>
+            </div>
+            <div class="adaptive-menu adaptive-menu_right">
+                <ul class="header-menu">
+                    <li class="header-menu__li"><a href="#" class="header-menu__link"><img src="img/modules/steam-header.svg" alt="" class="header-menu__li_img"> Steam</a></li>
+                    <li class="header-menu__li"><a href="#" class="header-menu__link"><img src="img/modules/origin-header.svg" alt="" class="header-menu__li_img"> Origin</a></li>
+                    <li class="header-menu__li"><a href="#" class="header-menu__link"><img src="img/modules/uplay-header.svg" alt="" class="header-menu__li_img"> Uplay</a></li>
+                    <li class="header-menu__li"><a href="#" class="header-menu__link"><img src="img/modules/gog-header.svg" alt="" class="header-menu__li_img"> GOG</a></li>
+                    <li class="header-menu__li"><a href="#" class="header-menu__link">Global Keys</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row header-border">
+            <div class="container header-container white-container">
+                <div class="row header-row">
+                    <div class="header-action">
+                        <a href="index.html" class="logo"><img src="img/logo/logo.png" alt="" class="logo__img"></a>
+                        <div class="header-links">
+                            <a href="quarantee.html" class="header-links__a">Гарантии</a>
+                            <a href="contacts.html" class="header-links__a">Контакты</a>
+                            <a href="reviews.html" class="header-links__a">Отзывы</a>
+                        </div>
+                    </div>
+                    <form required class="header-search">
+                            <label for="main-search" class="header-search__label"><img src="img/modules/search.svg" alt="" class="header-search__label_img"></label>
+                            <input onfocus="addOp()" onblur="removeOp()" autocomplete="off" id="main-search" type="search" class="header-search__input" placeholder="Поиск">
+                            <div class="dropmenu">
+                                <div class="header-search-result">
+                                    <div class="header-search-result-item">
+                                        <div class="header-search-result-item-info">
+                                            <img src="img/index/csgo-search.png" alt="" class="header-search-result-item-info__img">
+                                            <p class="header-search-result-item-info__game">Counter Strike: Global Offencive</p>
+                                            <p class="header-search-result-item-info__price">1 999₽</p>
+                                        </div>
+                                        <div class="header-search-result-item__blur"></div>
+                                    </div>
+                                    <div class="header-search-result-item">
+                                        <div class="header-search-result-item-info">
+                                            <img src="img/index/csgo-search.png" alt="" class="header-search-result-item-info__img">
+                                            <p class="header-search-result-item-info__game">Counter Strike: Global Offencive</p>
+                                            <p class="header-search-result-item-info__price">1 999₽</p>
+                                        </div>
+                                        <div class="header-search-result-item__blur"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+        <div class="row pbn">
+            <div class="container header-container white-container">
+                <div class="row header-row">
+                    <div class="nav">
+                        <div class="catalog-box"><a href="catalog.html" class="catalog-box__btn btn"><img src="img/modules/menu.svg" alt="" class="catalog-box__btn_img"> Каталог</a></div>
+                        <ul class="header-menu">
+                            <li class="header-menu__li"><a href="#" class="header-menu__link"><img src="img/modules/steam-header.svg" alt="" class="header-menu__li_img"> Steam</a></li>
+                            <li class="header-menu__li"><a href="#" class="header-menu__link"><img src="img/modules/origin-header.svg" alt="" class="header-menu__li_img"> Origin</a></li>
+                            <li class="header-menu__li"><a href="#" class="header-menu__link"><img src="img/modules/uplay-header.svg" alt="" class="header-menu__li_img"> Uplay</a></li>
+                            <li class="header-menu__li"><a href="#" class="header-menu__link"><img src="img/modules/gog-header.svg" alt="" class="header-menu__li_img"> GOG</a></li>
+                            <li class="header-menu__li"><a href="#" class="header-menu__link">Global Keys</a></li>
+                        </ul>
+                    </div>
+                    <a href="testyourluck.html" class="checkluck__btn btn"><img src="img/modules/clover.svg" alt="" class="checkluck__btn_img "> Испытай удачу</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="catalog">
+                <p class="catalog__title"><img src="img/catalog/catalog-title.png" alt="" class="catalog__title__img">Каталог игр</p>
+                <div class="catalog-games">
+                    <a href="good.html" class="catalog-games-item catalog-warhammer">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-gta">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-siege">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-farcry">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-farcry">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-siege">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-gta">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-warhammer">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-warhammer">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-gta">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-siege">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-farcry">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-farcry">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-siege">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-gta">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-warhammer">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-warhammer">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-gta">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-siege">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-farcry">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-farcry">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-siege">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-gta">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                    <a href="good.html" class="catalog-games-item catalog-warhammer">
+                        <p class="catalog-games-item__worth">1 999₽</p>
+                        <p class="catalog-games-item__game">Gladius: Chaos Space Marines</p>
+                        <p class="catalog-games-item__license">Лицензионный ключ Steam</p>
+                        <img src="img/catalog/steam.svg" alt="" class="catalog-games-item__img">
+                        <div class="catalog-games-item__sale">-20%</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+       <footer class="footer">
+        <div class="row header-row_footer footer-border">
+            <div class="container header-container">
+                <div class="row header-row header-row_footer">
+                    <div class="header-action header-action_footer">
+                         <div class="logo logo_footer">
+                            <a href="index.html" class="logo"><img src="img/logo/index-logo.png" alt="" class="logo__img"></a>
+                        </div>
+                        <div class="header-links footer-links">
+                            <a href="index.html" class="header-links__a header-links__a_footer">Главная</a>
+                            <a href="catalog.html" class="header-links__a header-links__a_footer">Каталог</a>
+                            <a href="quarantee.html" class="header-links__a header-links__a_footer">Гарантии</a>
+                            <a href="contacts.html" class="header-links__a header-links__a_footer">Контакты</a>
+                            <a href="reviews.html" class="header-links__a header-links__a_footer">Отзывы</a>
+                        </div>
+                    </div>
+                    <button class="checkluck__btn checkluck__btn_footer btn"><img src="img/modules/clover-footer.svg" alt="" class="checkluck__btn_img"> Испытай удачу</button>
+                </div>
+            </div>
+        </div>
+        <div class="row header-row_footer footer-row">
+            <div class="container header-container">
+                <div class="row header-row">
+                    <p class="footer__text">Все продаваемые ключи закупаются у официальных дистрибьюторов и издателей. В том числе у 1C-СофтКлаб, Бука, Новый Диск и Enaza.</p>
+                    <p class="footer__copyright">GAMESHOP.RU © 2019</p>
+                </div>
+            </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+     document.querySelector('#main-search').addEventListener('input', function() {
+        if (this.value.length) {
+            $(".dropmenu").addClass("dropmenushow")
+        } else {
+            $(".dropmenu").removeClass("dropmenushow")
+        }
+    });
+
+
+    function showMenu() {
+        $('.hamburger--spin').toggleClass('is-active')
+        $('.overlay').toggleClass('overlayvisible')
+
+    }
+
+    function addOp() {
+        $(".header-search__input").addClass("fixedsearch")
+        $(".header-search").addClass("hoveropacity")
+        $(".dropmenu").addClass("dropmenushow")
+    }
+
+    document.querySelector('#main-search').addEventListener('blur', function() {
+        if (this.value.length === 0) {
+            $(".header-search").removeClass("hoveropacity")
+            $('.dropmenu').removeClass('dropmenushow')
+            $(".header-search__input").removeClass("fixedsearch")
+        }
+    })
+    </script>
+</body>
+
+</html>
