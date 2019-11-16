@@ -1,0 +1,577 @@
+@charset "UTF-8";
+/* Градиенты */
+@media screen and (max-width: 1024px) {
+  .menu-block {
+    width: 100%;
+    padding: 0 0 10px 0; }
+  .adaptive-menu .catalog-box {
+    border-right: 1px solid #e8e8ec;
+    border-left: 1px solid #e8e8ec; }
+    .adaptive-menu .catalog-box_index {
+      border-right: 1px solid #89898a61;
+      border-left: 1px solid #89898a61; }
+    .adaptive-menu .catalog-box__btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 20px;
+      color: #ffffff;
+      font-family: 'Play', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      opacity: 0.5;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      border-opacity: 1;
+      border-top: 1px solid rgba(0, 0, 0, 0.4);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+      width: calc(100% - 40px); }
+      .adaptive-menu .catalog-box__btn_index {
+        color: black;
+        opacity: 1; }
+      .adaptive-menu .catalog-box__btn:hover {
+        opacity: 1;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+      .adaptive-menu .catalog-box__btn_img {
+        padding-right: 10px;
+        fill: black; }
+  .white-container {
+    overflow: initial; }
+  .slick-dots {
+    left: 14.5% !important; }
+  .index-arrows {
+    left: 87px; }
+  .header-slider-item .container {
+    overflow: visible; }
+  .slider-review-dots {
+    display: none; }
+  .index-reviews {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .header-index .hamburger-inner {
+    background-color: #fff; }
+    .header-index .hamburger-inner:before {
+      background-color: #fff; }
+    .header-index .hamburger-inner:after {
+      background-color: #fff; }
+  .hamburger.is-active:hover {
+    opacity: 1; }
+  .topsellsl {
+    display: none;
+    position: absolute;
+    left: -40px;
+    top: 130px; }
+  .topsellsr {
+    display: none;
+    position: absolute;
+    right: -40px;
+    top: 130px; }
+  .catalog-games {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly; }
+  .newitemsl {
+    display: none;
+    position: absolute;
+    left: -40px;
+    top: 85px; }
+  .newitemsr {
+    display: none;
+    position: absolute;
+    right: -40px;
+    top: 85px; }
+  .reviews__title__img {
+    left: 31%; }
+  .quarantee__title__img {
+    left: 27.5%; }
+  .footer-links {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .header-menu__li_img {
+    padding-right: 10px; }
+  .header-menu__li {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
+  .header-menu__link {
+    width: 100%;
+    color: black;
+    font-family: 'Play', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .adaptive-menu__a {
+    opacity: 1;
+    color: black;
+    font-family: 'Play', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 20px 30px;
+    width: calc(100% - 60px);
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.4); }
+  .header-search {
+    margin-right: 50px; }
+  .header-row .checkluck__btn {
+    margin-right: 50px; }
+  .header-links {
+    display: none; }
+  .header-row .nav .header-menu {
+    display: none; }
+  .is-active .hamburger-inner,
+  .is-active .hamburger-inner::before,
+  .is-active .hamburger-inner::after {
+    background-color: #fff;
+    width: 30px;
+    height: 3px; }
+  .hamburger {
+    display: inline-block !important;
+    outline: none;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    z-index: 200000000000000000000; }
+  .is-active {
+    position: fixed; }
+    .is-active:hover {
+      opacity: 1 !important; }
+  .adaptive-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    z-index: 6;
+    width: 100%;
+    background-color: #ffffff; }
+    .adaptive-menu .header-menu {
+      width: 100%; }
+  .testluck-plan {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly; }
+  .testluck-plan-item:last-child {
+    margin-top: 100px; }
+  .testluck-prize {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly; }
+  .good-block {
+    margin: 15px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+  .good-gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 20px 0; }
+    .good-gallery__item {
+      width: calc(100% - 40px);
+      height: auto;
+      padding: 10px 20px; }
+  .good-information__nav_item {
+    width: calc(100% - 40px);
+    text-align: center; }
+  .good-column {
+    margin-top: 15px;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    width: 100%; }
+  .good-poster {
+    width: 100%;
+    height: auto; }
+  .good-header {
+    padding: 305px 0 107px 0;
+    background-size: cover;
+    background-position: center right; }
+  .good-buy {
+    -webkit-transform: unset;
+    -ms-transform: unset;
+    transform: unset; }
+  .good-navigation {
+    margin-bottom: 20px; } }
+
+@media screen and (max-width: 1024px) and (max-width: 768px) {
+  .slick-dots {
+    left: 18.5% !important; }
+  .header-slider-item__game {
+    font-size: 60px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 684px;
+    white-space: nowrap; }
+  .index-reviews .reviews-box-readyview {
+    width: calc(100% - 255px); }
+  .review-slider-item {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .reviews__title__img {
+    left: 25%; }
+  .quarantee__title__img {
+    left: 20.5%; }
+  .quarantee-steps {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .catalog__title__img {
+    position: absolute;
+    left: 32.5%;
+    top: -5px; }
+  .header-row .footer__text {
+    margin-bottom: 10px; }
+  .testluck-plan {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly; }
+  .testluck-plan-item:nth-child(2) {
+    margin-top: 100px; }
+  .header-action_footer {
+    margin-bottom: 20px;
+    margin-top: 20px; }
+  .footer-row {
+    padding: 10px 0; } }
+
+@media screen and (max-width: 1024px) and (max-width: 425px) {
+  .header-slider-item__game {
+    font-size: 32px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 365px;
+    white-space: nowrap; }
+  .header-slider-item .container {
+    overflow: visible; }
+  .header-border_index {
+    border-bottom: 1px solid transparent; }
+  .pbn_index {
+    border-bottom: 1px solid #89898a61;
+    position: absolute;
+    width: 100%;
+    top: 126px;
+    z-index: 1; }
+  .index__promo__date {
+    font-size: 60px; }
+  .slick-dots {
+    left: 33.5% !important; }
+  .index-reviews-arrows {
+    bottom: 393px; }
+  .catalog-games {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .testluck-plan-item__chance {
+    margin: 0 0px; }
+  .testluck-plan-item {
+    width: calc(100% - 40px); }
+  .catalog__title__img {
+    position: absolute;
+    left: 16.5%;
+    top: -5px; }
+  .reviews__title__img {
+    position: absolute;
+    left: 1%;
+    top: -5px; }
+  .reviews-box-send .reviews__form_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+  .reviews-box-send .reviews__form_row_center {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+  .reviews-box-send .reviews__form_warning {
+    color: #eb5757;
+    font-family: 'Play', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    margin-top: 5px;
+    margin-left: 12px; }
+  .quarantee__title__img {
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    width: 100%; }
+  .overlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 70px; }
+  .header-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .header-row .checkluck__btn {
+      margin: 0; }
+  .catalog-box {
+    width: 100%; }
+  .header-action {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    .header-action .logo {
+      margin: 5px 0 15px 0; }
+  .header-search {
+    margin-right: 0; }
+  .adaptive-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 6;
+    width: 100%; }
+  .header-row .footer__text {
+    text-align: center;
+    margin-bottom: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .footer__copyright {
+    text-align: center;
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .header-row_footer {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header-action_footer {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .header-action .logo_footer {
+    margin: 0 0 10px 0; }
+  .footer-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .header-action .header-links__a_footer {
+    margin: 0; }
+  .testluck {
+    padding: 102px 0; }
+  .testluck-prize-item {
+    width: 100%; }
+  .testluck-prize-item_box {
+    width: 100%; } }
+
+@media screen and (max-width: 1024px) and (max-width: 375px) {
+  .popup-overlay .promo-popup {
+    padding: 70px 0px; }
+  .index-reviews-arrows {
+    bottom: 420px; }
+  .header-slider-item__game {
+    font-size: 32px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 323px;
+    white-space: nowrap; }
+  .header-slider-item .container {
+    overflow: visible; }
+  .header-border_index {
+    border-bottom: 1px solid transparent; }
+  .pbn_index {
+    border-bottom: 1px solid #89898a61;
+    position: absolute;
+    width: 100%;
+    top: 126px;
+    z-index: 1; }
+  .index__promo__date {
+    font-size: 60px; }
+  .slick-dots {
+    left: 38.5% !important; }
+  .index-reviews .reviews-box-readyview {
+    width: calc(100% - 300px); }
+  .catalog__title__img {
+    position: absolute;
+    left: 12.5%;
+    top: -5px; }
+  .footer-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .header-action .header-links__a_footer {
+    margin: 0 10px 0 0; }
+    .header-action .header-links__a_footer:nth-child(4) {
+      margin: 0; }
+  .reviews__title {
+    font-size: 19px; }
+  .reviews__title__img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: -5px; }
+  .quarantee__title {
+    font-size: 19px; }
+  .header-row .checkluck__btn {
+    width: calc(100% - 40px); } }
+
+@media screen and (max-width: 1024px) and (max-width: 320px) {
+  .popup-overlay .promo-popup {
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 40px 0px; }
+  .index-reviews-arrows {
+    bottom: 427px; }
+  .slick-dots {
+    left: 43.5% !important; }
+  .header-slider-item .container {
+    overflow: visible; }
+  .header-border_index {
+    border-bottom: 1px solid transparent; }
+  .pbn_index {
+    border-bottom: 1px solid #89898a61;
+    position: absolute;
+    width: 100%;
+    top: 126px;
+    z-index: 1; }
+  .header-search__input:focus {
+    width: 181px; }
+  .index__title {
+    font-size: 24px; }
+    .index__title_reviews {
+      display: none; }
+    .index__title_newitems {
+      display: none; }
+    .index__title_topsells {
+      display: none; }
+  .header-slider-item__game {
+    font-size: 32px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 273px;
+    white-space: nowrap; }
+  .header-slider-item-buy-text__worth {
+    font-size: 15px; }
+  .header-slider-item-buy-text {
+    padding: 6px 20px 7px 20px; }
+  .index-reviews .reviews-box-readyview {
+    width: calc(100% - 350px); }
+  .testluck__title {
+    font-size: 23px; }
+  .testluck__title__img {
+    position: absolute;
+    left: -15%;
+    top: -5px;
+    width: 130%; }
+  .catalog__title__img {
+    position: absolute;
+    left: 5%;
+    top: -5px; }
+  .header-action .header-links__a_footer {
+    margin: 0 5px 10px 0; }
+    .header-action .header-links__a_footer:last-child {
+      margin: 0; }
+    .header-action .header-links__a_footer:nth-child(4) {
+      margin: 0 10px 10px 0; } }
+
+@media screen and (max-height: 480px) {
+  .menu-block {
+    overflow: scroll; } }

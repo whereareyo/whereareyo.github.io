@@ -1,0 +1,335 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Градиенты */
+/* Градиенты */
+.btn {
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none; }
+
+/* ========================================================================
+   Компонент: Container
+ ========================================================================== */
+/*
+ * 1. Box-sizing должен быть 'content-box', благодаря этому максимальная ширина всегда одинакова и
+ *    не зависит от padding на разных экранах. Это важно для модификаторов.
+ */
+.container {
+  position: relative;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  max-width: 1225px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* Удаление padding у вложенного container */
+  /* Телефон в горизонтальном положение и шире */
+  /* Планшет в горизонтальном положение и шире */
+  /* Модификаторы
+ ========================================================================== */ }
+  .container .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .container-fueld {
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px; }
+  @media (min-width: 900px) {
+    .container {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media (min-width: 1139px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0; } }
+  .container_small {
+    max-width: 900px; }
+  .container_large {
+    max-width: 1139px; }
+  .container_expand {
+    max-width: none; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+@media (max-width: 1024px) {
+  .row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .container {
+    overflow: hidden; } }
+
+.reviews {
+  padding: 60px 0 100px 0;
+  width: 100%; }
+  .reviews__title {
+    color: #151B3D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative; }
+    .reviews__title__img {
+      position: absolute;
+      left: 35%;
+      top: -5px; }
+  .reviews-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%; }
+    .reviews-box-send {
+      padding: 30px 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      background-color: #ffffff;
+      margin-bottom: 12px; }
+      .reviews-box-send .reviews__form {
+        width: 100%;
+        margin-left: 12px; }
+        .reviews-box-send .reviews__form_message {
+          width: calc(100% - 24px);
+          padding: 16px 12px;
+          font-family: 'Roboto', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          background-color: #f5f5f5;
+          border: none;
+          outline: none;
+          margin-top: 12px; }
+          .reviews-box-send .reviews__form_message::-webkit-input-placeholder {
+            color: #9da1b6;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 400; }
+          .reviews-box-send .reviews__form_message:-ms-input-placeholder {
+            color: #9da1b6;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 400; }
+          .reviews-box-send .reviews__form_message::-ms-input-placeholder {
+            color: #9da1b6;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 400; }
+          .reviews-box-send .reviews__form_message::placeholder {
+            color: #9da1b6;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 400; }
+        .reviews-box-send .reviews__form_warning {
+          color: #eb5757;
+          font-family: 'Play', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          margin-right: 20px; }
+        .reviews-box-send .reviews__form .reviews__form_btn[disabled] {
+          opacity: 0.5;
+          -webkit-transition: 0.2s;
+          -o-transition: 0.2s;
+          transition: 0.2s; }
+        .reviews-box-send .reviews__form_btn {
+          background-color: #ff4b55;
+          color: #ffffff;
+          font-family: 'Play', sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          padding: 8px 20px;
+          opacity: 1;
+          -webkit-transition: 0.2s;
+          -o-transition: 0.2s;
+          transition: 0.2s; }
+        .reviews-box-send .reviews__form_username {
+          padding: 8px 12px;
+          font-family: 'Roboto', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          background-color: #f5f5f5;
+          border: none;
+          outline: none; }
+          .reviews-box-send .reviews__form_username::-webkit-input-placeholder {
+            color: #9da1b6;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 400; }
+          .reviews-box-send .reviews__form_username:-ms-input-placeholder {
+            color: #9da1b6;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 400; }
+          .reviews-box-send .reviews__form_username::-ms-input-placeholder {
+            color: #9da1b6;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 400; }
+          .reviews-box-send .reviews__form_username::placeholder {
+            color: #9da1b6;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 400; }
+        .reviews-box-send .reviews__form_row {
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
+          .reviews-box-send .reviews__form_row_center {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+    .reviews-box .readyview-text {
+      width: calc(100% - 12px);
+      padding-left: 12px; }
+      .reviews-box .readyview-text__date {
+        color: #a7abc2;
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        margin-bottom: 8px; }
+      .reviews-box .readyview-text__review {
+        color: #151B3D;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 8px; }
+      .reviews-box .readyview-text__username {
+        color: #a7abc2;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 400; }
+    .reviews-box-readyview {
+      padding: 30px 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      background-color: #ffffff;
+      margin-bottom: 12px; }
+      .reviews-box-readyview .readyview-text {
+        width: calc(100% - 12px);
+        padding-left: 12px; }
+        .reviews-box-readyview .readyview-text__date {
+          color: #a7abc2;
+          font-family: 'Roboto', sans-serif;
+          font-size: 10px;
+          font-weight: 400;
+          margin-bottom: 8px; }
+        .reviews-box-readyview .readyview-text__review {
+          color: #151B3D;
+          font-family: 'Roboto', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          margin-bottom: 8px; }
+        .reviews-box-readyview .readyview-text__username {
+          color: #a7abc2;
+          font-family: 'Roboto', sans-serif;
+          font-size: 12px;
+          font-weight: 400; }
+    .reviews-box-adminmsg {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 30px 20px 30px 26px;
+      border-top: 1px solid #dee1ef; }
+      .reviews-box-adminmsg__img {
+        margin-right: 18px; }
+      .reviews-box-adminmsg__status {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #ff4b55;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 600; }
+      .reviews-box-adminmsg__shopname {
+        color: #a7abc2;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-left: 10px; }
+
+.review-with-answer {
+  margin-bottom: 12px; }
+  .review-with-answer .reviews-box-readyview {
+    margin-bottom: 0; }
+
+.user-avatar {
+  max-width: 50px;
+  width: 100%;
+  height: 50px; }
+  .user-avatar__img {
+    width: 100%;
+    vertical-align: middle; }

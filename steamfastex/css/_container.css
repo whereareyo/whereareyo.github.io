@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* ========================================================================
+   Компонент: Container
+ ========================================================================== */
+/*
+ * 1. Box-sizing должен быть 'content-box', благодаря этому максимальная ширина всегда одинакова и
+ *    не зависит от padding на разных экранах. Это важно для модификаторов.
+ */
+.container {
+  position: relative;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  max-width: 1141px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* Удаление padding у вложенного container */
+  /* Телефон в горизонтальном положение и шире */
+  /* Планшет в горизонтальном положение и шире */
+  /* Модификаторы
+ ========================================================================== */ }
+  .container .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .container-fueld {
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px; }
+  @media (min-width: 900px) {
+    .container {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media (min-width: 1139px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0; } }
+  .container_small {
+    max-width: 900px; }
+  .container_large {
+    max-width: 1139px; }
+  .container_expand {
+    max-width: none; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+@media (max-width: 1024px) {
+  .row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
