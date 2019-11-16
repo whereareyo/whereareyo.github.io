@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/hamburgers.css">
+    <title>FAQ</title>
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <header>
+        <div class="main-header">
+            <div class="main-header-container">
+                <div class="main-header-logo">
+                    <img src="../assets/img/logo.png" alt="" class="main-header-logo__img">
+                    <p class="main-header-logo__p">POKOBUY</p>
+                </div>
+                <div class="scaleing">
+                    <nav class="main-header__nav">
+                        <ul class="main-header__nav_ul">
+                            <li class="main-header__nav_ul_li"><a href="index.html" class="main-header__nav_ul_li_a mainscroll">Главная</a></li>
+                            <li class="main-header__nav_ul_li"><a href="../shop/index.html" class="main-header__nav_ul_li_a">Магазин</a></li>
+                            <li class="main-header__nav_ul_li"><a href="../index.html#quarantees" class="main-header__nav_ul_li_a quaranteescroll">Гарантии</a></li>
+                            <li class="main-header__nav_ul_li"><a href="../index.html#reviews" class="main-header__nav_ul_li_a reviewscroll">Отзывы</a></li>
+                            <li class="main-header__nav_ul_li"><a href="../index.html#boosters" class="main-header__nav_ul_li_a boostersscroll">Наши бустеры</a></li>
+                        </ul>
+                    </nav>
+                    <div class="main-header-profile">
+                        <img src="../assets/img/man.svg" alt="" class="main-header-profile__img">
+                        <a href="../panel/index.html" class="main-header-profile__p">Личный кабинет</a>
+                        <a href="../panel/garbage.html" class="main-header-profile-balance"><button class="main-header-profile-balance__button">
+                                <span class="main-header-profile-balance__button_span">100<img src="../assets/img/ruble.svg" alt="" class="main-header-profile-balance__button_span_img"></span>
+                                <img src="../assets/img/shopping-cart.svg" alt="" class="main-header-profile-balance__button_img">
+                                <div class="main-header-profile-balance__button_ellipse">
+                                    <p class="main-header-profile-balance__button_ellipse__p">+1</p>
+                                </div>
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="showMenu()" class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+    <div class="faq-container">
+        <section class="faq">
+            <h1 class="faq__h1">Ответы на вопросы</h1>
+            <p class="faq__p">Буст побед</p>
+            <div class="faq-text">
+                <div class="faq-item" onclick="this.classList.toggle('open')">
+                    <div class="closed">
+                        <div class="opener">
+                            <div class="plus"></div>
+                        </div>
+                        <h4 class="faq-text__h4">Как заказать буст?</h4>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="label">1. Выберите нужную услугу и оформите ее в калькуляторе</span>
+                        <span class="label">2. Скопируйте ключ который придёт вам на почту</span>
+                        <span class="label">3. Оформите заказ в личном кабинете</span>
+                    </div>
+                </div>
+                <div class="faq-item" onclick="this.classList.toggle('open')">
+                    <div class="closed">
+                        <div class="opener">
+                            <div class="plus"></div>
+                        </div>
+                        <h4 class="faq-text__h4">Можно что-бы бустер сам играл?</h4>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="label">Да, если у вас нет временить быть на бусте, вы можете дать свой аккаунт бустеру в личном чате заказа</span>
+                    </div>
+                </div>
+                <div class="faq-item" onclick="this.classList.toggle('open')">
+                    <div class="closed">
+                        <div class="opener">
+                            <div class="plus"></div>
+                        </div>
+                        <h4 class="faq-text__h4">Могу ли я играть в другие игры?</h4>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="label">Нет, это может препятсвовать процесу буста</span>
+                    </div>
+                </div>
+                <div class="faq-item" onclick="this.classList.toggle('open')">
+                    <div class="closed">
+                        <div class="opener">
+                            <div class="plus"></div>
+                        </div>
+                        <h4 class="faq-text__h4">Могу ли я заказать буст калибровки?</h4>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="label">Да, конечно. Вам лишь нужно поставить галочку в калькуляторе напротив калибровки </span>
+                    </div>
+                </div>
+                <div class="faq-item" onclick="this.classList.toggle('open')">
+                    <div class="closed">
+                        <div class="opener">
+                            <div class="plus"></div>
+                        </div>
+                        <h4 class="faq-text__h4">Меня не забанят?</h4>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="label">Нет, если вы не будете использовать чыт-програмы.
+                            За всё время работы у нас не было случаев бана нашых клиентов</span>
+                    </div>
+                </div>
+                <div class="faq-item" onclick="this.classList.toggle('open')">
+                    <div class="closed">
+                        <div class="opener">
+                            <div class="plus"></div>
+                        </div>
+                        <h4 class="faq-text__h4">Сколько длится буст?</h4>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="label">Всё зависит от вашего заказа, тоисть чем больше побед тем больше времени требуется на буст. Длительность 1 игры - 3 мин</span>
+                    </div>
+                </div>
+            </div>
+            <p class="faq__p">Дополнительные услуги</p>
+            <div class="faq-text">
+                <div class="faq-item" onclick="this.classList.toggle('open')">
+                    <div class="closed">
+                        <div class="opener">
+                            <div class="plus"></div>
+                        </div>
+                        <h4 class="faq-text__h4">Как всё происходит?</h4>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="label">После покупки и активацыи услуги буста часов вам нужно будет настроить данные аккаунта в личном кабинете. В течении дня после активацыи администратор включит буст часов</span>
+                    </div>
+                </div>
+                <div class="faq-item" onclick="this.classList.toggle('open')">
+                    <div class="closed">
+                        <div class="opener">
+                            <div class="plus"></div>
+                        </div>
+                        <h4 class="faq-text__h4">Сколько часов мне накрутят?</h4>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="label">В зависимости от того сколько вы заказали. Буст идёт 24/7</span>
+                    </div>
+                </div>
+                <div class="faq-item" onclick="this.classList.toggle('open')">
+                    <div class="closed">
+                        <div class="opener">
+                            <div class="plus"></div>
+                        </div>
+                        <h4 class="faq-text__h4">Буст часов выключился, что делать?</h4>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="label">Если вы зашли в игру, это выбьет буст часов на аккаунте т.к Steam не позволяет запускать игровые сессии с разных устройств. Администратор переподключит автоматически в течении дня. Если через день буст часов не включат, свяжытесь с поддержкой</span>
+                    </div>
+                </div>
+                <div class="faq-item" onclick="this.classList.toggle('open')">
+                    <div class="closed">
+                        <div class="opener">
+                            <div class="plus"></div>
+                        </div>
+                        <h4 class="faq-text__h4">Когда включится буст часов?</h4>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="label">В течении дня после активацыы в личном кабинете</span>
+                    </div>
+                </div>
+                <div class="faq-item" onclick="this.classList.toggle('open')">
+                    <div class="closed">
+                        <div class="opener">
+                            <div class="plus"></div>
+                        </div>
+                        <h4 class="faq-text__h4">Как быстро мне накрутят лайки?</h4>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="label">В течении дня после покупки</span>
+                    </div>
+                </div>
+            </div>
+            <p class="faq__p">Аккаунты</p>
+            <div class="faq-text">
+                <div class="faq-item" onclick="this.classList.toggle('open')">
+                    <div class="closed">
+                        <div class="opener">
+                            <div class="plus"></div>
+                        </div>
+                        <h4 class="faq-text__h4">Как я получу данные?</h4>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="label">После покупки данные от аккаунта придут вам на почту. Так же выможете посмотреть их в личном кабинете</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="footer">
+        <div class="main-container">
+            <div class="footer-section">
+                <div class="footer-section-text">
+                    <p class="footer-section-text__p">© Copyrights POKO-BUY.RU 2018-2019. All rights reserved.
+                    </p>
+                    <p class="footer-section-text__p">Counter-Strike: Global Offensive is a registered trademark of Valve Corporation Company
+                    </p>
+                    <p class="footer-section-text__p">We are in no way affiliated with, associated with or endorsed by Valve Corporation.</p>
+                </div>
+                <div class="footer-section-item">
+                    <div class="footer-section-item-links">
+                        <p class="footer-section-item-links__p">Мы тут:</p>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/vk-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/discord-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/steam-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                    </div>
+                    <a href="ula/index.html" class="footer-section-item__a">Пользовательское соглашение</a>
+                    <div class="footer-section-item-certif">
+                        <img src="../assets/img/webmoneym.png" alt="" class="footer-section-item-certif__img">
+                        <img src="../assets/img/webmoneya.png" alt="" class="footer-section-item-certif__img">
+                        <img src="../assets/img/inter.png" alt="" class="footer-section-item-certif__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

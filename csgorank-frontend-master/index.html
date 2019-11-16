@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/container.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/css/hamburgers.css">
+    <title>Pokobuy</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-header">
+            <div class="main-header-container">
+                <div class="main-header-logo">
+                    <img src="assets/img/logo.png" alt="" class="main-header-logo__img">
+                    <p class="main-header-logo__p">POKOBUY</p>
+                </div>
+                <div class="scaleing">
+                    <nav class="main-header__nav">
+                        <ul class="main-header__nav_ul">
+                            <li class="main-header__nav_ul_li"><a href="index.html" class="main-header__nav_ul_li_a mainscroll">Главная</a></li>
+                            <li class="main-header__nav_ul_li"><a href="shop/index.html" class="main-header__nav_ul_li_a">Магазин</a></li>
+                            <li class="main-header__nav_ul_li"><a href="index.html#quarantees" class="main-header__nav_ul_li_a quaranteescroll">Гарантии</a></li>
+                            <li class="main-header__nav_ul_li"><a href="index.html#reviews" class="main-header__nav_ul_li_a reviewscroll">Отзывы</a></li>
+                            <li class="main-header__nav_ul_li"><a href="index.html#boosters" class="main-header__nav_ul_li_a boostersscroll">Наши бустеры</a></li>
+                        </ul>
+                    </nav>
+                    <div class="main-header-profile">
+                        <img src="assets/img/man.svg" alt="" class="main-header-profile__img">
+                        <a href="../panel/index.html" class="main-header-profile__p">Личный кабинет</a>
+                        <a href="panel/garbage.html" class="main-header-profile-balance"><button class="main-header-profile-balance__button">
+                                <span class="main-header-profile-balance__button_span">100<img src="assets/img/ruble.svg" alt="" class="main-header-profile-balance__button_span_img"></span>
+                                <img src="assets/img/shopping-cart.svg" alt="" class="main-header-profile-balance__button_img">
+                                <div class="main-header-profile-balance__button_ellipse">
+                                    <p class="main-header-profile-balance__button_ellipse__p">+1</p>
+                                </div>
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="showMenu()" class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+    <div class="main" id="main">
+        <div id="owl" class="main-slider owl-carousel">
+            <div class="main-slider-item">
+                <div class="main-container">
+                    <h1 class="main-slider-item__h1">Буст в CS:GO</h1>
+                    <p class="main-slider-item__p">Хочешь купить аккаунт, с вечной <br>
+                        гарантией и званием? <br>
+                        Тогда советуем тебе посетить наш магазин!</p>
+                    <button class="main-slider-item__button">Наш магазин</button>
+                    <img src="assets/img/main-portrait.png" alt="" class="main-slider-item__img">
+                </div>
+            </div>
+            <div class="main-slider-item main-slider-item_s">
+                <div class="main-container">
+                    <h1 class="main-slider-item__h1">Буст в CS:GO</h1>
+                    <p class="main-slider-item__p">Устал проигрывать и сливать катки? <br>
+                        Тогда тебе к нам!</p>
+                    <button class="main-slider-item__button">Заказать</button>
+                    <img src="assets/img/sledge_portrait.png" alt="" class="main-slider-item__img">
+                </div>
+            </div>
+            <div class="main-slider-item main-slider-item_t">
+                <div class="main-container">
+                    <h1 class="main-slider-item__h1">Буст в CS:GO</h1>
+                    <p class="main-slider-item__p">Только зашёл в кс и боишься<br>
+                        откалибровать сильвера ?<br><br>
+                        Тогда ты можешь заказать <br>
+                        калибровку до <b>ЛЕМА</b></p>
+                    <button class="main-slider-item__button">Заказать</button>
+                    <img src="assets/img/jackal_portrait.png" alt="" class="main-slider-item__img">
+                </div>
+            </div>
+        </div>
+        <div class="whyus anchor" id="quarantees">
+            <div class="main-container">
+                <h1 class="whyus__h1">Почему мы ?</h1>
+                <div class="whyus-wrapper">
+                    <div class="whyus-wrapper-item">
+                        <div class="whyus-wrapper-item-img">
+                            <img src="assets/img/earth-globe.svg" alt="" class="whyus-wrapper-item-img__img"></div>
+                        <h1 class="whyus-wrapper-item__h1">Опыт</h1>
+                        <p class="whyus-wrapper-item__p">У нас работают только <br>
+                            высококвалифицированные <br>
+                            бустеры, с большим <br>
+                            стажем работы в этой <br>
+                            отрасли.</p>
+                    </div>
+                    <div class="whyus-wrapper-item">
+                        <div class="whyus-wrapper-item-img">
+                            <img src="assets/img/shield.svg" alt="" class="whyus-wrapper-item__img"></div>
+                        <h1 class="whyus-wrapper-item__h1">Безопасность</h1>
+                        <p class="whyus-wrapper-item__p">Нам не нужны никакие данные от <br>
+                            вашего аккаунта. <br>
+                            Буст проходит исключительно <br>
+                            через лобби.</p>
+                    </div>
+                    <div class="whyus-wrapper-item">
+                        <div class="whyus-wrapper-item-img">
+                            <img src="assets/img/speedometers.svg" alt="" class="whyus-wrapper-item__img"></div>
+                        <h1 class="whyus-wrapper-item__h1">Скорость</h1>
+                        <p class="whyus-wrapper-item__p">Именно благодаря нашим <br>
+                            професиональным бустерам. <br>
+                            Прокачка ранга происходит <br>
+                            быстро и эффективно.</p>
+                    </div>
+                    <div class="whyus-wrapper-item">
+                        <div class="whyus-wrapper-item-img">
+                            <img src="assets/img/lock.svg" alt="" class="whyus-wrapper-item__img"></div>
+                        <h1 class="whyus-wrapper-item__h1">Надежность</h1>
+                        <p class="whyus-wrapper-item__p">Мы уже год на рынке и успели <br>
+                            собрать много положительных <br>
+                            отзывов от наших <br>
+                            любимых клиентов.</p>
+                    </div>
+                    <div class="whyus-wrapper-item">
+                        <div class="whyus-wrapper-item-img">
+                            <img src="assets/img/dialog.svg" alt="" class="whyus-wrapper-item__img"></div>
+                        <h1 class="whyus-wrapper-item__h1">Поддержка</h1>
+                        <p class="whyus-wrapper-item__p">Если у вас возникнут <br>
+                            какие-то проблеми <br>
+                            наша поддержка <br>
+                            поможет режишь вопрос.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="calc">
+            <div class="main-container">
+                <div class="calc-section">
+                    <div class="calc-section-action">
+                        <p class="calc-section-action__p">Калькулятор</p>
+                        <button onclick="showCalc(0)" class="calc-section-action__button">Звания</button>
+                        <button onclick="showCalc(1)" class="calc-section-action__button">Победы</button>
+                        <button onclick="showCalc(2)" class="calc-section-action__button">Доп.Услуги</button>
+                    </div>
+                    <form class="calcswapranks calc-section-box show">
+                        <p class="calc-section__p">Буст звания в CS:GO</p>
+                        <div class="calc-section-select">
+                            <div class="calc-section-select-item">
+                                <img src="assets/img/silver.png" alt="" class="calc-section-select-item__img" id="myRankForBoostImage">
+                                <p class="calc-section-select-item__p">Укажите ваше звание:</p>
+                                <div class="calc-section-select-item-ranks">
+                                    <div onclick="showDropmenu(1)" class="calc-section-select-item-ranks-list" id="fcr">
+                                        <p class="calc-section-select-item-ranks-list__p calc-section-select-item-ranks-list__p_main" id="myRankForBoost">Выбрать звание</p><img src="assets/img/arrowtop.svg" alt="" class="calc-section-select-item-ranks-list__img"><input type="text" id="myRankForBoostInput" style="display: none;">
+                                    </div>
+                                    <div class="dropmenu calc-section-select-item-ranks-box scrollbar" id="firstrankslist">
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(0)">
+                                            <p class="calc-section-select-item-ranks-list__p">Серебро 1</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(1)">
+                                            <p class="calc-section-select-item-ranks-list__p">Серебро 2</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(2)">
+                                            <p class="calc-section-select-item-ranks-list__p">Серебро 3</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(3)">
+                                            <p class="calc-section-select-item-ranks-list__p">Серебро 4</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(4)">
+                                            <p class="calc-section-select-item-ranks-list__p">Сильвер-Элита</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(5)">
+                                            <p class="calc-section-select-item-ranks-list__p">Серебро-Великий Магистр</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(6)">
+                                            <p class="calc-section-select-item-ranks-list__p">Золотая звезда 1</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(7)">
+                                            <p class="calc-section-select-item-ranks-list__p">Золотая звезда 2</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(8)">
+                                            <p class="calc-section-select-item-ranks-list__p">Золотая Звезда 3</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(9)">
+                                            <p class="calc-section-select-item-ranks-list__p">Золотая Звезда Магистр</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(10)">
+                                            <p class="calc-section-select-item-ranks-list__p">Магистр Хранитель 1</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(11)">
+                                            <p class="calc-section-select-item-ranks-list__p">Магистр Хранитель 2</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(12)">
+                                            <p class="calc-section-select-item-ranks-list__p">Магистр Хранитель Элита</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(13)">
+                                            <p class="calc-section-select-item-ranks-list__p">Заслуженный Магистр Хранитель</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(14)">
+                                            <p class="calc-section-select-item-ranks-list__p">Легендарный Беркут</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(15)">
+                                            <p class="calc-section-select-item-ranks-list__p">Легендарный Беркут Магистр</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(16)">
+                                            <p class="calc-section-select-item-ranks-list__p">Великий Магистр Высшего Ранка</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="myRankForBoost(17)">
+                                            <p class="calc-section-select-item-ranks-list__p">Всемирная Элита</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc-section-select-item">
+                                <img src="assets/img/global.png" alt="" class="calc-section-select-item__img" id="wantRankForBoostImage">
+                                <p class="calc-section-select-item__p calc-section-select-item__p_morem">Укажите желаемое звание:</p>
+                                <div class="calc-section-select-item-ranks">
+                                    <div onclick="showDropmenu(2)" class="calc-section-select-item-ranks-list" id="scr">
+                                        <p class="calc-section-select-item-ranks-list__p calc-section-select-item-ranks-list__p_main" id="wantRankForBoostHead">Выбрать звание</p><img src="assets/img/arrowtop.svg" alt="" class="calc-section-select-item-ranks-list__img"><input type="text" id="wantedRankForBoostInput" style="display: none;">
+                                    </div>
+                                    <div class="dropmenu calc-section-select-item-ranks-box scrollbar" id="secondrankslist">
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(0)">
+                                            <p class="calc-section-select-item-ranks-list__p">Серебро 1</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(1)">
+                                            <p class="calc-section-select-item-ranks-list__p">Серебро 2</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(2)">
+                                            <p class="calc-section-select-item-ranks-list__p">Серебро 3</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(3)">
+                                            <p class="calc-section-select-item-ranks-list__p">Серебро 4</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(4)">
+                                            <p class="calc-section-select-item-ranks-list__p">Сильвер-Элита</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(5)">
+                                            <p class="calc-section-select-item-ranks-list__p">Серебро-Великий Магистр</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(6)">
+                                            <p class="calc-section-select-item-ranks-list__p">Золотая звезда 1</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(7)">
+                                            <p class="calc-section-select-item-ranks-list__p">Золотая звезда 2</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(8)">
+                                            <p class="calc-section-select-item-ranks-list__p">Золотая Звезда 3</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(9)">
+                                            <p class="calc-section-select-item-ranks-list__p">Золотая Звезда Магистр</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(10)">
+                                            <p class="calc-section-select-item-ranks-list__p">Магистр Хранитель 1</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(11)">
+                                            <p class="calc-section-select-item-ranks-list__p">Магистр Хранитель 2</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(12)">
+                                            <p class="calc-section-select-item-ranks-list__p">Магистр Хранитель Элита</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(13)">
+                                            <p class="calc-section-select-item-ranks-list__p">Заслуженный Магистр Хранитель</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(14)">
+                                            <p class="calc-section-select-item-ranks-list__p">Легендарный Беркут</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(15)">
+                                            <p class="calc-section-select-item-ranks-list__p">Легендарный Беркут Магистр</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(16)">
+                                            <p class="calc-section-select-item-ranks-list__p">Великий Магистр Высшего Ранка</p>
+                                        </div>
+                                        <div class="calc-section-select-item-ranks-list" onclick="wantRankForBoost(17)">
+                                            <p class="calc-section-select-item-ranks-list__p">Всемирная Элита</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calc-section-item calcshowed">
+                            <div class="calc-section-item-checkboxes"><input type="checkbox" id="checkboxcalc" class="calc-section-item-checkboxes__input"><label for="checkboxcalc" class="calc-section-item-checkboxes__label calclabel">Без очереди +35%</label></div>
+                            <div class="calc-section-item-checkboxes"><input type="checkbox" id="checkboxcalcs" class="calc-section-item-checkboxes__input"><label for="checkboxcalcs" class="calc-section-item-checkboxes__label calclabel">Калибровка 600 руб.</label></div>
+                            <div class="calc-section-item-checkboxes"><input type="checkbox" id="checkboxcalct" class="calc-section-item-checkboxes__input"><label for="checkboxcalct" class="calc-section-item-checkboxes__label calclabel">+1 победа в конце ( 59 руб. )</label></div>
+                        </div>
+                        <div class="calc-section-form calcshowed">
+                            <div class="calc-section-form-item">
+                                <label for="email" class="calc-section-form-item__label">Укажите ваш email:</label>
+                                <input type="email" placeholder="test@mail.com" id="email" class="calc-section-form-item__input">
+                            </div>
+                            <div class="calc-section-form-item">
+                                <label for="promo" class="calc-section-form-item__label">Укажите промокод:</label>
+                                <input type="text" placeholder="Если имеется" id="promo" class="calc-section-form-item__input">
+                            </div>
+                        </div>
+                        <div class="calc-section-total">
+                            <div class="calc-section-total-time">
+                                <div class="calc-section-total-item">
+                                    <p class="calc-section-total-item__p"><span id="modelPrice">0</span> руб.</p>
+                                </div>
+                                <div class="calc-section-total-item calc-section-total-item_minp">
+                                    <img src="assets/img/time.svg" alt="" class="calc-section-total-item__img">
+                                    <p class="calc-section-total-item_minp__p"><span id="modelDays">1-2</span> дн.</p>
+                                </div>
+                            </div>
+                            <button class="calc-section__button">Оплатить</button>
+                        </div>
+                    </form>
+                    <form class="calcswapwins calc-section-box">
+                        <p class="calc-section__p">Буст побед в CS:GO</p>
+                        <p class="calcswapwins__p">Укажите кол-во побед:</p>
+                        <input type="text" placeholder="1000" class="calcswapwins__input calc-section-form-item__input" id="winrate-boost-input">
+                        <p class="calcswapwins__p">Цена:</p>
+                        <div class="calcswapwins-total">
+                            <p class="calcswapwins-total__p"><span id="winrate-boost-price">0</span> руб.</p>
+                        </div>
+                        <div class="calc-section-item">
+                            <div class="calc-section-item-checkboxes"><input type="checkbox" id="checkboxcalcwins" class="calc-section-item-checkboxes__input"><label for="checkboxcalcwins" class="calc-section-item-checkboxes__label calclabel">Без очереди +35%</label></div>
+                        </div>
+                        <div class="calc-section-form">
+                            <div class="calc-section-form-item">
+                                <label for="email" class="calc-section-form-item__label">Укажите ваш email:</label>
+                                <input type="email" placeholder="test@mail.com" id="email" class="calc-section-form-item__input">
+                            </div>
+                            <div class="calc-section-form-item">
+                                <label for="promo" class="calc-section-form-item__label">Укажите промокод:</label>
+                                <input type="text" placeholder="Если имеется" id="promo" class="calc-section-form-item__input">
+                            </div>
+                        </div>
+                        <div class="calc-section-total">
+                            <button class="calc-section__button">Оплатить</button>
+                        </div>
+                    </form>
+                    <form class="calcswapservices calc-section-box">
+                        <p class="calc-section__p">Буст часов в CS:GO</p>
+                        <p class="calcswapwins__p">Выберите тариф:</p>
+                        <div class="calc-section-select-item-ranks">
+                            <div onclick="showDropmenu(0)" class="calc-section-select-item-ranks-list" id="tcr">
+                                <p class="calc-section-select-item-ranks-list__p">Название</p><img src="assets/img/arrowtop.svg" alt="" class="calc-section-select-item-ranks-list__img">
+                            </div>
+                            <div class="dropmenu scrollbar" id="thirdrankslist">
+                                <div class="calc-section-select-item-ranks-list">
+                                    <p class="calc-section-select-item-ranks-list__p" onclick="changeTarifForBuy(0)">Буст часов на день - бесплатно</p>
+                                </div>
+                                <div class="calc-section-select-item-ranks-list">
+                                    <p class="calc-section-select-item-ranks-list__p" onclick="changeTarifForBuy(1)">Буст часов на неделю - 49 руб.</p>
+                                </div>
+                                <div class="calc-section-select-item-ranks-list">
+                                    <p class="calc-section-select-item-ranks-list__p" onclick="changeTarifForBuy(2)">Буст часов на месяц - 149 руб.</p>
+                                </div>
+                                <div class="calc-section-select-item-ranks-list">
+                                    <p class="calc-section-select-item-ranks-list__p" onclick="changeTarifForBuy(3)">Буст часов на 3 месяца - 299 руб.</p>
+                                </div>
+                                <div class="calc-section-select-item-ranks-list">
+                                    <p class="calc-section-select-item-ranks-list__p" onclick="changeTarifForBuy(4)">Буст часов на полгода - 449 руб.</p>
+                                </div>
+                                <div class="calc-section-select-item-ranks-list">
+                                    <p class="calc-section-select-item-ranks-list__p" onclick="changeTarifForBuy(5)">Буст часов на год - 749 руб.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="calcswapwins__p servicesopened">Цена:</p>
+                        <div class="calcswapwins-total servicesopened">
+                            <p class="calcswapwins-total__p"><span id="hoursboost-price">499</span> руб.</p>
+                        </div>
+                        <div class="calc-section-form">
+                            <div class="calc-section-form-item">
+                                <label for="email" class="calc-section-form-item__label">Укажите ваш email:</label>
+                                <input type="email" placeholder="test@mail.com" id="email" class="calc-section-form-item__input">
+                            </div>
+                            <div class="calc-section-form-item">
+                                <label for="promo" class="calc-section-form-item__label">Укажите промокод:</label>
+                                <input type="text" placeholder="Если имеется" id="promo" class="calc-section-form-item__input">
+                            </div>
+                        </div>
+                        <div class="calc-section-total">
+                            <button class="calc-section__button">Оплатить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="question anchor">
+            <div class="main-container">
+                <div class="question-section">
+                    <div class="question-section-text">
+                        <h1 class="question-section-text__h1">Как происходит буст?</h1>
+                        <span class="question-section-text__span"></span>
+                        <p class="question-section-text__p question-section-text__p_formar">Уникальность нашего метода заключается в <br>
+                            простоте и эффективности способа: нам не <br>
+                            нужны вашие данние steam, клиент любого <br>
+                            ранга заходит в лобби <b>к нашим опытным <br>
+                                бустерам со званием Global Elite.</b> <br>
+                            Так же после оплаты вы сможете перейти в <br>
+                            чат с бустером в личном кабинете и уточнить <br>
+                            удобное время для буста.
+                        </p>
+                        <p class="question-section-text__p">Игроку нужно лишь слушать и выполнять <br>
+                            что говорит бустер. </p>
+                        <img src="assets/img/maingrenade.png" alt="" class="question-section-text__img">
+                    </div>
+                    <div class="question-section-laptop">
+                        <img src="assets/img/laptop.png" alt="" class="laptopmain">
+                        <img src="assets/img/laptopimgmain.png" alt="" class="question-section-laptop__img">
+                        <div class="question-section-laptop-item">
+                            <img src="assets/img/laptopimg1.png" alt="" class="question-section-laptop-item__img">
+                            <img src="assets/img/laptopimg2.png" alt="" class="question-section-laptop-item__img">
+                            <img src="assets/img/laptopimg3.png" alt="" class="question-section-laptop-item__img">
+                        </div>
+                        <img src="assets/img/mka.png" alt="" class="mkabsolute">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="review anchor" id="reviews">
+            <div class="main-container">
+                <div class="review-section">
+                    <h1 class="review-section__h1">Отзывы довольных клиентов:</h1>
+                    <img src="assets/img/otziv.png" alt="" class="review-section__img">
+                    <button class="review-section__button"><img src="assets/img/review_btn.png" alt="" class="review-section__button_img">Ещё отзывы</button>
+                </div>
+            </div>
+        </div>
+        <div class="boosters anchor" id="boosters">
+            <div class="main-container">
+                <div class="boosters-section">
+                    <h1 class="boosters-section__h1">Наши бустеры:</h1>
+                    <div class="boosters-section-slider boosterslider">
+                        <div class="boosters-section-slider-item">
+                            <div class="boosters-section-slider-item-avatar"><img src="assets/img/sliderimg1.png" alt="" class="boosters-section-slider-item-avatar__img"></div>
+                            <p class="boosters-section-slider-item__p">Никита</p>
+                            <p class="boosters-section-slider-item__p">shelbysout</p>
+                        </div>
+                        <div class="boosters-section-slider-item">
+                            <div class="boosters-section-slider-item-avatar"><img src="assets/img/sliderimg2.png" alt="" class="boosters-section-slider-item-avatar__img"></div>
+                            <p class="boosters-section-slider-item__p">Адиль</p>
+                            <p class="boosters-section-slider-item__p">dallowin</p>
+                        </div>
+                        <div class="boosters-section-slider-item">
+                            <div class="boosters-section-slider-item-avatar"><img src="assets/img/sliderimg3.png" alt="" class="boosters-section-slider-item-avatar__img"></div>
+                            <p class="boosters-section-slider-item__p">Гоша</p>
+                            <p class="boosters-section-slider-item__p">Рубчинский</p>
+                        </div>
+                        <div class="boosters-section-slider-item">
+                            <div class="boosters-section-slider-item-avatar"><img src="assets/img/sliderimg1.png" alt="" class="boosters-section-slider-item-avatar__img"></div>
+                            <p class="boosters-section-slider-item__p">Никита</p>
+                            <p class="boosters-section-slider-item__p">shelbysout</p>
+                        </div>
+                        <div class="boosters-section-slider-item">
+                            <div class="boosters-section-slider-item-avatar"><img src="assets/img/sliderimg1.png" alt="" class="boosters-section-slider-item-avatar__img"></div>
+                            <p class="boosters-section-slider-item__p">Никита</p>
+                            <p class="boosters-section-slider-item__p">shelbysout</p>
+                        </div>
+                        <div class="boosters-section-slider-item">
+                            <div class="boosters-section-slider-item-avatar"><img src="assets/img/sliderimg1.png" alt="" class="boosters-section-slider-item-avatar__img"></div>
+                            <p class="boosters-section-slider-item__p">Никита</p>
+                            <p class="boosters-section-slider-item__p">shelbysout</p>
+                        </div>
+                        <div class="boosters-section-slider-item">
+                            <div class="boosters-section-slider-item-avatar"><img src="assets/img/sliderimg1.png" alt="" class="boosters-section-slider-item-avatar__img"></div>
+                            <p class="boosters-section-slider-item__p">Никита</p>
+                            <p class="boosters-section-slider-item__p">shelbysout</p>
+                        </div>
+                        <div class="boosters-section-slider-item">
+                            <div class="boosters-section-slider-item-avatar"><img src="assets/img/sliderimg1.png" alt="" class="boosters-section-slider-item-avatar__img"></div>
+                            <p class="boosters-section-slider-item__p">Никита</p>
+                            <p class="boosters-section-slider-item__p">shelbysout</p>
+                        </div>
+                        <div class="boosters-section-slider-item">
+                            <div class="boosters-section-slider-item-avatar"><img src="assets/img/sliderimg1.png" alt="" class="boosters-section-slider-item-avatar__img"></div>
+                            <p class="boosters-section-slider-item__p">Никита</p>
+                            <p class="boosters-section-slider-item__p">shelbysout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="main-container">
+                <div class="footer-section">
+                    <div class="footer-section-text">
+                        <p class="footer-section-text__p">© Copyrights POKO-BUY.RU 2018-2019. All rights reserved.
+                        </p>
+                        <p class="footer-section-text__p">Counter-Strike: Global Offensive is a registered trademark of Valve Corporation Company
+                        </p>
+                        <p class="footer-section-text__p">We are in no way affiliated with, associated with or endorsed by Valve Corporation.</p>
+                    </div>
+                    <div class="footer-section-item">
+                        <div class="footer-section-item-links">
+                            <p class="footer-section-item-links__p">Мы тут:</p>
+                            <a href="" class="footer-section-item-links__a"><img src="assets/img/vk-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                            <a href="" class="footer-section-item-links__a"><img src="assets/img/discord-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                            <a href="" class="footer-section-item-links__a"><img src="assets/img/steam-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                        </div>
+                        <a href="ula/index.html" class="footer-section-item__a">Пользовательское соглашение</a>
+                        <div class="footer-section-item-certif">
+                            <img src="assets/img/webmoneym.png" alt="" class="footer-section-item-certif__img">
+                            <img src="assets/img/webmoneya.png" alt="" class="footer-section-item-certif__img">
+                            <a href="https://www.free-kassa.ru/"><img src="https://www.free-kassa.ru/img/fk_btn/13.png" title="Прием платежей на сайте"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<script>
+$(document).ready(function() {
+    $('.boosterslider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        adaptiveHeight: true,
+        autoplaySpeed: 5000,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        autoplaySpeed: 2000,
+        dots: false,
+    })
+
+});
+
+function showDropmenu(e) {
+    $('.calc-section-select-item-ranks-box').removeClass('show')
+    $('.calc-section-select-item-ranks').toggleClass('bdrav')
+    if (e == 0) {
+        $('#thirdrankslist').toggleClass('dropmenushow')
+        $('#tcr').toggleClass('closedrank')
+    } else if (e == 1) {
+        $('#firstrankslist').toggleClass('dropmenushow')
+        $('#fcr').toggleClass('closedrank')
+
+
+    } else if (e == 2) {
+        $('#secondrankslist').toggleClass('dropmenushow')
+        $('#scr').toggleClass('closedrank')
+
+
+    }
+
+
+}
+
+function showCalc(ev) {
+    $('.calc-section-box').removeClass('show')
+    if (ev == 0) {
+        $(".calcswapranks").toggleClass('show')
+    } else if (ev == 1) {
+        $(".calcswapwins").toggleClass('show')
+    } else if (ev == 2) {
+        $(".calcswapservices").toggleClass('show')
+    }
+}
+</script>
+
+</html>

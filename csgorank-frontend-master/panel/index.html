@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Список заказов</title>
+    <link rel="icon" href="../assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/hamburgers.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-header main-header-client">
+            <div class="main-header-container">
+                <a href="../index.html" class="main-header-logo">
+                    <img src="../assets/img/logo.png" alt="" class="main-header-logo__img">
+                    <p class="main-header-logo__p">POKOBUY</p>
+                </a>
+                <div class="scaleing forclients">
+                    <div onclick="showPopup()" class="main-header-profile">
+                        <img src="../assets/img/man.svg" alt="" class="main-header-profile__img">
+                        <p class="main-header-profile__p">Личный кабинет</p>
+                        <div class="popupmenu">
+                            <div class="popup">
+                                <a href="cabinet.html" class="popup-item">
+                                    <p class="popup-item__p">Личный кабинет</p>
+                                </a>
+                                <a href="index.html" class="popup-item">
+                                    <p class="popup-item__p">Список заказов</p>
+                                </a>
+                                <a href="hours.html" class="popup-item">
+                                    <p class="popup-item__p">HoursBoost</p>
+                                </a>
+                                <a href="rank.html" class="popup-item">
+                                    <p class="popup-item__p">Чат</p>
+                                </a>
+                                <a href="garbage.html" class="popup-item">
+                                    <p class="popup-item__p">Корзина</p>
+                                </a>
+                                <a href="#" class="popup-item">
+                                    <p class="popup-item__p">Выход</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="showMenu()" class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+    <div class="panel-section">
+        <img src="../assets/img/sgrande.png" alt="" class="panel-section__img panel-section__img_fimg">
+        <div class="panel-section-action">
+            <form required class="panel-section-action-item panel-section-action-item_mb">
+                <h1 class="panel-section-action-item__h1">Активация</h1>
+                <p class="panel-section-action-item__p">Активируйте услугу <br> которую приобрели в <br> нашем магазине. Встасьте <br> ключ который пришел вам <br> на почту в поле снизу</p>
+                <input type="text" class="panel-section-action-item__input">
+                <button class="panel-section-action-item__button">Активировать</button>
+            </form>
+            <div class="panel-section-action-item">
+                <h1 class="panel-section-action-item__h1">Данные</h1>
+                <p class="panel-section-action-item__p">Внимание! Перед бустом <br> нужно заполнить свои <br> данние от аккаунта.Ваши <br> данние шифруются и <br> находятся в <br> безопасности</p>
+                <button class="panel-section-action-item__button panel-section-action-item__button_width" onclick="showModal()">Настроить</button>
+            </div>
+        </div>
+        <div class="panel-section-tables">
+            <p class="panel-section-tables__p">История заказов</p>
+            <div class="panel-section-tables-item">
+                <h1 class="panel-section-tables-item__h1">Аккаунты</h1>
+                <table class="panel-section-tables-item__table">
+                    <thead>
+                        <tr>
+                            <td>id</td>
+                            <td>Логин:Пароль</td>
+                            <td style="border-right: none;">Статус</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>39</td>
+                            <td>imnadze2003:123Qwe321WHqO74290SiNKWA</td>
+                            <td>Оплачен</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panel-section-tables-item">
+                <h1 class="panel-section-tables-item__h1">Буст побед</h1>
+                <table class="panel-section-tables-item__table">
+                    <thead>
+                        <tr>
+                            <td>id</td>
+                            <td>Заказ</td>
+                            <td>Бустер</td>
+                            <td>Начало</td>
+                            <td>Выполнено</td>
+                            <td style="border-right: none;">Действие</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>39</td>
+                            <td>100 побед</td>
+                            <td>shelbysout</td>
+                            <td>15.04.19</td>
+                            <td>16.04.19</td>
+                            <td style="padding: 10px 20px;"><a href="wins.html">Подробнее</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panel-section-tables-item">
+                <h1 class="panel-section-tables-item__h1">Буст часов</h1>
+                <table class="panel-section-tables-item__table">
+                    <thead>
+                        <tr>
+                            <td>id</td>
+                            <td>Кол-во часов</td>
+                            <td>Начало</td>
+                            <td>Выполнено</td>
+                            <td style="border-right: none;">Статус</td>
+                        </tr>
+                    </thead>
+                        <tr>
+                            <td>1</td>
+                            <td>30 дней</td>
+                            <td>15.04.19</td>
+                            <td>16.04.19</td>
+                            <td style="padding: 10px 20px;"><a href="hours.html">Подробнее</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- <p class="panel-section-tables-item__p">У вас ещё не было заказов</p> -->
+            </div>
+            <div class="panel-section-tables-item">
+                <h1 class="panel-section-tables-item__h1">Буст звания</h1>
+                <table class="panel-section-tables-item__table">
+                    <thead>
+                        <tr>
+                            <td>id</td>
+                            <td>Бустер</td>
+                            <td>Заказ</td>
+                            <td>Выполнено</td>
+                            <td style="border-right: none;">Действие</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dallowin</td>
+                            <td>Золотая Звезда 1 - Золотая Звезда 2</td>
+                            <td>Буст</td>
+                            <td><a href="rank.html">Подробнее</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <img src="../assets/img/ak.png" alt="" class="panel-section__img panel-section__img_simg">
+    </div>
+    <div class="overlay">
+        <form class="modal modal-form">
+            <div class="close-modal" onclick="closeModal('panel')"></div>
+            <h1 class="modal-form__h1">Настройка данных</h1>
+            <div class="modal-form__base">
+                <div class="modal-form__item">
+                    <label for="login" class="modal-form__label">Логин steam</label>
+                    <input type="text" class="modal-form__input" id="login">
+                </div>
+                <div class="modal-form__item">
+                    <label for="password" class="modal-form__label">Пароль steam</label>
+                    <input type="password" class="modal-form__input" id="password">
+                </div>
+            </div>
+            <p class="modal-form__p">Выберите защиту на вашем аккаунте</p>
+            <div class="modal-form-buttons">
+                <input type="submit" value="Приложение" class="modal-form-buttons__button rbtf" onclick="showSecure(2)">
+                <input type="submit" value="Почта" class="modal-form-buttons__button rbts" onclick="showSecure(1)">
+                <input type="submit" value="Нет" class="modal-form-buttons__button rbtt" onclick="showSecure(0)">
+            </div>
+            <div class="modal-form__secure modal-form__app">
+                <span class="modal-form__span">Одноразовые коды для входа в Steam, минимум 9 кодов </span>
+                <a href="#" class="modal-form__a">Подробнее где и как взять коды...</a>
+                <input type="text" placeholder="Одноразовые коды steam (код;код;код;...)" class="modal-form__input modal-form__input_codes">
+            </div>
+            <div class="modal-form__secure modal-form__email">
+                <div class="modal-form-text">
+                    <p class="modal-form-text__p">Вам следует связаться с бустером через чат в вашем <br> заказе и сообщить код с почты</p>
+                </div>
+            </div>
+            <div class="modal-form__secure modal-form__empty">
+                <div class="modal-form-text">
+                    <p class="modal-form-text__p">Вам не нужно ничего делать</p>
+                </div>
+            </div>
+            <button class="modal-form-buttons__button rbtfa" style="margin-top: 20px;">
+                Сохранить
+            </button>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="main-container">
+            <div class="footer-section">
+                <div class="footer-section-text">
+                    <p class="footer-section-text__p">© Copyrights POKO-BUY.RU 2018-2019. All rights reserved.
+                    </p>
+                    <p class="footer-section-text__p">Counter-Strike: Global Offensive is a registered trademark of Valve Corporation Company
+                    </p>
+                    <p class="footer-section-text__p">We are in no way affiliated with, associated with or endorsed by Valve Corporation.</p>
+                </div>
+                <div class="footer-section-item">
+                    <div class="footer-section-item-links">
+                        <p class="footer-section-item-links__p">Мы тут:</p>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/vk-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/discord-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/steam-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                    </div>
+                    <a href="ula/index.html" class="footer-section-item__a">Пользовательское соглашение</a>
+                    <div class="footer-section-item-certif">
+                        <img src="../assets/img/webmoneym.png" alt="" class="footer-section-item-certif__img">
+                        <img src="../assets/img/webmoneya.png" alt="" class="footer-section-item-certif__img">
+                        <img src="../assets/img/inter.png" alt="" class="footer-section-item-certif__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.rbtf').on('click', function() {
+            if (!$(this).hasClass('rbtfa')) {
+                $(this).addClass('rbtfa');
+                $('.rbts').removeClass('rbtfa');
+                $('.rbtt').removeClass('rbtfa');
+                return false
+            } else {
+                return false
+            }
+        });
+        $('.rbts').on('click', function() {
+            if (!$(this).hasClass('rbtfa')) {
+                $(this).addClass('rbtfa');
+                $('.rbtf').removeClass('rbtfa');
+                $('.rbtt').removeClass('rbtfa');
+                console.log('First click');
+                return false
+            } else {
+                return false
+            }
+        });
+        $('.rbtt').on('click', function() {
+            if (!$(this).hasClass('rbtfa')) {
+                $(this).addClass('rbtfa');
+                $('.rbtf').removeClass('rbtfa');
+                $('.rbts').removeClass('rbtfa');
+                return false
+            } else {
+                return false
+            }
+        });
+    })
+    </script>
+</body>
+
+</html>

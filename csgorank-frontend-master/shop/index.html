@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/container.css">
+    <link rel="stylesheet" href="../assets/css/hamburgers.css">
+    <title>Магазин</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-header">
+            <div class="main-header-container">
+                <div class="main-header-logo">
+                    <img src="../assets/img/logo.png" alt="" class="main-header-logo__img">
+                    <p class="main-header-logo__p">POKOBUY</p>
+                </div>
+                <div class="scaleing">
+                    <nav class="main-header__nav">
+                        <ul class="main-header__nav_ul">
+                            <li class="main-header__nav_ul_li"><a href="../index.html" class="main-header__nav_ul_li_a mainscroll">Главная</a></li>
+                            <li class="main-header__nav_ul_li"><a href="../shop/index.html" class="main-header__nav_ul_li_a">Магазин</a></li>
+                            <li class="main-header__nav_ul_li"><a href="../index.html#quarantees" class="main-header__nav_ul_li_a quaranteescroll">Гарантии</a></li>
+                            <li class="main-header__nav_ul_li"><a href="../index.html#reviews" class="main-header__nav_ul_li_a reviewscroll">Отзывы</a></li>
+                            <li class="main-header__nav_ul_li"><a href="../index.html#boosters" class="main-header__nav_ul_li_a boostersscroll">Наши бустеры</a></li>
+                        </ul>
+                    </nav>
+                    <div class="main-header-profile">
+                        <img src="../assets/img/man.svg" alt="" class="main-header-profile__img">
+                        <a href="../panel/index.html" class="main-header-profile__p">Личный кабинет</a>
+                        <a href="../panel/garbage.html" class="main-header-profile-balance"><button class="main-header-profile-balance__button">
+                                <span class="main-header-profile-balance__button_span">100<img src="../assets/img/ruble.svg" alt="" class="main-header-profile-balance__button_span_img"></span>
+                                <img src="../assets/img/shopping-cart.svg" alt="" class="main-header-profile-balance__button_img">
+                                <div class="main-header-profile-balance__button_ellipse">
+                                    <p class="main-header-profile-balance__button_ellipse__p">+1</p>
+                                </div>
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="showMenu()" class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+    <div class="shop__header">
+        <img src="../assets/img/shop-portrait.png" alt="" class="shop__header__img">
+        <div class="shop__header_slider">
+            <div class="shop__header_slider-title">
+                <h1 class="shop__header_slider-title__h1">Аккаунты CS:GO</h1>
+                <div class="shop__header_slider-title_triangle">
+                    <div class="shop__header_slider-title_triangle_item"></div>
+                    <div class="shop__header_slider-title_triangle_item"></div>
+                    <div class="shop__header_slider-title_triangle_item"></div>
+                    <div class="shop__header_slider-title_triangle_item"></div>
+                </div>
+            </div>
+            <div class="shop__header_slider-text">
+                <div class="shop__header_slider-text-item">
+                    <span class="shop__header_slider-text__p_span">1</span>
+                    <p class="shop__header_slider-text__p">Выбираете аккаунт</p>
+                </div>
+                <div class="shop__header_slider-text-item">
+                    <span class="shop__header_slider-text__p_span">2</span>
+                    <p class="shop__header_slider-text__p">Оплачиваете удобным способом </p>
+                </div>
+                <div class="shop__header_slider-text-item">
+                    <span class="shop__header_slider-text__p_span">3</span>
+                    <p class="shop__header_slider-text__p">Мгновенно получаете данные <br>
+                        на Вашу почту </p>
+                </div>
+                <button class="shop__header_slider-text__button" id="scrollClick">Выбрать аккаунт</button>
+            </div>
+        </div>
+    </div>
+    <main class="shop-main">
+        <img src="../assets/img/shop_ak.png" alt="" id="shopAk">
+        <img src="../assets/img/shop_grenade.png" alt="" id="shopGr">
+        <div class="container shop-section">
+            <h1 class="shop-section__h1">Магазин</h1>
+            <div class="shop-section-action">
+                <div class="shop-section-action-item">
+                    <input type="checkbox" id="cbx" style="display:none" />
+                    <label for="cbx" class="toggle"><span></span></label>
+                    <label for="cbx" class="shop-section-action__label">Подобрать под себя</label>
+                </div>
+                <div class="shop-section-action-item">
+                    <label for="shopsortmin" class="shop-section-action__label_sort">Цена от</label>
+                    <input type="number" id="shopsortmin">
+                </div>
+                <div class="shop-section-action-item">
+                    <label for="shopsort" class="shop-section-action__label_sort">до</label>
+                    <input type="number" id="shopsort">
+                </div>
+                <div class="shop-section-action-item">
+                    <label for="sortdrop" class="shop-section-action__label_sort">Сортировать по</label>
+                    <div class="shop-section-action__button" id="sortdrop"><span id="sortspan">Цена &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><img src="../assets/img/sort-swap.svg" alt="" class="sortsvg">
+                        <div class="dropmenu-block">
+                            <div class="sort-drop">
+                                <div onclick="sortSwap(this)" class="sort-drop-item"><span value="Количество" class="sort-drop-item__span">Новинки &nbsp;</span></div>
+                                <div onclick="sortSwap(this)" class="sort-drop-item"><span value="Цена" class="sort-drop-item__span">По возрастанию</span></div>
+                                <div onclick="sortSwap(this)" class="sort-drop-item"><span value="Качество" class="sort-drop-item__span">По убыванию</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="shop-section__h1 shop-section__h1_sh1">Список аккаунтов</h1>
+            <div class="shop-section-accounts">
+                <div class="shop-section-accounts-item">
+                    <img src="../assets/img/shop_prime.png" alt="" class="prime">
+                    <img src="../assets/img/shop_medal.png" alt="" class="shop-section-accounts-item__img">
+                    <div class="shop-section-accounts-item-wrapper">
+                        <div class="shop-section-accounts-item-wrapper-text">
+                            <p class="shop-section-accounts-item-wrapper-text__p">2499 руб.</p>
+                            <span class="shop-section-accounts-item-wrapper-text__span">2499 руб.</span>
+                        </div>
+                        <a href="good.html" class="shop-section-accounts-item-wrapper__button shop-section-accounts-item-wrapper__button_mr"><img src="../assets/img/eye.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></a>
+                        <button class="shop-section-accounts-item-wrapper__button"><img src="../assets/img/cart.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></button>
+                    </div>
+                </div>
+                <div class="shop-section-accounts-item">
+                    <img src="../assets/img/shop_prime.png" alt="" class="prime">
+                    <img src="../assets/img/shop_medal.png" alt="" class="shop-section-accounts-item__img">
+                    <div class="shop-section-accounts-item-wrapper">
+                        <div class="shop-section-accounts-item-wrapper-text">
+                            <p class="shop-section-accounts-item-wrapper-text__p">2499 руб.</p>
+                            <span class="shop-section-accounts-item-wrapper-text__span">2499 руб.</span>
+                        </div>
+                        <a href="good.html" class="shop-section-accounts-item-wrapper__button shop-section-accounts-item-wrapper__button_mr"><img src="../assets/img/eye.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></a>
+                        <button class="shop-section-accounts-item-wrapper__button"><img src="../assets/img/cart.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></button>
+                    </div>
+                </div>
+                <div class="shop-section-accounts-item">
+                    <img src="../assets/img/shop_prime.png" alt="" class="prime">
+                    <img src="../assets/img/shop_medal.png" alt="" class="shop-section-accounts-item__img">
+                    <div class="shop-section-accounts-item-wrapper">
+                        <div class="shop-section-accounts-item-wrapper-text">
+                            <p class="shop-section-accounts-item-wrapper-text__p">2499 руб.</p>
+                            <span class="shop-section-accounts-item-wrapper-text__span">2499 руб.</span>
+                        </div>
+                        <a href="good.html" class="shop-section-accounts-item-wrapper__button shop-section-accounts-item-wrapper__button_mr"><img src="../assets/img/eye.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></a>
+                        <button class="shop-section-accounts-item-wrapper__button"><img src="../assets/img/cart.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></button>
+                    </div>
+                </div>
+                <div class="shop-section-accounts-item">
+                    <img src="../assets/img/shop_prime.png" alt="" class="prime">
+                    <img src="../assets/img/shop_medal.png" alt="" class="shop-section-accounts-item__img">
+                    <div class="shop-section-accounts-item-wrapper">
+                        <div class="shop-section-accounts-item-wrapper-text">
+                            <p class="shop-section-accounts-item-wrapper-text__p">2499 руб.</p>
+                            <span class="shop-section-accounts-item-wrapper-text__span">2499 руб.</span>
+                        </div>
+                        <a href="good.html" class="shop-section-accounts-item-wrapper__button shop-section-accounts-item-wrapper__button_mr"><img src="../assets/img/eye.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></a>
+                        <button class="shop-section-accounts-item-wrapper__button"><img src="../assets/img/cart.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></button>
+                    </div>
+                </div>
+                <div class="shop-section-accounts-item">
+                    <img src="../assets/img/shop_prime.png" alt="" class="prime">
+                    <img src="../assets/img/shop_medal.png" alt="" class="shop-section-accounts-item__img">
+                    <div class="shop-section-accounts-item-wrapper">
+                        <div class="shop-section-accounts-item-wrapper-text">
+                            <p class="shop-section-accounts-item-wrapper-text__p">2499 руб.</p>
+                            <span class="shop-section-accounts-item-wrapper-text__span">2499 руб.</span>
+                        </div>
+                        <a href="good.html" class="shop-section-accounts-item-wrapper__button shop-section-accounts-item-wrapper__button_mr"><img src="../assets/img/eye.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></a>
+                        <button class="shop-section-accounts-item-wrapper__button"><img src="../assets/img/cart.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></button>
+                    </div>
+                </div>
+                <div class="shop-section-accounts-item">
+                    <img src="../assets/img/shop_prime.png" alt="" class="prime">
+                    <img src="../assets/img/shop_medal.png" alt="" class="shop-section-accounts-item__img">
+                    <div class="shop-section-accounts-item-wrapper">
+                        <div class="shop-section-accounts-item-wrapper-text">
+                            <p class="shop-section-accounts-item-wrapper-text__p">2499 руб.</p>
+                            <span class="shop-section-accounts-item-wrapper-text__span">2499 руб.</span>
+                        </div>
+                        <a href="good.html" class="shop-section-accounts-item-wrapper__button shop-section-accounts-item-wrapper__button_mr"><img src="../assets/img/eye.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></a>
+                        <button class="shop-section-accounts-item-wrapper__button"><img src="../assets/img/cart.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></button>
+                    </div>
+                </div>
+                <div class="shop-section-accounts-item">
+                    <img src="../assets/img/shop_prime.png" alt="" class="prime">
+                    <img src="../assets/img/shop_medal.png" alt="" class="shop-section-accounts-item__img">
+                    <div class="shop-section-accounts-item-wrapper">
+                        <div class="shop-section-accounts-item-wrapper-text">
+                            <p class="shop-section-accounts-item-wrapper-text__p">2499 руб.</p>
+                            <span class="shop-section-accounts-item-wrapper-text__span">2499 руб.</span>
+                        </div>
+                        <a href="good.html" class="shop-section-accounts-item-wrapper__button shop-section-accounts-item-wrapper__button_mr"><img src="../assets/img/eye.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></a>
+                        <button class="shop-section-accounts-item-wrapper__button"><img src="../assets/img/cart.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></button>
+                    </div>
+                </div>
+                <div class="shop-section-accounts-item">
+                    <img src="../assets/img/shop_prime.png" alt="" class="prime">
+                    <img src="../assets/img/shop_medal.png" alt="" class="shop-section-accounts-item__img">
+                    <div class="shop-section-accounts-item-wrapper">
+                        <div class="shop-section-accounts-item-wrapper-text">
+                            <p class="shop-section-accounts-item-wrapper-text__p">2499 руб.</p>
+                            <span class="shop-section-accounts-item-wrapper-text__span">2499 руб.</span>
+                        </div>
+                        <a href="good.html" class="shop-section-accounts-item-wrapper__button shop-section-accounts-item-wrapper__button_mr"><img src="../assets/img/eye.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></a>
+                        <button class="shop-section-accounts-item-wrapper__button"><img src="../assets/img/cart.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></button>
+                    </div>
+                </div>
+                <div class="shop-section-accounts-item">
+                    <img src="../assets/img/shop_prime.png" alt="" class="prime">
+                    <img src="../assets/img/shop_medal.png" alt="" class="shop-section-accounts-item__img">
+                    <div class="shop-section-accounts-item-wrapper">
+                        <div class="shop-section-accounts-item-wrapper-text">
+                            <p class="shop-section-accounts-item-wrapper-text__p">2499 руб.</p>
+                            <span class="shop-section-accounts-item-wrapper-text__span">2499 руб.</span>
+                        </div>
+                        <a href="good.html" class="shop-section-accounts-item-wrapper__button shop-section-accounts-item-wrapper__button_mr"><img src="../assets/img/eye.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></a>
+                        <button class="shop-section-accounts-item-wrapper__button"><img src="../assets/img/cart.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></button>
+                    </div>
+                </div>
+            </div>
+            <button class="shop-section__button" id="addAcc">Показать ещё</button>
+        </div>
+    </main>
+    <div class="footer">
+        <div class="main-container">
+            <div class="footer-section">
+                <div class="footer-section-text">
+                    <p class="footer-section-text__p">© Copyrights POKO-BUY.RU 2018-2019. All rights reserved.
+                    </p>
+                    <p class="footer-section-text__p">Counter-Strike: Global Offensive is a registered trademark of Valve Corporation Company
+                    </p>
+                    <p class="footer-section-text__p">We are in no way affiliated with, associated with or endorsed by Valve Corporation.</p>
+                </div>
+                <div class="footer-section-item">
+                    <div class="footer-section-item-links">
+                        <p class="footer-section-item-links__p">Мы тут:</p>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/vk-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/discord-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/steam-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                    </div>
+                    <a href="ula/index.html" class="footer-section-item__a">Пользовательское соглашение</a>
+                    <div class="footer-section-item-certif">
+                        <img src="../assets/img/webmoneym.png" alt="" class="footer-section-item-certif__img">
+                        <img src="../assets/img/webmoneya.png" alt="" class="footer-section-item-certif__img">
+                        <img src="../assets/img/inter.png" alt="" class="footer-section-item-certif__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+    $("#scrollClick").click(function() {
+        $('html,body').animate({
+                scrollTop: $(".shop-main").offset().top
+            },
+            1500);
+    });
+
+    function sortSwap(event) {
+        var active = $(event).text()
+        $("#sortspan").text(active)
+    }
+    $("#addAcc").click(function() {
+        $(".shop-section-accounts").append(`<div class="shop-section-accounts-item">
+                    <img src="../assets/img/shop_prime.png" alt="" class="prime">
+                    <img src="../assets/img/shop_medal.png" alt="" class="shop-section-accounts-item__img">
+                    <div class="shop-section-accounts-item-wrapper">
+                        <div class="shop-section-accounts-item-wrapper-text">
+                            <p class="shop-section-accounts-item-wrapper-text__p">2499 руб.</p>
+                            <span class="shop-section-accounts-item-wrapper-text__span">2499 руб.</span>
+                        </div>
+                        <a href="good.html" class="shop-section-accounts-item-wrapper__button shop-section-accounts-item-wrapper__button_mr"><img src="../assets/img/eye.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></a>
+                        <button class="shop-section-accounts-item-wrapper__button"><img src="../assets/img/cart.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></button>
+                    </div>
+                </div>
+                <div class="shop-section-accounts-item">
+                    <img src="../assets/img/shop_prime.png" alt="" class="prime">
+                    <img src="../assets/img/shop_medal.png" alt="" class="shop-section-accounts-item__img">
+                    <div class="shop-section-accounts-item-wrapper">
+                        <div class="shop-section-accounts-item-wrapper-text">
+                            <p class="shop-section-accounts-item-wrapper-text__p">2499 руб.</p>
+                            <span class="shop-section-accounts-item-wrapper-text__span">2499 руб.</span>
+                        </div>
+                        <a href="good.html" class="shop-section-accounts-item-wrapper__button shop-section-accounts-item-wrapper__button_mr"><img src="../assets/img/eye.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></a>
+                        <button class="shop-section-accounts-item-wrapper__button"><img src="../assets/img/cart.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></button>
+                    </div>
+                </div>
+                <div class="shop-section-accounts-item">
+                    <img src="../assets/img/shop_prime.png" alt="" class="prime">
+                    <img src="../assets/img/shop_medal.png" alt="" class="shop-section-accounts-item__img">
+                    <div class="shop-section-accounts-item-wrapper">
+                        <div class="shop-section-accounts-item-wrapper-text">
+                            <p class="shop-section-accounts-item-wrapper-text__p">2499 руб.</p>
+                            <span class="shop-section-accounts-item-wrapper-text__span">2499 руб.</span>
+                        </div>
+                        <a href="good.html" class="shop-section-accounts-item-wrapper__button shop-section-accounts-item-wrapper__button_mr"><img src="../assets/img/eye.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></a>
+                        <button class="shop-section-accounts-item-wrapper__button"><img src="../assets/img/cart.svg" alt="" class="shop-section-accounts-item-wrapper__button_img"></button>
+                    </div>
+                </div>`)
+    });
+    </script>
+</body>
+
+</html>

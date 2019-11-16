@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../assets/img/logo.ico" type="image/x-icon">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+    <section class="main-section">
+        <div class="auth">
+            <h1 class="auth-title">Регистрация</h1>
+            <div class="alert-modal show" id="alert-modal">
+                <p class="alert-modal__text">Введенная вами почта уже существует в базе данных, введите другую почту.</p>
+                <div class="alert-close" onclick="document.getElementById('alert-modal').classList.remove('show')"></div>
+            </div>
+            <form class="auth-form">
+                <div class="auth-form__item">
+                    <input required type="text" placeholder="Придумайте логин" class="auth-form__item_input">
+                    <div class="alert-text">Данный пароль уже существует в базе</div>
+                </div>
+                <div class="auth-form__item">
+                    <input required type="email" placeholder="Ваш Email" class="auth-form__item_input">
+                    <div class="alert-text">Данный пароль уже существует в базе</div>
+                </div>
+                <div class="auth-form__item">
+                    <input type="text" placeholder="Ссылка на вашу страницу VK" class="auth-form__item_input">
+                    <div class="alert-text">Данный пароль уже существует в базе</div>
+                </div>
+                <div class="auth-form__item">
+                    <input required type="password" placeholder="Придумайте пароль" class="auth-form__item_input">
+                    <div class="alert-text">Данный пароль уже существует в базе</div>
+                </div>
+                <div class="auth-form__item">
+                    <input required type="password" placeholder="Повторите пароль" class="auth-form__item_input">
+                    <div class="alert-text">Данный пароль уже существует в базе</div>
+                </div>
+                <p class="auth-description" style="margin-top: 20px">Уже зарегистрированы?<a href="login.html" class="auth-description__link">Войти в аккаунт</a></p>
+                <div class="auth-form__item">
+                    <div class="auth-form__item_recaptcha g-recaptcha scap" data-sitekey="6KepjAsTFFFFFFMqccY0ZiGqc3TEd3YVxo8cHsGX"></div>
+                </div>
+                <button class="btn btn-order">Регистрация</button>
+            </form>
+        </div>
+        <p class="auth-footer__text">© 2019 POKO-BUY.RU</p>
+    </section>
+</body>
+
+</html>

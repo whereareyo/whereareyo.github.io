@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Корзина</title>
+     <link rel="icon" href="../assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/hamburgers.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-header main-header-client">
+            <div class="main-header-container">
+                <a href="../index.html" class="main-header-logo">
+                    <img src="../assets/img/logo.png" alt="" class="main-header-logo__img">
+                    <p class="main-header-logo__p">POKOBUY</p>
+                </a>
+                <div class="scaleing forclients">
+                    <div onclick="showPopup()" class="main-header-profile">
+                        <img src="../assets/img/man.svg" alt="" class="main-header-profile__img">
+                        <p class="main-header-profile__p">Личный кабинет</p>
+                        <div class="popupmenu">
+                            <div class="popup">
+                                <a href="cabinet.html" class="popup-item">
+                                    <p class="popup-item__p">Личный кабинет</p>
+                                </a>
+                                <a href="index.html" class="popup-item">
+                                    <p class="popup-item__p">Список заказов</p>
+                                </a>
+                                <a href="hours.html" class="popup-item">
+                                    <p class="popup-item__p">HoursBoost</p>
+                                </a>
+                                <a href="rank.html" class="popup-item">
+                                    <p class="popup-item__p">Чат</p>
+                                </a>
+                                <a href="garbage.html" class="popup-item">
+                                    <p class="popup-item__p">Корзина</p>
+                                </a>
+                                <a href="#" class="popup-item">
+                                    <p class="popup-item__p">Выход</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="showMenu()" class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+    <div class="profile">
+        <form class="profile-section">
+            <div class="profile-section-header" style="margin-bottom: 0;">
+                <p class="profile-section-header__p">Корзина</p>
+            </div>
+            <div class="profile-section-content" style="background-color: #fff;padding-top: 35px;">
+                <div class="garbage">
+                    <div class="col">
+                        <div class="garbage-item" style="display: flex; justify-content: space-between; padding-bottom: 15px; border-bottom: 1px solid #a9a9a9;">
+                            <h3 class="garbage__h3">Товар</h3>
+                            <h3 class="garbage__h3" style="padding-left: 177px;">Цена</h3>
+                            <h3 class="garbage__h3">Удалить</h3>
+                        </div>
+                        <div class="garbage-item" style="display: flex; justify-content: space-between; margin-bottom: 20px; padding-top: 15px;">
+                            <p class="garbage__p">Аккаунт с Global Elite + почта </p>
+                            <p class="garbage__p">600руб.</p>
+                            <button class="garbage__button"><img src="../assets/img/x-mark.svg" alt="" class="garbage__button_img"></button>
+                        </div>
+                        <div class="garbage-item" style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                            <p class="garbage__p">Аккаунт с Global Elite + почта </p>
+                            <p class="garbage__p">600руб.</p>
+                            <button class="garbage__button"><img src="../assets/img/x-mark.svg" alt="" class="garbage__button_img"></button>
+                        </div>
+                        <div class="garbage-item" style="display: flex; justify-content: space-between;">
+                            <p class="garbage__p">Аккаунт с Global Elite + почта </p>
+                            <p class="garbage__p">600руб.</p>
+                            <button class="garbage__button"><img src="../assets/img/x-mark.svg" alt="" class="garbage__button_img"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-section-header" style="margin-bottom: 0; border-top: 1px solid #a9a9a9; border-bottom: none;">
+                <p class="profile-section-header__p">Итого к оплате: 600руб.</p>
+                <button class="profile-section-header__a">Перейти к оплате</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="main-container">
+            <div class="footer-section">
+                <div class="footer-section-text">
+                    <p class="footer-section-text__p">© Copyrights POKO-BUY.RU 2018-2019. All rights reserved.
+                    </p>
+                    <p class="footer-section-text__p">Counter-Strike: Global Offensive is a registered trademark of Valve Corporation Company
+                    </p>
+                    <p class="footer-section-text__p">We are in no way affiliated with, associated with or endorsed by Valve Corporation.</p>
+                </div>
+                <div class="footer-section-item">
+                    <div class="footer-section-item-links">
+                        <p class="footer-section-item-links__p">Мы тут:</p>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/vk-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/discord-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/steam-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                    </div>
+                    <a href="ula/index.html" class="footer-section-item__a">Пользовательское соглашение</a>
+                    <div class="footer-section-item-certif">
+                        <img src="../assets/img/webmoneym.png" alt="" class="footer-section-item-certif__img">
+                        <img src="../assets/img/webmoneya.png" alt="" class="footer-section-item-certif__img">
+                        <img src="../assets/img/inter.png" alt="" class="footer-section-item-certif__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

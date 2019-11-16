@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/container.css">
+    <link rel="stylesheet" href="../assets/css/hamburgers.css">
+    <title>Аккаунт</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-header">
+            <div class="main-header-container">
+                <div class="main-header-logo">
+                    <img src="../assets/img/logo.png" alt="" class="main-header-logo__img">
+                    <p class="main-header-logo__p">POKOBUY</p>
+                </div>
+                <div class="scaleing">
+                    <nav class="main-header__nav">
+                        <ul class="main-header__nav_ul">
+                            <li class="main-header__nav_ul_li"><a href="index.html" class="main-header__nav_ul_li_a mainscroll">Главная</a></li>
+                            <li class="main-header__nav_ul_li"><a href="../shop/index.html" class="main-header__nav_ul_li_a">Магазин</a></li>
+                            <li class="main-header__nav_ul_li"><a href="../index.html#quarantees" class="main-header__nav_ul_li_a quaranteescroll">Гарантии</a></li>
+                            <li class="main-header__nav_ul_li"><a href="../index.html#reviews" class="main-header__nav_ul_li_a reviewscroll">Отзывы</a></li>
+                            <li class="main-header__nav_ul_li"><a href="../index.html#boosters" class="main-header__nav_ul_li_a boostersscroll">Наши бустеры</a></li>
+                        </ul>
+                    </nav>
+                    <div class="main-header-profile">
+                        <img src="../assets/img/man.svg" alt="" class="main-header-profile__img">
+                        <a href="../panel/index.html" class="main-header-profile__p">Личный кабинет</a>
+                        <a href="../panel/garbage.html" class="main-header-profile-balance"><button class="main-header-profile-balance__button">
+                                <span class="main-header-profile-balance__button_span">100<img src="../assets/img/ruble.svg" alt="" class="main-header-profile-balance__button_span_img"></span>
+                                <img src="../assets/img/shopping-cart.svg" alt="" class="main-header-profile-balance__button_img">
+                                <div class="main-header-profile-balance__button_ellipse">
+                                    <p class="main-header-profile-balance__button_ellipse__p">+1</p>
+                                </div>
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="showMenu()" class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+    <div class="acc">
+        <div class="container">
+            <h1 class="acc__h1">Данные об аккаунте</h1>
+            <ul class="acc__ul">
+                <li class="acc__ul_li"><a href="../index.html" class="acc__ul_li_a">Главная</a></li>
+                <img src="../assets/img/buyAcc/karambit.png" alt="" class="acc__ul_img">
+                <li class="acc__ul_li"><a href="../shop/index.html" class="acc__ul_li_a">Магазин</a></li>
+                <img src="../assets/img/buyAcc/karambit.png" alt="" class="acc__ul_img">
+                <li class="acc__ul_li"><a href="#" class="acc__ul_li_a">Аккаунт со званием</a></li>
+            </ul>
+            <div class="acc-section">
+                <div class="acc-section-action">
+                    <div class="acc-section-action-images">
+                        <img src="../assets/img/buyAcc/item.png" alt="" class="acc-section-action-images__img">
+                        <div class="acc-section-action-images-text">
+                            <div class="acc-section-action-images-text-item">
+                                <img src="../assets/img/buyAcc/passage-of-time.svg" alt="" class="acc-section-action-images-text-item__img">
+                                <p class="acc-section-action-images-text-item__p">Моментальная <br>
+                                    доставка</p>
+                            </div>
+                            <div class="acc-section-action-images-text-item">
+                                <img src="../assets/img/buyAcc/collaboration.svg" alt="" class="acc-section-action-images-text-item__img">
+                                <p class="acc-section-action-images-text-item__p">Быстрая <br>
+                                    поддержка</p>
+                            </div>
+                            <div class="acc-section-action-images-text-item">
+                                <img src="../assets/img/buyAcc/guarantee.svg" alt="" class="acc-section-action-images-text-item__img">
+                                <p class="acc-section-action-images-text-item__p">100% гарантия <br>
+                                    результата</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form required class="acc-section-action-text">
+                        <h1 class="acc-section-action-text__h1">Аккаунт с Global Elite + почта</h1>
+                        <div class="acc-section-action-text-item">
+                            <p class="acc-section-action-text-item__p">Звание в CS:GO:<span class="acc-section-action-text-item__p__span acc-section-action-text-item__p__span_f">Global Elite</span></p>
+                            <p class="acc-section-action-text-item__p">Часов в игре :<span class="acc-section-action-text-item__p__span acc-section-action-text-item__p__span_s">531</span></p>
+                            <p class="acc-section-action-text-item__p">Игр на аккаунте :<span class="acc-section-action-text-item__p__span acc-section-action-text-item__p__span_t">3</span></p>
+                            <p class="acc-section-action-text-item__p">Наличие прайма :<span class="acc-section-action-text-item__p__span acc-section-action-text-item__p__span_fr">Есть</span></p>
+                        </div>
+                        <div class="acc-section-action-text-buttons"><button class="acc-section-action-text-buttons__button acc-section-action-text-buttons__button_f">CSGOSTATS</button><button class="acc-section-action-text-buttons__button acc-section-action-text-buttons__button_s"><img src="../assets/img/buyAcc/steam.png" alt="" class="acc-section-action-text-buttons__button_s_img">PROFILE</button></div>
+                        <button class="acc-section-action-text__button">Купить<img src="../assets/img/buyAcc/acc_cart.svg" alt="" class="acc-section-action-text__button__img"></button>
+                        <p class="acc-section-action-text__p">Нажмите, чтобы сделать заказ.</p>
+                    </form>
+                </div>
+                <div class="acc-section-text">
+                    <h1 class="acc-section-text__h1">Купить аккаунт CS:GO</h1>
+                    <div class="acc-section-text-item">
+                        <p class="acc-section-text-item__p">Поднимать звание на аккаунте в Counter Strike, наверное, сложнее, чем в любой другой игре. Казалось бы, игроки в командах находятся в предельно равных условиях, но можно ли назвать их равными, когда система постоянно почему-то дает тиммейтов, неспособных даже нормально закупиться, не говоря об его игре? Тем, кто устал пытаться постоянно выигрывать 1 в 5, стараясь поднять свое звание до какого-то приемлемого уровня, мы предлагаем купить Аккаунт КС.</p>
+                    </div>
+                    <h1 class="acc-section-text__h1">Зачем покупать аккаунты CS:GO?</h1>
+                    <div class="acc-section-text-item acc-section-text-item_seconditem">
+                        <h3 class="acc-section-text-item__h3">Покупка аккаунтов CS:GO чаще всего интересует тех, кто:</h3>
+                        <div class="acc-section-text-item-answer">
+                            <div class="acc-section-text-item-answer__circle"></div>
+                            <p class="acc-section-text-item-answer__p">Не хочет прокачивать свою учетную запись. Вместо утомительного матчмейкинга со слабыми рандомами легче просто сразу
+                                начать играть на том уровне, которому соответствует скилл.</p>
+                        </div>
+                        <div class="acc-section-text-item-answer">
+                            <div class="acc-section-text-item-answer__circle"></div>
+                            <p class="acc-section-text-item-answer__p">Хочет быстрее научиться хорошо играть. Слабые игроки не знают даже половины тех приемов, которые существуют в CS:GO, а
+                                тренировать АИМ на неумелых противников практически невозможно. Высокоуровневые игроки составят хорошую
+                                конкуренцию, а наблюдая за их действиями во время матчей, пользователь почерпнет для себя много полезной информации.</p>
+                        </div>
+                        <div class="acc-section-text-item-answer">
+                            <div class="acc-section-text-item-answer__circle"></div>
+                            <p class="acc-section-text-item-answer__p">Хочет похвастаться перед друзьями. Добиться высокого звания в CS:GO сейчас крайне тяжело, так как на ерверах CS:GO много читеров, и это небезосновательно считается серьезным достижением.</p>
+                        </div>
+                    </div>
+                    <h1 class="acc-section-text__h1">Мы предлагаем!</h1>
+                    <div class="acc-section-text-item acc-section-text-item_lastitem">
+                        <div class="acc-section-text-item-answer">
+                            <div class="acc-section-text-item-answer__circle"></div>
+                            <p class="acc-section-text-item-answer__p">Низкие цены. На все аккаунты CS:GO предлагается доступная и обдуманная цена. Вам не придется торговаться с одиночными продавцами, неспособных определить адекватную цену профиля.</p>
+                        </div>
+                        <div class="acc-section-text-item-answer">
+                            <div class="acc-section-text-item-answer__circle"></div>
+                            <p class="acc-section-text-item-answer__p">Широкий выбор. Мы предлагаем купить стим аккаунт CS:GO с самым разным винрейтом и званиями, чтобы наши клиенты всегда имели возможность выбрать подходящий вариант.
+                            </p>
+                        </div>
+                        <div class="acc-section-text-item-answer">
+                            <div class="acc-section-text-item-answer__circle"></div>
+                            <p class="acc-section-text-item-answer__p">Качество. Мы гарантируем, что аккаунты, представленные на нашем сайте, не являются ворованными. Все представленные профили были прокачаны нашими специалистами или куплены после проведения тщательной проверки.</p>
+                        </div>
+                        <div class="acc-section-text-item-answer">
+                            <div class="acc-section-text-item-answer__circle"></div>
+                            <p class="acc-section-text-item-answer__p">Удобство. Система работает полностью автоматически. Вам достаточно определиться, какой вы хотите купить аккаунт CS:GO, после чего оплатить его любым из представленных способов и ввести электронную почту, чтобы мы отправили вам данные товара. После получения данных сразу можно запускать Steam и играть в свое удовольствие.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="main-container">
+            <div class="footer-section">
+                <div class="footer-section-text">
+                    <p class="footer-section-text__p">© Copyrights POKO-BUY.RU 2018-2019. All rights reserved.
+                    </p>
+                    <p class="footer-section-text__p">Counter-Strike: Global Offensive is a registered trademark of Valve Corporation Company
+                    </p>
+                    <p class="footer-section-text__p">We are in no way affiliated with, associated with or endorsed by Valve Corporation.</p>
+                </div>
+                <div class="footer-section-item">
+                    <div class="footer-section-item-links">
+                        <p class="footer-section-item-links__p">Мы тут:</p>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/vk-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/discord-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/steam-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                    </div>
+                    <a href="ula/index.html" class="footer-section-item__a">Пользовательское соглашение</a>
+                    <div class="footer-section-item-certif">
+                        <img src="../assets/img/webmoneym.png" alt="" class="footer-section-item-certif__img">
+                        <img src="../assets/img/webmoneya.png" alt="" class="footer-section-item-certif__img">
+                        <img src="../assets/img/inter.png" alt="" class="footer-section-item-certif__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

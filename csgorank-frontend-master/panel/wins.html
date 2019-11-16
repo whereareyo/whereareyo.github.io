@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HoursBoost</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/hamburgers.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-header main-header-client">
+            <div class="main-header-container">
+                <a href="../index.html" class="main-header-logo">
+                    <img src="../assets/img/logo.png" alt="" class="main-header-logo__img">
+                    <p class="main-header-logo__p">POKOBUY</p>
+                </a>
+                <div class="scaleing forclients">
+                    <div onclick="showPopup()" class="main-header-profile">
+                        <img src="../assets/img/man.svg" alt="" class="main-header-profile__img">
+                        <p class="main-header-profile__p">Личный кабинет</p>
+                        <div class="popupmenu">
+                            <div class="popup">
+                                <a href="cabinet.html" class="popup-item">
+                                    <p class="popup-item__p">Личный кабинет</p>
+                                </a>
+                                <a href="index.html" class="popup-item">
+                                    <p class="popup-item__p">Список заказов</p>
+                                </a>
+                                <a href="hours.html" class="popup-item">
+                                    <p class="popup-item__p">HoursBoost</p>
+                                </a>
+                                <a href="rank.html" class="popup-item">
+                                    <p class="popup-item__p">Чат</p>
+                                </a>
+                                <a href="garbage.html" class="popup-item">
+                                    <p class="popup-item__p">Корзина</p>
+                                </a>
+                                <a href="#" class="popup-item">
+                                    <p class="popup-item__p">Выход</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="showMenu()" class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+    <div class="cabinet" style="margin-bottom: 165px;">
+        <div class="cabinet-container">
+            <div class="cabinet-column">
+                <div class="cabinet-box">
+                    <h3 class="cabinet-title">Ваш бустер</h3>
+                    <hr class="cabinet-box__line">
+                    <div class="cabinet-box__order">
+                        <h3 class="cabinet-subtitle">Паша</h3>
+                    </div>
+                </div>
+                <div class="cabinet-box">
+                    <h3 class="cabinet-title">История заказа</h3>
+                    <hr class="cabinet-box__line">
+                    <div style="display: flex;">
+                        <div>
+                            <h3 class="cabinet-subtitle">Начало заказа</h3>
+                            <p class="cabinet-box__description">
+                                04:20 16.05.2019
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="cabinet-subtitle">Длительность</h3>
+                            <p class="cabinet-box__description">
+                                6 дней
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cabinet-row">
+                <div class="cabinet-chat">
+                    <h3 class="cabinet-title">Чат</h3>
+                    <div class="cabinet-chat__block">
+                        <div class="cabinet-chat__list" id="boosterChatList">
+                            <div class="cabinet-chat__message cabinet-chat__message-admin">
+                                <div class="cabinet-chat__message_column">
+                                    <h4 class="cabinet-chat__message_username">PaShA</h4>
+                                    <p class="cabinet-chat__message_text">Здраствуйте, настройте ваш аккаунт в личном кабинете</p>
+                                </div>
+                                <div class="cabinet-chat__message_date">14:29:29</div>
+                            </div>
+                            <div class="cabinet-chat__message cabinet-chat__message-user">
+                                <div class="cabinet-chat__message_column">
+                                    <h4 class="cabinet-chat__message_username">Клиент</h4>
+                                    <p class="cabinet-chat__message_text">Здраствуйте, настройте ваш аккаунт в личном кабинете</p>
+                                </div>
+                                <div class="cabinet-chat__message_date">14:29:29</div>
+                            </div>
+                        </div>
+                        <div class="cabinet-chat__form">
+                            <textarea name="message" onkeyup="SendComment(event)" placeholder="Введите сообщение" class="cabinet-chat__form_textarea" id="textareaMessage"></textarea>
+                            <button class="btn btn-primary btn-message" id="postMessage">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="main-container">
+            <div class="footer-section">
+                <div class="footer-section-text">
+                    <p class="footer-section-text__p">© Copyrights POKO-BUY.RU 2018-2019. All rights reserved.
+                    </p>
+                    <p class="footer-section-text__p">Counter-Strike: Global Offensive is a registered trademark of Valve Corporation Company
+                    </p>
+                    <p class="footer-section-text__p">We are in no way affiliated with, associated with or endorsed by Valve Corporation.</p>
+                </div>
+                <div class="footer-section-item">
+                    <div class="footer-section-item-links">
+                        <p class="footer-section-item-links__p">Мы тут:</p>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/vk-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/discord-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/steam-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                    </div>
+                    <a href="ula/index.html" class="footer-section-item__a">Пользовательское соглашение</a>
+                    <div class="footer-section-item-certif">
+                        <img src="../assets/img/webmoneym.png" alt="" class="footer-section-item-certif__img">
+                        <img src="../assets/img/webmoneya.png" alt="" class="footer-section-item-certif__img">
+                        <img src="../assets/img/inter.png" alt="" class="footer-section-item-certif__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <style type="text/css">
+    .cabinet-box__order {
+        justify-content: center;
+    }
+
+    .cabinet-box__description {
+
+        margin-top: 5px
+    }
+
+    .cabinet-box__description::last-child {
+        text-align: center;
+    }
+    </style>
+    <script>
+    function SendComment(e) {
+        if (event.keyCode == 13) {
+            $('#postMessage').click();
+            $(this).val('');
+        }
+    }
+
+    $("#postMessage").click(function() {
+        var dt = new Date()
+        var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds()
+        $('#boosterChatList').append(`<div class="cabinet-chat__message cabinet-chat__message-user">
+                                    <div class="cabinet-chat__message_column">
+                                        <h4 class="cabinet-chat__message_username">shelbysout</h4>
+                                        <p class="cabinet-chat__message_text">${$("#textareaMessage").val()}</p>
+                                    </div>
+                                    <div class="cabinet-chat__message_date">${time}</div>
+                                </div>`)
+        $("#textareaMessage").val('')
+    });
+    $.ajax({
+        url: "chat.html",
+        type: "POST",
+        dataType: 'json',
+        success: function(result) {
+            var message = '';
+            for (var n in result) {
+                message += `<div class="cabinet-chat__message cabinet-chat__message-user">
+                                    <div class="cabinet-chat__message_column">
+                                        <h4 class="cabinet-chat__message_username">${n.message}</h4>
+                                        <p class="cabinet-chat__message_text">${n.message}</p>
+                                    </div>
+                                    <div class="cabinet-chat__message_date">${n.message}</div>
+                                </div>`
+            }
+            $("#boosterChatList").html(message)
+        }
+    });
+    </script>
+</body>
+
+</html>

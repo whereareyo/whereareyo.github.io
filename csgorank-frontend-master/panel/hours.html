@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HoursBoost</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/hamburgers.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-header main-header-client">
+            <div class="main-header-container">
+                <a href="../index.html" class="main-header-logo">
+                    <img src="../assets/img/logo.png" alt="" class="main-header-logo__img">
+                    <p class="main-header-logo__p">POKOBUY</p>
+                </a>
+                <div class="scaleing forclients">
+                    <div onclick="showPopup()" class="main-header-profile">
+                        <img src="../assets/img/man.svg" alt="" class="main-header-profile__img">
+                        <p class="main-header-profile__p">Личный кабинет</p>
+                        <div class="popupmenu">
+                            <div class="popup">
+                                <a href="cabinet.html" class="popup-item">
+                                    <p class="popup-item__p">Личный кабинет</p>
+                                </a>
+                                <a href="index.html" class="popup-item">
+                                    <p class="popup-item__p">Список заказов</p>
+                                </a>
+                                <a href="hours.html" class="popup-item">
+                                    <p class="popup-item__p">HoursBoost</p>
+                                </a>
+                                <a href="rank.html" class="popup-item">
+                                    <p class="popup-item__p">Чат</p>
+                                </a>
+                                <a href="garbage.html" class="popup-item">
+                                    <p class="popup-item__p">Корзина</p>
+                                </a>
+                                <a href="#" class="popup-item">
+                                    <p class="popup-item__p">Выход</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="showMenu()" class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+    <div class="cabinet">
+        <div class="cabinet-container">
+            <div class="cabinet-column">
+                <div class="cabinet-box">
+                    <h3 class="cabinet-title">Ваш заказ</h3>
+                    <hr class="cabinet-box__line">
+                    <div class="cabinet-box__order">
+                        <h3 class="cabinet-subtitle">Ваш заказ</h3>:<div class="cabinet-box__days">100 дней</div>
+                    </div>
+                    <div class="cabinet-box__ending">
+                        Окончание 15.04.19 17:40
+                    </div>
+                    <div class="cabinet-box__ending">
+                        Дата заказа 15.04.19 17:40
+                    </div>
+                    <div class="cabinet-box__button">
+                        <button class="btn btn-order">Продлить</button>
+                    </div>
+                </div>
+                <div class="cabinet-box">
+                    <h3 class="cabinet-title">Добавление</h3>
+                    <hr class="cabinet-box__line">
+                    <p class="cabinet-box__description">
+                        Введите полное название игры, в точности как в steam
+                    </p>
+                    <form required class="cabinet-box__form">
+                        <input type="text" placeholder="Название игры" class="cabinet-box__input">
+                        <div class="cabinet-box__button">
+                            <button class="btn btn-order">Добавить</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="cabinet-box">
+                    <h3 class="cabinet-title">Ваш заказ</h3>
+                    <div class="cabinet-box__order cabinet-box__order_status">
+                        <h3 class="cabinet-subtitle">Режим:</h3>
+                        <div class="cabinet-box__online">В сети</div>
+                    </div>
+                    <form required class="cabinet-box__form">
+                        <div>
+                            <input type="checkbox" id="cbx" style="display:none" />
+                            <label for="cbx" class="toggle"><span></span></label>
+                        </div>
+                        <div class="cabinet-box__button">
+                            <button class="btn btn-order">Сохранить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="cabinet-row">
+                <div class="cabinet-games">
+                    <h3 class="cabinet-title">Игры</h3>
+                    <div class="cabinet-games__list">
+                        <div class="cabinet-games__list_item">
+                            <div class="cabinet-games__list_item-title" title="Counter-Strike: Global Offensive">Counter-Strike: Global Offensive</div>
+                            <div class="cabinet-games__list_item-delete">Удалить</div>
+                        </div>
+                        <div class="cabinet-games__list_item">
+                            <div class="cabinet-games__list_item-title" title="Dota 2">Dota 2</div>
+                            <div class="cabinet-games__list_item-delete">Удалить</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cabinet-chat">
+                    <h3 class="cabinet-title">Чат</h3>
+                    <div class="cabinet-chat__block">
+                        <div class="cabinet-chat__list" id="boosterChatList">
+                            <div class="cabinet-chat__message cabinet-chat__message-admin">
+                                <div class="cabinet-chat__message_column">
+                                    <h4 class="cabinet-chat__message_username">PaShA</h4>
+                                    <p class="cabinet-chat__message_text">Здраствуйте, настройте ваш аккаунт в личном кабинете</p>
+                                </div>
+                                <div class="cabinet-chat__message_date">14:29:29</div>
+                            </div>
+                            <div class="cabinet-chat__message cabinet-chat__message-user">
+                                <div class="cabinet-chat__message_column">
+                                    <h4 class="cabinet-chat__message_username">Клиент</h4>
+                                    <p class="cabinet-chat__message_text">Здраствуйте, настройте ваш аккаунт в личном кабинете</p>
+                                </div>
+                                <div class="cabinet-chat__message_date">14:29:29</div>
+                            </div>
+                        </div>
+                        <div class="cabinet-chat__form">
+                            <textarea name="message" onkeyup="SendComment(event)" placeholder="Введите сообщение" class="cabinet-chat__form_textarea" id="textareaMessage"></textarea>
+                            <button class="btn btn-message" id="postMessage">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="main-container">
+            <div class="footer-section">
+                <div class="footer-section-text">
+                    <p class="footer-section-text__p">© Copyrights POKO-BUY.RU 2018-2019. All rights reserved.
+                    </p>
+                    <p class="footer-section-text__p">Counter-Strike: Global Offensive is a registered trademark of Valve Corporation Company
+                    </p>
+                    <p class="footer-section-text__p">We are in no way affiliated with, associated with or endorsed by Valve Corporation.</p>
+                </div>
+                <div class="footer-section-item">
+                    <div class="footer-section-item-links">
+                        <p class="footer-section-item-links__p">Мы тут:</p>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/vk-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/discord-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/steam-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                    </div>
+                    <a href="ula/index.html" class="footer-section-item__a">Пользовательское соглашение</a>
+                    <div class="footer-section-item-certif">
+                        <img src="../assets/img/webmoneym.png" alt="" class="footer-section-item-certif__img">
+                        <img src="../assets/img/webmoneya.png" alt="" class="footer-section-item-certif__img">
+                        <img src="../assets/img/inter.png" alt="" class="footer-section-item-certif__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+    function SendComment(e) {
+        if (event.keyCode == 13) {
+            $('#postMessage').click();
+            $(this).val('');
+        }
+    }
+
+    $("#postMessage").click(function() {
+        var dt = new Date()
+        var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds()
+        $('#boosterChatList').append(`<div class="cabinet-chat__message cabinet-chat__message-user">
+                                    <div class="cabinet-chat__message_column">
+                                        <h4 class="cabinet-chat__message_username">shelbysout</h4>
+                                        <p class="cabinet-chat__message_text">${$("#textareaMessage").val()}</p>
+                                    </div>
+                                    <div class="cabinet-chat__message_date">${time}</div>
+                                </div>`)
+        $("#textareaMessage").val('')
+    });
+    $.ajax({
+        url: "chat.html",
+        type: "POST",
+        dataType: 'json',
+        success: function(result) {
+            var message = '';
+            for (var n in result) {
+                message += `<div class="cabinet-chat__message cabinet-chat__message-user">
+                                    <div class="cabinet-chat__message_column">
+                                        <h4 class="cabinet-chat__message_username">${n.message}</h4>
+                                        <p class="cabinet-chat__message_text">${n.message}</p>
+                                    </div>
+                                    <div class="cabinet-chat__message_date">${n.message}</div>
+                                </div>`
+            }
+            $("#boosterChatList").html(message)
+        }
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Личный кабинет</title>
+    <link rel="icon" href="../assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/hamburgers.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-header main-header-client">
+            <div class="main-header-container">
+                <a href="../index.html" class="main-header-logo">
+                    <img src="../assets/img/logo.png" alt="" class="main-header-logo__img">
+                    <p class="main-header-logo__p">POKOBUY</p>
+                </a>
+                <div class="scaleing forclients">
+                    <div onclick="showPopup()" class="main-header-profile">
+                        <img src="../assets/img/man.svg" alt="" class="main-header-profile__img">
+                        <p class="main-header-profile__p">Личный кабинет</p>
+                        <div class="popupmenu">
+                            <div class="popup">
+                                <a href="cabinet.html" class="popup-item">
+                                    <p class="popup-item__p">Личный кабинет</p>
+                                </a>
+                                <a href="index.html" class="popup-item">
+                                    <p class="popup-item__p">Список заказов</p>
+                                </a>
+                                <a href="hours.html" class="popup-item">
+                                    <p class="popup-item__p">HoursBoost</p>
+                                </a>
+                                <a href="rank.html" class="popup-item">
+                                    <p class="popup-item__p">Чат</p>
+                                </a>
+                                <a href="garbage.html" class="popup-item">
+                                    <p class="popup-item__p">Корзина</p>
+                                </a>
+                                <a href="#" class="popup-item">
+                                    <p class="popup-item__p">Выход</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="showMenu()" class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+    <div class="profile">
+        <div class="profile-section">
+            <div class="profile-section-header">
+                <p class="profile-section-header__p">Мой профиль</p>
+                <button onclick="showModal()" class="profile-section-header__a">Изменить пароль</button>
+            </div>
+            <form required class="profile-section-content">
+                <div class="row">
+                    <div class="profile-section-content-item"><label for="nicknamecab" class="profile-section-content-item__label">Имя пользователя</label><input type="text" id="nicknamecab" placeholder="shelbysout" class="profile-section-content-item__input"></div>
+                    <div class="profile-section-content-item"><label for="emailcab" class="profile-section-content-item__label">Почта</label><input type="email" id="emailcab" placeholder="shelbysout@gmail.com" class="profile-section-content-item__input"></div>
+                </div>
+                <div class="row">
+                    <div class="profile-section-content-item"><label for="namecab" class="profile-section-content-item__label">Имя</label><input type="text" id="namecab" placeholder="Nikita" class="profile-section-content-item__input"></div>
+                    <div class="profile-section-content-item"><label for="lnamecab" class="profile-section-content-item__label">Фамилия</label><input type="text" id="lnamecab" placeholder="Tarasenko" class="profile-section-content-item__input"></div>
+                </div>
+                <button class="profile-section-content__button">Сохранить</button>
+            </form>
+        </div>
+    </div>
+    <div class="overlay">
+        <div class="modal modal-form" style="padding: 30px 33px 0px 33px;">
+            <div class="close-modal" onclick="closeModal('panel')"></div>
+            <h1 class="modal-form__h1">Изменение пароля</h1>
+            <form required class="modal-form__based">
+                <div class="modal-form__item">
+                    <label for="password1" class="modal-form__label">Введите новый пароль</label>
+                    <input type="password" class="modal-form__input" id="password1">
+                </div>
+                <div class="modal-form__item">
+                    <label for="password2" class="modal-form__label">Подтвердите новый пароль</label>
+                    <input type="password" class="modal-form__input" id="password2">
+                </div>
+                <button class="profile-section-content__button">Сохранить</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="main-container">
+            <div class="footer-section">
+                <div class="footer-section-text">
+                    <p class="footer-section-text__p">© Copyrights POKO-BUY.RU 2018-2019. All rights reserved.
+                    </p>
+                    <p class="footer-section-text__p">Counter-Strike: Global Offensive is a registered trademark of Valve Corporation Company
+                    </p>
+                    <p class="footer-section-text__p">We are in no way affiliated with, associated with or endorsed by Valve Corporation.</p>
+                </div>
+                <div class="footer-section-item">
+                    <div class="footer-section-item-links">
+                        <p class="footer-section-item-links__p">Мы тут:</p>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/vk-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/discord-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                        <a href="" class="footer-section-item-links__a"><img src="../assets/img/steam-main.png" alt="" class="footer-section-item-links__a_img"></a>
+                    </div>
+                    <a href="ula/index.html" class="footer-section-item__a">Пользовательское соглашение</a>
+                    <div class="footer-section-item-certif">
+                        <img src="../assets/img/webmoneym.png" alt="" class="footer-section-item-certif__img">
+                        <img src="../assets/img/webmoneya.png" alt="" class="footer-section-item-certif__img">
+                        <img src="../assets/img/inter.png" alt="" class="footer-section-item-certif__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

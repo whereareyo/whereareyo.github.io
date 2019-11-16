@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Восстановление пароля</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" href="../assets/img/logo.ico" type="image/x-icon">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+    <section class="main-section">
+        <div class="auth">
+            <h1 class="auth-title">Восстановить пароль</h1>
+            <div class="alert-modal show" id="alert-modal">
+                <p class="alert-modal__text">Введенная вами почта уже существует в базе данных, введите другую почту.</p>
+                <div class="alert-close" onclick="document.getElementById('alert-modal').classList.remove('show')"></div>
+            </div>
+            <form class="auth-form">
+                <div class="auth-form__item">
+                    <input required type="email" placeholder="Введите вашу почту" class="auth-form__item_input">
+                    <div class="alert-text">Данный пароль уже существует в базе</div>
+                </div>
+                <p class="auth-description" style="margin: 20px 0">Нет аккаунта?<a href="signup.html" class="auth-description__link">Создать аккаунт</a></p>
+                <button class="btn btn-order">Восстановить</button>
+            </form>
+        </div>
+        <p class="auth-footer__text">© 2019 POKO-BUY.RU</p>
+    </section>
+</body>
+
+</html>

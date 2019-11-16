@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" href="../assets/img/logo.ico" type="image/x-icon">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+    <section class="main-section">
+        <div class="auth">
+            <h1 class="auth-title">Вход</h1>
+            <div class="alert-modal show" id="alert-modal">
+                <p class="alert-modal__text">Введенная вами почта уже существует в базе данных, введите другую почту.</p>
+                <div class="alert-close" onclick="document.getElementById('alert-modal').classList.remove('show')"></div>
+            </div>
+            <form class="auth-form">
+                <div class="auth-form__item">
+                    <input required type="text" placeholder="Придумайте логин" class="auth-form__item_input">
+                    <div class="alert-text">Данный пароль уже существует в базе</div>
+                </div>
+                <div class="auth-form__item">
+                    <input required type="email" placeholder="Ваш Email" class="auth-form__item_input">
+                    <div class="alert-text">Данный пароль уже существует в базе</div>
+                </div>
+                <div class="auth-form__item">
+                    <div class="auth-form__item_checkbox">
+                        <input type="checkbox" class="auth-checkbox__input_checkbox" id="checkbox">
+                        <label for="checkbox" class="auth-checkbox__label">Запомнить меня</label>
+                    </div>
+                </div>
+                <p class="auth-description">Забыли логин или пароль?<a href="forgot.html" class="auth-description__link">Воcстановить</a></p>
+                <div class="auth-form__item">
+                    <div class="auth-form__item_recaptcha g-recaptcha" data-sitekey="6KepjAsTFFFFFFMqccY0ZiGqc3TEd3YVxo8cHsGX"></div>
+                </div>
+                <button class="btn btn-order">Войти</button>
+            </form>
+            <div class="auth-links">
+                <div class="auth-links__title">Войти через:</div>
+                <div class="auth-links__list">
+                    <div class="auth-links__list_item"><img src="../assets/img/vk.png" alt=""></div>
+                    <div class="auth-links__list_item"><img src="../assets/img/fb.png" alt=""></div>
+                    <div class="auth-links__list_item"><img src="../assets/img/g+.png" alt=""></div>
+                    <div class="auth-links__list_item"><img src="../assets/img/steam.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <p class="auth-footer__text">© 2019 POKO-BUY.RU</p>
+    </section>
+</body>
+
+</html>
