@@ -1,0 +1,96 @@
+// Базовые цвета https://colorscheme.ru/color-converter.html
+
+
+// exs-colors
+$red: #a13131;
+$green: #438d3c;
+$dark-gray: #2a2b36;
+$orange: #e4a302;
+// end-exs-colors
+
+$yellow: #ffe15a;
+$orange: #ff5500;
+$purple: #9b59b6;
+$purple-dark: #41479b;
+$brown: #3a2f0e;
+$gray: #bdbdbd;
+$dark-gray: #828282;
+$light-gray: #e0e0e0;
+$black: #181718;
+$white: #ffffff;
+$pink-color: #f06795;
+$dark: #333333;
+$red: #a13131;
+$red-light: #ff4b55;
+$green: #73af00;
+$blue: #4173cd;
+$white: #ffffff;
+$cold: #f5f5f5;
+$bg-color: #F2F0F1;
+$dark-green: #27ae60;
+$blue-light: #cccfe1;
+
+$color-primary: $blue;
+$color-secondary: $red-light;
+
+/* Градиенты */
+
+$gradient-main: linear-gradient(42deg, #5038d5 0%, #8938d5 100%);
+
+
+
+$font-weight_regular: 400;
+$font-weight_medium: 500;
+$font-weight_semibold: 600;
+$font-weight_bold: 700;
+
+$font-size_root: 16px;
+
+$font-size: 1rem; // rem(16px)
+
+$font-size_h1: rem(48px);
+$font-size_h2: rem(32px);
+$font-size_h3: rem(24px);
+$font-size_h4: rem(18px);
+$font-size_h5: rem(16px);
+$font-size_h6: rem(16px);
+
+$line-height: 2;
+
+// Ширины
+
+$screen-xs: 0;
+$screen-sm: 480px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1800px;
+
+// Разное
+
+$transition-fast: ease 0.3s;
+$transition-slow: all 0.8s;
+$padding-small: 12px;
+
+
+@mixin flex($justify, $align) {
+    display: flex;
+	justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-center {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin align-center {
+    display: flex;
+	align-items: center;
+}
+
+@mixin justify-center {
+	display: flex;
+	justify-content: center;
+}

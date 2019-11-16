@@ -1,0 +1,35 @@
+@media screen and (max-width: 500px) {
+	.header-menu-bar {
+		display: none;
+	}
+	.footer {
+
+		&-row {
+			flex-direction: column;
+
+		}
+		&-contacts {
+			margin-bottom: 15px;
+		}
+
+		&-place {
+			margin-bottom: 15px;
+		}
+	}
+	.slider-products-content {
+		flex-direction: column;
+
+		.slider-products-column {
+			margin-bottom: 25px;
+		}
+	}
+	.plus-content-item {
+		margin-right: 0;
+	}
+	.plus-content {
+		flex-direction: column;
+	}
+	.plus__title {
+		font-size: 20px;
+	}
+}
