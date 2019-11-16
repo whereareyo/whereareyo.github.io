@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CRYPTO CURRENCY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="dashboard-header">
+            <h1 class="dashboard-header__h1">LOGO</h1>
+            <div class="dashboard-header-menu">
+                <ul class="dashboard-header-menu__ul">
+                    <li class="dashboard-header-menu__ul__li"><a class="dashboard-header-menu__ul__li__a" href="panel.html">PANEL</a></li>
+                    <li class="dashboard-header-menu__ul__li"><a class="dashboard-header-menu__ul__li__a" href="portfolio.html">PORTFOLIOS</a></li>
+                    <li class="dashboard-header-menu__ul__li"><a class="dashboard-header-menu__ul__li__a" href="utilities.html">UTILITIES</a></li>
+                    <li class="dashboard-header-menu__ul__li"><a class="dashboard-header-menu__ul__li__a" href="trades.html">TRADES</a></li>
+                    <li class="dashboard-header-menu__ul__li"><a class="dashboard-header-menu__ul__li__a" href="dashboard.html">SETTINGS</a></li>
+                </ul>
+            </div>
+            <div class="dashboard-header-exit">
+                <img class="dashboard-header-logo-exit__img" src="" alt="">
+            </div>
+            <div class="dashboard-header-text"> <img src="../assets/img/exit.png" alt=""> <a class="dashboard-header-text__a" href="#">Exit</a></div>
+        </div>
+        <div class="submenu">
+            <ul class="submenu__ul">
+                <li onclick="showAcc(0)" class="submenu__ul__li lijq"><a class="submenu__ul__li__a" href="#">Account</a></li>
+                <li onclick="showAcc(1)" class="submenu__ul__li lijq"><a class="submenu__ul__li__a" href="#">Subscription </a>
+                </li>
+                <li onclick="showAcc(2)" class="submenu__ul__li lijq" id="dash-ref"><a class="submenu__ul__li__a" href="#">Referral </a></li>
+            </ul>
+        </div>
+        <div class="Rectangle dfjq" id="rectangle-acc">
+            <h1 class="Rectangle__h1">Integrations</h1>
+            <p class="Rectangle__p">Expansion installed!</p>
+            <form action="#" class="Rectangle__form">
+                <label class="Rectangle__label" for="fn">Enter your First Name:</label>
+                <input type="text" id="fn" placeholder="First Name" class="Rectangle__input">
+                <label class="Rectangle__label" for="ln">Enter your Last Name:</label>
+                <input type="text" id="ln" placeholder="Last Name" class="Rectangle__input">
+                <label class="Rectangle__label" for="mn">Enter your Middle Name:</label>
+                <input type="text" id="mn" placeholder="Middle Name" class="Rectangle__input">
+                <label class="Rectangle__label" for="email">Enter your email:</label>
+                <input type="email" id="email" placeholder="email" pattern=".+@gmail.com" size="30" required class="Rectangle__input">
+                <button class="Rectangle__button btn">SAVE</button>
+            </form>
+        </div>
+        <div class="Rectangle rfs" id="rectangle-subs">
+            <h1 class="Rectangle__h1">PAYMENT</h1>
+            <p class="Rectangle__p">Since your account is under $500, you are currently in HodlBot's free tier!</p>
+            <p class="Rectangle__p">Current value:<span class="Rectangle__p_span">$0.00</span></p>
+            <h1 class="Rectangle__h1">PayPal Subscription</h1>
+            <p class="Rectangle__p">Subscribe with PayPal to make sure your HodlBot service is never interrupted. It's<span class="Rectangle__p_span">$10/month.</span></p>
+            <p class="Rectangle__p">Don't worry. We won't bill you if you have less than 500$ or if you have pre-purchased time left.</p>
+            <p class="Rectangle__p">You can also purchase preset amounts of time.</p>
+            <div class="Rectangle-buttons">
+                <div class="Rectangle-buttons-text rbtf">
+                    <p class="Rectangle-buttons-text__p">3 MONTHS</p>
+                    <h2 class="Rectangle-buttons-text__h2">$27</h2>
+                    <span class="Rectangle-buttons-text__span">$9 / month</span>
+                </div>
+                <div class="Rectangle-buttons-text mrn rbts">
+                    <p class="Rectangle-buttons-text__p rtx">1 YEAR</p>
+                    <h2 class="Rectangle-buttons-text__h2">$96</h2>
+                    <span class="Rectangle-buttons-text__span">$8 / month</span>
+                </div>
+            </div>
+        </div>
+        <div class="Rectangle" id="rectangle-ref">
+            <h1 class="page-wrap__h1 hs">REFERRAL</h1>
+            <p class="Rectangle__p">For each person you refer that pays at least once, you'll get a free month of Extension.</p>
+            <p class="Rectangle__p">You have referred<span class="Rectangle__p_span">0</span>  friends so far!</p>
+            <p class="Rectangle__p mbn">The share icons below will enable you to share your current portfolio with a friend.</p>
+            <div class="page-wrap-ref" id="ref-block">
+                <p id="ref-btn" class="page-wrap-ref__p">cryptocurrency.com/referral=рандомцифры</p>
+                <button data-title="Click to copy" onclick="copytext('#ref-btn')" class="page-wrap-ref__button btn datat"><img src="../assets/img/copy-ref.svg" alt="" class="page-wrap-ref__button__img"></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $('.rbtf').on('click', function() {
+        if (!$(this).hasClass('rbtfa')) {
+            $(this).addClass('rbtfa');
+            console.log('First click');
+        } else {
+            $(this).removeClass('rbtfa');
+            console.log('Second click');
+        }
+    });
+    $('.rbts').on('click', function() {
+        if (!$(this).hasClass('rbtsa')) {
+            $(this).addClass('rbtsa');
+            console.log('First click');
+        } else {
+            $(this).removeClass('rbtsa');
+            console.log('Second click');
+        }
+    });
+    function showSubsc() {
+        $('.Rectangle').addClass('dfjq')
+    }
+    function showRef() {
+        $('.Rectangle').addClass('dfjq')
+    }
+    function showAcc(e) {
+        $('.Rectangle').removeClass("dfjq")
+
+        if (e === 0) {
+            $('#rectangle-acc').addClass('dfjq')
+        } else if (e === 1) {
+            $('#rectangle-subs').addClass('dfjq')
+        } else if (e === 2) {
+            $('#rectangle-ref').addClass('dfjq')
+        }
+    }
+    $(document).ready(function() {
+        var text = $('#ref-block');
+        var replaced = text.html().replace(/рандомцифры/gi, this);
+        text.html(replaced);
+
+        $('#dash-ref').click(function() {
+            $('.overlay').toggleClass('show-overlay')
+        })
+
+        $('.close-modal').click(function() {
+            $('.overlay').removeClass('show-overlay')
+        })
+    })
+
+    function showTrial() {
+        $('.dashboardTrial').addClass('dashboardTrial-visible')
+    }
+
+    function copytext(el) {
+        var $tmp = $("<input>");
+        $("body").append($tmp);
+        $tmp.val($(el).text()).select();
+        document.execCommand("copy");
+        $tmp.remove();
+    }
+    </script>
+</body>
+
+</html>

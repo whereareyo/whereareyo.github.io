@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CRYPTO CURRENCY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="dashboard-header">
+            <h1 class="dashboard-header__h1">LOGO</h1>
+            <div class="dashboard-header-menu">
+                <ul class="dashboard-header-menu__ul">
+                    <li class="dashboard-header-menu__ul__li"><a class="dashboard-header-menu__ul__li__a" href="panel.html">PANEL</a></li>
+                    <li class="dashboard-header-menu__ul__li"><a class="dashboard-header-menu__ul__li__a" href="portfolio.html">PORTFOLIOS</a></li>
+                    <li class="dashboard-header-menu__ul__li"><a class="dashboard-header-menu__ul__li__a" href="utilities.html">UTILITIES</a></li>
+                    <li class="dashboard-header-menu__ul__li"><a class="dashboard-header-menu__ul__li__a" href="trades.html">TRADES</a></li>
+                    <li class="dashboard-header-menu__ul__li"><a class="dashboard-header-menu__ul__li__a" href="dashboard.html">SETTINGS</a></li>
+                </ul>
+            </div>
+            <div class="dashboard-header-exit">
+                <img class="dashboard-header-logo-exit__img" src="" alt="">
+            </div>
+            <div class="dashboard-header-text"> <img src="../assets/img/exit.png" alt=""> <a class="dashboard-header-text__a" href="#">Exit</a></div>
+        </div>
+        <div class="panel">
+            <div class="panel-fitem">
+                <div class="panel-fitem-value">
+                    <h1 class="panel-fitem-value__h1">Account Value</h1>
+                    <p class="panel-fitem-value__p">$16 <span class="panel-fitem-value__p__span">(+ $0)</span></p>
+                    <div class="panel-fitem-value-dates">
+                        <div class="panel-fitem-value-dates-item">
+                            <p class="panel-fitem-value-dates-item__p">7 Day</p>
+                            <span class="panel-fitem-value-dates-item__span">+2.5%</span>
+                        </div>
+                        <div class="panel-fitem-value-dates-item">
+                            <p class="panel-fitem-value-dates-item__p">30 Day</p>
+                            <span class="panel-fitem-value-dates-item__span">+122.5%</span>
+                        </div>
+                        <div class="panel-fitem-value-dates-item">
+                            <p class="panel-fitem-value-dates-item__p">All Time</p>
+                            <span class="panel-fitem-value-dates-item__span">+122.5%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-fitem-comp">
+                    <h1 class="panel-fitem-comp__h1">Composition</h1>
+                    <div class="panel-fitem-comp-links">
+                        <div class="panel-fitem-comp-links-item ihrl">
+                            <p class="panel-fitem-comp-links-item__p phrl">Portfolio</p>
+                        </div>
+                        <div class="panel-fitem-comp-links-item ihrl">
+                            <p class="panel-fitem-comp-links-item__p phrl">Allocations</p>
+                        </div>
+                        <div class="panel-fitem-comp-links-item ihrl">
+                            <p class="panel-fitem-comp-links-item__p phrl">Coins</p>
+                        </div>
+                    </div>
+                    <div class="panel-coins">
+                        <div class="panel-fitem-comp-progress">
+                            <div class="coin-item coin-item__active panel-fitem-comp-progress-item first-coin">
+                                <p class="panel-fitem-comp-progress-item__p" id="panel-coins-circle">ETH</p>
+                                <span class="panel-fitem-comp-progress-item__span">100.00%</span>
+                            </div>
+                        </div>
+                        <button class="panel-fitem-comp__button btn" onclick="toggleClassModal('coins')"><span class="panel-fitem-comp__button__span">CHANGE PORTFOLIO</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-sitem">
+                <div class="panel-sitem-graph">
+                    <div class="panel-sitem-graph-text">
+                        <h1 class="panel-sitem-graph-text__h1">Perfomance</h1>
+                        <div class="panel-sitem-graph-text-p">
+                            <p class="panel-sitem-graph-text-p__p">1W</p>
+                            <p class="panel-sitem-graph-text-p__p">1M</p>
+                            <p class="panel-sitem-graph-text-p__p">6M</p>
+                            <p class="panel-sitem-graph-text-p__p">1Y</p>
+                            <p class="panel-sitem-graph-text-p__p mrn">All Time</p>
+                        </div>
+                    </div>
+                    <canvas id="myChart" width="800" height="254"></canvas>
+                </div>
+                <div class="panel-sitem-actions">
+                    <div class="panel-sitem-actions-item">
+                        <h1 class="panel-sitem-actions-item__h1">Rebalancing</h1>
+                        <h3 class="panel-sitem-actions-item__h3">Auto</h3>
+                        <p class="panel-sitem-actions-item__p">Last Rebalance:</p>
+                        <p class="panel-sitem-actions-item__p plp">Next Rebalance:</p>
+                        <button class="panel-sitem-actions-item__button btn" onclick="toggleClassModal('balance')"><span class="panel-sitem-actions-item__button__span">MANUAL REBALANCE</span></button>
+                    </div>
+                    <div class="panel-sitem-actions-item">
+                        <h1 class="panel-sitem-actions-item__h1">Subscription</h1>
+                        <h3 class="panel-sitem-actions-item__h3">Trial</h3>
+                        <p class="panel-sitem-actions-item__p">Account Type:<span class="panel-sitem-actions-item__p__span">In Trial</span></p>
+                        <p class="panel-sitem-actions-item__p plp">Time remaining:<span class="panel-sitem-actions-item__p__span">14 Days</span></p>
+                        <button class="panel-sitem-actions-item__button btn" onclick="toggleClassModal('subscrition')"><span class="panel-sitem-actions-item__button__span">Manage SUBSCRIPTION</span></button>
+                    </div>
+                    <div class="panel-sitem-actions-item mrn">
+                        <h1 class="panel-sitem-actions-item__h1">Utilities</h1>
+                        <h4 class="panel-sitem-actions-item__h4">Blacklist</h4>
+                        <p class="panel-sitem-actions-item__p">BotName will never buy blacklisted <br>
+                            coins. You have <br>
+                            <span class="panel-sitem-actions-item__p__span pln">0 coins</span> currently blacklisted.</p>
+                        <h4 class="panel-sitem-actions-item__h4">Cashout</h4>
+                        <p class="panel-sitem-actions-item__p panelmb">Consolidate any % of your portfolio <br>
+                            into any coin, instantly.</p>
+                        <a href="utilities.html" class="panel-sitem-actions-item__button btn"><span class="panel-sitem-actions-item__button__span">Manage Utilities</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay">
+        <div class="modal modal-subs">
+            <div class="page-wrap">
+                <div class="close-modal" onclick="closeModal()"></div>
+                <h3 class="page-wrap__h3 hs">Manage Subscrition</h3>
+                <p class="page-wrap__p ps">Check:</p>
+                <h1 class="page-wrap__h1">$25</h1>
+                <p class="page-wrap__balance">Your balance: $555.00</p>
+                <div class="page-wrap-buttons">
+                    <button class="page-wrap__button_left btn opentrial" onclick="showTrial()">PAY $25/MONTH</button>
+                    <button class="page-wrap__button_right btn opentrial" onclick="showTrial()">PAY $100/6 Monthes</button>
+                    <div class="trial">
+                        <div class="trial-text">
+                            <p class="trial-text__p">You already have a trial subscription for 14 days!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-balance">
+            <div class="aside-wrap">
+                <div class="close-modal" onclick="closeModal()"></div>
+                <h3 class="aside-wrap__h3 hs">ACCOUNT SETUP</h3>
+                <p class="aside-wrap__p ps">Current Account Value</p>
+                <h1 class="aside-wrap__h1">$25</h1>
+                <p class="aside-wrap__balance">You need $100 on your balance to use our project. You need deposit $75 more.</p>
+                <button class="aside-wrap__button btn">DEPOSIT</button>
+            </div>
+        </div>
+        <div class="modal modal-coins">
+            <div class="aside-wrap">
+                <div class="close-modal" onclick="closeModal()"></div>
+                <h3 class="aside-wrap__h3 hs">Composition valutes</h3>
+                <div class="modal-coins__row">
+                    <h3 class="aside-wrap__h3 hs">ACCOUNT SETUP</h3>
+                    <div class="modal-coins__checkbox">
+                        <div class="modal-coins__checkbox_active" id="active-coins-checkbox">ETH</div>
+                        <div class="modal-coins__checkbox_items">
+                            <div class="modal-coins__checkbox_items_item" onclick="eachCoins('eth')">ETH</div>
+                            <div class="modal-coins__checkbox_items_item" onclick="eachCoins('btc')">BTC</div>
+                            <div class="modal-coins__checkbox_items_item" onclick="eachCoins('bch')">BCH</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="aside-wrap__button btn" onclick="saveEachCoin()">SAVE</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+        $('#btn-subs').click(function() {
+            $('.overlay').toggleClass('show-modal')
+        })
+
+        $('.close-modal').click(function() {
+            $('.overlay').removeClass('show-modal')
+        })
+    })
+
+    function toggleClassModal(modal) {
+        $('.overlay').toggleClass('show-overlay')
+
+        if (modal === 'balance') {
+            $('.modal-balance').toggleClass('show-modal')
+        } else if (modal === 'subscrition') {
+            $('.modal-subs').toggleClass('show-modal')
+        } else if (modal === 'coins') {
+            $('.modal-coins').toggleClass('show-modal')
+        }
+    }
+
+    function showTrial() {
+        $('.trial').addClass('trial-visible')
+    }
+
+    function closeModal() {
+        $('.overlay').removeClass('show-overlay')
+        $('.modal').removeClass('show-modal')
+    }
+
+    function eachCoins(e) {
+        $('#active-coins-checkbox').text(e.toUpperCase());
+    }
+
+    function saveEachCoin(argument) {
+        const vals = $('#active-coins-checkbox').text()
+        $('#panel-coins-circle').text(vals)
+        closeModal()
+    }
+    </script>
+</body>
+
+</html>

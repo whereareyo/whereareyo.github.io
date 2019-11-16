@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CRYPTO CURRENCY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="dashboard-header">
+            <h1 class="dashboard-header__h1">LOGO</h1>
+            <div class="dashboard-header-menu">
+                <ul class="dashboard-header-menu__ul">
+                    <li class="dashboard-header-menu__ul__li"><a class="dashboard-header-menu__ul__li__a" href="panel.html">PANEL</a></li>
+                    <li class="dashboard-header-menu__ul__li"><a class="dashboard-header-menu__ul__li__a" href="portfolio.html">PORTFOLIOS</a></li>
+                    <li class="dashboard-header-menu__ul__li"><a class="dashboard-header-menu__ul__li__a" href="utilities.html">UTILITIES</a></li>
+                    <li class="dashboard-header-menu__ul__li"><a class="dashboard-header-menu__ul__li__a" href="trades.html">TRADES</a></li>
+                    <li class="dashboard-header-menu__ul__li"><a class="dashboard-header-menu__ul__li__a" href="dashboard.html">SETTINGS</a></li>
+                </ul>
+            </div>
+            <div class="dashboard-header-exit">
+                <img class="dashboard-header-logo-exit__img" src="" alt="">
+            </div>
+            <div class="dashboard-header-text"> <img src="../assets/img/exit.png" alt=""> <a class="dashboard-header-text__a" href="#">Exit</a></div>
+        </div>
+        <div class="utilities">
+            <div class="utilities-item">
+                <h1 class="utilities-item__h1">Rebalancing</h1>
+                <p class="utilities-item__p">When the market shifts, a portfolio will drift away from its target <br>
+                    allocation. HodlBot automatically rebalances your portfolio to <br>
+                    keep it on track. Portfolio rebalances generally lead to risk <br>
+                    mitigation and improved returns.</p>
+                <div class="utilities-item-buttons">
+                    <div class="utilities-item-buttons-item">
+                        <p class="utilities-item-buttons-item__p">Rebalance Period (days)</p>
+                        <input type="text" placeholder="28" class="utilities-item-buttons-item__input">
+                        <button class="utilities-item-buttons-item__button btn"><span class="utilities-item-buttons-item__button__span">Set Rebalance Period</span></button>
+                    </div>
+                    <div class="utilities-item-buttons-item">
+                        <p class="utilities-item-buttons-item__p">Manual Rebalance</p>
+                        <button class="utilities-item-buttons-item__button ubtn btn"><span class="utilities-item-buttons-item__button__span">Manual Rebalance</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="utilities-item">
+                <h1 class="utilities-item__h1">Cashout</h1>
+                <p class="utilities-item__p">Cash out allows you to convert any % of your existing portfolio <br>
+                    and consolidate it into a single coin. One use case, may be <br>
+                    cashing out to a stable coin in a bear market.</p>
+                <input type="text" placeholder="Coin" class="utilities-item__input">
+                <input type="text" placeholder="0" class="utilities-item__input umb">
+                <button class="utilities-item__button btn"><span class="utilities-item__button__span">Set Rebalance Period</span></button>
+            </div>
+            <div class="utilities-item ha">
+                <h1 class="utilities-item__h1">Coin Blacklist</h1>
+                <p class="utilities-item__p">Blacklist coins you never want to buy e.g. USDT. For Indices, <br>
+                    HodlBot will skip the coin and replace it with the next <br>
+                    highest coin by market cap.</p>
+                <div class="utilities-item-blz">
+                    <div class="utilities-item-blz-item">
+                        <p class="utilities-item-blz-item__p">Select Coins to Blacklist</p>
+                        <input placeholder="Add Coin" class="utilities-item-blz-item__input" id="blacklistedInput" type="text" list="options" value="">
+                        <datalist id="options">
+                            <option onclick="eachCoins(this)" value="ADA">Cardano</option>
+                            <option onclick="eachCoins(this)" value="ADX">AdEx</option>
+                            <option onclick="eachCoins(this)" value="AE">Aeternity</option>
+                            <option onclick="eachCoins(this)" value="AGI">SingularityNET</option>
+                            <option onclick="eachCoins(this)" value="AION">Aion</option>
+                            <option onclick="eachCoins(this)" value="AMB">Ambrosus</option>
+                            <option onclick="eachCoins(this)" value="APPC">AppCoins</option>
+                            <option onclick="eachCoins(this)" value="ARDR">Ardor</option>
+                            <option onclick="eachCoins(this)" value="ARK">Ark</option>
+                            <option onclick="eachCoins(this)" value="ARN">Aeron</option>
+                            <option onclick="eachCoins(this)" value="AST">AirSwap</option>
+                            <option onclick="eachCoins(this)" value="ATOM">Cosmos</option>
+                            <option onclick="eachCoins(this)" value="BAT">Basic Attention Token</option>
+                            <option onclick="eachCoins(this)" value="BCD">Bitcoin Diamond</option>
+                            <option onclick="eachCoins(this)" value="BCH">Bitcoin Cash</option>
+                            <option onclick="eachCoins(this)" value="BCPT">BlockMason Credit Protocol</option>
+                            <option onclick="eachCoins(this)" value="BLZ">Bluzelle</option>
+                            <option onclick="eachCoins(this)" value="BNB">Binance Coin</option>
+                            <option onclick="eachCoins(this)" value="BNT">Bancor</option>
+                            <option onclick="eachCoins(this)" value="BRD">Bread</option>
+                            <option onclick="eachCoins(this)" value="BTC">Bitcoin</option>
+                            <option onclick="eachCoins(this)" value="BTG">Bitcoin Gold</option>
+                            <option onclick="eachCoins(this)" value="BTS">BitShares</option>
+                            <option onclick="eachCoins(this)" value="BTT">BitTorrent</option>
+                            <option onclick="eachCoins(this)" value="CAD">Canadian Dollar</option>
+                            <option onclick="eachCoins(this)" value="CDT">Blox</option>
+                            <option onclick="eachCoins(this)" value="CELR">Celer Network</option>
+                            <option onclick="eachCoins(this)" value="CMT">CyberMiles</option>
+                            <option onclick="eachCoins(this)" value="CND">Cindicator</option>
+                            <option onclick="eachCoins(this)" value="CVC">Civic</option>
+                            <option onclick="eachCoins(this)" value="DASH">Dash</option>
+                            <option onclick="eachCoins(this)" value="DATA">Streamr DATAcoin</option>
+                            <option onclick="eachCoins(this)" value="DCR">Decred</option>
+                            <option onclick="eachCoins(this)" value="DENT">Dent</option>
+                            <option onclick="eachCoins(this)" value="DGD">DigixDAO</option>
+                            <option onclick="eachCoins(this)" value="DLT">Agrello</option>
+                            <option onclick="eachCoins(this)" value="DNT">district0x</option>
+                            <option onclick="eachCoins(this)" value="DOCK">Dock</option>
+                            <option onclick="eachCoins(this)" value="DOGE">Dogecoin</option>
+                            <option onclick="eachCoins(this)" value="EDO">Eidoo</option>
+                            <option onclick="eachCoins(this)" value="ELF">aelf</option>
+                            <option onclick="eachCoins(this)" value="ENG">Enigma</option>
+                            <option onclick="eachCoins(this)" value="ENJ">Enjin Coin</option>
+                            <option onclick="eachCoins(this)" value="EOS">EOS</option>
+                            <option onclick="eachCoins(this)" value="ETC">Ethereum Classic</option>
+                            <option onclick="eachCoins(this)" value="ETH">Ethereum</option>
+                            <option onclick="eachCoins(this)" value="ETHOS">Ethos</option>
+                            <option onclick="eachCoins(this)" value="EUR">Euro</option>
+                            <option onclick="eachCoins(this)" value="EVX">Everex</option>
+                            <option onclick="eachCoins(this)" value="FET">Fetch</option>
+                            <option onclick="eachCoins(this)" value="FUEL">Etherparty</option>
+                            <option onclick="eachCoins(this)" value="FUN">FunFair</option>
+                            <option onclick="eachCoins(this)" value="GAS">Gas</option>
+                            <option onclick="eachCoins(this)" value="GBP">United Kingdom Pound Sterling</option>
+                            <option onclick="eachCoins(this)" value="GNO">Gnosis</option>
+                            <option onclick="eachCoins(this)" value="GNT">Golem</option>
+                            <option onclick="eachCoins(this)" value="GO">GoChain</option>
+                            <option onclick="eachCoins(this)" value="GRS">Groestlcoin</option>
+                            <option onclick="eachCoins(this)" value="GTO">Gifto</option>
+                            <option onclick="eachCoins(this)" value="GVT">Genesis Vision</option>
+                            <option onclick="eachCoins(this)" value="GXC">GXChain</option>
+                            <option onclick="eachCoins(this)" value="HC">HyperCash</option>
+                            <option onclick="eachCoins(this)" value="HOT">Holo</option>
+                            <option onclick="eachCoins(this)" value="ICX">ICON</option>
+                            <option onclick="eachCoins(this)" value="INS">Insolar</option>
+                            <option onclick="eachCoins(this)" value="IOST">IOST</option>
+                            <option onclick="eachCoins(this)" value="IOTX">IoTeX</option>
+                            <option onclick="eachCoins(this)" value="JPY">Japanese Yen</option>
+                            <option onclick="eachCoins(this)" value="KEY">Selfkey</option>
+                            <option onclick="eachCoins(this)" value="KMD">Komodo</option>
+                            <option onclick="eachCoins(this)" value="KNC">Kyber Network</option>
+                            <option onclick="eachCoins(this)" value="LEND">ETHLend</option>
+                            <option onclick="eachCoins(this)" value="LINK">Chainlink</option>
+                            <option onclick="eachCoins(this)" value="LOOM">Loom Network</option>
+                            <option onclick="eachCoins(this)" value="LRC">Loopring</option>
+                            <option onclick="eachCoins(this)" value="LSK">Lisk</option>
+                            <option onclick="eachCoins(this)" value="LTC">Litecoin</option>
+                            <option onclick="eachCoins(this)" value="LUN">Lunyr</option>
+                            <option onclick="eachCoins(this)" value="MANA">Decentraland</option>
+                            <option onclick="eachCoins(this)" value="MATIC">Matic Network</option>
+                            <option onclick="eachCoins(this)" value="MCO">Crypto.com</option>
+                            <option onclick="eachCoins(this)" value="MDA">Moeda Loyalty Points</option>
+                            <option onclick="eachCoins(this)" value="MFT">Mainframe</option>
+                            <option onclick="eachCoins(this)" value="MIOTA">IOTA</option>
+                            <option onclick="eachCoins(this)" value="MITH">Mithril</option>
+                            <option onclick="eachCoins(this)" value="MLN">Melon</option>
+                            <option onclick="eachCoins(this)" value="MTH">Monetha</option>
+                            <option onclick="eachCoins(this)" value="MTL">Metal</option>
+                            <option onclick="eachCoins(this)" value="NANO">Nano</option>
+                            <option onclick="eachCoins(this)" value="NAS">Nebulas</option>
+                            <option onclick="eachCoins(this)" value="NAV">NavCoin</option>
+                            <option onclick="eachCoins(this)" value="NCASH">Nucleus Vision</option>
+                            <option onclick="eachCoins(this)" value="NEBL">Neblio</option>
+                            <option onclick="eachCoins(this)" value="NEO">NEO</option>
+                            <option onclick="eachCoins(this)" value="NPXS">Pundi X</option>
+                            <option onclick="eachCoins(this)" value="NULS">NULS</option>
+                            <option onclick="eachCoins(this)" value="NXS">Nexus</option>
+                            <option onclick="eachCoins(this)" value="OAX">OAX</option>
+                            <option onclick="eachCoins(this)" value="OMG">OmiseGO</option>
+                            <option onclick="eachCoins(this)" value="ONE">Harmony</option>
+                            <option onclick="eachCoins(this)" value="ONG">Ontology Gas</option>
+                            <option onclick="eachCoins(this)" value="ONT">Ontology</option>
+                            <option onclick="eachCoins(this)" value="OST">OST</option>
+                            <option onclick="eachCoins(this)" value="PAX">Paxos Standard Token</option>
+                            <option onclick="eachCoins(this)" value="PHX">Red Pulse Phoenix</option>
+                            <option onclick="eachCoins(this)" value="PIVX">PIVX</option>
+                            <option onclick="eachCoins(this)" value="POA">POA Network</option>
+                            <option onclick="eachCoins(this)" value="POE">Po.et</option>
+                            <option onclick="eachCoins(this)" value="POLY">Polymath</option>
+                            <option onclick="eachCoins(this)" value="POWR">Power Ledger</option>
+                            <option onclick="eachCoins(this)" value="PPT">Populous</option>
+                            <option onclick="eachCoins(this)" value="QKC">QuarkChain</option>
+                            <option onclick="eachCoins(this)" value="QLC">QLC Chain</option>
+                            <option onclick="eachCoins(this)" value="QSP">Quantstamp</option>
+                            <option onclick="eachCoins(this)" value="QTUM">Qtum</option>
+                            <option onclick="eachCoins(this)" value="RCN">Ripio Credit Network</option>
+                            <option onclick="eachCoins(this)" value="RDN">Raiden Network Token</option>
+                            <option onclick="eachCoins(this)" value="REN">Ren</option>
+                            <option onclick="eachCoins(this)" value="REP">Augur</option>
+                            <option onclick="eachCoins(this)" value="REQ">Request</option>
+                            <option onclick="eachCoins(this)" value="RLC">iExec RLC</option>
+                            <option onclick="eachCoins(this)" value="RVN">Ravencoin</option>
+                            <option onclick="eachCoins(this)" value="SC">Siacoin</option>
+                            <option onclick="eachCoins(this)" value="SKY">Skycoin</option>
+                            <option onclick="eachCoins(this)" value="SNGLS">SingularDTV</option>
+                            <option onclick="eachCoins(this)" value="SNM">SONM</option>
+                            <option onclick="eachCoins(this)" value="SNT">Status</option>
+                            <option onclick="eachCoins(this)" value="STEEM">Steem</option>
+                            <option onclick="eachCoins(this)" value="STORJ">Storj</option>
+                            <option onclick="eachCoins(this)" value="STORM">Storm</option>
+                            <option onclick="eachCoins(this)" value="STRAT">Stratis</option>
+                            <option onclick="eachCoins(this)" value="SYS">Syscoin</option>
+                            <option onclick="eachCoins(this)" value="TFUEL">Theta Fuel</option>
+                            <option onclick="eachCoins(this)" value="THETA">THETA</option>
+                            <option onclick="eachCoins(this)" value="TNB">Time New Bank</option>
+                            <option onclick="eachCoins(this)" value="TNT">Tierion</option>
+                            <option onclick="eachCoins(this)" value="TRX">TRON</option>
+                            <option onclick="eachCoins(this)" value="TUSD">TrueUSD</option>
+                            <option onclick="eachCoins(this)" value="USD">United States Dollar</option>
+                            <option onclick="eachCoins(this)" value="USDC">USD Coin</option>
+                            <option onclick="eachCoins(this)" value="USDS">StableUSD</option>
+                            <option onclick="eachCoins(this)" value="USDT">Tether</option>
+                            <option onclick="eachCoins(this)" value="VET">VeChain</option>
+                            <option onclick="eachCoins(this)" value="VIA">Viacoin</option>
+                            <option onclick="eachCoins(this)" value="VIB">Viberate</option>
+                            <option onclick="eachCoins(this)" value="VIBE">VIBE</option>
+                            <option onclick="eachCoins(this)" value="WABI">Tael</option>
+                            <option onclick="eachCoins(this)" value="WAN">Wanchain</option>
+                            <option onclick="eachCoins(this)" value="WAVES">Waves</option>
+                            <option onclick="eachCoins(this)" value="WPR">WePower</option>
+                            <option onclick="eachCoins(this)" value="WTC">Waltonchain</option>
+                            <option onclick="eachCoins(this)" value="XEM">NEM</option>
+                            <option onclick="eachCoins(this)" value="XLM">Stellar</option>
+                            <option onclick="eachCoins(this)" value="XMR">Monero</option>
+                            <option onclick="eachCoins(this)" value="XRP">XRP</option>
+                            <option onclick="eachCoins(this)" value="XTZ">Tezos</option>
+                            <option onclick="eachCoins(this)" value="XVG">Verge</option>
+                            <option onclick="eachCoins(this)" value="XZC">Zcoin</option>
+                            <option onclick="eachCoins(this)" value="YOYOW">YOYOW</option>
+                            <option onclick="eachCoins(this)" value="ZEC">Zcash</option>
+                            <option onclick="eachCoins(this)" value="ZEN">Horizen</option>
+                            <option onclick="eachCoins(this)" value="ZIL">Zilliqa</option>
+                            <option onclick="eachCoins(this)" value="ZRX">0x</option>
+                        </datalist>
+                    </div>
+                    <div class="utilities-item-blz-item">
+                        <p class="utilities-item-blz-item__p">Currently Blacklisted</p>
+                        <div class="utilities-item-blz-item-buttons" id="blacklistedSelect">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="utilities-item">
+                <h1 class="utilities-item__h1 ump">New features coming soon</h1>
+                <p class="utilities-item__p mbn">Have a great idea for the future? Reach us at</p>
+                <a href="" class="utilities-item__a">support@domain.com</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+    <script>
+    function seachCoins(e) {
+        $('#active-coins-checkbox').text(e.toUpperCase());
+    }
+
+    function eachCoins(argument) {
+        const vals = $(argument).html()
+        console.log(vals)
+        $("#blacklistedSelect").append(vals);
+    }
+
+        function removeCoin(arg) {
+            $(arg).closest('.coinbtn').remove();
+        }
+
+    $(document).ready(function() {
+        $('#blacklistedInput').keypress(function(e) {
+            var key = e.which;
+            console.log(e.key);
+            e.preventDefault()
+            if (key == 13) {
+                const vals = $('#blacklistedInput').val();
+                console.log(vals)
+                $('#blacklistedSelect').append("<button class='utilities-item-blz-item-buttons__button btn coinbtn'><span class='utilities-item-blz-item-buttons__button__span'>"+ vals +"</span><img onclick='removeCoin(this)' src='../assets/img/x.png' alt='' class='utilities-item-blz-item-buttons__button__img iconCoin'></button>");
+                $('#blacklistedInput').val('')
+                return false;
+            }
+        });
+    })
+    </script>
+</body>
