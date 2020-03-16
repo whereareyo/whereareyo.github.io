@@ -237,7 +237,7 @@ table {
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
-    
+
 }
 
 .prev_arrow:hover {
@@ -282,7 +282,7 @@ table {
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
-    
+
 }
 
 .next_arrow:hover {
@@ -2109,6 +2109,20 @@ html {
 }
 
 @media screen and (min-width: 1921px) {
+    .services__simg {
+        left: 40%;
+    }
+
+    .services__fimg {
+        left: 14%;
+    }
+    .info__img {
+        left: 263px;
+    }
+    .aside__linesimg {
+        left: 263px;
+    }
+
     .case-section_second__img {
         position: relative;
         padding-bottom: 102px;
