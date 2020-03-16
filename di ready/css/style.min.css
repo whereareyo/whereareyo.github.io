@@ -2111,31 +2111,38 @@ html {
         left: auto;
         top: auto;
     }
+
     .case-section_third {
-            justify-content: space-evenly;
+        justify-content: space-evenly;
     }
+
     .case-section_third img:nth-child(2) {
         position: relative;
         right: auto;
     }
+
     .case-section_second {
         justify-content: center;
     }
+
     .case-section_first {
         justify-content: center;
-            width: 100%;
-    padding: 90px 0px 50px 0;
+        width: 100%;
+        padding: 90px 0px 50px 0;
 
     }
+
     .case-section_first img:first-child {
         position: relative;
         padding-right: 51px;
     }
+
     .contacts {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-evenly;
+        height: 934px;
     }
 
     .contacts-content {
@@ -2146,6 +2153,7 @@ html {
 
     .contacts-map {
         padding-left: 425px;
+        height: 934px;
     }
 
     .trinity-section_first {
