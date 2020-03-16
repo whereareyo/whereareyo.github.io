@@ -1743,7 +1743,7 @@ html {
     padding-top: 40px;
     padding-left: 3px;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     z-index: 3
 }
@@ -2108,6 +2108,8 @@ html {
     transition: all .3s
 }
 
+
+
 @media screen and (min-width: 1921px) {
     .services__simg {
         left: 40%;
@@ -2116,9 +2118,11 @@ html {
     .services__fimg {
         left: 14%;
     }
+
     .info__img {
         left: 263px;
     }
+
     .aside__linesimg {
         left: 263px;
     }
@@ -2195,6 +2199,29 @@ html {
 
     .trinity-section-item:nth-child(odd) .trinity-section-item__date {
         margin-right: 117px;
+    }
+}
+@media screen and (min-width: 4096px) {
+    .aside__img {
+        width: 54%;
+        object-fit: cover;
+    }
+
+    .aside__linesimg {
+        left: 24.8%;
+    }
+
+    .info__img {
+        left: 24.8%;
+    }
+    .services__fimg {
+            left: 27%;
+    }
+    .services__simg {
+        left: 44%;
+    }
+    .projects__imglines {
+        display: none;
     }
 }
 
