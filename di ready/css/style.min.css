@@ -2954,6 +2954,14 @@ html {
 }
 
 @media screen and (max-width:480px) {
+    .trinity-section_second {
+        width: calc(100% - 30px);
+    padding: 0 15px 0 15px;
+    }
+    .trinity-section-text {
+        margin-top: 35px;
+    }
+
     .contacts {
         padding: 78px 0 78px 0;
         background-color: #f7f8fa;
@@ -2991,10 +2999,27 @@ html {
 
     .about-aside-content__title {
         line-height: 40px;
+        font-size: 35px;
     }
 
     .about-aside-content__title b {
         line-height: 40px;
+        font-size: 35px;
+    }
+    .services-page-content-info {
+        height: 500px;
+    }
+    .portfolio-aside img {
+        display: none;
+    }
+    .portfolio-aside-content {
+        padding: 156px 0 0 0;
+    }
+    .case-aside img {
+        display: none;
+    }
+    .portfolio-aside-content__title {
+        font-size: 40px;
     }
 
     .info-content__btn {
@@ -3054,7 +3079,8 @@ html {
     }
 
     .case-aside__title {
-        font-size: 40px
+        font-size: 38px;
+        padding: 156px 0 0 0;
     }
 
 
@@ -3262,13 +3288,13 @@ html {
     }
 
     .aside-content__title {
-        font-size: 46px;
+        font-size: 40px;
         width: auto;
         line-height: 50px;
     }
 
     .aside-content__title b {
-        font-size: 45px;
+        font-size: 40px;
         line-height: 50px;
     }
 
@@ -3399,7 +3425,6 @@ html {
 
     .case-aside__title {
         font-size: 30px;
-        padding: 10px 0
     }
 
     .case-section_second {
