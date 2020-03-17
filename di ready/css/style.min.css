@@ -2201,6 +2201,7 @@ html {
         margin-right: 117px;
     }
 }
+
 @media screen and (min-width: 4096px) {
     .aside__img {
         width: 54%;
@@ -2214,12 +2215,15 @@ html {
     .info__img {
         left: 24.8%;
     }
+
     .services__fimg {
-            left: 27%;
+        left: 27%;
     }
+
     .services__simg {
         left: 44%;
     }
+
     .projects__imglines {
         display: none;
     }
@@ -2698,6 +2702,16 @@ html {
         animation: none !important;
     }
 
+    .trinity-section-item:nth-child(odd) img {
+        position: relative;
+        left: -50px;
+    }
+
+    .trinity-section-item:nth-child(even) img {
+        position: relative;
+        right: -100px;
+    }
+
     .services-content {
         padding: 32px 0 101px 0;
     }
@@ -2931,6 +2945,65 @@ html {
 }
 
 @media screen and (max-width:480px) {
+    .contacts {
+        padding: 78px 0 78px 0;
+        background-color: #f7f8fa;
+    }
+
+    .contacts-content__title {
+        font-size: 45px;
+    }
+
+    .trinity-aside img {
+        display: none;
+    }
+
+    .accommodation img {
+        display: none;
+    }
+
+    .trinity-aside__title {
+        padding: 156px 0 0 0;
+        font-size: 40px;
+    }
+
+    .about-section-content-text__title {
+        line-height: 40px;
+    }
+
+    .about-section-content-text__title {
+        font-size: 30px;
+    }
+
+    .about-aside-content {
+        padding: 156px 0 78px 0;
+        position: relative;
+    }
+
+    .about-aside-content__title {
+        line-height: 40px;
+    }
+
+    .about-aside-content__title b {
+        line-height: 40px;
+    }
+
+    .info-content__btn {
+        width: 100%;
+    }
+
+    .services-content__title {
+        font-size: 35px;
+    }
+
+    .partners-content__title {
+        font-size: 33px;
+    }
+
+    .info-content__title {
+        line-height: 40px;
+    }
+
     .footer-content-info__copyright {
         text-align: center;
     }
@@ -3052,6 +3125,7 @@ html {
     }
 
     .about-aside__img {
+        display: none;
         width: 100%;
         height: 404px;
         -o-object-fit: contain;
@@ -3072,8 +3146,21 @@ html {
     .accommodation-content {
         position: relative;
         width: 100%;
-        padding: 40px 0;
+        padding: 156px 0 0px 0;
         text-align: center
+    }
+
+    .accommodation-content__title {
+        font-size: 50px;
+    }
+
+    .services-page-content-info__title {
+        height: auto;
+
+    }
+
+    .services-page-content-info__btn {
+        width: 100%;
     }
 
     .services-page__limg {
@@ -3167,11 +3254,13 @@ html {
 
     .aside-content__title {
         font-size: 46px;
-        width: auto
+        width: auto;
+        line-height: 50px;
     }
 
     .aside-content__title b {
-        font-size: 45px
+        font-size: 45px;
+        line-height: 50px;
     }
 
     .header-content-logo {
