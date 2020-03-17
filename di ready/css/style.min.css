@@ -2230,6 +2230,15 @@ html {
 }
 
 @media screen and (max-width:1199px) {
+    .about-aside-content {
+        position: relative;
+    }
+    .portfolio-aside-content {
+        position: relative;
+    }
+    .portfolio-project {
+        margin-top: 50px;
+    }
     .next_arrow_partners {
         right: 0;
     }
