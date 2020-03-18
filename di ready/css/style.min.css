@@ -816,18 +816,18 @@ table {
 
 .case-section_third img:nth-child(3) {
     margin-top: 50px;
-    padding-left: 53px
+    padding-left: 30px
 }
 
 .case-section_third img:nth-child(4) {
     margin-top: 50px;
-    padding-left: 22px
+    padding-left: 20px
 }
 
 .case-section-text {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -837,7 +837,8 @@ table {
     align-items: flex-start;
     margin-left: 53px;
     max-width: 526px;
-    position: relative
+    position: relative;
+    right: 0;
 }
 
 .case-section-text__title {
@@ -849,6 +850,7 @@ table {
 }
 
 .case-section-text__subtitle {
+    width: 100%;
     color: #000;
     font-size: 20px;
     font-weight: 300;
@@ -1009,7 +1011,7 @@ table {
 .trinity-section-text {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1034,7 +1036,8 @@ table {
     color: #000;
     font-size: 20px;
     font-weight: 300;
-    line-height: 28px
+    line-height: 28px;
+    width: 100%;
 }
 
 html {
@@ -1159,7 +1162,8 @@ html {
 }
 
 .about-section-content-text {
-    padding: 182px 0 0 42px
+    padding: 182px 0 0 42px;
+    width: calc(100% - 42px);
 }
 
 .about-section-content-text__title {
@@ -1167,6 +1171,7 @@ html {
     font-size: 35px;
     font-weight: 700;
     line-height: 55px;
+    margin-left: 42px;
     margin-bottom: 44px;
     width: 460px
 }
@@ -1400,7 +1405,8 @@ html {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    height: 348px
+    height: 348px;
+    width: 570px;
 }
 
 .services-page-content-info:last-child {
@@ -1417,7 +1423,8 @@ html {
     color: #000;
     font-size: 20px;
     font-weight: 300;
-    line-height: 28px
+    line-height: 28px;
+    width: 100%;
 }
 
 .services-page-content-info__btn {
@@ -1625,6 +1632,9 @@ html {
     -ms-flex-align: start;
     align-items: flex-start
 }
+.info-content .column {
+    width: 100%;
+}
 
 .info-content__title {
     color: #000;
@@ -1640,6 +1650,7 @@ html {
 
 .info-content__subtitle {
     color: #000;
+    width: 100%;
     font-size: 25px;
     font-weight: 700;
     line-height: 24.91px;
@@ -1817,7 +1828,10 @@ html {
     width: 100%;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
     justify-content: flex-end;
+    position: relative;
+    right: 0;
     padding: 32px 0 202px 0
 }
 
@@ -2119,6 +2133,21 @@ html {
 
 
 @media screen and (min-width: 1921px) {
+      .footer_contacts {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .contacts {
+        height: calc(100vh - 280px);
+    }
+
+    .contacts-content {
+        top: auto;
+    }
+
     .trinity-section_third {
         max-width: 1893px;
         margin: 0 auto;
@@ -2249,7 +2278,6 @@ html {
         -webkit-box-pack: space-evenly;
             -ms-flex-pack: space-evenly;
                 justify-content: space-evenly;
-        height: 934px;
     }
 
     .contacts-content {
@@ -2293,45 +2321,21 @@ html {
 }
 
 @media screen and (min-width: 4096px) {
-    .footer_contacts {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    }
-
-    .contacts {
-        height: calc(100vh - 280px);
-    }
-
-    .contacts-content {
-        top: auto;
-    }
-
-    .aside__img {
-        width: 54%;
-        -o-object-fit: cover;
-           object-fit: cover;
-    }
-
-    .aside__linesimg {
-        left: 24.8%;
-    }
-
-    .info__img {
-        left: 24.8%;
-    }
-
-    .services__fimg {
-        left: 27%;
-    }
-
-    .services__simg {
-        left: 44%;
-    }
+  
 
     .projects__imglines {
         display: none;
+    }
+}
+@media screen and (max-width: 1441px) {
+    .aside__linesimg {
+        left: -10px;
+    }
+    .services__fimg {
+        left: -200px;
+    }
+    .services__simg {
+        left: 477px;
     }
 }
 
@@ -2805,6 +2809,9 @@ html {
 }
 
 @media screen and (max-width:768px) {
+    .header-content-social {
+        padding-bottom: 5px;
+    }
     .contacts {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -2815,15 +2822,20 @@ html {
 
     .contacts-map {
         width: 100%;
+        height: 100%;
     }
 
     .contacts-content {
         width: calc(100% - 176px);
-        padding: 50px 88px 123px 88px;
+        padding: 50px 88px 50px 88px;
     }
 
     .contacts-content__title {
         font-size: 29px;
+        margin-bottom: 50px;
+        line-height:0
+    }
+    .contacts-content-transport {
         margin-bottom: 50px;
     }
 
@@ -3150,7 +3162,8 @@ html {
     }
 
     .contacts {
-        padding: 78px 0 78px 0;
+        padding: 78px 0 0 0;
+        height: auto;
         background-color: #f7f8fa;
     }
 
@@ -3205,6 +3218,10 @@ html {
 
     .services-page-content-info {
         height: 500px;
+        width: 100%;
+    }
+    .services-page {
+        padding: 50px 0;
     }
 
     .portfolio-aside img {
@@ -3416,7 +3433,7 @@ html {
     .accommodation-content {
         position: relative;
         width: 100%;
-        padding: 156px 0 0px 0;
+        padding: 128px 0 0px 0;
         text-align: center
     }
 
@@ -3453,11 +3470,11 @@ html {
 
     .contacts-map {
         width: 100%;
-        height: 500px
+        height: 300px
     }
 
     .contacts-content {
-        width: calc(100% - 176px);
+        width: calc(100% - 30px);
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -3468,7 +3485,7 @@ html {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        padding: 50px 88px 123px 88px;
+        padding: 50px 15px 50px 15px;
     }
 
     .contacts-content__title {
@@ -3833,10 +3850,6 @@ html {
 
     .header {
         width: 320px
-    }
-
-    .info {
-        padding: 92px 0 0 0
     }
 
     .case-section_third img:nth-child(2) {
