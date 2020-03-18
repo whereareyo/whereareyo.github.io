@@ -2429,6 +2429,9 @@ html {
 }
 
 @media screen and (max-width:1199px) {
+      .about-aside {
+        margin-bottom: 10px;
+    }
     .about-aside-content {
         position: relative;
     }
@@ -2898,6 +2901,11 @@ html {
 }
 
 @media screen and (max-width:768px) {
+
+    .about-section-content-text__title {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
     .header-content-social {
         padding-bottom: 5px;
     }
@@ -3223,6 +3231,13 @@ html {
   }
 }
 @media screen and (max-width:480px) {
+    .about-section-content-text {
+        padding: 15px;
+    }
+    .about-section img {
+        padding: 0 15px;
+        width: calc(100% - 30px);
+    }
     .case-section_third {
         padding-bottom: 15px;
     }
@@ -3317,13 +3332,15 @@ html {
     .trinity-aside__title b {
         font-size: 28px;
     }
-
-    .about-section-content-text__title {
-        line-height: 40px;
-    }
-
     .about-section-content-text__title {
         font-size: 29px;
+        line-height: 40px;
+        margin-left: 0;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .about-section-content-text__subtitle {
+        text-align: center;
     }
 
     .about-section-content-text__title b {
