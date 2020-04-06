@@ -1,0 +1,78 @@
+.about {
+    width: 100%;
+    background-image: url(../img/languagebg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 364px 0 256px 0;
+    background-color: #fff;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+        &__title {
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 58px;
+            color: #24126A;
+            margin-bottom: 21px;
+        }
+
+        &__subtitle {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+            color: #5D6066;
+            margin-bottom: 164px;
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+						margin-bottom: 100px;
+
+						&:last-child {
+							margin-bottom: 0;
+						}            
+
+            &:nth-child(4) {
+                flex-direction: row-reverse;
+
+                .about-content-item-imgblock {
+                	margin-left: 126px;
+                }
+                .about-content-item__title {
+                	text-align: right;
+                }
+                .about-content-item__subtitle {
+                	text-align: right;
+                }
+            }
+
+            &-imgblock {
+            	margin-right: 126px;
+            }
+
+            &__title {
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 52px;
+                color: #24126A;
+                margin-bottom: 15px;
+
+            }
+
+            &__subtitle {
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 26px;
+                color: #5D6066;
+								max-width: 632px;
+            }
+        }
+    }
+}

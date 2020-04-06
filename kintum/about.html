@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kintum</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+</head>
+
+<body>
+    <button onclick="showMenu()" class="hamburger hamburger--slider" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <div class="adaptive-menu">
+        <div class="adaptive__nav">
+            <a href="index.html" class="adaptive__nav_item"><span class="adaptive_span">Home</span>
+            </a>
+            <a href="questions.html" class="adaptive__nav_item"><span class="adaptive_span">Questions</span>
+            </a>
+            <div class="adaptive__nav_item"><span class="adaptive_span">Prices <img class="adaptive_nav_img" alt="" src="img/header_arrow.png"></span>
+                <div class="adaptive_column">
+                    <a href="btc.html" class="adaptive__nav_item_link">Bitcoin</a>
+                    <a href="eth.html" class="adaptive__nav_item_link">Etherium</a>
+                    <a href="btccash.html" class="adaptive__nav_item_link">Bitcoin cash</a>
+                </div>
+            </div>
+            <a href="about.html" class="adaptive__nav_item"><span class="adaptive_span">About</span>
+            </a>
+        </div>
+        <div class="row">
+            <button class=" login_btn_adaptive btn">LOGIN</button>
+            <button class=" signup_btn_adaptive btn">SIGN UP</button>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="modal_login">
+        <h1 class="modal_login__title">Log in</h1>
+        <p class="modal_login__subtitle">A better way to trade and manage <br> cryptocurrency</p>
+        <form required action="">
+            <div class="column">
+                <input type="email" placeholder="Your Email" class="modal_login__input">
+                <input type="password" placeholder="Password" class="modal_login__input">
+            </div>
+            <div class="button modal_login__forgot btn">Forgot password?</div>
+            <button class="modal_login__btn  btn">LOG IN</button>
+        </form>
+        <p class="modal_login__question">Don’t have an account? <button id="signuphere" class="btn">Sign up here</button></p>
+    </div>
+    <div class="modal_signup">
+        <h1 class="modal_signup__title">Sign Up</h1>
+        <p class="modal_signup__subtitle">A better way to trade and manage <br> cryptocurrency</p>
+        <form action="">
+            <div class="column">
+                <input type="email" placeholder="Your Email" class="modal_signup__input">
+                <input type="password" placeholder="Password" class="modal_signup__input">
+            </div>
+            <div class="button modal_signup__forgot btn">Forgot password?</div>
+            <button class="modal_signup__btn  btn">SIGN UP</button>
+        </form>
+        <p class="modal_signup__question">Already have an account?<button id="loginhere" class="btn">Log in here</button></p>
+    </div>
+    <div class="modal_backtologin">
+        <h1 class="modal_backtologin__title">Reset Password</h1>
+        <p class="modal_backtologin__subtitle">Enter your Email and we'll send you a link to <br> reset your password</p>
+        <form action="">
+            <div class="column">
+                <input type="email" placeholder="Your Email Adress" class="modal_backtologin__input">
+            </div>
+            <button class="modal_backtologin__btn  btn">SEND RECOVERY LINK</button>
+        </form>
+        <p class="modal_backtologin__question"><button id="backtologin" class="btn">Go back to Log In</button></p>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="row  row_header">
+                <div class="row">
+                    <a href="index.html" class="header-logo"><img src="img/logo.png" alt=""></a>
+                    <nav class="header__nav">
+                        <a href="index.html" class="header__nav_item">
+                            <p class="header__nav_item__title">Home</p>
+                        </a>
+                        <a href="questions.html" class="header__nav_item">
+                            <p class="header__nav_item__title">Questions</p>
+                        </a>
+                        <div class="header__nav_item">
+                            <div class="dropdown__nav">
+                                <div class="nav_menu">
+                                    <a href="btc.html" class="nav_menu__link">Bitcoin</a>
+                                    <a href="eth.html" class="nav_menu__link">Etherium</a>
+                                    <a href="btccash.html" class="nav_menu__link">Bitcoin cash</a>
+                                </div>
+                            </div>
+                            <p class="header__nav_item__title">Prices</p>
+                            <img src="img/header_arrow.png" alt="">
+                        </div>
+                        <a href="about.html" class="header__nav_item">
+                            <p class="header__nav_item__title">About</p>
+                        </a>
+                    </nav>
+                </div>
+                <div class="row">
+                    <button class="login_btn btn">LOGIN</button>
+                    <button class="signup_btn btn">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="container">
+            <div class="about-content">
+                <h1 class="about-content__title">About Kintum</h1>
+                <p class="about-content__subtitle">Our expert teams have worked all over the world for top tech and finance companies. <br>
+                    They’ve been pulled together from Google, Amazon, Morgan Stanley, Barclays and others, <br>
+                    on a mission to upgrade the world to a better financial system. <br>
+                    Find out more on the careers page</p>
+                <div class="about-content-item">
+                    <div class="about-content-item-imgblock"><img src="img/aboutimg1.png" alt=""></div>
+                    <div class="column">
+                        <h1 class="about-content-item__title">A culture around vision</h1>
+                        <div class="about-content-item__subtitle">We believe that decentralised cryptocurrencies like Bitcoin and Ethereum
+                            will fundamentally change how the world views and uses money. As early
+                            pioneers in this industry, we feel it’s our duty to bring this knowledge and
+                            excitement to the world as best we can. <br> <br>
+                            It takes a certain breed of person, with a special system of values, to take
+                            on a challenge of such epic proportions.</div>
+                    </div>
+                </div>
+                <div class="about-content-item">
+                    <div class="about-content-item-imgblock"><img src="img/aboutimg2.png" alt=""></div>
+                    <div class="column">
+                        <h1 class="about-content-item__title">To the moon</h1>
+                        <div class="about-content-item__subtitle">This phrase was made popular by the community in reference
+                            to Bitcoin's rocketing price, and now also reflects our optimism
+                            and excitement for this technology. <br> <br>
+                            Whether you’re sitting in a London penthouse, or on a beach in Bali,
+                            when you look up at the evening sky, the moon is one of the world’s
+                            only constants, and in many ways, our one true leveller. We believe
+                            Bitcoin has the same potential for an open, equal financial system.</div>
+                    </div>
+                </div>
+                <div class="about-content-item">
+                    <div class="about-content-item-imgblock"><img src="img/aboutimg3.png" alt=""></div>
+                    <div class="column">
+                        <h1 class="about-content-item__title">Open and equal</h1>
+                        <div class="about-content-item__subtitle">We’re trusted by over 3 million people across 40 countries.
+                            That’s because we’re building a community together. <br> <br>
+                            We want to upgrade everyone, everywhere with our easy-to-use products,
+                            built on some of the world’s most sophisticated cryptocurrency security systems.
+                            While traditional financial institutions may rely on exclusive offers,
+                            we provide inclusive experiences.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="downloadmain">
+        <div class="container">
+            <div class="downloadmain-content">
+                <h1 class="downloadmain-content__title">It’s never too late to get started</h1>
+                <p class="downloadmain-content__subtitle">Buy, store and learn about Bitcoin and Ethereum now</p>
+                <div class="row" style="align-items: center; justify-content: center;">
+                        <p class="aside-content__avail" style="color: #fff;">Download for:</p>
+                        <div class="row">
+                            <button class="aside-content__download btn" style="background-color: #fff;"><img src="img/swindows.svg" alt=""></button>
+                            <button class="aside-content__download btn" style="background-color: #fff;"><img src="img/sapple.svg" alt=""></button>
+                            <button class="aside-content__download btn" style="background-color: #fff;"><img src="img/slinux.svg" alt=""></button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer footer_about footer_notmain">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-content-logo">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    <p class="footer-content-logo__copyright">© Copyright 2020</p>
+                </div>
+                <div class="row">
+                    <div class="footer-content-item">
+                        <h1 class="footer-content-item__title">Information</h1>
+                        <a href="about.html" class="footer-content-item__link">About</a>
+                        <a href="questions.html" class="footer-content-item__link">Questions</a>
+                    </div>
+                    <div class="footer-content-item">
+                        <h1 class="footer-content-item__title">Resources</h1>
+                        <a href="btc.html" class="footer-content-item__link">Bitcoin price</a>
+                        <a href="eth.html" class="footer-content-item__link">Etherium price</a>
+                        <a href="btccash.html" class="footer-content-item__link">Bitcoin Cash price</a>
+                    </div>
+                    <div class="footer-content-item">
+                        <h1 class="footer-content-item__title">Other</h1>
+                        <a href="" class="footer-content-item__link">Terms of use</a>
+                        <a href="" class="footer-content-item__link">Privacy policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

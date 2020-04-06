@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kintum</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+</head>
+
+<body>
+    <button onclick="showMenu()" class="hamburger hamburger--slider" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <div class="adaptive-menu">
+        <div class="adaptive__nav">
+            <a href="index.html" class="adaptive__nav_item"><span class="adaptive_span">Home</span>
+            </a>
+            <a href="questions.html" class="adaptive__nav_item"><span class="adaptive_span">Questions</span>
+            </a>
+            <div class="adaptive__nav_item"><span class="adaptive_span">Prices <img class="adaptive_nav_img" alt="" src="img/header_arrow.png"></span>
+                <div class="adaptive_column">
+                    <a href="btc.html" class="adaptive__nav_item_link">Bitcoin</a>
+                    <a href="eth.html" class="adaptive__nav_item_link">Etherium</a>
+                    <a href="btccash.html" class="adaptive__nav_item_link">Bitcoin cash</a>
+                </div>
+            </div>
+            <a href="about.html" class="adaptive__nav_item"><span class="adaptive_span">About</span>
+            </a>
+        </div>
+        <div class="row">
+            <button class=" login_btn_adaptive btn">LOGIN</button>
+            <button class=" signup_btn_adaptive btn">SIGN UP</button>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="modal_login">
+        <h1 class="modal_login__title">Log in</h1>
+        <p class="modal_login__subtitle">A better way to trade and manage <br> cryptocurrency</p>
+        <form required action="">
+            <div class="column">
+                <input type="email" placeholder="Your Email" class="modal_login__input">
+                <input type="password" placeholder="Password" class="modal_login__input">
+            </div>
+            <div class="button modal_login__forgot btn">Forgot password?</div>
+            <button class="modal_login__btn  btn">LOG IN</button>
+        </form>
+        <p class="modal_login__question">Don’t have an account? <button id="signuphere" class="btn">Sign up here</button></p>
+    </div>
+    <div class="modal_signup">
+        <h1 class="modal_signup__title">Sign Up</h1>
+        <p class="modal_signup__subtitle">A better way to trade and manage <br> cryptocurrency</p>
+        <form action="">
+            <div class="column">
+                <input type="email" placeholder="Your Email" class="modal_signup__input">
+                <input type="password" placeholder="Password" class="modal_signup__input">
+            </div>
+            <div class="button modal_signup__forgot btn">Forgot password?</div>
+            <button class="modal_signup__btn  btn">SIGN UP</button>
+        </form>
+        <p class="modal_signup__question">Already have an account?<button id="loginhere" class="btn">Log in here</button></p>
+    </div>
+    <div class="modal_backtologin">
+        <h1 class="modal_backtologin__title">Reset Password</h1>
+        <p class="modal_backtologin__subtitle">Enter your Email and we'll send you a link to <br> reset your password</p>
+        <form action="">
+            <div class="column">
+                <input type="email" placeholder="Your Email Adress" class="modal_backtologin__input">
+            </div>
+            <button class="modal_backtologin__btn  btn">SEND RECOVERY LINK</button>
+        </form>
+        <p class="modal_backtologin__question"><button id="backtologin" class="btn">Go back to Log In</button></p>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="row  row_header">
+                <div class="row">
+                    <a href="index.html" class="header-logo header-logo_white"><img class="logo_changer" src="img/logo_white.png" alt=""></a>
+                    <nav class="header__nav">
+                        <a href="index.html" class="header__nav_item">
+                            <p class="header__nav_item__title header__nav_item__title_white">Home</p>
+                        </a>
+                        <a href="questions.html" class="header__nav_item">
+                            <p class="header__nav_item__title header__nav_item__title_white">Questions</p>
+                        </a>
+                        <div class="header__nav_item">
+                            <div class="dropdown__nav">
+                                <div class="nav_menu">
+                                    <a href="btc.html" class="nav_menu__link">Bitcoin</a>
+                                    <a href="eth.html" class="nav_menu__link">Etherium</a>
+                                    <a href="btccash.html" class="nav_menu__link">Bitcoin cash</a>
+                                </div>
+                            </div>
+                            <p class="header__nav_item__title header__nav_item__title_white">Prices</p>
+                            <img src="img/white_arrow_down.png" alt="">
+                        </div>
+                        <a href="about.html" class="header__nav_item">
+                            <p class="header__nav_item__title header__nav_item__title_white">About</p>
+                        </a>
+                    </nav>
+                </div>
+                <div class="row">
+                    <button class="login_btn login_btn_white btn">LOGIN</button>
+                    <button class="signup_btn signup_btn_white btn">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="price">
+        <div class="container">
+            <div class="price-content">
+                <h1 class="price-content__title"><b>Etherium</b> price</h1>
+                <p class="price-content__subtitle">ETH to USD</p>
+                <div class="row">
+                    <a href="btc.html" class="price-content__btn  btn "><img src="img/bitcoin.svg" alt=""></a>
+                    <a href="eth.html" class="price-content__btn  price-content__btn_acitve btn"><img src="img/eth.svg" alt=""></a>
+                    <a href="btccash.html" class="price-content__btn     btn"><img src="img/btcc.png" alt=""></a>
+                </div>
+                <div class="row">
+                    <button id="dayopener" class="price-content__time btn">Day</button>
+                    <button id="weekopener" class="price-content__time btn">Week</button>
+                    <button id="monthopener" class="price-content__time btn">Month</button>
+                    <button id="yearopener" class="price-content__time btn">Year</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="calc">
+        <div class="container">
+            <div class="calc-content">
+                <div class="column">
+                    <h1 class="calc-content__title">Calculate the price of Etherium
+                        in your currency</h1>
+                    <div class="column">
+                        <input type="text" id="value" class="calc-content__input">
+                        <label for="value" class="calc-content__label calc-content__value">ETH</label>
+                        <input type="text" id="money" class="calc-content__input">
+                        <label for="money" class="calc-content__label calc-content__money">USD</label>
+                    </div>
+                    <button class="calc-content__btn btn">BUY</button>
+                </div>
+                <div class="column">
+                    <h1 class="calc-content__title">About Etherium</h1>
+                    <p class="calc-content__info">Launched in 2015, Ethereum is a blockchain platform designed for executing smart contracts and enables anyone
+                        to build decentralised applications (dApps) on top of it without third party involvement. Developers can also use the
+                        Ethereum blockchain to issue new cryptocurrencies, known as Ethereum tokens.
+                    </p>
+                    <p class="calc-content__info">
+                        Like Bitcoin, Ethereum is an open-source project not owned or controlled by any individual or entity.
+                        This means that anyone can download the software and connect to the network. Ether (ETH) is the native cryptocurrency
+                        for the Ethereum platform that can be traded on exchanges like just like Bitcoin and also functions as the transaction fees
+                        for miners on the Ethereum network.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="questions questions_price">
+        <div class="container">
+            <div class="questions-content ">
+                <div class="row">
+                    <div class="column">
+                        <div class="questions-content-item tradepage-item">
+                            <div class="row">
+                                <h1 class="questions-content-item__title">What is Ethereum?</h1>
+                                <button class="questions-content-item__btn btn"><img src="img/arrow_down.svg" alt=""></button>
+                            </div>
+                            <div class="questions-content-item__info">Ethereum (ETH) is a smart contract platform that enables developers to build decentralized applications (dapps) conceptualized by Vitalik Buterin in 2013. ETH is the native currency for the Ethereum platform and also works as the transaction fees to miners on the Ethereum network.</div>
+                        </div>
+                        <div class="questions-content-item tradepage-item">
+                            <div class="row">
+                                <h1 class="questions-content-item__title">Where did Ethereum come from?</h1>
+                                <button class="questions-content-item__btn btn"><img src="img/arrow_down.svg" alt=""></button>
+                            </div>
+                            <div class="questions-content-item__info">Ethereum was first mentioned in 2013 in a whitepaper by Vitalik Buterin, a developer
+                                who was working on Bitcoin at the time.
+                                Buterin believed that Bitcoin should be made more customisable. He believed Bitcoin
+                                should go a step further than simply being a store of wealth and that it needed smart
+                                contract features to determine automatically when payments should occur, for example.
+                                This project was not taken up for Bitcoin, therefore Buterin created Ethereum
+                                in 2014 for this purpose.</div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="questions-content-item tradepage-item">
+                            <div class="row">
+                                <h1 class="questions-content-item__title">How do I actually buy Ethereum?</h1>
+                                <button class="questions-content-item__btn btn"><img src="img/arrow_down.svg" alt=""></button>
+                            </div>
+                            <div class="questions-content-item__info">You should try kraken.com there are markets directly in ETH/USD or ETH/EUR and you can pay by credit card. It's also a very well known and reputable exchange.
+                                But aware that it takes you a little while to verify your credit card / id / etc. so start the account creation asap and don't wait the moment you want to buy to do it.
+                            </div>
+                        </div>
+                        <div class="questions-content-item tradepage-item">
+                            <div class="row">
+                                <h1 class="questions-content-item__title">What is the difference between Bitcoin and Ethereum?</h1>
+                                <button class="questions-content-item__btn btn"><img src="img/arrow_down.svg" alt=""></button>
+                            </div>
+                            <div class="questions-content-item__info">Ethereum and Bitcoin share many similarities. In this article, we’ll try to highlight the most fundamental differences between them.
+                                The biggest difference is the purposes or ultimate goals of these projects.
+                                Bitcoin aims to be a store of wealth, a digital gold if you will, and eventually become a globally adopted currency which could improve or replace conventional money to some extent. The purpose of Ethereum is to become a platform upon which smart contracts and decentralised apps can run.
+                            </div>
+                        </div>
+                        <div class="questions-content-item tradepage-item">
+                            <div class="row">
+                                <h1 class="questions-content-item__title">Do I need to buy a whole Ethereum?</h1>
+                                <button class="questions-content-item__btn btn"><img src="img/arrow_down.svg" alt=""></button>
+                            </div>
+                            <div class="questions-content-item__info">Should I buy an Ethereum? This is a question most of us had at least once in our lives. Cryptocurrencies have captured our attention and refused to let it go.
+                                No matter where you go, you can’t avoid hearing about them.
+                                Ethereum is one of the biggest cryptocurrencies in the world. It’s discussed on TV, the Internet, around water coolers at work and coffee shops all over the world.
+                                In this crypto-crazed world, you can’t help but ask yourself, “Should I buy Ethereum or some other cryptocurrency?”</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="downloadmain">
+        <div class="container">
+            <div class="downloadmain-content">
+                <h1 class="downloadmain-content__title">It’s never too late to get started</h1>
+                <p class="downloadmain-content__subtitle">Buy, store and learn about Bitcoin and Ethereum now</p>
+                <div class="row" style="align-items: center; justify-content: center;">
+                        <p class="aside-content__avail" style="color: #fff;">Download for:</p>
+                        <div class="row">
+                            <button class="aside-content__download btn" style="background-color: #fff;"><img src="img/swindows.svg" alt=""></button>
+                            <button class="aside-content__download btn" style="background-color: #fff;"><img src="img/sapple.svg" alt=""></button>
+                            <button class="aside-content__download btn" style="background-color: #fff;"><img src="img/slinux.svg" alt=""></button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer footer_notmain">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-content-logo">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    <p class="footer-content-logo__copyright">© Copyright 2020</p>
+                </div>
+                <div class="row">
+                    <div class="footer-content-item">
+                        <h1 class="footer-content-item__title">Information</h1>
+                        <a href="about.html" class="footer-content-item__link">About</a>
+                        <a href="questions.html" class="footer-content-item__link">Questions</a>
+                    </div>
+                    <div class="footer-content-item">
+                        <h1 class="footer-content-item__title">Resources</h1>
+                        <a href="btc.html" class="footer-content-item__link">Bitcoin price</a>
+                        <a href="eth.html" class="footer-content-item__link">Etherium price</a>
+                        <a href="btccash.html" class="footer-content-item__link">Bitcoin Cash price</a>
+                    </div>
+                    <div class="footer-content-item">
+                        <h1 class="footer-content-item__title">Other</h1>
+                        <a href="" class="footer-content-item__link">Terms of use</a>
+                        <a href="" class="footer-content-item__link">Privacy policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if ($(".adaptive-menu").hasClass("show")) {
+                $(".header").removeClass("scrolled");
+                $(".header-logo").removeClass("header-logo_scrolled");
+                $(".hamburger").removeClass("hamburger_scrolled");
+            } else if ($(".header").offset().top > 50) {
+                $(".header").addClass("scrolled");
+                $(".logo_changer").attr("src", "img/logo.png")
+                $(".header-logo").addClass("header-logo_scrolled");
+                $(".hamburger").addClass("hamburger_scrolled");
+            } else {
+                $(".header").removeClass("scrolled");
+                $(".logo_changer").attr("src", "img/logo_white.png")
+                $(".header-logo").removeClass("header-logo_scrolled");
+                $(".hamburger").removeClass("hamburger_scrolled");
+            }
+        })
+    })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
+
+</html>

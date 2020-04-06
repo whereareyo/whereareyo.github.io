@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kintum</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+</head>
+
+<body>
+    <button onclick="showMenu()" class="hamburger hamburger--slider" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <div class="adaptive-menu">
+        <div class="adaptive__nav">
+            <a href="index.html" class="adaptive__nav_item"><span class="adaptive_span">Home</span>
+            </a>
+            <a href="questions.html" class="adaptive__nav_item"><span class="adaptive_span">Questions</span>
+            </a>
+            <div class="adaptive__nav_item"><span class="adaptive_span">Prices <img class="adaptive_nav_img" alt="" src="img/header_arrow.png"></span>
+                <div class="adaptive_column">
+                    <a href="btc.html" class="adaptive__nav_item_link">Bitcoin</a>
+                    <a href="eth.html" class="adaptive__nav_item_link">Etherium</a>
+                    <a href="btccash.html" class="adaptive__nav_item_link">Bitcoin cash</a>
+                </div>
+            </div>
+            <a href="about.html" class="adaptive__nav_item"><span class="adaptive_span">About</span>
+            </a>
+        </div>
+        <div class="row">
+            <button class=" login_btn_adaptive btn">LOGIN</button>
+            <button class=" signup_btn_adaptive btn">SIGN UP</button>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="modal_login">
+        <h1 class="modal_login__title">Log in</h1>
+        <p class="modal_login__subtitle">A better way to trade and manage <br> cryptocurrency</p>
+        <form required action="">
+            <div class="column">
+                <input type="email" placeholder="Your Email" class="modal_login__input">
+                <input type="password" placeholder="Password" class="modal_login__input">
+            </div>
+            <div class="button modal_login__forgot btn">Forgot password?</div>
+            <button class="modal_login__btn  btn">LOG IN</button>
+        </form>
+        <p class="modal_login__question">Don’t have an account? <button id="signuphere" class="btn">Sign up here</button></p>
+    </div>
+    <div class="modal_signup">
+        <h1 class="modal_signup__title">Sign Up</h1>
+        <p class="modal_signup__subtitle">A better way to trade and manage <br> cryptocurrency</p>
+        <form action="">
+            <div class="column">
+                <input type="email" placeholder="Your Email" class="modal_signup__input">
+                <input type="password" placeholder="Password" class="modal_signup__input">
+            </div>
+            <div class="button modal_signup__forgot btn">Forgot password?</div>
+            <button class="modal_signup__btn  btn">SIGN UP</button>
+        </form>
+        <p class="modal_signup__question">Already have an account?<button id="loginhere" class="btn">Log in here</button></p>
+    </div>
+    <div class="modal_backtologin">
+        <h1 class="modal_backtologin__title">Reset Password</h1>
+        <p class="modal_backtologin__subtitle">Enter your Email and we'll send you a link to <br> reset your password</p>
+        <form action="">
+            <div class="column">
+                <input type="email" placeholder="Your Email Adress" class="modal_backtologin__input">
+            </div>
+            <button class="modal_backtologin__btn  btn">SEND RECOVERY LINK</button>
+        </form>
+        <p class="modal_backtologin__question"><button id="backtologin" class="btn">Go back to Log In</button></p>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="row  row_header">
+                <div class="row">
+                    <a href="index.html" class="header-logo header-logo_white"><img class="logo_changer" src="img/logo_white.png" alt=""></a>
+                    <nav class="header__nav">
+                        <a href="index.html" class="header__nav_item">
+                            <p class="header__nav_item__title header__nav_item__title_white">Home</p>
+                        </a>
+                        <a href="questions.html" class="header__nav_item">
+                            <p class="header__nav_item__title header__nav_item__title_white">Questions</p>
+                        </a>
+                        <div class="header__nav_item">
+                            <div class="dropdown__nav">
+                                <div class="nav_menu">
+                                    <a href="btc.html" class="nav_menu__link">Bitcoin</a>
+                                    <a href="eth.html" class="nav_menu__link">Etherium</a>
+                                    <a href="btccash.html" class="nav_menu__link">Bitcoin cash</a>
+                                </div>
+                            </div>
+                            <p class="header__nav_item__title header__nav_item__title_white">Prices</p>
+                            <img src="img/white_arrow_down.png" alt="">
+                        </div>
+                        <a href="about.html" class="header__nav_item">
+                            <p class="header__nav_item__title header__nav_item__title_white">About</p>
+                        </a>
+                    </nav>
+                </div>
+                <div class="row">
+                    <button class="login_btn login_btn_white btn">LOGIN</button>
+                    <button class="signup_btn signup_btn_white btn">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="price">
+        <div class="container">
+            <div class="price-content">
+                <h1 class="price-content__title"><b>Bitcoin Cash</b> price</h1>
+                <p class="price-content__subtitle">BTH to USD</p>
+                <div class="row">
+                    <a href="btc.html" class="price-content__btn  btn "><img src="img/bitcoin.svg" alt=""></a>
+                    <a href="eth.html" class="price-content__btn btn"><img src="img/eth.svg" alt=""></a>
+                    <a href="btccash.html" class="price-content__btn price-content__btn_acitve     btn"><img src="img/btcc.png" alt=""></a>
+                </div>
+                <div class="row">
+                    <button id="dayopener" class="price-content__time btn">Day</button>
+                    <button id="weekopener" class="price-content__time btn">Week</button>
+                    <button id="monthopener" class="price-content__time btn">Month</button>
+                    <button id="yearopener" class="price-content__time btn">Year</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="calc">
+        <div class="container">
+            <div class="calc-content">
+                <div class="column">
+                    <h1 class="calc-content__title">Calculate the price of Bitcoin Cash
+                        in your currency</h1>
+                    <div class="column">
+                        <input type="text" id="value" class="calc-content__input">
+                        <label for="value" class="calc-content__label calc-content__value">BTH</label>
+                        <input type="text" id="money" class="calc-content__input">
+                        <label for="money" class="calc-content__label calc-content__money">USD</label>
+                    </div>
+                    <button class="calc-content__btn btn">BUY</button>
+                </div>
+                <div class="column">
+                    <h1 class="calc-content__title">About Bitcoin Cash</h1>
+                    <p class="calc-content__info">Bitcoin Cash (BCH) is a cryptocurrency that launched in August 2017 as a result of a hard fork (a community-led update to
+                        the protocol or code) of the Bitcoin blockchain. The purpose of the fork was to increase the block size so more transactions
+                        can be processed per block. Since the fork, BCH has continued to evolve its technology in new directions beyond simply
+                        offering just a ‘bigger-blocks’ alternative to Bitcoin (BTC).
+                    </p>
+                    <p class="calc-content__info">
+                        The BCH community is focused on facilitating everyday transactions so that they are cheaper and faster and can be used
+                        as digital cash for everyday purposes, thus competing with payments giants like PayPal and Visa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="questions questions_price">
+        <div class="container">
+            <div class="questions-content ">
+                <div class="row">
+                    <div class="column">
+                        <div class="questions-content-item tradepage-item">
+                            <div class="row">
+                                <h1 class="questions-content-item__title">What is Bitcoin Cash?</h1>
+                                <button class="questions-content-item__btn btn"><img src="img/arrow_down.svg" alt=""></button>
+                            </div>
+                            <div class="questions-content-item__info">Simply put, Bitcoin Cash (BCH) is a cryptocurrency, that came from Bitcoin (BTC). It is not the same currency and its technical implementation differs. However, like pizzas that can be served as dessert pizzas or savoury pizzas, they come from the same base.
+                                Bitcoin Cash was launched in August 2017 as a result of a hard fork of the original Bitcoin blockchain. The main motive of the fork was to increase the block size in the blockchain from 1MB to 8MB (then to 32MB) to facilitate faster transactions. This is often regarded by the Bitcoin Cash community as a faster and cheaper system alternative to Bitcoin (BTC) - but the debate remains.
+                                These aren’t all the differences between the two cryptocurrencies especially as developers continue to evolve their technology to encompass other areas beyond just the speed. Like a lot of cryptocurrencies or altcoins on the market, both communities are passionate and there are plenty of innovative projects bringing us closer to the digital financial future that we deserve.</div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="questions-content-item tradepage-item">
+                            <div class="row">
+                                <h1 class="questions-content-item__title">Where did Bitcoin Cash come from?</h1>
+                                <button class="questions-content-item__btn btn"><img src="img/arrow_down.svg" alt=""></button>
+                            </div>
+                            <div class="questions-content-item__info">Bitcoin Cash came from a desire to improve Bitcoin as a medium of exchange, rather than an investment medium. Following the Bitcoin community’s lack of consensus surrounding Bitcoin’s scalability, the blockchain split, resulting in the creation of Bitcoin Cash.
+                                2017 spiked interest and resulted in the Bitcoin network becoming congested as adoption increased. This led to a backlog of transactions and increasing transaction fees, which wasn’t conducive to Bitcoin being used for everyday transactions.
+                                That’s when the scaling debate really took off.</div>
+                        </div>
+                        <div class="questions-content-item tradepage-item">
+                            <div class="row">
+                                <h1 class="questions-content-item__title">How do I actually buy Bitcoin Cash?</h1>
+                                <button class="questions-content-item__btn btn"><img src="img/arrow_down.svg" alt=""></button>
+                            </div>
+                            <div class="questions-content-item__info">The easiest way to do this is with a broker exchange. The most popular of these is Coinbase, as it’s great for beginners. You can buy Bitcoin Cash using your Fiat currency via credit/debit card or with your bank account.
+                                To make things even easier for you, we are going to give you a step-by-step guide on buying Bitcoin Cash with Coinbase! First, you will need to open a Coinbase account.</div>
+                        </div>
+                        <div class="questions-content-item tradepage-item">
+                            <div class="row">
+                                <h1 class="questions-content-item__title">What is the difference between Bitcoin and Bitcoin Cash?</h1>
+                                <button class="questions-content-item__btn btn"><img src="img/arrow_down.svg" alt=""></button>
+                            </div>
+                            <div class="questions-content-item__info">Like pancakes and waffles, these two cryptocurrencies share many ingredients but are different. Bitcoin Cash comes from the same mill as Bitcoin. They share the same white paper, the same supply, same mining algorithm and even have the same reward system.
+                                Both Bitcoin and Bitcoin Cash aim to be a worldwide accepted digital currency, but there are some important technical differences as both communities have differing views on their solution to scalability.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="downloadmain">
+        <div class="container">
+            <div class="downloadmain-content">
+                <h1 class="downloadmain-content__title">It’s never too late to get started</h1>
+                <p class="downloadmain-content__subtitle">Buy, store and learn about Bitcoin and Ethereum now</p>
+                <div class="row" style="align-items: center; justify-content: center;">
+                        <p class="aside-content__avail" style="color: #fff;">Download for:</p>
+                        <div class="row">
+                            <button class="aside-content__download btn" style="background-color: #fff;"><img src="img/swindows.svg" alt=""></button>
+                            <button class="aside-content__download btn" style="background-color: #fff;"><img src="img/sapple.svg" alt=""></button>
+                            <button class="aside-content__download btn" style="background-color: #fff;"><img src="img/slinux.svg" alt=""></button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer footer_notmain">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-content-logo">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    <p class="footer-content-logo__copyright">© Copyright 2020</p>
+                </div>
+                <div class="row">
+                    <div class="footer-content-item">
+                        <h1 class="footer-content-item__title">Information</h1>
+                        <a href="about.html" class="footer-content-item__link">About</a>
+                        <a href="questions.html" class="footer-content-item__link">Questions</a>
+                    </div>
+                    <div class="footer-content-item">
+                        <h1 class="footer-content-item__title">Resources</h1>
+                        <a href="btc.html" class="footer-content-item__link">Bitcoin price</a>
+                        <a href="eth.html" class="footer-content-item__link">Etherium price</a>
+                        <a href="btccash.html" class="footer-content-item__link">Bitcoin Cash price</a>
+                    </div>
+                    <div class="footer-content-item">
+                        <h1 class="footer-content-item__title">Other</h1>
+                        <a href="" class="footer-content-item__link">Terms of use</a>
+                        <a href="" class="footer-content-item__link">Privacy policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if ($(".adaptive-menu").hasClass("show")) {
+                $(".header").removeClass("scrolled");
+                $(".header-logo").removeClass("header-logo_scrolled");
+                $(".hamburger").removeClass("hamburger_scrolled");
+            } else if ($(".header").offset().top > 50) {
+                $(".header").addClass("scrolled");
+                $(".logo_changer").attr("src", "img/logo.png")
+                $(".header-logo").addClass("header-logo_scrolled");
+                $(".hamburger").addClass("hamburger_scrolled");
+            } else {
+                $(".header").removeClass("scrolled");
+                $(".logo_changer").attr("src", "img/logo_white.png")
+                $(".header-logo").removeClass("header-logo_scrolled");
+                $(".hamburger").removeClass("hamburger_scrolled");
+            }
+        })
+    })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
+
+</html>

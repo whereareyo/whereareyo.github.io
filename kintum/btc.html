@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kintum</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+</head>
+
+<body>
+    <button onclick="showMenu()" class="hamburger hamburger--slider" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <div class="adaptive-menu">
+        <div class="adaptive__nav">
+            <a href="index.html" class="adaptive__nav_item"><span class="adaptive_span">Home</span>
+            </a>
+            <a href="questions.html" class="adaptive__nav_item"><span class="adaptive_span">Questions</span>
+            </a>
+            <div class="adaptive__nav_item"><span class="adaptive_span">Prices <img class="adaptive_nav_img" alt="" src="img/header_arrow.png"></span>
+                <div class="adaptive_column">
+                    <a href="btc.html" class="adaptive__nav_item_link">Bitcoin</a>
+                    <a href="eth.html" class="adaptive__nav_item_link">Etherium</a>
+                    <a href="btccash.html" class="adaptive__nav_item_link">Bitcoin cash</a>
+                </div>
+            </div>
+            <a href="about.html" class="adaptive__nav_item"><span class="adaptive_span">About</span>
+            </a>
+        </div>
+        <div class="row">
+            <button class=" login_btn_adaptive btn">LOGIN</button>
+            <button class=" signup_btn_adaptive btn">SIGN UP</button>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="modal_login">
+        <h1 class="modal_login__title">Log in</h1>
+        <p class="modal_login__subtitle">A better way to trade and manage <br> cryptocurrency</p>
+        <form required action="">
+            <div class="column">
+                <input type="email" placeholder="Your Email" class="modal_login__input">
+                <input type="password" placeholder="Password" class="modal_login__input">
+            </div>
+            <div class="button modal_login__forgot btn">Forgot password?</div>
+            <button class="modal_login__btn  btn">LOG IN</button>
+        </form>
+        <p class="modal_login__question">Don’t have an account? <button id="signuphere" class="btn">Sign up here</button></p>
+    </div>
+    <div class="modal_signup">
+        <h1 class="modal_signup__title">Sign Up</h1>
+        <p class="modal_signup__subtitle">A better way to trade and manage <br> cryptocurrency</p>
+        <form action="">
+            <div class="column">
+                <input type="email" placeholder="Your Email" class="modal_signup__input">
+                <input type="password" placeholder="Password" class="modal_signup__input">
+            </div>
+            <div class="button modal_signup__forgot btn">Forgot password?</div>
+            <button class="modal_signup__btn  btn">SIGN UP</button>
+        </form>
+        <p class="modal_signup__question">Already have an account?<button id="loginhere" class="btn">Log in here</button></p>
+    </div>
+    <div class="modal_backtologin">
+        <h1 class="modal_backtologin__title">Reset Password</h1>
+        <p class="modal_backtologin__subtitle">Enter your Email and we'll send you a link to <br> reset your password</p>
+        <form action="">
+            <div class="column">
+                <input type="email" placeholder="Your Email Adress" class="modal_backtologin__input">
+            </div>
+            <button class="modal_backtologin__btn  btn">SEND RECOVERY LINK</button>
+        </form>
+        <p class="modal_backtologin__question"><button id="backtologin" class="btn">Go back to Log In</button></p>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="row  row_header">
+                <div class="row">
+                    <a href="index.html" class="header-logo header-logo_white"><img class="logo_changer" src="img/logo_white.png" alt=""></a>
+                    <nav class="header__nav">
+                        <a href="index.html" class="header__nav_item">
+                            <p class="header__nav_item__title header__nav_item__title_white">Home</p>
+                        </a>
+                        <a href="questions.html" class="header__nav_item">
+                            <p class="header__nav_item__title header__nav_item__title_white">Questions</p>
+                        </a>
+                        <div class="header__nav_item">
+                            <div class="dropdown__nav">
+                                <div class="nav_menu">
+                                    <a href="btc.html" class="nav_menu__link">Bitcoin</a>
+                                    <a href="eth.html" class="nav_menu__link">Etherium</a>
+                                    <a href="btccash.html" class="nav_menu__link">Bitcoin cash</a>
+                                </div>
+                            </div>
+                            <p class="header__nav_item__title header__nav_item__title_white">Prices</p>
+                            <img src="img/white_arrow_down.png" alt="">
+                        </div>
+                        <a href="about.html" class="header__nav_item">
+                            <p class="header__nav_item__title header__nav_item__title_white">About</p>
+                        </a>
+                    </nav>
+                </div>
+                <div class="row">
+                    <button class="login_btn login_btn_white btn">LOGIN</button>
+                    <button class="signup_btn signup_btn_white btn">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="price">
+        <div class="container">
+            <div class="price-content">
+                <h1 class="price-content__title"><b>Bitcoin</b> price</h1>
+                <p class="price-content__subtitle">BTC to USD</p>
+                <div class="row">
+                    <a href="btc.html" class="price-content__btn  price-content__btn_acitve  btn "><img src="img/bitcoin.svg" alt=""></a>
+                    <a href="eth.html" class="price-content__btn btn"><img src="img/eth.svg" alt=""></a>
+                    <a href="btccash.html" class="price-content__btn     btn"><img src="img/btcc.png" alt=""></a>
+                </div>
+                <div class="row">
+                    <button id="dayopener" class="price-content__time btn">Day</button>
+                    <button id="weekopener" class="price-content__time btn">Week</button>
+                    <button id="monthopener" class="price-content__time btn">Month</button>
+                    <button id="yearopener" class="price-content__time btn">Year</button>
+                </div>
+                <div class="price-content-graph price-content-graph_current show">
+                    <p class="price-content-graph__title">Bitcoin price current</p>
+                    <div class="row">
+                        <p class="price-content-graph__value">USD :</p>
+                        <p id="currentbtc" class="price-content-graph__price"></p>
+                    </div>
+                </div>
+                <div class="price-content-graph price-content-graph_day">
+                    <p class="price-content-graph__title">Bitcoin price over the day</p>
+                    <div class="row">
+                        <p class="price-content-graph__value">USD :</p>
+                        <p id="daybtc" class="price-content-graph__price"></p>
+                    </div>
+                </div>
+                <div class="price-content-graph price-content-graph_week">
+                    <p class="price-content-graph__title">Bitcoin price over the week</p>
+                    <div class="row">
+                        <p class="price-content-graph__value">USD :</p>
+                        <p id="weekbtc" class="price-content-graph__price"></p>
+                    </div>
+                </div>
+                <div class="price-content-graph price-content-graph_month">
+                    <p class="price-content-graph__title">Bitcoin price over the month</p>
+                    <div class="row">
+                        <p class="price-content-graph__value">USD :</p>
+                        <p id="monthbtc" class="price-content-graph__price"></p>
+                    </div>
+                </div>
+                <div class="price-content-graph price-content-graph_year">
+                    <p class="price-content-graph__title">Bitcoin price over the year</p>
+                    <div class="row">
+                        <p class="price-content-graph__value">USD :</p>
+                        <p id="yearbtc" class="price-content-graph__price"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="calc">
+        <div class="container">
+            <div class="calc-content">
+                <div class="column">
+                    <h1 class="calc-content__title">Calculate the price of Etherium
+                        in your currency</h1>
+                    <div class="column">
+                        <input type="text" id="value" class="calc-content__input">
+                        <label for="value" class="calc-content__label calc-content__value">BTC</label>
+                        <input type="text" id="money" class="calc-content__input">
+                        <label for="money" class="calc-content__label calc-content__money">USD</label>
+                    </div>
+                    <button class="calc-content__btn btn">BUY</button>
+                </div>
+                <div class="column">
+                    <h1 class="calc-content__title">About Bitcoin</h1>
+                    <p class="calc-content__info">Bitcoin (BTC) is a consensus network that enables a new payment system and a completely digital currency. Powered by its users, it is a peer to peer payment network that requires no central authority to operate. On October 31st, 2008, an individual or group of individuals operating under the pseudonym "Satoshi Nakamoto" published the Bitcoin Whitepaper and described it as: "a purely peer-to-peer version of electronic cash, which would allow online payments to be sent directly from one party to another without going through a financial institution."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="questions questions_price">
+        <div class="container">
+            <div class="questions-content ">
+                <div class="row">
+                    <div class="column">
+                        <div class="questions-content-item tradepage-item">
+                            <div class="row">
+                                <h1 class="questions-content-item__title">Where did Bitcoin come from?</h1>
+                                <button class="questions-content-item__btn btn"><img src="img/arrow_down.svg" alt=""></button>
+                            </div>
+                            <div class="questions-content-item__info">
+                                Bitcoin was created in 2009 by an unknown developer (or developers) under the pseudonym Satoshi Nakamoto. Nakamoto seemingly created the digital currency in response to the 2008 financial crisis.
+                                New Bitcoins enter the ecosystem using the computer programming Nakamoto wrote when creating the Bitcoin network. This program will only ever produce 21 million Bitcoin. Today, a little over 16.7 million exist.
+                                In the Bitcoin whitepaper, Nakamoto explains that each Bitcoin transaction has to be verified by a decentralized group of computers – also known as miners. In exchange for verifying transactions and auditing the network ledger, these miners get Bitcoins as a reward.
+                                These Bitcoin rewards had previously not been in circulation and therefore come from the network programming.</div>
+                        </div>
+                        <div class="questions-content-item tradepage-item">
+                            <div class="row">
+                                <h1 class="questions-content-item__title">How do I get Bitcoin?</h1>
+                                <button class="questions-content-item__btn btn"><img src="img/arrow_down.svg" alt=""></button>
+                            </div>
+                            <div class="questions-content-item__info">There are a number of ways you can get Bitcoin:
+                                Just like traditional money, you can earn it by providing goods or services, and asking for people to pay you in Bitcoin rather than in traditional money. This is often a cheaper and easier alternative to other payment methods and one of the easiest ways to get your hands on some Bitcoin.
+                                Another way is how most people get their Bitcoin: buy it from a credible Bitcoin broker or exchange provider, like Luno. This is similar to how you would buy foreign currency at your bank or shares online. This is often the easiest way to get Bitcoin because you are virtually guaranteed that someone will be willing to sell their Bitcoin to you on such a platform.
+                                You can also get Bitcoin by mining for it, but this has become very difficult to do for the average person. Most mining is now done by huge companies with very expensive and highly specialised equipment, which a typical person or computer cannot compete with. So unless you have a lot of expertise and a huge amount of money to spend on this, rather just buy or earn the Bitcoin.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="questions-content-item tradepage-item">
+                            <div class="row">
+                                <h1 class="questions-content-item__title">Bitcoin as digital gold</h1>
+                                <button class="questions-content-item__btn btn"><img src="img/arrow_down.svg" alt=""></button>
+                            </div>
+                            <div class="questions-content-item__info">Over the centuries, gold has been considered as an object of value by many different groups of people all over the world. It’s important to note that gold in itself has no value - it’s just a piece of shiny metal. Its value comes from the (somewhat perplexing) fact that everyone just agreed that it has value, and therefore it becomes valuable. The reason they chose gold versus other objects is important - gold has certain characteristics that make it a better ‘store of value’ (as it is commonly known) than other objects:
+                                For one, it is rare, which means it has limited supply(there is only a certain amount of gold in the world - if it was too abundant everyone would have it and then it would have no value). It is malleable (it can be melted and made into smaller units i.e. coins, and importantly the per unit value doesn’t change when you break it into smaller pieces, unlike things like diamonds). It is stable and doesn’t degrade, it’s easy to recognise and very importantly, difficult to counterfeit.</div>
+                        </div>
+                        <div class="questions-content-item tradepage-item">
+                            <div class="row">
+                                <h1 class="questions-content-item__title">Bitcoin as the internet</h1>
+                                <button class="questions-content-item__btn btn"><img src="img/arrow_down.svg" alt=""></button>
+                            </div>
+                            <div class="questions-content-item__info">The internet has changed the way people live and do business, and is arguably one of the biggest advancements in human history. What many people don’t realise is that the internet we know today might never have happened at all because there were a number of ‘rival’ ‘internets’ being built at that time. These were specific companies that wanted to connect all the computers in the world and share information, but do it on their own system, so that people had to pay to access their own ‘information superhighway’.
+                                The modern internet was different in that it was, by design, an open system that anyone could use as they please, and it wasn’t owned by anyone, so no gatekeepers. This lead to something called ‘permissionless innovation’ - people can try and test new things without needing access granted by some gatekeeper. This lead to an explosion of innovation and adoption of the ‘open’ internet, and is the reason the internet is so pervasive today. The design also means that most parts of the internet are ‘interoperable’ - this means that the internet or email I use can connect to the same internet or email a person in another country uses. This is similar to different countries speaking different languages - a German person and a Chinese person will struggle to communicate, but if they both speak English it’s much easier. The internet allowed everyone to essentially speak ‘one global language’.</div>
+                        </div>
+                        <div class="questions-content-item tradepage-item">
+                            <div class="row">
+                                <h1 class="questions-content-item__title">How is the price of Bitcoin and other cryptocurrencies calculated?</h1>
+                                <button class="questions-content-item__btn btn"><img src="img/arrow_down.svg" alt=""></button>
+                            </div>
+                            <div class="questions-content-item__info">Many people wonder how the price of Bitcoin is calculated, but it’s important to remember that it works no different than it would with other currencies or objects. Let’s first look at how the prices of most things are derived - we can use oranges as an example. What is the price of an orange?
+                                Well, it depends. As a starting point, one would derive the price of an orange based on two things: how much someone is trying to sell it for, and how much another person is trying to buy it for. If John wants to sell it for USD2.50 and Sarah is only prepared to pay USD2.00, there is no deal. But if they agree on a price that works for both, let’s say USD2.25, then the transaction will happen. If it’s winter there might be more people wanting to buy oranges, so the price will go up. Or if there is a drought the supply of oranges will become less, so more people are trying to buy less oranges, which can also drive the price up.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="downloadmain">
+        <div class="container">
+            <div class="downloadmain-content">
+                <h1 class="downloadmain-content__title">It’s never too late to get started</h1>
+                <p class="downloadmain-content__subtitle">Buy, store and learn about Bitcoin and Ethereum now</p>
+                <div class="row" style="align-items: center; justify-content: center;">
+                        <p class="aside-content__avail" style="color: #fff;">Download for:</p>
+                        <div class="row">
+                            <button class="aside-content__download btn" style="background-color: #fff;"><img src="img/swindows.svg" alt=""></button>
+                            <button class="aside-content__download btn" style="background-color: #fff;"><img src="img/sapple.svg" alt=""></button>
+                            <button class="aside-content__download btn" style="background-color: #fff;"><img src="img/slinux.svg" alt=""></button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer footer_notmain">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-content-logo">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    <p class="footer-content-logo__copyright">© Copyright 2020</p>
+                </div>
+                <div class="row">
+                    <div class="footer-content-item">
+                        <h1 class="footer-content-item__title">Information</h1>
+                        <a href="about.html" class="footer-content-item__link">About</a>
+                        <a href="questions.html" class="footer-content-item__link">Questions</a>
+                    </div>
+                    <div class="footer-content-item">
+                        <h1 class="footer-content-item__title">Resources</h1>
+                        <a href="btc.html" class="footer-content-item__link">Bitcoin price</a>
+                        <a href="eth.html" class="footer-content-item__link">Etherium price</a>
+                        <a href="btccash.html" class="footer-content-item__link">Bitcoin Cash price</a>
+                    </div>
+                    <div class="footer-content-item">
+                        <h1 class="footer-content-item__title">Other</h1>
+                        <a href="" class="footer-content-item__link">Terms of use</a>
+                        <a href="" class="footer-content-item__link">Privacy policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if ($(".adaptive-menu").hasClass("show")) {
+                $(".header").removeClass("scrolled");
+                $(".header-logo").removeClass("header-logo_scrolled");
+                $(".hamburger").removeClass("hamburger_scrolled");
+            } else if ($(".header").offset().top > 50) {
+                $(".header").addClass("scrolled");
+                $(".logo_changer").attr("src", "img/logo.png")
+                $(".header-logo").addClass("header-logo_scrolled");
+                $(".hamburger").addClass("hamburger_scrolled");
+            } else {
+                $(".header").removeClass("scrolled");
+                $(".logo_changer").attr("src", "img/logo_white.png")
+                $(".header-logo").removeClass("header-logo_scrolled");
+                $(".hamburger").removeClass("hamburger_scrolled");
+            }
+        })
+    })
+    </script>
+</body>
+
+</html>
