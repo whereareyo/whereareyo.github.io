@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="268" height="130" viewBox="0 0 268 130">
+    <defs>
+        <mask id="yiarb" width="2.02" height="2.07" x="-1.01" y="-1.04">
+            <path fill="#fff" d="M28.8 31.8h210.4v66.4H28.8z" />
+            <path d="M56.851 34.31h173.911c4.25 0 6.603 3.445 5.256 7.695l-14.636 46.171c-1.348 4.25-5.885 7.695-10.135 7.695H37.337c-4.25 0-6.604-3.445-5.257-7.695l14.637-46.17c1.347-4.25 5.884-7.696 10.134-7.696z" />
+        </mask>
+        <filter id="yiara" width="312.2" height="168.2" x="-22.1" y="-19.1" filterUnits="userSpaceOnUse">
+            <feOffset in="SourceGraphic" result="FeOffset1023Out" />
+            <feGaussianBlur in="FeOffset1023Out" result="FeGaussianBlur1024Out" stdDeviation="16.36 16.36" />
+        </filter>
+        <linearGradient id="yiarc" x1="134.4" x2="133.7" y1="95.87" y2="34.31" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ff7300" />
+            <stop offset=".84" stop-color="#ffa900" />
+            <stop offset="1" stop-color="#ffa900" />
+        </linearGradient>
+    </defs>
+    <g>
+        <g>
+            <g filter="url(#yiara)">
+                <path fill="none" stroke="#ffa000" stroke-opacity=".5" stroke-width="4.4" d="M56.851 34.31h173.911c4.25 0 6.603 3.445 5.256 7.695l-14.636 46.171c-1.348 4.25-5.885 7.695-10.135 7.695H37.337c-4.25 0-6.604-3.445-5.257-7.695l14.637-46.17c1.347-4.25 5.884-7.696 10.134-7.696z" mask="url(&quot;#yiarb&quot;)" />
+                <path fill="#ffa000" fill-opacity=".5" d="M56.851 34.31h173.911c4.25 0 6.603 3.445 5.256 7.695l-14.636 46.171c-1.348 4.25-5.885 7.695-10.135 7.695H37.337c-4.25 0-6.604-3.445-5.257-7.695l14.637-46.17c1.347-4.25 5.884-7.696 10.134-7.696z" />
+            </g>
+            <g filter="url(#yiara)">
+                <path fill="none" stroke="#ffa000" stroke-opacity=".5" stroke-width="4.4" d="M56.851 34.31h173.911c4.25 0 6.603 3.445 5.256 7.695l-14.636 46.171c-1.348 4.25-5.885 7.695-10.135 7.695H37.337c-4.25 0-6.604-3.445-5.257-7.695l14.637-46.17c1.347-4.25 5.884-7.696 10.134-7.696z" mask="url(&quot;#yiarb&quot;)" />
+                <path fill="#ffa000" fill-opacity=".5" d="M56.851 34.31h173.911c4.25 0 6.603 3.445 5.256 7.695l-14.636 46.171c-1.348 4.25-5.885 7.695-10.135 7.695H37.337c-4.25 0-6.604-3.445-5.257-7.695l14.637-46.17c1.347-4.25 5.884-7.696 10.134-7.696z" />
+            </g>
+            <path fill="url(#yiarc)" d="M56.851 34.31h173.911c4.25 0 6.603 3.445 5.256 7.695l-14.636 46.171c-1.348 4.25-5.885 7.695-10.135 7.695H37.337c-4.25 0-6.604-3.445-5.257-7.695l14.637-46.17c1.347-4.25 5.884-7.696 10.134-7.696z" />
+        </g>
+    </g>
+</svg>
