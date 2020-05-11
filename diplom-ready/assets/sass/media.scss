@@ -1,0 +1,140 @@
+@media screen and (max-width: 1024px) {
+
+    .header {
+        .container {
+            overflow: visible;
+        }
+    }
+
+    .slider-info {
+        padding-left: 15px;
+        width: calc(100% - 15px);
+        left: 0;
+    }
+
+    .cart-menu {
+        right: 35px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cart-menu .slider-products_page-item {
+        flex-direction: row;
+        background: none;
+        border: none;
+    }
+
+    .cart-menu .slider-products-content-item {
+        margin-bottom: 0;
+        max-width: 70px;
+        max-height: 70px;
+    }
+
+    .header-menu-bar {
+        display: none;
+    }
+
+    .slider-info {
+        top: 155px;
+    }
+
+    .cart {
+        margin: 0 auto;
+    }
+    .cart-adaptive {
+        margin: 0 auto;
+    }
+
+    .footer {
+
+        &-row {
+            flex-direction: column;
+
+        }
+
+        &-contacts {
+            margin-bottom: 15px;
+        }
+
+        &-place {
+            margin-bottom: 15px;
+        }
+    }
+
+    .slider-products-content {
+        flex-direction: column;
+
+        .slider-products-column {
+            margin-bottom: 25px;
+        }
+    }
+
+    .plus-content-item {
+        margin-right: 0;
+    }
+
+    .plus-content {
+        flex-direction: column;
+    }
+
+    .plus__title {
+        font-size: 20px;
+    }
+
+    .slider-products_page-item {
+        flex-direction: column;
+    }
+
+    .slider-products_page-item__title {
+        text-align: center;
+        width: 100%;
+    }
+
+    .slider-products_page-item__desc {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .slider-products_page-item .column {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .slider-products_page-item {
+        width: 100%;
+    }
+
+    .slider-products-content-item {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 441px) {
+    .slider-info {
+        top: 100px;
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+
+        &__title {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        &__subtitle {
+            font-size: 17px;
+            width: calc(100% - 30px);
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .cart-menu {
+        right: 0;
+        margin: 0 10px;
+        width: calc(320px - 50px);
+        position: fixed;
+
+    }
+}
