@@ -29,12 +29,28 @@ $(function () {
 	function fixedMenu() {
 		if ($(window).width() > 991) {
 			let s = $(window).scrollTop();
-			if (s > 70) {
+			if (s > 1) {
 				$('.header__top-wrapper').addClass('header__top-wrapper_fixed');
 				$('.nice-select-wrapper').after($('.header__menu'));
+				$('.nice-select-wrapper__title').addClass('dn')
+				$('.menuli').addClass('li_fixed')
+				$('.header-logo').addClass('nowrap')
+				$('.nice-select-wrapper').addClass('fixed_select')
+				$(".header__button").addClass('dn')
+				$('.tel_fixed').addClass("header__tel_fixed")
+				$('.header').addClass("header_sticky")
+				$('.main_menu').addClass('menu_fixed')
 			} else {
 				$('.header__top-wrapper').removeClass('header__top-wrapper_fixed');
 				$('.header__bottom .container').prepend($('.header__menu'));
+				$('.nice-select-wrapper__title').removeClass('dn')
+				$('.menuli').removeClass('li_fixed')
+				$('.header-logo').removeClass('nowrap')
+				$('.nice-select-wrapper').removeClass('fixed_select')
+				$(".header__button").removeClass('dn')
+				$('.tel_fixed').removeClass("header__tel_fixed")
+				$('.main_menu').removeClass('menu_fixed')
+				$('.header').removeClass("header_sticky")
 			}
 		} else {
 			$('.header__top-wrapper').removeClass('header__top-wrapper_fixed');
@@ -83,20 +99,22 @@ $(function () {
 	});
 
 	// Слайдер отзывов
-	var feedbackSlider = new Swiper('.feedback-container', {
+	var feedbackSlider = new Swiper('.slider', {
 		loop: true,
-		navigation: {
-			nextEl: '.slide-next-feedback',
-			prevEl: '.slide-prev-feedback',
-		},
-		slidesPerView: 2,
+		slidesPerView: 1,
 		speed: 600,
-		// autoHeight: true,
-		pagination: {
-			el: '.swiper-pagination',
-			type: 'bullets',
-			clickable: true
-		},
+		 navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+
+      },
+      mousewheel: true,
+      keyboard: true,
 		breakpoints: {
 			300: {
 				slidesPerView: 1,
@@ -104,20 +122,14 @@ $(function () {
 			},
 			992: {
 				// autoHeight: false,
-				slidesPerView: 2
+				slidesPerView: 1
 			}
 		}
 	})
 
-	// Мобильное меню
-	let link = $('.menu-link'),
-		menu = $('.header__bottom');
-
-	link.on('click', function (e) {
-		e.preventDefault();
-		link.toggleClass('menu-link_active');
-		menu.toggleClass('header__bottom_active');
-	});
+	$('.hamburger').click(function () {
+		$(this).toggleClass('is-active')
+	})
 
 	// Замена фона 
 	$('.nice-select li').on('click', function () {
@@ -136,6 +148,8 @@ $(function () {
 	})
 
 	// Отправка модальной формы 
+	$('#popup-call').hide()
+	$('#popup-thank').hide()
 	$('.modal form').on('submit', function (e) {
 		e.preventDefault();
 		$("#popup-call").modal("hide");
@@ -161,6 +175,15 @@ $(function () {
 		}, 5000);
 		clearForm();
 	});
+	
+	$('input').keyup(function () {
+		if (!$('input').val().length === 0) {
+			$('button').attr('disabled', '');
+		} else {
+			$('button').removeAttr('disabled');
+		}
+	})
+	$('button').attr('disabled', '');
 
 	// Очистка скрытого поля
 	$('.modal').on('hidden.bs.modal', function () {
@@ -171,17 +194,5 @@ $(function () {
 	function clearForm() {
 		$('input').val('');
 	}
-
-	// Подстанока заголовка услуги
-	$('.services__item').on('click', function () {
-		$('input.modal__info').val($(this).find('.services__item-title').text());
-	})
-
-	// Подстанока заголовка прайса
-	$('.price__row').on('click', function () {
-		$('input.modal__info').val($(this).find('span:first-child').text());
-	})
-
-
 
 });

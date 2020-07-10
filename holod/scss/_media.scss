@@ -1,0 +1,144 @@
+@media screen and (max-width: 1440px) {
+	.aside__bg {
+		width: 100%;
+	}
+	.contacts .map {
+		width: 50%;
+	}
+
+}
+@media screen and (max-width: 1210px) {
+	.quarantee .col-xl-4 {
+		width: 33%;
+	}
+	.reviews-item {
+		width: 90%;
+	}
+	.whyus .col-xl-4 {
+		width: 33%;
+	}
+	.whyus-item {
+		min-height: 105px;
+	}
+	.about .col-xl-6 {
+		width: 50%;
+	}
+	.discuss .col-xl-6 {
+		width: 50%;
+	}
+	.aside .col-xl-7 {
+		width: 70%;
+	}
+	.aside-person {
+		left: auto; right: 0;
+	}
+	.header .row {
+		justify-content: space-between;
+	}
+	.header .col-xl-4, .header .col-xl-8 {
+		width: fit-content;
+	}
+	.header .nice-select-wrapper {
+		margin-left: 60px;
+	}
+	.menu_fixed {
+		margin-left: 55px;
+	}
+	.footer {
+		.col-xl-4 {
+			display: none !important;
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+	.header__tel {
+		display: none;
+	}
+	.header .nice-select-wrapper {
+		display: none;
+	}
+	.header__bottom {
+		display: none;
+	}
+	.reviews-item {
+		display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 60px 30px 60px;
+	}
+	.contacts .map {
+		width: 36%;
+	}
+	.footer__menu {
+		display: none;
+	}
+	.footer .col-xl-8 {
+		justify-content: space-between;
+	}
+	.footer__policy {
+		margin: 0;
+	}
+	.footer-nav__info {
+		left: auto;
+		right: 0;
+	}
+	.about__info, .whyus__title, .reviews__title, .about__title, .quarantee__title, .contacts__title, .price__title, .discuss__title {
+		font-size: 30px;
+	}
+	.about__img, .discuss__img {
+		background-position: center center;
+	}
+	.aside__bg {
+		background-size: cover;
+		    background-position: 183px 0px;
+	}
+	.aside .quals-item {
+		background-color: rgba(255, 255, 255, 0.6);
+	}
+	.aside-person {
+		width: 200px;
+		height: 60px;
+	}
+	.aside-person__info {
+		font-size: 15px;
+	}
+	.discuss-text__subtitle {
+		width: auto;
+	}
+	.price-appender__pay, .price-appender__link {
+		font-size: 13px;
+	}
+	.price__row span:nth-child(2) {
+		white-space: nowrap;
+	}
+
+	.whyus .col-xl-4 {
+		width: 50%;
+
+		&:last-child {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+
+			.whyus-item {
+				margin-bottom: 0;
+				margin-top: 57px;
+				width: 330px;
+			}
+		}
+	}
+	.quarantee .col-xl-4 {
+		width: 50%;
+
+		&:last-child {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+
+			.quarantee-item {
+				margin-bottom: 0;
+				width: 330px;
+			}
+		}
+	}
+}
