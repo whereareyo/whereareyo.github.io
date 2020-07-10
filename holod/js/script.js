@@ -31,7 +31,7 @@ $(function () {
 			let s = $(window).scrollTop();
 			if (s > 1) {
 				$('.header__top-wrapper').addClass('header__top-wrapper_fixed');
-				$('.nice-select-wrapper').after($('.header__menu'));
+				$('.header-logo').after($('.main_menu'));
 				$('.nice-select-wrapper__title').addClass('dn')
 				$('.menuli').addClass('li_fixed')
 				$('.header-logo').addClass('nowrap')
@@ -73,13 +73,7 @@ $(function () {
 		fixedMenu();
 	});
 
-	$(window).resize(function () {
-		fixedMenu();
-		if ($(window).width() > 991) {
-			$('.header__bottom').removeClass('header__bottom_active');
-			$('.menu-link').removeClass('menu-link_active');
-		}
-	})
+	
 
 	// плавная прокрутка
 	$('.menu li, .scroll').click(function () {
@@ -129,6 +123,7 @@ $(function () {
 
 	$('.hamburger').click(function () {
 		$(this).toggleClass('is-active')
+		$('.header__bottom').toggleClass('header__bottom_active')
 	})
 
 	// Замена фона 

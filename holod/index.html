@@ -27,12 +27,12 @@
         <div class="header">
             <div class="container">
                 <div class="row">
+                    <div class="hamburger hamburger--slider" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </div>
                     <div class="col-xl-8 d-flex align-items-center">
-                        <div class="hamburger hamburger--slider" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </div>
                         <div class="header-logo">
                             <svg id="Capa_1" enable-background="new 0 0 512 512" height="39" viewBox="0 0 512 512" width="25" xmlns="http://www.w3.org/2000/svg">
                                 <g>
@@ -129,6 +129,74 @@
                 <li class="menuli"><a href="#reviews">Отзывы</a></li>
                 <li class="menuli"><a href="#contacts">Контакты</a></li>
             </ul>
+            <div class="adaptive-content">
+                <div class="nice-select-wrapper">
+                    <p class="nice-select-wrapper__title">Ваш город:</p>
+                    <div class="nice-select" tabindex="0"><span class="current">Москва</span>
+                        <ul class="list">
+                            <li data-value="Санкт-Петербург" data-display="Санкт-Петербург" class="option selected">
+                                Санкт-Петербург
+                                <input class="cities-title " type="hidden" value="Санкт-Петербурге">
+                            </li>
+                            <li data-value="1" class="option">
+                                Самара
+                                <input class="cities-title " type="hidden" value="Самаре">
+                            </li>
+                            <li data-value="2" class="option">
+                                Ростов
+                                <input class="cities-title " type="hidden" value="Ростове">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tel_fixed d-flex flex-column align-items-center">
+                    <a class="header__tel " href="tel:+79271318032">
+                        <?xml version="1.0" encoding="iso-8859-1"?>
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width='12px' height='13px' x="0px" y="0px" viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594
+                                               c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448
+                                                c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813
+                                                  C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z" />
+                                </g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                        </svg>
+                        <span>+7 (927) 131-80-32</span>
+                    </a>
+                    <button class="button header__button" data-toggle="modal" data-target="#popup-call">Вызвать мастера</button>
+                </div>
+            </div>
         </div>
     </div>
     <!--END HEADER-->
@@ -307,6 +375,7 @@
                 <div class="price-appender">
                     <p class="price-appender__link">Это не весь список, посмотреть все услуги вы можете <a class="price__button" href="#">нажав сюда.</a></p>
                     <p class="price-appender__pay">Возможна безналичная оплата</p>
+                    <button class="button price__modal" data-toggle="modal" data-target="#popup-call">Заказать</button>
                 </div>
             </div>
         </div>

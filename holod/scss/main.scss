@@ -475,6 +475,10 @@ body {
     width: 100%;
     margin-bottom: 109px;
 
+    &__button {
+    	display: none;
+    }
+
     &__title {
         color: #000000;
         font-size: 38px;
@@ -1187,5 +1191,11 @@ body {
         text-align: center;
         margin-top: 33px;
     }
+}
+.hamburger {
+	display: none;
+}
+.adaptive-content {
+	display: none;
 }
 @import "_media.scss";
