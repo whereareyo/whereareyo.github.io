@@ -50,13 +50,21 @@ button:disabled {
 input,
 button {
   outline: none !important;
-  
+
   border: none !important;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease; }
 input:invalid {
     box-shadow: none;
+}
+.modal-open .modal {
+      overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+.modal {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
 }
 button:hover {
   -webkit-box-shadow: 0 4px 8px rgba(121, 222, 152, 0.58);
