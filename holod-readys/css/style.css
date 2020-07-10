@@ -1038,7 +1038,7 @@ input {
     text-align: center; }
   .reviews-item {
     width: 1005px;
-    height: 247px;
+    height: auto;
     -webkit-box-shadow: 0 8px 20px rgba(187, 207, 222, 0.38);
     box-shadow: 0 8px 20px rgba(187, 207, 222, 0.38);
     border-radius: 2px;
