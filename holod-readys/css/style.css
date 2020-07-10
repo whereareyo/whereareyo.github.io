@@ -50,11 +50,14 @@ button:disabled {
 input,
 button {
   outline: none !important;
+  
   border: none !important;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease; }
-
+input:invalid {
+    box-shadow: none;
+}
 button:hover {
   -webkit-box-shadow: 0 4px 8px rgba(121, 222, 152, 0.58);
   box-shadow: 0 4px 8px rgba(121, 222, 152, 0.58);
