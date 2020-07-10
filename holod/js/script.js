@@ -8,9 +8,9 @@ $(function () {
 	$(".price__row").hide();
 	$(".price__row").slice(0, 8).show();
 
-	$(".price__button").on('click', function (e) {
+	$(".appender").on('click', function (e) {
 		e.preventDefault();
-		$('.price__button').hide();
+		$('.price-appender__link').hide();
 		$(".price__row:hidden").slice(0, 100).fadeIn();
 	});
 
@@ -153,8 +153,8 @@ $(function () {
 		}, 300);
 		clearForm();
 
-		link.toggleClass('menu-link_active');
-		menu.toggleClass('header__bottom_active');
+		$('.header__bottom').removeClass('header__bottom_active');
+		$('.hamburger').removeClass('is-active')
 	});
 
 	// Отправка формы 
@@ -171,14 +171,6 @@ $(function () {
 		clearForm();
 	});
 	
-	$('input').keyup(function () {
-		if (!$('input').val().length === 0) {
-			$('button').attr('disabled', '');
-		} else {
-			$('button').removeAttr('disabled');
-		}
-	})
-	$('button').attr('disabled', '');
 
 	// Очистка скрытого поля
 	$('.modal').on('hidden.bs.modal', function () {
@@ -189,5 +181,8 @@ $(function () {
 	function clearForm() {
 		$('input').val('');
 	}
+	$('.price__row').on('click', function () {
+		$('input.modal__info').val($(this).find('span:first-child').text());
+	})
 
 });

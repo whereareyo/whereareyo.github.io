@@ -771,6 +771,8 @@ body {
 .price {
   width: 100%;
   margin-bottom: 109px; }
+  .price__modal {
+    display: none; }
   .price__button {
     display: none; }
   .price__title {
@@ -791,9 +793,15 @@ body {
       color: #000000;
       font-size: 14px;
       font-weight: 600; }
-      .price-appender__link a {
+      .price-appender__link .appender {
         color: #636464;
-        text-decoration: underline !important; }
+        text-decoration: underline !important;
+        cursor: pointer;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s; }
+        .price-appender__link .appender:hover {
+          opacity: .65; }
     .price-appender__pay {
       color: #000000;
       font-size: 14px;
@@ -869,6 +877,8 @@ body {
           background-color: transparent;
           -webkit-box-shadow: none;
           box-shadow: none; }
+  .price .hidden {
+    display: none; }
 
 .about {
   width: 100%;
@@ -1436,6 +1446,9 @@ body {
 .adaptive-content {
   display: none; }
 
+.modal-dialog {
+  margin: 0 auto; }
+
 @media screen and (max-width: 1440px) {
   .aside__bg {
     width: 100%; }
@@ -1985,3 +1998,7 @@ body {
     width: 90%; }
   .hamburger {
     right: 0; } }
+
+@media screen and (min-width: 1921px) {
+  .contacts .map {
+    width: 50%; } }

@@ -475,8 +475,13 @@ body {
     width: 100%;
     margin-bottom: 109px;
 
-    &__button {
+    &__modal {
     	display: none;
+    }
+
+
+    &__button {
+        display: none;
     }
 
     &__title {
@@ -494,14 +499,21 @@ body {
         width: 100%;
         display: flex;
 
+
         &__link {
             color: #000000;
             font-size: 14px;
             font-weight: 600;
 
-            a {
+            .appender {
                 color: #636464;
                 text-decoration: underline !important;
+                cursor: pointer;
+                transition: all .3s;
+
+                &:hover {
+                	opacity: .65;
+                }
             }
         }
 
@@ -592,6 +604,10 @@ body {
                 }
             }
         }
+    }
+
+    .hidden {
+        display: none;
     }
 }
 
@@ -1192,10 +1208,15 @@ body {
         margin-top: 33px;
     }
 }
+
 .hamburger {
-	display: none;
+    display: none;
 }
+
 .adaptive-content {
-	display: none;
+    display: none;
+}
+.modal-dialog {
+	margin: 0 auto;
 }
 @import "_media.scss";
