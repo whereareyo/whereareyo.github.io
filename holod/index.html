@@ -17,13 +17,12 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/vendor.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!--START HEADER-->
-    <header>
+    <header id="header">
         <div class="header">
             <div class="container">
                 <div class="row">
@@ -33,7 +32,7 @@
                         </span>
                     </div>
                     <div class="col-xl-8 d-flex align-items-center">
-                        <div class="header-logo">
+                        <a href="#" class="header-logo scroll">
                             <svg  enable-background="new 0 0 512 512" height="39" viewBox="0 0 512 512" width="25" xmlns="http://www.w3.org/2000/svg">
                                 <g>
                                     <path d="m100 415.814h312v-199.814h-51.792l-4.757 27.826c-3.451 20.188-20.82 34.84-41.301 34.84h-110.3c-20.481 0-37.851-14.652-41.301-34.84l-4.757-27.826h-57.792z" />
@@ -46,7 +45,7 @@
                                 <h1 class="header-logo__title">Холод-РемБТ </h1>
                                 <p class="header-logo__subtitle">Ремонт холодильников на дому</p>
                             </div>
-                        </div>
+                        </a>
                         <div class="nice-select-wrapper">
                             <p class="nice-select-wrapper__title">Ваш город:</p>
                             <div class="nice-select" tabindex="0"><span class="current">Москва</span>
@@ -239,7 +238,7 @@
                             деньги от частного мастера</p>
                         <form action="#">
                             <div class="d-flex">
-                                <input required placeholder="Ваш номер" id='aside_number' type="tel" class="aside__input mask-phone">
+                                <span><input required placeholder="Ваш номер" id='aside_number' type="tel" class="aside__input mask-phone"></span>
                                 <button class="button aside__button">Вызвать мастера</button>
                             </div>
                             <label for="aside_number" class="aside__label">Нажимая кнопку “Вызвать мастера” Вы соглашаетесь на обработку данных.</label>
@@ -423,7 +422,7 @@
                     <p class="about__callme">Звоните сейчас, и я постараюсь определить проблему и сориентирую вас по цене</p>
                     <form action="#">
                         <div class="d-flex">
-                            <input required placeholder="Ваш номер" id='about_number' type="tel" class="aside__input mask-phone">
+                            <span><input required placeholder="Ваш номер" id='about_number' type="tel" class="aside__input mask-phone"></span>
                             <button class="button aside__button">Позвонить мастеру</button>
                         </div>
                         <label for="about_number" class="about__hint">Нажимая кнопку “Позвонить мастеру” Вы соглашаетесь на обработку данных.</label>
@@ -907,8 +906,8 @@
                     </a>
                     <p class="contacts__question">Задайте мне вопрос</p>
                     <form action="#"  class="contacts-form d-flex flex-wrap">
-                        <input required type="text" placeholder="Ваше имя" class="contacts__input">
-                        <input required type="tel" placeholder="Ваш телефон" class="contacts__input mask-phone">
+                        <span><input required type="text" placeholder="Ваше имя" class="contacts__input"></span>
+                        <span><input required type="tel" placeholder="Ваш телефон" class="contacts__input mask-phone"></span>
                         <textarea placeholder="Ваш комментарий" required name="textarea" id="textarea" cols="30" rows="10" class="contacts__textarea" style="width:100%; height:105px;"></textarea>
                         <div class="d-flex align-items-center">
                             <button class="contacts__button">Отправить</button>
@@ -919,9 +918,7 @@
                 </div>
             </div>
         </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1122.5087765856047!2d30.277447463454358!3d59.91416530130378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skz!4v1594314456831!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            <img src="img/pin_20(1).svg" alt="">
+        <div id="yamap" class="map">
         </div>
     </div>
     <!--END CONTACTS-->
@@ -930,7 +927,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-8 d-flex align-items-center">
-                    <div class="footer-logo">
+                    <a href="#header" class="footer-logo scroll">
                         <svg  enable-background="new 0 0 512 512" height="39" viewBox="0 0 512 512" width="25" xmlns="http://www.w3.org/2000/svg">
                             <g>
                                 <path d="m100 415.814h312v-199.814h-51.792l-4.757 27.826c-3.451 20.188-20.82 34.84-41.301 34.84h-110.3c-20.481 0-37.851-14.652-41.301-34.84l-4.757-27.826h-57.792z"></path>
@@ -943,7 +940,7 @@
                             <h1 class="header-logo__title">Холод-РемБТ </h1>
                             <p class="header-logo__subtitle">Ремонт холодильников на дому</p>
                         </div>
-                    </div>
+                    </a>
                     <div class="d-flex position-relative">
                         <a href="#" class="footer__policy">Политика конфиденциальности</a>
                         <p class="footer-nav__info">Представленная информация на сайте не является публичной офертой</p>
@@ -1011,7 +1008,7 @@
     <!--END FOOTER-->
     <!--START MODALS-->
     <div class="overlay"></div>
-    <div class="modal fade popup-call" id="popup-call" tabindex="-1" role="dialog" style="padding-right: 17px; display: block;">
+    <div class="modal fade popup-call" id="popup-call" tabindex="-1" role="dialog" style="padding-right: 17px; padding-left: 17px; display: block;">
         <div class="modal-dialog popup__dialog" role="document">
             <div class="modal-content popup__content">
                 <div class="popup__close close" data-dismiss="modal">×</div>
@@ -1035,7 +1032,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade popup-thank" id="popup-thank" tabindex="-1" role="dialog" style="padding-right: 17px; display: block;">
+    <div class="modal fade popup-thank" id="popup-thank" tabindex="-1" role="dialog" style="padding-right: 17px; padding-left: 17px; display: block;">
         <div class="modal-dialog popup__dialog" role="document">
             <div class="modal-content popup__content">
                 <div class="popup__close close" data-dismiss="modal">×</div>
@@ -1050,7 +1047,7 @@
     </div>
     <!--END MODALS-->
     <script src="js/script.js"></script>
-    <script src="js/vendor.js"></script>
+    <script src="js/vendor.min.js"></script>
 </body>
 
 </html>
