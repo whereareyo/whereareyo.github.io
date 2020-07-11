@@ -82,8 +82,8 @@ $(function() {
         slidesPerView: 1,
         speed: 600,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.reviews-button-next',
+            prevEl: '.reviews-button-prev',
 
         },
         pagination: {
