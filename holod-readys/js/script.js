@@ -171,6 +171,22 @@ $(function() {
         clearForm();
     });
 
+    // Замена фона 
+		$('.nice-select li').on('click', function () {
+			let headerUrl = $(this).find('.img-1').attr('src');
+			let offerUrl = $(this).find('.img-2').attr('src');
+			let newHeaderUrl = headerUrl.replace('webp', 'jpg');
+			let newOfferUrl = offerUrl.replace('webp', 'jpg');
+			$('.aside-person').hide()
+
+			$('.aside__bg').css({
+				backgroundImage: 'url(' + newHeaderUrl + ')'
+			})
+			$('.whyus').css({
+				backgroundImage: 'url(' + newOfferUrl + ')'
+			});
+			$('.header__main h1 .city').text($(this).find('.cities-title').val());
+		})
 
     // Очистка скрытого поля
     $('.modal').on('hidden.bs.modal', function() {

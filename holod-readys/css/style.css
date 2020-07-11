@@ -411,6 +411,9 @@ input {
         -o-transition: all 0.15s ease-in-out;
         transition: all 0.15s ease-in-out;
         pointer-events: none; }
+        .nice-select .list li img {
+          display: none;
+        }
       .header .nice-select-wrapper .nice-select .list {
         position: absolute;
         border-radius: 2px;
@@ -450,6 +453,11 @@ input {
           transition: all 0.2s;
           cursor: pointer;
           border-bottom: 1px solid #f2f2f2; }
+          .header .nice-select-wrapper .nice-select .list li:hover {
+            background-color: #009afe !important;
+            color: #fff; }
+          .header .nice-select-wrapper .nice-select .list .selected {
+            font-weight: 600; }     
   .header .tel_fixed {
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
@@ -981,13 +989,13 @@ input {
   padding: 55px 0 98px 0;
   width: 100%;
   background-image: url(../img/whyus_bg.png);
+  background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 1px solid #636464;
   border-bottom: 1px solid #636464;
-  border-right: 1px solid #636464;
-  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2); }
+  -webkit-box-shadow: 0 8px 20px rgba(187, 207, 222, 0.28);
+  box-shadow: 0 8px 20px rgba(187, 207, 222, 0.28); }
   .whyus__title {
     color: #000000;
     font-size: 38px;
@@ -1852,6 +1860,9 @@ input {
         width: 330px; } }
 
 @media screen and (max-width: 767px) {
+  .whyus {
+    background-image: none;
+  }
   .aside__bg {
     background-image: none;
     background-color: #edf5f8;
