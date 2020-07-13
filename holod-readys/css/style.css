@@ -375,7 +375,8 @@ a {
   z-index: 5;
   position: absolute;
   right: -4px;
-  top: 50%; }
+  top: 50%;
+  outline: none !important; }
 
 .reviews-button-next img,
 .reviews-button-prev img{
@@ -389,7 +390,8 @@ a {
   z-index: 5;
   position: absolute;
   left: -4px;
-  top: 50%; }
+  top: 50%;
+  outline: none !important; }
 
 .dn {
   display: none !important; }
@@ -1574,6 +1576,7 @@ input {
     display: flex;
     margin-right: -30px; }
     .footer__menu li {
+      outline: none !important;
       width: auto;
       height: 42px;
       border-radius: 0 0 3px 3px;
