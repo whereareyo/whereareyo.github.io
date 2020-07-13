@@ -184,4 +184,30 @@ $(function() {
         $('input.modal__info').val($(this).find('span:first-child').text());
     })
 
+
+    function whyUs () {
+    	 if ($(window).width() < 767) {
+    		$('.whyus .col-xl-4:nth-child(1) .whyus-item:nth-child(1) .whyus-item__number span').text('01')
+    		$('.whyus .col-xl-4:nth-child(1) .whyus-item:nth-child(2) .whyus-item__number span').text('02')
+    		$('.whyus .col-xl-4:nth-child(2) .whyus-item:nth-child(1) .whyus-item__number span').text('03')
+    		$('.whyus .col-xl-4:nth-child(2) .whyus-item:nth-child(2) .whyus-item__number span').text('04')
+    		$('.whyus .col-xl-4:nth-child(3) .whyus-item:nth-child(1) .whyus-item__number span').text('05')
+    		$('.whyus .col-xl-4:nth-child(3) .whyus-item:nth-child(2) .whyus-item__number span').text('06')
+    	} else if ($(window).width() < 991) {
+    		$('.whyus .col-xl-4:nth-child(1) .whyus-item:nth-child(1) .whyus-item__number span').text('01')
+    		$('.whyus .col-xl-4:nth-child(1) .whyus-item:nth-child(2) .whyus-item__number span').text('03')
+    		$('.whyus .col-xl-4:nth-child(2) .whyus-item:nth-child(1) .whyus-item__number span').text('02')
+    		$('.whyus .col-xl-4:nth-child(2) .whyus-item:nth-child(2) .whyus-item__number span').text('04')
+    		$('.whyus .col-xl-4:nth-child(3) .whyus-item:nth-child(1) .whyus-item__number span').text('05')
+    		$('.whyus .col-xl-4:nth-child(3) .whyus-item:nth-child(2) .whyus-item__number span').text('06')
+    	}  else  {
+				$('.whyus .col-xl-4:nth-child(1) .whyus-item:nth-child(1) .whyus-item__number span').text('01')
+    		$('.whyus .col-xl-4:nth-child(1) .whyus-item:nth-child(2) .whyus-item__number span').text('04')
+    		$('.whyus .col-xl-4:nth-child(2) .whyus-item:nth-child(1) .whyus-item__number span').text('02')
+    		$('.whyus .col-xl-4:nth-child(2) .whyus-item:nth-child(2) .whyus-item__number span').text('05')
+    		$('.whyus .col-xl-4:nth-child(3) .whyus-item:nth-child(1) .whyus-item__number span').text('03')
+    		$('.whyus .col-xl-4:nth-child(3) .whyus-item:nth-child(2) .whyus-item__number span').text('06')
+    	}
+    }
+    whyUs()
 });
