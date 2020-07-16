@@ -1,210 +1,28 @@
 @font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-Bold.woff") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy Black';
   src: url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: block; }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-RegularItalic.woff2") format("woff2"), url("../fonts/Gilroy-RegularItalic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-UltraLightItalic.woff2") format("woff2"), url("../fonts/Gilroy-UltraLightItalic.woff") format("woff");
-  font-weight: 200;
-  font-style: italic;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-UltraLight.woff2") format("woff2"), url("../fonts/Gilroy-UltraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-ThinItalic.woff2") format("woff2"), url("../fonts/Gilroy-ThinItalic.woff") format("woff");
-  font-weight: 100;
-  font-style: italic;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy Semibold';
   src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: block; }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"), url("../fonts/Gilroy-ExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy RealBold';
   src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: block; }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Gilroy-ExtraBoldItalic.woff") format("woff");
-  font-weight: 800;
-  font-style: italic;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Gilroy-SemiBoldItalic.woff") format("woff");
-  font-weight: 600;
-  font-style: italic;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-BoldItalic.woff2") format("woff2"), url("../fonts/Gilroy-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-BlackItalic.woff2") format("woff2"), url("../fonts/Gilroy-BlackItalic.woff") format("woff");
-  font-weight: 900;
-  font-style: italic;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-UltraLightItalic.woff2") format("woff2"), url("../fonts/Gilroy-UltraLightItalic.woff") format("woff");
-  font-weight: 200;
-  font-style: italic;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-RegularItalic.woff2") format("woff2"), url("../fonts/Gilroy-RegularItalic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-HeavyItalic.woff2") format("woff2"), url("../fonts/Gilroy-HeavyItalic.woff") format("woff");
-  font-weight: 900;
-  font-style: italic;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"), url("../fonts/Gilroy-ExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-BoldItalic.woff2") format("woff2"), url("../fonts/Gilroy-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy Regular';
   src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-BlackItalic.woff2") format("woff2"), url("../fonts/Gilroy-BlackItalic.woff") format("woff");
-  font-weight: 900;
-  font-style: italic;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Gilroy-ExtraBoldItalic.woff") format("woff");
-  font-weight: 800;
-  font-style: italic;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-UltraLight.woff2") format("woff2"), url("../fonts/Gilroy-UltraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-ThinItalic.woff2") format("woff2"), url("../fonts/Gilroy-ThinItalic.woff") format("woff");
-  font-weight: 100;
-  font-style: italic;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Gilroy-SemiBoldItalic.woff") format("woff");
-  font-weight: 600;
-  font-style: italic;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff");
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
   font-display: block; }
 
@@ -525,7 +343,7 @@ a:hover {
   margin-right: 0 !important;
   text-decoration: none !important;
   font-size: 16px !important;
-  padding-bottom: 0 !important;
+  padding-bottom: 3px !important;
   border-bottom: none !important;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
@@ -559,7 +377,7 @@ a:hover {
 .popup-thank .popup__subtitle {
   color: #000000;
   font-size: 18px;
-  font-weight: 700;
+  font-family: 'Gilroy RealBold';
   margin-bottom: 23px; }
 
 .popup-thank .submit {
@@ -578,7 +396,7 @@ a:hover {
   background-color: #555555;
   color: #ffffff;
   font-size: 14px;
-  font-weight: 700;
+  font-family: 'Gilroy RealBold';
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease; }
@@ -632,7 +450,7 @@ input {
     outline: none !important;
     color: #ffffff;
     font-size: 14px;
-    font-weight: 900;
+    font-family: 'Gilroy Black';
     cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -642,7 +460,7 @@ input {
     .header select option {
       color: #000 !important;
       font-size: 13px;
-      font-weight: 600; }
+      font-family: 'Gilroy Semibold'; }
 
 .header_sticky .header-logo {
   -webkit-box-flex: 0 !important;
@@ -675,18 +493,18 @@ input {
 .header-logo__title {
   color: #fff;
   font-size: 16px;
-  font-weight: 700;
+  font-family: 'Gilroy RealBold';
   margin-bottom: 8px; }
 
 .header-logo__subtitle {
   color: #fff;
   font-size: 14px;
-  font-weight: 400; }
+  font-family: 'Gilroy Regular'; }
 
 .header .nice-select-wrapper__title {
   color: #fff;
   font-size: 12px;
-  font-weight: 600;
+  font-family: 'Gilroy Black';
   margin-right: 11px; }
 
 select option img {
@@ -708,7 +526,7 @@ select option img {
   align-items: center;
   color: #fff;
   font-size: 16px;
-  font-weight: 900;
+  font-family: 'Gilroy Black';
   padding-bottom: 3px;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
@@ -749,7 +567,7 @@ select option img {
   background-image: linear-gradient(to left, #ff9600 0%, #fbaf38 100%);
   color: #fff;
   font-size: 16px;
-  font-weight: 900;
+  font-family: 'Gilroy Black';
   border: none !important;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
@@ -789,7 +607,7 @@ select option img {
 .header__menu li a {
   color: #fff;
   font-size: 16px;
-  font-weight: 900;
+  font-family: 'Gilroy Black';
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease; }
@@ -820,7 +638,7 @@ select option img {
       outline: none !important;
       color: #000;
       font-size: 14px;
-      font-weight: 900;
+      font-family: 'Gilroy Black';
       cursor: pointer;
       -webkit-appearance: none;
       -moz-appearance: none;
@@ -830,7 +648,7 @@ select option img {
       .footer .header select option {
         color: #000 !important;
         font-size: 13px;
-        font-weight: 600; }
+        font-family: 'Gilroy Semibold'; }
   .footer .header .header-logo {
     -webkit-box-flex: 0 !important;
     -ms-flex: none !important;
@@ -858,16 +676,16 @@ select option img {
   .footer .header-logo__title {
     color: #000;
     font-size: 16px;
-    font-weight: 700;
+    font-family: 'Gilroy Black';
     margin-bottom: 8px; }
   .footer .header-logo__subtitle {
     color: #000;
     font-size: 14px;
-    font-weight: 400; }
+    font-family: 'Gilroy Regular'; }
   .footer .nice-select-wrapper__title {
     color: #000;
     font-size: 12px;
-    font-weight: 600;
+    font-family: 'Gilroy Black';
     margin-right: 11px; }
   .footer select option img {
     display: none; }
@@ -886,7 +704,7 @@ select option img {
     align-items: center;
     color: #000;
     font-size: 16px;
-    font-weight: 900;
+    font-family: 'Gilroy Black';
     padding-bottom: 3px;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
@@ -923,7 +741,7 @@ select option img {
     background-image: linear-gradient(to left, #ff9600 0%, #fbaf38 100%);
     color: #fff;
     font-size: 16px;
-    font-weight: 900;
+    font-family: 'Gilroy Black';
     border: none !important;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
@@ -959,7 +777,7 @@ select option img {
   .footer .header__menu li a {
     color: #000;
     font-size: 16px;
-    font-weight: 900;
+    font-family: 'Gilroy Black';
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease; }
@@ -989,7 +807,7 @@ select option img {
 .aside__title {
   color: #fff;
   font-size: 50px;
-  font-weight: 900;
+  font-family: 'Gilroy Black';
   line-height: 56px;
   margin-bottom: 59px;
   width: calc(100% - 50px); }
@@ -1025,12 +843,12 @@ select option img {
 .aside .quals-item__text {
   color: #fff;
   font-size: 18px;
-  font-weight: 600; }
+  font-family: 'Gilroy Semibold'; }
 
 .aside__info {
   color: #fff;
   font-size: 18px;
-  font-weight: 600;
+  font-family: 'Gilroy Semibold';
   margin-bottom: 17px; }
 
 .aside__input {
@@ -1043,7 +861,7 @@ select option img {
   margin-right: 10px;
   color: #000000;
   font-size: 14px;
-  font-weight: 400; }
+  font-family: 'Gilroy Regular'; }
 
 .aside__input::-webkit-input-placeholder {
   color: #000000; }
@@ -1079,12 +897,12 @@ select option img {
   background-image: linear-gradient(to left, #ff9600 0%, #fbaf38 100%);
   color: #fff;
   font-size: 14px;
-  font-weight: 600; }
+  font-family: 'Gilroy Semibold'; }
 
 .aside__label {
   color: #fff;
   font-size: 12px;
-  font-weight: 400;
+  font-family: 'Gilroy Regular';
   margin-top: 10px; }
 
 .aside-person {
@@ -1114,7 +932,7 @@ select option img {
 .crashes__title {
   color: #000000;
   font-size: 42px;
-  font-weight: 900;
+  font-family: 'Gilroy Black';
   margin-bottom: 41px;
   text-align: center; }
 
@@ -1122,7 +940,7 @@ select option img {
   padding-top: 30px;
   color: #9e9e9e;
   font-size: 16px;
-  font-weight: 700;
+  font-family: 'Gilroy RealBold';
   margin-bottom: 47px; }
 
 .crashes .brand:nth-child(2) {
@@ -1146,12 +964,12 @@ select option img {
 .crashes__hint {
   color: #9e9e9e;
   font-size: 16px;
-  font-weight: 700; }
+  font-family: 'Gilroy RealBold'; }
 
 .crashes .appender {
   color: #000000;
   font-size: 14px;
-  font-weight: 600;
+  font-family: 'Gilroy Semibold';
   text-decoration: underline;
   text-align: center;
   margin-top: 34px;
@@ -1207,7 +1025,7 @@ select option img {
     .crashes-item-header__title {
       color: #ffffff;
       font-size: 18px;
-      font-weight: 500; }
+      font-family: 'Gilroy Regular'; }
     .crashes-item-header__close {
       position: relative; }
       .crashes-item-header__close:before {
@@ -1216,7 +1034,7 @@ select option img {
         height: 17px;
         color: #ffffff;
         font-size: 40px;
-        font-weight: 400; }
+        font-family: 'Gilroy Regular'; }
   .crashes-item-text {
     width: 100%;
     border: 2px solid #7bc200;
@@ -1227,7 +1045,7 @@ select option img {
     font-size: 14px; }
     .crashes-item-text b {
       font-size: 16px;
-      font-weight: 700;
+      font-family: 'Gilroy RealBold';
       display: block;
       width: 100%;
       position: relative; }
@@ -1260,36 +1078,36 @@ select option img {
 .about__title {
   color: #000000;
   font-size: 38px;
-  font-weight: 900;
+  font-family: 'Gilroy Black';
   margin-bottom: 46px; }
 
 .about__name {
   font-size: 20px;
-  font-weight: 600;
+  font-family: 'Gilroy Semibold';
   margin-bottom: 25px; }
 
 .about__help {
   color: #7ec600;
   font-size: 22px;
-  font-weight: 600;
+  font-family: 'Gilroy Regular';
   margin-bottom: 38px; }
 
 .about__text {
   color: #000000;
   font-size: 16px;
-  font-weight: 400; }
+  font-family: 'Gilroy Regular'; }
 
 .about__callme {
   color: #9b9b9b;
   font-size: 16px;
-  font-weight: 500;
+  font-family: 'Gilroy Regular';
   font-style: italic;
   margin-bottom: 10px; }
 
 .about__hint {
   color: #000000;
   font-size: 12px;
-  font-weight: 600;
+  font-family: 'Gilroy Semibold';
   margin-top: 15px; }
 
 .about .aside__button {
@@ -1302,7 +1120,7 @@ select option img {
   height: 47px;
   border: 1px solid #c6c6c6 !important;
   margin-right: 10px;
-  font-weight: 600; }
+  font-family: 'Gilroy Semibold'; }
 
 .about .aside__input:focus {
   border: 1px solid #000 !important; }
@@ -1321,7 +1139,7 @@ select option img {
 .about__info {
   color: #000000;
   font-size: 40px;
-  font-weight: 400;
+  font-family: 'Gilroy Regular';
   margin: 16px 0 23px 0;
   text-align: center; }
 
@@ -1330,7 +1148,7 @@ select option img {
   .steps__title {
     color: #000000;
     font-size: 42px;
-    font-weight: 900;
+    font-family: 'Gilroy Black';
     margin-bottom: 39px;
     text-align: center; }
   .steps-item {
@@ -1371,7 +1189,7 @@ select option img {
         .steps-item-number__item span {
           color: #ffffff;
           font-size: 28px;
-          font-weight: 900;
+          font-family: 'Gilroy Black';
           position: absolute;
           left: 50%;
           top: 50%;
@@ -1381,12 +1199,12 @@ select option img {
     .steps-item__title {
       color: #83ce00;
       font-size: 28px;
-      font-weight: 900;
+      font-family: 'Gilroy Black';
       margin-bottom: 16px; }
     .steps-item__subtitle {
       color: #000000;
       font-size: 16px;
-      font-weight: 400;
+      font-family: 'Gilroy Regular';
       text-align: center;
       max-width: 219px; }
 
@@ -1413,19 +1231,19 @@ select option img {
 .contacts__title {
   color: #000000;
   font-size: 36px;
-  font-weight: 900;
+  font-family: 'Gilroy Black';
   margin-bottom: 10px; }
 
 .contacts__subtitle {
   color: #000000;
   font-size: 18px;
-  font-weight: 500;
+  font-family: 'Gilroy Regular';
   margin-bottom: 26px; }
 
 .contacts__tel {
   color: #7fc900;
   font-size: 26px;
-  font-weight: 700;
+  font-family: 'Gilroy RealBold';
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
@@ -1442,7 +1260,7 @@ select option img {
 .contacts__question {
   color: #000000;
   font-size: 18px;
-  font-weight: 900;
+  font-family: 'Gilroy Black';
   margin-bottom: 13px;
   margin-top: 26px; }
 
@@ -1465,7 +1283,7 @@ select option img {
   margin-bottom: 10px;
   color: #000000;
   font-size: 14px;
-  font-weight: 500; }
+  font-family: 'Gilroy Regular'; }
 
 .contacts__input::-webkit-input-placeholder {
   color: #000; }
@@ -1496,7 +1314,7 @@ select option img {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-  font-weight: 500; }
+  font-family: 'Gilroy Regular'; }
 
 .contacts textarea::-webkit-input-placeholder {
   color: #000;
@@ -1541,7 +1359,7 @@ select option img {
   background-image: linear-gradient(to left, #ff9600 0%, #fbaf38 100%);
   color: #fff;
   font-size: 16px;
-  font-weight: 900;
+  font-family: 'Gilroy Black';
   border: none !important;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
@@ -1557,7 +1375,7 @@ select option img {
 .contacts__hint {
   color: #000000;
   font-size: 12px;
-  font-weight: 400;
+  font-family: 'Gilroy Regular';
   margin-left: 20px; }
 
 .contacts .map {
@@ -1581,7 +1399,7 @@ select option img {
 .footer__policy {
   color: #9a9a9a;
   font-size: 14px;
-  font-weight: 600;
+  font-family: 'Gilroy Regular';
   text-decoration: underline !important;
   white-space: nowrap; }
 
@@ -1591,7 +1409,7 @@ select option img {
 .footer__hint {
   color: #000000;
   font-size: 14px;
-  font-weight: 600;
+  font-family: 'Gilroy Regular';
   position: absolute;
   right: 200px;
   top: 0; }
@@ -1680,7 +1498,7 @@ select option img {
   line-height: 1;
   color: #000000;
   font-size: 18px;
-  font-weight: 700; }
+  font-family: 'Gilroy RealBold'; }
 
 .popup__form {
   display: -webkit-box;
@@ -1706,7 +1524,7 @@ select option img {
   background-color: #ffffff;
   color: #000000;
   font-size: 14px;
-  font-weight: 500;
+  font-family: 'Gilroy Regular';
   margin-bottom: 10px; }
 
 .popup__form input::-webkit-input-placeholder {
@@ -1745,7 +1563,7 @@ select option img {
   background-color: #555555;
   color: #ffffff;
   font-size: 14px !important;
-  font-weight: 700;
+  font-family: 'Gilroy RealBold';
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease; }
@@ -1757,7 +1575,7 @@ select option img {
 .popup__form small {
   color: #000000;
   font-size: 14px;
-  font-weight: 500;
+  font-family: 'Gilroy Regular';
   text-align: center;
   margin-top: 33px; }
 
@@ -1883,7 +1701,7 @@ select option img {
       outline: none !important;
       color: #fff;
       font-size: 14px;
-      font-weight: 900;
+      font-family: 'Gilroy Black';
       cursor: pointer;
       -webkit-appearance: none;
       -moz-appearance: none;
@@ -1894,7 +1712,7 @@ select option img {
       .adaptive-content select option {
         color: #000 !important;
         font-size: 13px;
-        font-weight: 600; }
+        font-family: 'Gilroy Semibold'; }
   .adaptive-content .header__tel {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1926,7 +1744,7 @@ select option img {
   .adaptive-content .nice-select-wrapper__title {
     color: #fff;
     font-size: 14px;
-    font-weight: 700;
+    font-family: 'Gilroy RealBold';
     margin-right: 15px; }
   .adaptive-content .nice-select-wrapper .nice-select {
     position: relative;
@@ -2290,7 +2108,7 @@ select option img {
     background: linear-gradient(to top, #80ea80 0%, #93f570 99%, #93f570 100%);
     color: #000000;
     font-size: 14px;
-    font-weight: 700;
+    font-family: 'Gilroy RealBold';
     border: none !important;
     -webkit-transition: all .3s;
     -o-transition: all .3s;

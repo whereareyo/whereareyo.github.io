@@ -175,22 +175,21 @@ $(function() {
     $('.crashes-item').on('click', function() {
         $('input.modal__info').val($(this).find('h1').text());
     })
-
-
-    function whyUs () {
-    	 if ($(window).width() < 991) {
+ function steps () {
+ 			if ($(window).width() < 991) {
     	 	$('.steps-item:nth-child(2) .steps-item-number .steps-item-number__circle').show()
     	}  else  {
 				$('.steps-item:nth-child(2) .steps-item-number .steps-item-number__circle').hide()
     	}
-    }
-    whyUs()
-    function steps () {
-    	if (!$(window).width() < 1210) {
+    	if ($(window).width() < 1210) {
     		$('.steps-item:nth-child(2) .steps-item-number .steps-item-number__circle:last-child').show()
     	} else {
-    		$('.steps-item:nth-child(2) .steps-item-number .steps-item-number__circle:last-child').hide()
+    		$('.steps-item:nth-child(2) .steps-item-number .steps-item-number__circle').hide()
     	}
+    	
     }
+   
     steps()
+    
+   
 });
