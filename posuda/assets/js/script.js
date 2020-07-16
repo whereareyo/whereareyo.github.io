@@ -185,4 +185,12 @@ $(function() {
     	}
     }
     whyUs()
+    function steps () {
+    	if (!$(window).width() < 1210) {
+    		$('.steps-item:nth-child(2) .steps-item-number .steps-item-number__circle:last-child').show()
+    	} else {
+    		$('.steps-item:nth-child(2) .steps-item-number .steps-item-number__circle:last-child').hide()
+    	}
+    }
+    steps()
 });
