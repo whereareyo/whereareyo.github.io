@@ -1036,22 +1036,32 @@ select option img {
         font-size: 40px;
         font-family: 'Gilroy Regular'; }
   .crashes-item-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 100%;
     border: 2px solid #7bc200;
     height: auto;
     padding: 47px 49px 51px 33px;
-    border-radius: 0 0 4px 4px;
-    color: #000000;
-    font-size: 14px; }
+    border-radius: 0 0 4px 4px; }
     .crashes-item-text b {
       font-size: 16px;
       font-family: 'Gilroy RealBold';
       display: block;
-      width: 100%;
       position: relative; }
-      .crashes-item-text b .price {
-        margin-left: 10px;
-        font-size: 16px; }
+    .crashes-item-text .price {
+      margin-left: 10px;
+      font-size: 16px;
+      font-family: 'Gilroy RealBold'; }
+    .crashes-item-text__subtitle {
+      color: #000000;
+      font-size: 14px;
+      font-family: 'Gilroy Regular';
+      margin-top: 3px; }
 
 .about {
   width: 100%;
@@ -1659,24 +1669,13 @@ select option img {
     display: none !important; } }
 
 @media screen and (max-width: 991px) {
+  .crashes-item-text {
+    padding: 47px 15px 51px 15px; }
   .footer__hint {
     right: 0;
     top: 3px; }
   .contacts {
     padding-bottom: 70px; }
-  .quarantee__title {
-    margin-bottom: 30px; }
-  .price {
-    margin-bottom: 30px; }
-  .discuss {
-    margin-bottom: 30px; }
-  .reviews {
-    margin-bottom: 10px;
-    margin-top: 30px; }
-  .quarantee {
-    margin-bottom: 50px; }
-  .reviews__title {
-    margin-bottom: 10px; }
   .adaptive-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1885,9 +1884,13 @@ select option img {
     padding: 15px 0;
     background-color: #fff; }
   .header-logo__subtitle, .header-logo__title {
-    color: #000; } }
+    color: #000; }
+  .header__bottom {
+    margin-top: 77px; } }
 
 @media screen and (max-width: 767px) {
+  .header__bottom {
+    margin-top: 64px; }
   .header-logo svg {
     width: 30px;
     height: 30px;
