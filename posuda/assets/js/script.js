@@ -3,15 +3,13 @@ $(function() {
 
     // цены
 
-    $('.crashes-item-text').hide()
-    $('.crashes-item').click(function () {
-    	if ($('.crashes-item-text', this).is(':hidden')) {
-    		$('.crashes-item-text', this).show().fadeIn()
-    		$('.crashes-item-header', this).addClass('crashes-item-header_opened')
-    } else {
-    		$('.crashes-item-text', this).hide().fadeOut()
-    		$('.crashes-item-header', this).removeClass('crashes-item-header_opened')
-    }
+    $('.collapse').collapse()
+    $('.crashes-item-header').click(function () {
+    	if (!$(this).hasClass('collapsed')) {
+    		$(this).removeClass('crashes-item-header_opened')
+    	} else {
+    		$(this).addClass('crashes-item-header_opened')
+    	}
     })
 
     $(".crashes-item").hide();

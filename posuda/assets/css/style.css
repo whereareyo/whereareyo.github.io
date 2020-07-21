@@ -532,7 +532,9 @@ select option img {
   -o-transition: all .3s ease;
   transition: all .3s ease;
   position: absolute;
-  top: 56px; }
+  top: 56px;
+  left: 10px;
+  white-space: nowrap; }
   .header__tel_static {
     position: static; }
 
@@ -1124,6 +1126,10 @@ select option img {
   width: 215px;
   height: 47px;
   font-size: 16px; }
+
+.about .col-xl-6:last-child {
+  width: 100%;
+  padding: 0 30px 30px 30px; }
 
 .about .aside__input {
   width: 263px;
