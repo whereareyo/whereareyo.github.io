@@ -403,7 +403,9 @@ a:hover {
 
 .popup-thank .submit:hover {
   background-color: #1ba514 !important;
-  background-image: none !important; }
+  background-image: none !important;
+  -webkit-box-shadow: 0 4px 8px rgba(27, 165, 20, 0.58);
+  box-shadow: 0 4px 8px rgba(27, 165, 20, 0.58); }
 
 .hamburger-inner,
 .hamburger-inner:after,
@@ -1594,7 +1596,9 @@ select option img {
 
 .popup__form .submit:hover {
   background-color: #1ba514 !important;
-  background-image: none !important; }
+  background-image: none !important;
+  -webkit-box-shadow: 0 4px 8px rgba(27, 165, 20, 0.58);
+  box-shadow: 0 4px 8px rgba(27, 165, 20, 0.58); }
 
 .popup__form small {
   color: #000000;
