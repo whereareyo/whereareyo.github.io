@@ -539,6 +539,7 @@ select option img {
   transition: all .3s ease;
   position: absolute;
   top: 56px;
+  left: 0;
   white-space: nowrap; }
   .header__tel_static {
     position: static; }
