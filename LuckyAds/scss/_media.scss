@@ -1,0 +1,58 @@
+@media screen and (max-width: 1024px) {
+    .header-content {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main .about {
+        padding: 23px 15px 44px 15px;
+        flex-direction: column;
+    }
+
+    .main .about-content .box {
+        position: static;
+        margin-bottom: 74px;
+    }
+
+    .main .about-content__desc {
+        font-size: 18px;
+        line-height: 24px;
+        width: 224px;
+    }
+    .main .about-form__title {
+        margin-bottom: 44px;
+    }
+    .main .about-form__price {
+        margin-bottom: 53px;
+    }
+
+    .main .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__title {
+            width: 255px;
+            font-size: 32px;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+
+}
+@media screen and (max-width: 380px) {
+        .main .about-form {
+            width: calc(100% - 112px);
+        }
+        .main .about-form__subtitle {
+            font-size: 19px;
+        }
+        .main .about-content__desc {
+            width: 100%;
+        }
+}
