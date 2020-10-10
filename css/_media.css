@@ -1,0 +1,4 @@
+@media screen and (max-width: 1600px) {
+  .info-wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
