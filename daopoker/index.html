@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DAOPOKER</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <!--START HEADER-->
+    <header>
+        <div class="hamburger hamburger--slider">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </div>
+        <div class="header position-fixed">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 d-flex align-items-center">
+                        <a href="#main" class="logo scroll">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="230" height="35" viewBox="0 0 230 35">
+                                <g>
+                                    <g>
+                                        <path fill="#fff" d="M62.788 9.861h6.872v22.91h-6.872v-2.154c-1.62 1.863-3.895 2.795-6.827 2.795-3.024 0-5.606-1.16-7.744-3.482-2.138-2.352-3.207-5.223-3.207-8.614 0-3.39 1.07-6.247 3.207-8.568 2.138-2.352 4.72-3.528 7.744-3.528 2.932 0 5.208.932 6.827 2.795zm-9.393 15.533c1.008 1.008 2.321 1.512 3.94 1.512 1.619 0 2.933-.504 3.94-1.512 1.009-1.008 1.513-2.367 1.513-4.078 0-1.71-.504-3.07-1.512-4.078-1.009-1.008-2.322-1.512-3.94-1.512-1.62 0-2.933.504-3.941 1.512s-1.512 2.368-1.512 4.078c0 1.71.504 3.07 1.512 4.078zm40.917 4.536c-2.351 2.321-5.223 3.482-8.613 3.482-3.39 0-6.262-1.16-8.614-3.482-2.352-2.352-3.528-5.223-3.528-8.614 0-3.39 1.176-6.247 3.528-8.568 2.352-2.352 5.223-3.528 8.614-3.528 3.39 0 6.262 1.176 8.614 3.528 2.351 2.321 3.527 5.177 3.527 8.568 0 3.39-1.175 6.262-3.527 8.614zm-12.37-4.72c1.008 1.008 2.26 1.512 3.757 1.512 1.496 0 2.749-.504 3.757-1.512s1.512-2.306 1.512-3.894-.504-2.887-1.512-3.895-2.26-1.512-3.757-1.512c-1.497 0-2.75.504-3.757 1.512-1.008 1.008-1.512 2.307-1.512 3.895s.504 2.886 1.512 3.894z" />
+                                    </g>
+                                    <g>
+                                        <path fill="#fff" d="M37.012 4.95C33.842 1.65 29.889 0 25.152 0H11.43v5.036l.014-.013 7.827 7.827V7.547h5.881c2.712 0 4.9.882 6.567 2.647 1.699 1.731 2.548 4.05 2.548 6.958 0 2.908-.85 5.244-2.548 7.008-1.666 1.732-3.855 2.598-6.567 2.598h-5.88v-4.596l-7.828 7.827-.014-.013v4.329h13.722c4.737 0 8.69-1.633 11.86-4.9 3.202-3.3 4.803-7.384 4.803-12.253 0-4.868-1.601-8.935-4.803-12.202z" />
+                                    </g>
+                                    <g>
+                                        <path fill="#fb3e3e" d="M119 0c3.37 0 6.215 1.144 8.537 3.431 2.322 2.288 3.484 5.066 3.484 8.334s-1.161 6.045-3.484 8.333c-2.322 2.288-5.167 3.431-8.536 3.431h-5.151v10.785H106V0zm0 16.177c1.211 0 2.209-.425 2.994-1.275.784-.85 1.177-1.895 1.177-3.137s-.393-2.288-1.178-3.138c-.784-.85-1.782-1.274-2.992-1.274h-5.151v8.824zm35.205 15.098C151.686 33.758 148.612 35 144.98 35c-3.63 0-6.704-1.242-9.223-3.725-2.518-2.517-3.777-5.589-3.777-9.216 0-3.628 1.259-6.683 3.777-9.167 2.519-2.516 5.593-3.774 9.224-3.774 3.63 0 6.704 1.258 9.223 3.774 2.518 2.484 3.777 5.54 3.777 9.167s-1.259 6.7-3.777 9.215zm-13.246-5.05c1.079 1.079 2.42 1.618 4.022 1.618 1.603 0 2.944-.54 4.023-1.618 1.08-1.078 1.62-2.467 1.62-4.166 0-1.7-.54-3.088-1.62-4.167-1.079-1.078-2.42-1.617-4.023-1.617-1.602 0-2.943.539-4.022 1.617-1.08 1.079-1.62 2.468-1.62 4.167 0 1.7.54 3.088 1.62 4.167zm44.735 8.089h-8.34l-7.85-10.834v10.834h-7.36V0h7.36v20.54l7.359-10.736h8.585l-8.929 12.255zM193.488 25c.85 2.288 2.813 3.431 5.888 3.431 1.995 0 3.565-.62 4.71-1.862l5.887 3.382C207.552 33.317 203.987 35 199.277 35c-4.12 0-7.424-1.226-9.91-3.676-2.453-2.452-3.68-5.54-3.68-9.265 0-3.693 1.211-6.765 3.631-9.216 2.453-2.484 5.593-3.725 9.42-3.725 3.565 0 6.525 1.241 8.88 3.725 2.387 2.451 3.581 5.523 3.581 9.216 0 1.046-.098 2.026-.294 2.941zm10.401-5.49c-.72-2.582-2.453-3.873-5.2-3.873-2.846 0-4.628 1.291-5.348 3.873zm18.843-5.343c.458-1.569 1.374-2.762 2.747-3.579a8.756 8.756 0 0 1 4.612-1.274v8.333c-1.799-.294-3.483.016-5.053.931-1.537.883-2.306 2.435-2.306 4.657v11.079h-7.359V9.804h7.359z" />
+                                    </g>
+                                    <g transform="rotate(135 10 17.5)">
+                                        <path fill="#fb3e3e" d="M16.849 24.288H3.72V11.16h13.129z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-center">
+                        <ul class="d-flex">
+                            <li class="menu abouttrigger">
+                                <a href="#about" class="menu__link">
+                                    About
+                                </a>
+                            </li>
+                            <li class="menu teamtrigger">
+                                <a href="#team" class="menu__link">
+                                    Team
+                                </a>
+                            </li>
+                            <li class="menu faqtrigger">
+                                <a href="" class="menu__link">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-center justify-content-end">
+                        <div class="d-flex">
+                            <button class="download">
+                                <span>Download</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END HEADER-->
+    <!--START MAIN-->
+    <div id="main" class="main">
+        <!--START ASIDE-->
+        <div class="aside">
+            <img src="img/cart1.svg" alt="" class="aside__cart">
+            <img src="img/asideblackchip.svg" alt="" class="aside__blackchip">
+            <div class="banner">
+                <div class="banner-slide">
+                    <div class="aside-mac w-100 position-relative">
+                        <img src="img/banner1.png" alt="">
+                    </div>
+                    <a href="" class="aside-helper__link aside-helper__link_slider">Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" width="68" height="14" viewBox="0 0 68 14">
+                            <g>
+                                <g>
+                                    <path fill="#fb3e3e" d="M59.97.22a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H1A.75.75 0 0 1 1 6h63.69l-4.72-4.72a.75.75 0 0 1 0-1.06z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="banner-slide">
+                    <div class="aside-mac w-100 position-relative">
+                        <img src="img/banner2.png" alt="">
+                    </div>
+                    <a href="" class="aside-helper__link aside-helper__link_slider">Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" width="68" height="14" viewBox="0 0 68 14">
+                            <g>
+                                <g>
+                                    <path fill="#fb3e3e" d="M59.97.22a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H1A.75.75 0 0 1 1 6h63.69l-4.72-4.72a.75.75 0 0 1 0-1.06z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="banner-slide">
+                    <div class="aside-mac w-100 position-relative">
+                        <img src="img/banner3.png" alt="">
+                    </div>
+                    <a href="" class="aside-helper__link aside-helper__link_slider">Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" width="68" height="14" viewBox="0 0 68 14">
+                            <g>
+                                <g>
+                                    <path fill="#fb3e3e" d="M59.97.22a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H1A.75.75 0 0 1 1 6h63.69l-4.72-4.72a.75.75 0 0 1 0-1.06z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="banner-slide">
+                    <div class="aside-mac w-100 position-relative">
+                        <img src="img/banner4.png" alt="">
+                    </div>
+                    <a href="" class="aside-helper__link aside-helper__link_slider">Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" width="68" height="14" viewBox="0 0 68 14">
+                            <g>
+                                <g>
+                                    <path fill="#fb3e3e" d="M59.97.22a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H1A.75.75 0 0 1 1 6h63.69l-4.72-4.72a.75.75 0 0 1 0-1.06z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="banner-slide">
+                    <div class="aside-mac w-100 position-relative">
+                        <img src="img/banner5.png" alt="">
+                    </div>
+                    <a href="" class="aside-helper__link aside-helper__link_slider">Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" width="68" height="14" viewBox="0 0 68 14">
+                            <g>
+                                <g>
+                                    <path fill="#fb3e3e" d="M59.97.22a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H1A.75.75 0 0 1 1 6h63.69l-4.72-4.72a.75.75 0 0 1 0-1.06z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="banner-slide">
+                    <div class="aside-mac w-100 position-relative">
+                        <img src="img/banner6.png" alt="">
+                    </div>
+                    <a href="" class="aside-helper__link aside-helper__link_slider">Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" width="68" height="14" viewBox="0 0 68 14">
+                            <g>
+                                <g>
+                                    <path fill="#fb3e3e" d="M59.97.22a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H1A.75.75 0 0 1 1 6h63.69l-4.72-4.72a.75.75 0 0 1 0-1.06z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="banner-slide">
+                    <div class="aside-mac w-100 position-relative">
+                        <img src="img/banner7.png" alt="">
+                    </div>
+                    <a href="" class="aside-helper__link aside-helper__link_slider">Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" width="68" height="14" viewBox="0 0 68 14">
+                            <g>
+                                <g>
+                                    <path fill="#fb3e3e" d="M59.97.22a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H1A.75.75 0 0 1 1 6h63.69l-4.72-4.72a.75.75 0 0 1 0-1.06z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="aside-social">
+                <div class="aside-social__bg">
+                    <img src="img/hugecube.svg" class="aside-social__cube" alt="">
+                    <div class="aside-social-links">
+                        <a href=""><img src="img/vk.svg" alt=""></a>
+                        <a href=""><img src="img/twitter.svg" alt=""></a>
+                        <a href=""><img src="img/facebook.svg" alt=""></a>
+                        <a href=""><img src="img/youtube.svg" alt=""></a>
+                    </div>
+                </div>
+                <img src="img/cart2.svg" class="aside-social__cart" alt="">
+            </div>
+        </div>
+        <!--END ASIDE-->
+        <!--START LIVE-->
+        <div class="live">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="live-border">
+                            <img src="img/blackchip.svg" alt="" class="live-border__blackchip">
+                            <div class="live-content">
+                                <div class="live-content-item">
+                                    <h1 class="live-content-item__title">Players online</h1>
+                                    <div class="d-flex align-items-center">
+                                        <span><b>•</b> 5 402</span>
+                                    </div>
+                                </div>
+                                <div class="live-content-item">
+                                    <h1 class="live-content-item__title">Active slots</h1>
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/burger.svg" alt="">
+                                        <span>12 958</span>
+                                    </div>
+                                </div>
+                                <div class="live-content-item">
+                                    <h1 class="live-content-item__title">Total bets</h1>
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/purse.svg" alt="">
+                                        <span>3 994 572</span>
+                                    </div>
+                                </div>
+                                <div class="live-content-item">
+                                    <h1 class="live-content-item__title">Active bets</h1>
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/pursearrow.svg" alt="">
+                                        <span>17 582</span>
+                                    </div>
+                                </div>
+                                <div class="live-content-item">
+                                    <h1 class="live-content-item__title">Total players</h1>
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/people.svg" alt="">
+                                        <span>87 666</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END LIVE-->
+        <!--START STATS-->
+        <div class="stats">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <h1 class="stats__title">Real-time statistic</h1>
+                        <p class="stats__subtitle">Below in the statistics of users in the real time</p>
+                        <div class="stats-scroll">
+                            <div class="stats-wrapper">
+                                <div class="stats__row">
+                                    <div class="liveind">
+                                        <div class="liveind__dot"></div><span>Live</span>
+                                    </div>
+                                    <div class="stats__row-selector">
+                                        <button class=" selector selector__active"><span>Все ставки</span>
+                                            <div class="line"></div>
+                                        </button>
+                                        <button class="selector"><span>Крупные выигрыши</span>
+                                            <div class="line"></div>
+                                        </button>
+                                        <button class="selector"><span>Крутые моменты</span>
+                                            <div class="line"></div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="stats__row">
+                                    <span>Игра</span>
+                                    <span>Игрок</span>
+                                    <span>Время</span>
+                                    <span>Ставка</span>
+                                    <span>Коэфф</span>
+                                    <span>Выигрыш</span>
+                                </div>
+                                <div class="stats__row">
+                                    <span class='d-flex align-items-center showgame'>
+                                        <div class="gameicon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                                                <g>
+                                                    <g opacity=".5">
+                                                        <path fill="#c8d5e8" d="M14 2C7.373 2 2 7.373 2 14s5.373 12 12 12 12-5.373 12-12S20.627 2 14 2zm14 12c0 7.732-6.268 14-14 14S0 21.732 0 14 6.268 0 14 0s14 6.268 14 14zm-14 6c2.203 0 4.076-1.223 4.94-2.948a1 1 0 1 1 1.787.896C19.52 20.36 16.947 22 14 22c-2.947 0-5.52-1.639-6.728-4.052a1 1 0 0 1 1.789-.896C9.924 18.777 11.797 20 14 20zm-2.333-8.917a1.75 1.75 0 1 1-3.5 0 1.75 1.75 0 0 1 3.5 0zm4.666 0a1.75 1.75 0 1 1 3.5 0 1.75 1.75 0 0 1-3.5 0z" />
+                                                    </g>
+                                                </g>
+                                            </svg></div>
+                                        <span class="d-flex flex-column w-auto">
+                                            <h1 class="stats__row-title text-left">Bubbles</h1>
+                                            <p class="stats__row-subtitle">Просмотр</p>
+                                        </span>
+                                    </span>
+                                    <span>Is hidden</span>
+                                    <span>02:17</span>
+                                    <span>100 $</span>
+                                    <span>0.00x</span>
+                                    <span class='betwin'>100 $</span>
+                                </div>
+                                <div class="stats__row">
+                                    <span class='d-flex align-items-center showgame'>
+                                        <div class="gameicon">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g opacity="0.5">
+                                                    <path d="M15 28.5V15" stroke="#C8D5E8" stroke-width="2" />
+                                                    <path d="M13 2.3094C14.2376 1.59487 15.7624 1.59487 17 2.3094L24.9904 6.92265C26.228 7.63718 26.9904 8.95769 26.9904 10.3868V19.6132C26.9904 21.0423 26.228 22.3628 24.9904 23.0773L17 27.6906C15.7624 28.4051 14.2376 28.4051 13 27.6906L5.00962 23.0774C3.77201 22.3628 3.00962 21.0423 3.00962 19.6132V10.3868C3.00962 8.95769 3.77201 7.63718 5.00962 6.92265L13 2.3094Z" stroke="#C8D5E8" stroke-width="2" />
+                                                    <path d="M3 8L15 15L27 8" stroke="#C8D5E8" stroke-width="2" />
+                                                    <circle cx="15" cy="8" r="2" fill="#C8D5E8" />
+                                                    <circle cx="11.5" cy="17.5" r="1.5" fill="#C8D5E8" />
+                                                    <circle cx="6.5" cy="19.5" r="1.5" fill="#C8D5E8" />
+                                                    <circle cx="23.5" cy="19.5" r="1.5" fill="#C8D5E8" />
+                                                    <circle cx="19.5" cy="17.5" r="1.5" fill="#C8D5E8" />
+                                                    <circle cx="23.5" cy="14.5" r="1.5" fill="#C8D5E8" />
+                                                    <circle cx="19.5" cy="22.5" r="1.5" fill="#C8D5E8" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <span class="d-flex flex-column w-auto">
+                                            <h1 class="stats__row-title text-left">Dice</h1>
+                                            <p class="stats__row-subtitle">Просмотр</p>
+                                        </span>
+                                    </span>
+                                    <span>Is hidden</span>
+                                    <span>02:17</span>
+                                    <span>100 $</span>
+                                    <span>0.00x</span>
+                                    <span class='betwin'>0 $</span>
+                                </div>
+                                <div class="stats__row">
+                                    <span class='d-flex align-items-center showgame'>
+                                        <div class="gameicon">
+                                            <svg width="20" height="30" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g opacity="0.5">
+                                                    <circle cx="10" cy="20" r="9" stroke="#C8D5E8" stroke-width="2" />
+                                                    <rect x="6" y="8" width="8" height="4" fill="#C8D5E8" />
+                                                    <path d="M10 8V6C10 4.89543 10.8954 4 12 4V4C13.1046 4 14 3.10457 14 2V0" stroke="#C8D5E8" stroke-width="2" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <span class="d-flex flex-column w-auto">
+                                            <h1 class="stats__row-title text-left">Mines</h1>
+                                            <p class="stats__row-subtitle">Просмотр</p>
+                                        </span>
+                                    </span>
+                                    <span>Is hidden</span>
+                                    <span>02:17</span>
+                                    <span>100 $</span>
+                                    <span>0.00x</span>
+                                    <span class='betwin'>100 $</span>
+                                </div>
+                                <div class="stats__row">
+                                    <span class='d-flex align-items-center showgame'>
+                                        <div class="gameicon">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M14 26C20.6274 26 26 20.6274 26 14C26 7.37258 20.6274 2 14 2C7.37258 2 2 7.37258 2 14C2 20.6274 7.37258 26 14 26ZM14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14C0 21.732 6.26801 28 14 28Z" fill="#C8D5E8" />
+                                                <path opacity="0.5" d="M12.2604 10.0669L10.0725 13.924C9.43644 15.0454 9.61402 16.4516 10.5089 17.3796C12.4161 19.3574 15.5839 19.3574 17.4911 17.3796C18.386 16.4516 18.5636 15.0454 17.9275 13.924L15.7396 10.0669C14.9733 8.71591 13.0267 8.71591 12.2604 10.0669Z" stroke="#C8D5E8" stroke-width="2" />
+                                            </svg>
+                                        </div>
+                                        <span class="d-flex flex-column w-auto">
+                                            <h1 class="stats__row-title text-left">Bubbles</h1>
+                                            <p class="stats__row-subtitle">Просмотр</p>
+                                        </span>
+                                    </span>
+                                    <span>Is hidden</span>
+                                    <span>02:17</span>
+                                    <span>100 $</span>
+                                    <span>0.00x</span>
+                                    <span class='betwin'>0 $</span>
+                                </div>
+                                <div class="stats__row">
+                                    <span class='d-flex align-items-center showgame'>
+                                        <div class="gameicon">
+                                            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity="0.5" d="M9.26913 8.05018C2.96511 12.4558 2.35522 18.6906 3.42452 21C4.06099 19.2405 5.8733 16.4507 9.02771 15.1009C13.4298 22.9262 20.5052 23.7306 23 22.5755C21.0585 21.8732 17.8623 19.7391 16.7309 15.9498C23.0349 11.5442 23.6448 5.30941 22.5755 3C21.939 4.75949 20.1267 7.5493 16.9723 8.89912C12.5702 1.07382 5.49476 0.269399 3 1.42452C4.94154 2.12684 8.13766 4.26094 9.26913 8.05018Z" stroke="#C8D4E8" stroke-width="2" />
+                                                <path opacity="0.5" d="M15 12C15 13.1046 14.1046 14 13 14C11.8954 14 11 13.1046 11 12C11 10.8954 11.8954 10 13 10C14.1046 10 15 10.8954 15 12Z" fill="#C8D4E8" />
+                                            </svg>
+                                        </div>
+                                        <span class="d-flex flex-column w-auto">
+                                            <h1 class="stats__row-title text-left">Bubbles</h1>
+                                            <p class="stats__row-subtitle">Просмотр</p>
+                                        </span>
+                                    </span>
+                                    <span>Is hidden</span>
+                                    <span>02:17</span>
+                                    <span>100 $</span>
+                                    <span>0.00x</span>
+                                    <span class='betwin'>100 $</span>
+                                </div>
+                                <div class="stats__row">
+                                    <span class='d-flex align-items-center showgame'>
+                                        <div class="gameicon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                                                <g>
+                                                    <g opacity=".5">
+                                                        <path fill="#c8d5e8" d="M14 2C7.373 2 2 7.373 2 14s5.373 12 12 12 12-5.373 12-12S20.627 2 14 2zm14 12c0 7.732-6.268 14-14 14S0 21.732 0 14 6.268 0 14 0s14 6.268 14 14zm-14 6c2.203 0 4.076-1.223 4.94-2.948a1 1 0 1 1 1.787.896C19.52 20.36 16.947 22 14 22c-2.947 0-5.52-1.639-6.728-4.052a1 1 0 0 1 1.789-.896C9.924 18.777 11.797 20 14 20zm-2.333-8.917a1.75 1.75 0 1 1-3.5 0 1.75 1.75 0 0 1 3.5 0zm4.666 0a1.75 1.75 0 1 1 3.5 0 1.75 1.75 0 0 1-3.5 0z" />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <span class="d-flex flex-column w-auto">
+                                            <h1 class="stats__row-title text-left">Bubbles</h1>
+                                            <p class="stats__row-subtitle">Просмотр</p>
+                                        </span>
+                                    </span>
+                                    <span>Is hidden</span>
+                                    <span>02:17</span>
+                                    <span>100 $</span>
+                                    <span>0.00x</span>
+                                    <span class='betwin'>100 $</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END STATS-->
+        <!--START INFO-->
+        <div class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 position-relative">
+                        <img src="img/blackchip2.svg" alt="" class="info__blackchip">
+                        <img src="img/redchip.svg" alt="" class="info__redchip">
+                        <div class="info-wrapper">
+                            <div class="info-content">
+                                <div class="info-content-item">
+                                    <h1 class="info-content-item__title">Easy to Access</h1>
+                                    <p class="info-content-item__subtitle">Players from all over the world can access
+                                        our desktop client use either CHP,
+                                        BTC or ETH to deposit or withdraw
+                                        from their CHP account from
+                                        anywhere in the world.</p>
+                                </div>
+                                <div class="info-content-item">
+                                    <h1 class="info-content-item__title">100% Decentralized</h1>
+                                    <p class="info-content-item__subtitle">Our highly advanced RNG is now fully
+                                        decentralized. You as a player can, at
+                                        any time, view your impact on the card
+                                        shuffling.</p>
+                                </div>
+                            </div>
+                            <div class="info-content">
+                                <div class="info-content-item">
+                                    <h1 class="info-content-item__title">Community-Centric</h1>
+                                    <p class="info-content-item__subtitle">Our growing community of crypto poker fans
+                                        are
+                                        our greatest asset and top priority.
+                                        Feedback,
+                                        ideas, and opinions are
+                                        always
+                                        welcome from our players.</p>
+                                </div>
+                                <div class="info-content-item">
+                                    <h1 class="info-content-item__title">Player Promotions</h1>
+                                    <p class="info-content-item__subtitle">As we are a community-focused brand,
+                                        it’s essential that we offer you as a player,
+                                        the best possible promotions that the poker
+                                        market can offer.</p>
+                                </div>
+                            </div>
+                            <div class="info-content">
+                                <div class="info-content-item">
+                                    <h1 class="info-content-item__title">Available on Mobile</h1>
+                                    <p class="info-content-item__subtitle">Players can download CoinPoker’s
+                                        mobile application to access the same
+                                        tournaments, cash games, and crypto
+                                        poker experience on the go.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END INFO-->
+        <!--START ABOUT-->
+        <div id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="about-content">
+                            <div class="about-content__img"><img src="img/aboutimg.svg" alt=""></div>
+                            <div class="d-flex flex-column">
+                                <h1 class="about-content__title">About <b>DaoPoker</b></h1>
+                                <p class="about-content__subtitle">Developed by our ambitious team of poker lovers, DaoPoker is a revolutionary platform
+                                    that uses blockchain technology to address key issues in the online poker industry.
+                                    Quick and secure transactions are made possible with BTC, ETH and CHP tokens.
+                                    CHP is the currency of the DaoPoker economy and is used for all products such as
+                                    poker and sports betting. It will continue to support future developments
+                                    delivered to our community.</p>
+                                <div class="d-flex align-items-center">
+                                    <span class="about-content__download">Download for</span>
+                                    <button class="about-content__btn"><img src="img/windows.svg" alt=""></button>
+                                    <button class="about-content__btn"><img src="img/apple.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END ABOUT-->
+        <!--START TEAM-->
+        <div id="team" class="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 d-flex flex-column align-items-center">
+                        <h1 class="team__title">Development team</h1>
+                        <p class="team__subtitle">In the block below you can get to know the team of specialists
+                            who worked on the creation of DaoPoker! It is thanks to this
+                            developer that you can now play DaoPoker!</p>
+                        <div class="team-wrapper">
+                            <img src="img/blackchip3.svg" alt="" class="team__blackchip">
+                            <div class="prev"><img src="img/sliderarrow.svg" alt=""></div>
+                            <div class="next"> <img src="img/sliderarrow.svg" alt=""></div>
+                            <div class="slider">
+                                <div class="slide">
+                                    <div class="slide-content">
+                                        <div class="slide-content-worker">
+                                            <div class="worker__img"><img src="img/worker1.svg" alt=""></div>
+                                            <div class="d-flex flex-column">
+                                                <h1 class="worker__name">Dominik Holland</h1>
+                                                <p class="worker__duty">CEO</p>
+                                                <div class="worker-rating">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slide-content-desc">
+                                            <p>René is an online gaming software engineer with more
+                                                than a decade of experience working in the field.
+                                                As a lead developer, he specialized in building
+                                                multi-player online-based games like poker, backgammon,
+                                                chess, rummy, and other card games. René’s extensive
+                                                background in the industry allows him to build on best
+                                                principles as well as deliver with the latest innovations
+                                                in the industry.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="slide-content">
+                                        <div class="slide-content-worker">
+                                            <div class="worker__img"><img src="img/worker2.svg" alt=""></div>
+                                            <div class="d-flex flex-column">
+                                                <h1 class="worker__name">Alex Rudak</h1>
+                                                <p class="worker__duty">Developer, designer.</p>
+                                                <div class="worker-rating">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slide-content-desc">
+                                            <p>Justas is an online gaming software developer with more
+                                                than 12 years of experience in the field. In addition to that,
+                                                he is an author & a contributor of 10 published iOS and
+                                                Android games. For the past three years, Justas has been
+                                                working as an online poker software developer.
+                                                Over the last year, he has been focusing on blockchain
+                                                related projects & smart contracts.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="slide-content">
+                                        <div class="slide-content-worker">
+                                            <div class="worker__img"><img src="img/worker3.svg" alt=""></div>
+                                            <div class="d-flex flex-column">
+                                                <h1 class="worker__name">Johanna Taylor</h1>
+                                                <p class="worker__duty">UI/UX Designer</p>
+                                                <div class="worker-rating">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slide-content-desc">
+                                            <p>Matt fell in love with poker while working at Mirage
+                                                Resorts in Las Vegas as a table games administrator
+                                                for several years. This was followed by a 10+ year career
+                                                at PokerStars as Senior Manager of their support team.
+                                                Matt has moved on to guide our team of support ninjas
+                                                as Head of Support in delivering top notch service
+                                                to our growing community.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="slide-content">
+                                        <div class="slide-content-worker">
+                                            <div class="worker__img"><img src="img/worker2.svg" alt=""></div>
+                                            <div class="d-flex flex-column">
+                                                <h1 class="worker__name">Alex Rudak</h1>
+                                                <p class="worker__duty">Developer, designer.</p>
+                                                <div class="worker-rating">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slide-content-desc">
+                                            <p>Justas is an online gaming software developer with more
+                                                than 12 years of experience in the field. In addition to that,
+                                                he is an author & a contributor of 10 published iOS and
+                                                Android games. For the past three years, Justas has been
+                                                working as an online poker software developer.
+                                                Over the last year, he has been focusing on blockchain
+                                                related projects & smart contracts.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="slide-content">
+                                        <div class="slide-content-worker">
+                                            <div class="worker__img"><img src="img/worker1.svg" alt=""></div>
+                                            <div class="d-flex flex-column">
+                                                <h1 class="worker__name">Dominik Holland</h1>
+                                                <p class="worker__duty">CEO</p>
+                                                <div class="worker-rating">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slide-content-desc">
+                                            <p>René is an online gaming software engineer with more
+                                                than a decade of experience working in the field.
+                                                As a lead developer, he specialized in building
+                                                multi-player online-based games like poker, backgammon,
+                                                chess, rummy, and other card games. René’s extensive
+                                                background in the industry allows him to build on best
+                                                principles as well as deliver with the latest innovations
+                                                in the industry.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END TEAM-->
+        <!--START FAQ-->
+        <div class="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 d-flex align-items-center">
+                        <div class="faq-game"><img src="img/faqchip1.svg" alt="" class="faqredchipf"><img src="img/faqchip2.svg" alt="" class="faqredchips"><img src="img/faqgame.png" alt=""></div>
+                        <div class="faq-content">
+                            <h1 class="faq-content__title">FAQ</h1>
+                            <div class="faq-content-item">
+                                <img src="img/chip.png" alt="">
+                                <p class="faq-content-item__subtitle">How do I set up a DaoPoker account?</p>
+                            </div>
+                            <div class="faq-content-item">
+                                <img src="img/chip.png" alt="">
+                                <p class="faq-content-item__subtitle">What CHP is and why do I need it to play?</p>
+                            </div>
+                            <div class="faq-content-item">
+                                <img src="img/chip.png" alt="">
+                                <p class="faq-content-item__subtitle">Can I withdraw my DaoPoker funds in BTC?</p>
+                            </div>
+                            <div class="faq-content-item">
+                                <img src="img/chip.png" alt="">
+                                <p class="faq-content-item__subtitle">Which crypto wallet should I use for CHP?</p>
+                            </div>
+                            <div class="faq-content-item">
+                                <img src="img/chip.png" alt="">
+                                <p class="faq-content-item__subtitle">How do I deposit CHP, ETH or USDT to my DaoPoker account?</p>
+                            </div>
+                            <div class="faq-content-item">
+                                <img src="img/chip.png" alt="">
+                                <p class="faq-content-item__subtitle">Can I withdraw my DaoPoker funds in BTC?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END FAQ-->
+        <!--START METHODS-->
+        <div class="methods">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 d-flex align-items-center  justify-content-center">
+                        <div class="methods-content">
+                            <div class=""><img src="img/visa.png" alt=""></div>
+                            <div class=""><img src="img/paym2.png" alt=""></div>
+                            <div class=""><img src="img/paym3.png" alt=""></div>
+                            <div class=""><img src="img/paym4.png" alt=""></div>
+                            <div class=""><img src="img/paym5.png" alt=""></div>
+                            <div class=""><img src="img/paym6.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END METHODS-->
+    </div>
+    <!--END MAIN-->
+    <!--START FAQPAGE-->
+    <div class="faqpage">
+        <div class="start">
+            <img src="img/faqpageredchip1.svg" alt="" class="start__redchipf">
+            <img src="img/faqpageredchip2.svg" class="start__redchips" alt="">
+            <img src="img/asideblackchip.svg" class="start__blackchip" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 position-relative">
+                        <img src="img/startimg.svg" class="start__bg" alt="">
+                        <div class="start-content">
+                            <h1 class="start-content__title">How to Get Started
+                                on <b>DaoPoker</b> :
+                                Detailed Guide</h1>
+                            <div class="d-flex align-items-center">
+                                <span><img src="img/calendar.svg" alt="">May 16, 2020 </span>
+                                <span><img src="img/user.svg" alt="">shelby</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="steps">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="steps-item steps-item_huge">
+                            <div class="steps-text">
+                                <span><b>1</b></span>
+                                <div class="d-flex flex-column">
+                                    <h1 class="steps-item__title">Go to the Download Page</h1>
+                                    <p class="steps-item__subtitle">Go to <a href="index.html">www.daopoker.com</a> and click “Download”.</p>
+                                </div>
+                            </div>
+                            <img src="img/steps1.svg" alt="">
+                        </div>
+                        <div class="steps-item steps-item_huge">
+                            <div class="steps-text">
+                                <span><b>2</b></span>
+                                <div class="d-flex flex-column">
+                                    <h1 class="steps-item__title">Download the App</h1>
+                                    <p class="steps-item__subtitle">Wait for the program file to download, or click on one
+                                        of the links listed below if it fails to launch.</p>
+                                </div>
+                            </div>
+                            <img src="img/steps2.svg" alt="">
+                        </div>
+                        <div class="steps-item">
+                            <div class="steps-text">
+                                <span><b>3</b></span>
+                                <div class="d-flex flex-column">
+                                    <h1 class="steps-item__title">Create an Account</h1>
+                                    <p class="steps-item__subtitle">Once the app is ready and launched, <br>
+                                        click on the “Create Account” option.</p>
+                                </div>
+                            </div>
+                            <img src="img/steps3.svg" alt="">
+                        </div>
+                        <div class="steps-item">
+                            <div class="steps-text">
+                                <span><b>4</b></span>
+                                <div class="d-flex flex-column">
+                                    <h1 class="steps-item__title">Registration</h1>
+                                    <p class="steps-item__subtitle">Complete the registration form and <br>
+                                        click “Register”.</p>
+                                </div>
+                            </div>
+                            <img src="img/steps4.svg" alt="">
+                        </div>
+                        <div class="steps-item">
+                            <div class="steps-text">
+                                <span><b>5</b></span>
+                                <div class="d-flex flex-column">
+                                    <h1 class="steps-item__title">Email verification </h1>
+                                    <p class="steps-item__subtitle">A verification email will be sent to your <br>
+                                        account within a few minutes.</p>
+                                </div>
+                            </div>
+                            <img src="img/steps5.svg" alt="">
+                        </div>
+                        <div class="steps-item">
+                            <div class="steps-text">
+                                <span><b>6</b></span>
+                                <div class="d-flex flex-column">
+                                    <h1 class="steps-item__title">Email confirmation </h1>
+                                    <p class="steps-item__subtitle">Open the verification email and click “Verify” <br>
+                                        (If you can’t find it in your Inbox then
+                                        check your Junk folder).</p>
+                                </div>
+                            </div>
+                            <img src="img/steps6.svg" alt="">
+                        </div>
+                        <div class="steps-item">
+                            <div class="steps-text">
+                                <span><b>7</b></span>
+                                <div class="d-flex flex-column">
+                                    <h1 class="steps-item__title">Complete Registration
+                                        by Verifying Your Account</h1>
+                                    <p class="steps-item__subtitle">Verify your identity via SMS by entering <br>
+                                        your phone number.</p>
+                                </div>
+                            </div>
+                            <img src="img/steps7.svg" alt="">
+                        </div>
+                        <div class="steps-item">
+                            <div class="steps-text">
+                                <span><b>8</b></span>
+                                <div class="d-flex flex-column">
+                                    <h1 class="steps-item__title">Complete Registration
+                                        by Verifying Your Account</h1>
+                                    <p class="steps-item__subtitle">You will receive an SMS with the verification code in just
+                                        a few minutes. Enter the code and click the “Confirm Code”
+                                        button to complete verification.</p>
+                                </div>
+                            </div>
+                            <img src="img/steps8.svg" alt="">
+                        </div>
+                        <div class="steps-item">
+                            <div class="steps-text">
+                                <span><b>9</b></span>
+                                <div class="d-flex flex-column">
+                                    <h1 class="steps-item__title">Complete Registration
+                                        by Verifying Your Account</h1>
+                                    <p class="steps-item__subtitle">Wait just a few seconds while we get your account ready.</p>
+                                </div>
+                            </div>
+                            <img src="img/steps9.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="methods">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 d-flex align-items-center justify-content-center">
+                        <div class="methods-content">
+                            <img src="img/visa.png" alt="">
+                            <img src="img/paym2.png" alt="">
+                            <img src="img/paym3.png" alt="">
+                            <img src="img/paym4.png" alt="">
+                            <img src="img/paym5.png" alt="">
+                            <img src="img/paym6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END FAQPAGE-->
+    <!--START DOWNLOADPAGE-->
+    <div class="downloadpage">
+        <img src="img/hugecube.svg" alt="" class="dcube">
+        <img src="img/asideblackchip.svg" alt="" class="dblackchip">
+        <img src="img/downloadpageblackchip.svg" alt="" class="dblackchips">
+        <img src="img/downloadpagecart.svg" alt="" class="downloadcart">
+        <div class="save">
+            <div class="save__img"><img src="img/downloadpagelogo.svg" alt=""><img src="" alt=""></div>
+            <h1 class="save__title">Your download will start soon.</h1>
+            <p class="save__subtitle">If you’re seeing this page, it means that your download will start in a few seconds!
+                Thank you for downloading CoinPoker. If it’s been a while, and your download hasn’t started,
+                please click the button below.</p>
+            <div class="d-flex align-items-center">
+                <button class="save__download"><img src="img/windows.svg" alt=""><b>Windows</b></button><button class="save__download"><img src="img/apple.svg" alt=""><b>MacOS</b></button>
+            </div>
+        </div>
+    </div>
+    <!--END DOWNLOADPAGE-->
+    <!--START FOOTER-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <a href="#main" class="footer-logo scroll">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="182" height="31" viewBox="0 0 182 31">
+                            <defs>
+                                <filter id="kf8oa" width="1472%" height="1472%" x="-676%" y="-676%" filterUnits="objectBoundingBox">
+                                    <feGaussianBlur in="SourceGraphic" result="FeGaussianBlur1077Out" stdDeviation="50 50" />
+                                </filter>
+                            </defs>
+                            <g>
+                                <g>
+                                    <g>
+                                        <path fill="#fff" d="M52.735 7.626h5.31v17.7h-5.31v-1.664c-1.25 1.44-3.009 2.16-5.274 2.16-2.337 0-4.331-.898-5.983-2.691C39.826 21.314 39 19.095 39 16.476c0-2.62.826-4.827 2.478-6.62 1.652-1.817 3.646-2.726 5.983-2.726 2.265 0 4.023.72 5.274 2.16zm-7.257 12c.779.779 1.794 1.168 3.045 1.168 1.25 0 2.265-.389 3.044-1.168.779-.779 1.168-1.829 1.168-3.15 0-1.322-.39-2.372-1.168-3.151-.779-.779-1.794-1.168-3.044-1.168-1.251 0-2.266.39-3.045 1.168-.779.779-1.168 1.829-1.168 3.15 0 1.322.39 2.372 1.168 3.151zm31.614 3.505c-1.817 1.793-4.035 2.69-6.655 2.69s-4.838-.897-6.655-2.69c-1.817-1.817-2.726-4.036-2.726-6.655 0-2.62.909-4.827 2.726-6.62 1.817-1.817 4.035-2.726 6.655-2.726s4.838.909 6.655 2.726c1.817 1.793 2.726 4 2.726 6.62s-.909 4.838-2.726 6.655zm-9.558-3.646c.779.778 1.746 1.168 2.903 1.168 1.156 0 2.124-.39 2.903-1.168.778-.78 1.168-1.782 1.168-3.01 0-1.227-.39-2.23-1.168-3.008-.78-.78-1.747-1.169-2.903-1.169-1.157 0-2.124.39-2.903 1.169-.779.778-1.168 1.781-1.168 3.009 0 1.227.39 2.23 1.168 3.009z" />
+                                    </g>
+                                    <g>
+                                        <path fill="#fff" d="M32.825 3.824C30.376 1.274 27.322 0 23.662 0H13.06v3.891l.01-.01 6.048 6.047V5.831h4.544c2.095 0 3.786.682 5.074 2.045 1.312 1.338 1.969 3.13 1.969 5.376 0 2.247-.657 4.052-1.97 5.415-1.287 1.338-2.978 2.007-5.073 2.007h-4.544v-3.551l-6.047 6.047-.011-.01v3.345h10.602c3.66 0 6.714-1.262 9.163-3.787 2.474-2.55 3.71-5.705 3.71-9.466 0-3.76-1.236-6.903-3.71-9.428z" />
+                                    </g>
+                                    <g>
+                                        <path fill="#fff" d="M96.175 0c2.603 0 4.801.884 6.595 2.651 1.794 1.768 2.691 3.914 2.691 6.439 0 2.524-.897 4.67-2.69 6.438-1.795 1.768-3.994 2.651-6.596 2.651h-3.98v8.332H86.13V0zm0 12.498c.935 0 1.705-.328 2.312-.984.606-.657.91-1.465.91-2.424 0-.96-.304-1.768-.91-2.424-.607-.657-1.377-.985-2.312-.985h-3.98v6.817zm27.199 11.665c-1.946 1.92-4.321 2.879-7.126 2.879-2.805 0-5.18-.96-7.126-2.879-1.946-1.944-2.919-4.317-2.919-7.12s.973-5.163 2.919-7.082c1.946-1.944 4.32-2.917 7.126-2.917 2.805 0 5.18.973 7.126 2.917 1.946 1.919 2.919 4.28 2.919 7.082 0 2.803-.973 5.176-2.919 7.12zm-10.234-3.9c.834.832 1.87 1.25 3.108 1.25s2.274-.418 3.108-1.25c.834-.834 1.25-1.907 1.25-3.22 0-1.313-.416-2.386-1.25-3.22-.834-.832-1.87-1.249-3.108-1.249s-2.274.417-3.108 1.25c-.834.833-1.251 1.906-1.251 3.22 0 1.312.417 2.385 1.25 3.218zm34.563 6.248h-6.444l-6.065-8.37v8.37h-5.685V0h5.685v15.869l5.686-8.294h6.633l-6.898 9.468zm6.022-7.195c.657 1.767 2.173 2.65 4.549 2.65 1.541 0 2.754-.48 3.639-1.439l4.548 2.614c-1.87 2.6-4.624 3.9-8.263 3.9-3.184 0-5.736-.946-7.657-2.84-1.895-1.894-2.843-4.28-2.843-7.158 0-2.853.935-5.227 2.805-7.12 1.895-1.92 4.321-2.879 7.278-2.879 2.754 0 5.041.96 6.86 2.879 1.845 1.893 2.768 4.267 2.768 7.12 0 .808-.076 1.565-.228 2.272zm8.036-4.242c-.556-1.995-1.895-2.992-4.018-2.992-2.198 0-3.576.997-4.131 2.992zm14.558-4.129c.354-1.212 1.062-2.133 2.123-2.764a6.763 6.763 0 0 1 3.563-.985v6.438a5.704 5.704 0 0 0-3.904.72c-1.188.682-1.782 1.881-1.782 3.598v8.56h-5.685V7.574h5.685z" />
+                                    </g>
+                                    <g>
+                                        <g filter="url(#kf8oa)" opacity=".25" transform="rotate(135 12.5 13.5)">
+                                            <path fill="#fb3e3e" d="M17.243 18.763H7.1V8.62h10.143z" />
+                                        </g>
+                                        <g transform="rotate(135 12.5 13.5)">
+                                            <path fill="#fb3e3e" d="M17.243 18.763H7.1V8.62h10.143z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-xl-4">
+                    <div class="d-flex align-items-center  justify-content-center">
+                        <a href="#" class="footer__link">About</a>
+                        <a href="#" class="footer__link">Team</a>
+                        <a href="#" class="footer__link">FAQ</a>
+                        <a href="#" class="footer__link">Download</a>
+                    </div>
+                    <p class="copyright">© DaoPoker. All rights reserved.</p>
+                </div>
+                <div class="col-xl-4">
+                    <button class="support"><span class="romb"></span>Online support</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END FOOTER-->
+    <!--START MODALS-->
+    <div class="overlay"></div>
+    <div class="adaptive-menu">
+        <div class="adaptive-menu-content">
+            <a href="#main" class="logo scroll">
+                <svg xmlns="http://www.w3.org/2000/svg" width="230" height="35" viewBox="0 0 230 35">
+                    <g>
+                        <g>
+                            <path fill="#fff" d="M62.788 9.861h6.872v22.91h-6.872v-2.154c-1.62 1.863-3.895 2.795-6.827 2.795-3.024 0-5.606-1.16-7.744-3.482-2.138-2.352-3.207-5.223-3.207-8.614 0-3.39 1.07-6.247 3.207-8.568 2.138-2.352 4.72-3.528 7.744-3.528 2.932 0 5.208.932 6.827 2.795zm-9.393 15.533c1.008 1.008 2.321 1.512 3.94 1.512 1.619 0 2.933-.504 3.94-1.512 1.009-1.008 1.513-2.367 1.513-4.078 0-1.71-.504-3.07-1.512-4.078-1.009-1.008-2.322-1.512-3.94-1.512-1.62 0-2.933.504-3.941 1.512s-1.512 2.368-1.512 4.078c0 1.71.504 3.07 1.512 4.078zm40.917 4.536c-2.351 2.321-5.223 3.482-8.613 3.482-3.39 0-6.262-1.16-8.614-3.482-2.352-2.352-3.528-5.223-3.528-8.614 0-3.39 1.176-6.247 3.528-8.568 2.352-2.352 5.223-3.528 8.614-3.528 3.39 0 6.262 1.176 8.614 3.528 2.351 2.321 3.527 5.177 3.527 8.568 0 3.39-1.175 6.262-3.527 8.614zm-12.37-4.72c1.008 1.008 2.26 1.512 3.757 1.512 1.496 0 2.749-.504 3.757-1.512s1.512-2.306 1.512-3.894-.504-2.887-1.512-3.895-2.26-1.512-3.757-1.512c-1.497 0-2.75.504-3.757 1.512-1.008 1.008-1.512 2.307-1.512 3.895s.504 2.886 1.512 3.894z" />
+                        </g>
+                        <g>
+                            <path fill="#fff" d="M37.012 4.95C33.842 1.65 29.889 0 25.152 0H11.43v5.036l.014-.013 7.827 7.827V7.547h5.881c2.712 0 4.9.882 6.567 2.647 1.699 1.731 2.548 4.05 2.548 6.958 0 2.908-.85 5.244-2.548 7.008-1.666 1.732-3.855 2.598-6.567 2.598h-5.88v-4.596l-7.828 7.827-.014-.013v4.329h13.722c4.737 0 8.69-1.633 11.86-4.9 3.202-3.3 4.803-7.384 4.803-12.253 0-4.868-1.601-8.935-4.803-12.202z" />
+                        </g>
+                        <g>
+                            <path fill="#fb3e3e" d="M119 0c3.37 0 6.215 1.144 8.537 3.431 2.322 2.288 3.484 5.066 3.484 8.334s-1.161 6.045-3.484 8.333c-2.322 2.288-5.167 3.431-8.536 3.431h-5.151v10.785H106V0zm0 16.177c1.211 0 2.209-.425 2.994-1.275.784-.85 1.177-1.895 1.177-3.137s-.393-2.288-1.178-3.138c-.784-.85-1.782-1.274-2.992-1.274h-5.151v8.824zm35.205 15.098C151.686 33.758 148.612 35 144.98 35c-3.63 0-6.704-1.242-9.223-3.725-2.518-2.517-3.777-5.589-3.777-9.216 0-3.628 1.259-6.683 3.777-9.167 2.519-2.516 5.593-3.774 9.224-3.774 3.63 0 6.704 1.258 9.223 3.774 2.518 2.484 3.777 5.54 3.777 9.167s-1.259 6.7-3.777 9.215zm-13.246-5.05c1.079 1.079 2.42 1.618 4.022 1.618 1.603 0 2.944-.54 4.023-1.618 1.08-1.078 1.62-2.467 1.62-4.166 0-1.7-.54-3.088-1.62-4.167-1.079-1.078-2.42-1.617-4.023-1.617-1.602 0-2.943.539-4.022 1.617-1.08 1.079-1.62 2.468-1.62 4.167 0 1.7.54 3.088 1.62 4.167zm44.735 8.089h-8.34l-7.85-10.834v10.834h-7.36V0h7.36v20.54l7.359-10.736h8.585l-8.929 12.255zM193.488 25c.85 2.288 2.813 3.431 5.888 3.431 1.995 0 3.565-.62 4.71-1.862l5.887 3.382C207.552 33.317 203.987 35 199.277 35c-4.12 0-7.424-1.226-9.91-3.676-2.453-2.452-3.68-5.54-3.68-9.265 0-3.693 1.211-6.765 3.631-9.216 2.453-2.484 5.593-3.725 9.42-3.725 3.565 0 6.525 1.241 8.88 3.725 2.387 2.451 3.581 5.523 3.581 9.216 0 1.046-.098 2.026-.294 2.941zm10.401-5.49c-.72-2.582-2.453-3.873-5.2-3.873-2.846 0-4.628 1.291-5.348 3.873zm18.843-5.343c.458-1.569 1.374-2.762 2.747-3.579a8.756 8.756 0 0 1 4.612-1.274v8.333c-1.799-.294-3.483.016-5.053.931-1.537.883-2.306 2.435-2.306 4.657v11.079h-7.359V9.804h7.359z" />
+                        </g>
+                        <g transform="rotate(135 10 17.5)">
+                            <path fill="#fb3e3e" d="M16.849 24.288H3.72V11.16h13.129z" />
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <ul class="d-flex">
+                <li class="menu">
+                    <a href="index.html#about" class="menu__link">
+                        About
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="index.html#team" class="menu__link">
+                        Team
+                    </a>
+                </li>
+                <li class="menu faqtrigger">
+                    <a href="" class="menu__link">
+                        FAQ
+                    </a>
+                </li>
+            </ul>
+            <button class="download">
+                <span>Download</span>
+            </button>
+            <button class="support"><span class="romb"></span>Online support</button>
+        </div>
+    </div>
+    <!--END MODALS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
