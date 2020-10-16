@@ -1,0 +1,79 @@
+button {
+    outline: none !important;
+    border: none;
+    cursor: pointer !important;
+    background-color: transparent;
+    transition: all .3s ease !important;
+}
+
+.row {
+    display: flex;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: #000000ab;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+    cursor: pointer;    
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3f97ff;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px;
+}
+::-webkit-scrollbar-track {
+        background-color: #1d1d20;
+}
+.stats-scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+.stats-scroll::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+.stats-scroll::-webkit-scrollbar-thumb {
+    background-color: #ea3e3e;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px;
+}
+.stats-scroll::-webkit-scrollbar-track {
+        background-color: #0f131b;
+}
+@keyframes roll {
+    from {
+        transform: translateX(-1000%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.show {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
